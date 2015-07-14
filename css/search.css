@@ -1,0 +1,153 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/** Search
+------------------------------ **/
+
+.contents .search
+{
+	background:url(../img/design/content_search_back_body.gif);
+}
+.contents .search .body
+{
+	width:490px;
+	padding:0 10px 10px;
+	background:url(../img/design/content_search_back_bottom.gif) bottom no-repeat;
+}
+.contents .search .body h3
+{
+	margin:0;
+	padding:0;
+	background:none;
+}
+.contents .search .body ul
+{
+	margin:0;
+	padding:5px 0 0;
+}
+.contents .search .body ul li
+{
+	line-height:20px;
+}
+.contents .search .body ul.tile li
+{
+	float:left;
+	width:50%;
+}
+.contents .search .body ul li span
+{
+	color:#666;
+	font-size:10px;
+}
+.contents .search .body input
+{
+	vertical-align:middle;
+}
+.contents .search .body input.text
+{
+	width:468px;
+	margin-bottom:5px;
+	border:solid 1px #fff;
+	height:20px;
+	font-size:16px;
+	line-height:20px;
+}
+
+
+.contents .search .body .buttons
+{
+	padding:10px;
+	text-align:center;
+}
+
+.contents .search .frameWide
+{
+	clear:both;
+	width:490px;
+	background:url(../img/design/content_search_frame_wide_body.gif);
+}
+.contents .search .frameWide .body
+{
+	width:470px;
+	padding:0 10px 5px;
+	background:url(../img/design/content_search_frame_wide_bottom.gif) bottom no-repeat;
+}
+
+.contents .search .frameHalf
+{
+	width:240px;
+	background:url(../img/design/content_search_frame_half_body.gif);
+}
+.contents .search .frameHalf .body
+{
+	width:220px;
+	padding:0 10px 5px;
+	background:url(../img/design/content_search_frame_half_bottom.gif) bottom no-repeat;
+}
+
+
+/** Search result
+------------------------------ **/
+
+.contents .searchResult .noResult
+{
+	color:red;
+	font-weight:bold;
+}
+
+.contents .searchResult table.result
+{
+	width:510px;
+	margin-bottom:10px;
+	border-collapse:collapse;
+}
+.contents .searchResult table.result th,
+.contents .searchResult table.result td
+{
+	padding:5px;
+	border:solid 1px #ccc;
+	vertical-align:top;
+}
+.contents .searchResult table.result th
+{
+	background:#eee;
+}
+.contents .searchResult table.result th span
+{
+	padding-left:5px;
+	color:#666;
+	font-size:10px;
+	font-weight:normal;
+	text-decoration:none;
+}
+.contents .searchResult table.result td.thumb
+{
+	width:120px;
+}
+.contents .searchResult table.result th.rating,
+.contents .searchResult table.result th.review,
+.contents .searchResult table.result th.link
+{
+	width:50px;
+	text-align:center;
+}
+.contents .searchResult table.result td.rating,
+.contents .searchResult table.result td.review,
+.contents .searchResult table.result td.link
+{
+	width:auto;
+	text-align:center;
+}
+.contents .searchResult table.result td.rating a
+{
+	color:#f36;
+	font-weight:bold;
+}
+.contents .searchResult table.result td.zero a
+{
+	color:#999;
+}
+.contents .searchResult table.result td.description
+{
+	line-height:20px;
+}

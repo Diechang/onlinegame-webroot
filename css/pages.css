@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+	@ Use : Pages, Links
+	
+	* Theme color	: H = 200
+	* Link blue		: #3399cc
+	* Link red		: #ff3366
+*/
+
+.content li
+{
+	padding-left:10px;
+	background:url(/img/design/listmark.gif) top left no-repeat;
+}
+

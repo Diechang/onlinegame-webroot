@@ -1,0 +1,98 @@
+@charset 'UTF-8';
+div.post h1 {
+  color: #000000;
+  font-size: 160%;
+  font-weight: bold;
+  padding: 0;
+  margin: 0 3px 10px 0;
+}
+div.post h2 {
+  color: #223a70;
+  font-size: 140%;
+  font-weight: normal;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+div.post h3 {
+  font-size: 100%;
+  color: #223a70;
+  font-weight: normal;
+  margin: 5px 3px 5px 0;
+  padding: 0;
+}
+div.post h3 a{
+  margin: 5px 3px 5px 0;
+  padding: 0;
+}
+div.post h4 {
+  font-size: 80%;
+  color: #223a70;
+  font-weight: normal;
+  margin: 5px 3px 5px 0;
+  padding: 0;
+}
+div.main h2{
+  font-size: 120%;
+  color: #223a70;
+  font-weight: normal;
+  margin: 5px 3px 5px 0;
+  padding: 0;
+}
+div.main h2 a{
+  margin: 5px 3px 5px 0;
+  padding: 0;
+}
+div.main h4 {
+  font-size: 80%;
+  color: #223a70;
+  font-weight: normal;
+  margin: 5px 3px 5px 0;
+  padding: 0;
+}
+table.header_value { 
+  table-layout: auto;
+  border-spacing: 0px;
+  empty-cells: show;
+  background-color: #ffffff;
+  margin: 3px 0 10px 0;
+  text-align:left;
+  border-collapse: collapse;
+}
+table.header_value td { 
+  font-weight: normal;
+  color: #223a70;
+  border: none;
+  padding: 0;
+}
+table.header_value td.label { 
+  color: #223a70;
+  font-weight: normal;
+  border: none;
+  padding: 0 5px 3px 0;
+  white-space: nowrap;
+}
+table.header_value td.value { 
+  color: #223a70;
+  font-weight: normal;
+  border: none;
+  padding: 0 5px 3px 0;
+}
+table.header_value img { 
+  margin: 3px 5px 0 5px;
+}
+span.header_value {
+  font-weight: bold;
+  color: #17184b;
+  margin: 0 10px 0 0;
+}
+span.header_value a {
+  font-weight: bold;
+}
+div.system_message {
+  margin: 0 0 10px 0;
+}
+div.system_message p {
+  font-size: 80%;
+  line-height: 0.8em;
+  color: #cc0000;
+}

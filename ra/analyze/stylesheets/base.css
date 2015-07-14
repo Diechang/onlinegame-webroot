@@ -1,0 +1,111 @@
+@charset 'UTF-8';
+body {
+  padding: 5px;
+  margin: 0;
+  vertical-align: baseline;
+  list-style-type: none;
+  text-decoration: none;
+  text-indent: 0;
+  font-family: "Lucida Grande", "Verdana", "Lucida Grande", "Verdana", "ＭＳ Ｐゴシック", sans-serif;
+  font-size: 100%;
+  font-style: normal;
+  font-weight: normal;
+  background-color:#ffffff;
+  color: #000000;
+  text-align: center;
+}
+img {
+  border: none;
+  display: inline;
+  clear: both;
+  padding: 0;
+  margin: 0;
+  vertical-align: text-bottom;
+} 
+form { 
+  margin: 5px 0;
+  padding: 5px 0;
+}
+input.text {
+  border: 1px solid #223a70;
+  background-color: #f3f3f2;
+  margin: 0;
+  padding: 2px;
+  font-size: 120%;
+  width: 350px;
+}
+input.readonly {
+  border: 1px solid #223a70;
+  background-color: #f3f3f2;
+  color: #aaaaaa;
+  margin: 0;
+  padding: 2px;
+  font-size: 120%;
+  width: 350px;
+}
+input.text:focus,
+input.readonly:focus,
+textarea:focus {
+  background-color: #eaedf7;
+}
+input.button {
+  margin: 0;
+  padding: 2px;
+}
+input.checkbox {
+  margin: 0;
+  padding: 2px;
+}
+input.radio {
+  margin: 0;
+  padding: 2px;
+}
+select {
+  margin: 0;
+  padding: 0;
+  font-size: 120%;
+}
+textarea{
+  border: 1px solid #223a70;
+  background-color: #f3f3f2;
+  padding: 2px;
+  width: 500px;
+  height: 100px;
+}
+p {
+  margin: 10px 0;
+}
+a {
+  color: #223a70;
+  text-decoration: none;
+  line-height: 1.5;
+}
+a:hover {
+  color: #cc0000;
+}
+dt, dd {
+  line-height: 1.5em;
+}
+table { 
+  table-layout: auto;
+  border-spacing: 0px;
+  empty-cells: show;
+  margin: 15px 0;
+  padding: 0;
+  text-align:left;
+  border-collapse: collapse;
+  font-size: 100%;
+}
+th { 
+  font-weight: normal;
+  border: 1px solid #223a70; 
+  padding: 7px 2px 7px 5px;
+  margin: 1px 0 1px 0;
+  text-align: left;
+  white-space: nowrap;
+  background-color: #223a70;
+  color : #ffffff;
+}
+td { 
+  border: 1px solid #9ea1a3; 
+}

@@ -1,0 +1,327 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+	@ Use : Ranking, Properties
+	
+	* Theme color	: H = 200
+	* Link blue		: #3399cc
+	* Link red		: #ff3366
+*/
+
+
+.contents .ranking .rankMore
+{
+	height:20px;
+	margin:0;
+	padding:10px;
+	line-height:20px;
+	background:url(../img/design/content_ranking_more.gif);
+}
+.contents .ranking .rankMore a
+{
+	padding-left:20px;
+	background:url(/img/design/icon_rank_more.gif) left center no-repeat;
+}
+
+
+/** Tabs
+------------------------------ **/
+
+.contents .ranking .rankChangeTabs
+{
+	padding:10px;
+}
+.contents .ranking .rankChangeTabs li
+{
+	display:inline;
+	float:left;
+}
+.contents .ranking .rankChangeTabs li a
+{
+	display:block;
+	float:left;
+	margin-right:5px;
+	margin-bottom:5px;
+	padding:0 10px 0 20px;
+	border:solid 1px #999;
+	line-height:20px;
+	background:url(/img/design/icon_rank_more.gif) left center no-repeat;
+	color:#666;
+	font-size:10px;
+	text-decoration:none;
+}
+.contents .ranking .rankChangeTabs li a:hover
+{
+	border:solid 1px #39c;
+	color:#39c;
+}
+.contents .ranking .rankChangeTabs li.active a
+{
+	color:#f36;
+	border:solid 1px #f36;
+	font-weight:bold;
+}
+
+
+/** Ranking
+------------------------------ **/
+
+.contents .ranking
+{
+	background:url(../img/design/content_ranking_body.gif)
+}
+.contents .ranking .body
+{
+	padding-bottom:5px;
+	background:url(../img/design/content_ranking_bottom.gif) bottom no-repeat;
+}
+.contents .ranking ul,
+.contents .ranking ul li
+{
+	margin:0;
+	padding:0;
+}
+.contents .ranking h2.common
+{
+	height:30px;
+	padding:0 5px 15px;
+	line-height:30px;
+	background:url(../img/design/content_ranking_title_common.gif) top no-repeat;
+	color:#630;
+	font-size:16px;
+	font-weight:bold;
+}
+
+
+/** Ranking - wide
+------------------------------ **/
+
+.contents .ranking .rankingWide
+{
+	background:url(../img/design/content_ranking_wide_body.gif);
+}
+.contents .ranking .rankingWide .top
+{
+	padding:5px 0 0;
+	background:url(../img/design/content_ranking_wide_top.gif) top no-repeat;
+}
+.contents .ranking .rankingWide .body
+{
+	padding:0 0 5px;
+	background:url(../img/design/content_ranking_wide_bottom.gif) bottom no-repeat;
+}
+.contents .ranking .rankingWide .rankingList
+{
+	padding:0 5px 5px;
+}
+.contents .ranking .rankingWide .rankingList li
+{
+	padding:5px;
+}
+
+/** Head **/
+.contents .ranking .rankingWide .rankingList .head
+{
+	margin-bottom:10px;
+}
+.contents .ranking .rankingWide .rankingList .head td.icon,
+.contents .ranking .rankingWide .rankingList .head td.title
+{
+	vertical-align:middle;
+}
+.contents .ranking .rankingWide .rankingList .head td.title
+{
+	padding:0 10px;
+}
+.contents .ranking .rankingWide .rankingList .head td.title a
+{
+	text-decoration:none;
+}
+.contents .ranking .rankingWide .rankingList .head td.title a:hover
+{
+	text-decoration:underline;
+}
+.contents .ranking .rankingWide .rankingList .head td.title span
+{
+	display:block;
+	line-height:15px;
+	color:#666;
+	font-size:12px;
+	text-decoration:none;
+}
+
+.contents .ranking .rankingWide .rankingList .rankNo1 .head td.icon
+{
+	width:60px;
+}
+.contents .ranking .rankingWide .rankingList .rankNoTop .head td.icon,
+.contents .ranking .rankingWide .rankingList .rankNoX .head td.icon
+{
+	width:30px;
+}
+.contents .ranking .rankingWide .rankingList .rankNoTop .head td.iconS,
+.contents .ranking .rankingWide .rankingList .rankNoX .head td.iconS
+{
+	padding-left:20px;
+	background:url(/img/design/icon_rank_more.gif) left center no-repeat;
+	color:#666;
+	font-weight:bold;
+}
+
+.contents .ranking .rankingWide .rankingList .rankNo1 .head td.title
+{
+	line-height:20px;
+	font-size:16px;
+}
+.contents .ranking .rankingWide .rankingList .rankNoTop .head td.title,
+.contents .ranking .rankingWide .rankingList .rankNoX .head td.title
+{
+	line-height:15px;
+	font-size:14px;
+}
+
+/** Images **/
+.contents .ranking .rankingWide .rankingList .images
+{
+	float:left;
+}
+
+.contents .ranking .rankingWide .rankingList .rankNo1 .images
+{
+	width:160px;
+}
+.contents .ranking .rankingWide .rankingList .rankNo1 .images .thumb
+{
+	width:160px;
+	margin-bottom:10px;
+}
+.contents .ranking .rankingWide .rankingList .rankNo1 .images .star100Back
+{
+	margin:auto;
+}
+.contents .ranking .rankingWide .rankingList .rankNoTop .images
+{
+	width:100px;
+}
+.contents .ranking .rankingWide .rankingList .rankNoTop .images .thumb
+{
+	width:100px;
+	margin-bottom:5px;
+}
+.contents .ranking .rankingWide .rankingList .rankNoX .images
+{
+	width:80px;
+}
+.contents .ranking .rankingWide .rankingList .rankNoX .images .thumb
+{
+	width:80px;
+	margin-bottom:5px;
+}
+
+/** Data **/
+.contents .ranking .rankingWide .rankingList .data
+{
+	float:right;
+}
+.contents .ranking .rankingWide .rankingList .data .description
+{
+	margin-bottom:10px;
+	line-height:20px;
+}
+.contents .ranking .rankingWide .rankingList .data .numsTable 
+{
+	margin-bottom:10px;
+	border-collapse:collapse;
+}
+.contents .ranking .rankingWide .rankingList .data .numsTable th
+{
+	padding-left:15px;
+	padding-right:5px;
+	line-height:20px;
+	background:url(/img/design/icon_star.gif) left center no-repeat;
+	font-weight:normal;
+}
+.contents .ranking .rankingWide .rankingList .data .numsTable td
+{
+	padding-left:5px;
+	padding-right:20px;
+	line-height:20px;
+	color:#f36;
+}
+.contents .ranking .rankingWide .rankingList .data .icon_official
+{
+	margin:0;
+}
+.contents .ranking .rankingWide .rankingList .data .icon_official a
+{
+	color:#f36;
+}
+
+.contents .ranking .rankingWide .rankingList .rankNo1 .data
+{
+	width:320px;
+}
+.contents .ranking .rankingWide .rankingList .rankNoTop .data
+{
+	width:380px;
+}
+.contents .ranking .rankingWide .rankingList .rankNoX .data
+{
+	width:400px;
+}
+
+
+/** Ranking - small
+------------------------------ **/
+.contents .ranking .rankingSmalls li
+{
+	float:left;
+	width:255px;
+	height:80px;
+	background:url(../img/design/content_ranking_small_body.gif) center repeat-y;
+}
+.contents .ranking .rankingSmalls li a
+{
+	text-decoration:none;
+}
+.contents .ranking .rankingSmalls li a:hover
+{
+	text-decoration:underline;
+}
+.contents .ranking .rankingSmalls li h3
+{
+	overflow:hidden;
+	width:225px;
+	height:20px;
+	margin:0;
+	padding:10px 15px;
+	background:url(../img/design/content_ranking_small_top.gif) top no-repeat;
+	line-height:20px;
+}
+.contents .ranking .rankingSmalls li h3 a
+{
+	font-size:12px;
+	color:#333;
+}
+.contents .ranking .rankingSmalls li p
+{
+	width:225px;
+	height:30px;
+	margin:0;
+	padding:0 15px 10px;
+	background:url(../img/design/content_ranking_small_bottom.gif) bottom no-repeat;
+	line-height:15px;
+}
+.contents .ranking .rankingSmalls li p a
+{
+	display:block;
+	overflow:hidden;
+	height:30px;
+}
+.contents .ranking .rankingSmalls li p a span
+{
+	display:block;
+	font-size:10px;
+	color:#666;
+}

@@ -1,0 +1,156 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+	@ Use : Ranking, Properties
+	
+	* Theme color	: H = 200
+	* Link blue		: #3399cc
+	* Link red		: #ff3366
+*/
+
+/** Properties
+------------------------------ **/
+
+/** summary **/
+.propSummary h2
+{
+	margin-bottom:10px;
+	padding:0;
+	background:none;
+	line-height:30px;
+	font-size:24px;
+	font-weight:bold;
+}
+.propSummary h2 span
+{
+	display:block;
+	line-height:15px;
+	color:#666;
+	font-size:14px;
+	font-weight:normal;
+}
+
+/** pickup **/
+.propPickup ul li
+{
+	float:left;
+	width:120px;
+	margin-right:10px;
+}
+.propPickup ul li.tail
+{
+	margin:0;
+}
+.propPickup h3
+{
+	margin:0;
+	padding:0;
+	background:none;
+}
+.propPickup .rating
+{
+	width:100px;
+	margin:5px auto;
+}
+.propPickup p.title
+{
+	line-height:15px;
+	font-weight:bold;
+}
+
+/** list **/
+.listChangeTabs
+{
+	width:510px;
+	height:30px;
+	margin-bottom:10px;
+}
+.listChangeTabs li
+{
+	float:left;
+	width:100px;
+	height:30px;
+	margin-right:5px;
+}
+.listChangeTabs li a
+{
+	display:block;
+	width:100px;
+	height:30px;
+}
+.listChangeTabs li.details a
+{
+	background:url(/img/design/list_tabs_details_active.gif) center no-repeat;
+}
+.listChangeTabs li.thumb a
+{
+	background:url(/img/design/list_tabs_thumb_active.gif) center no-repeat;
+}
+.listChangeTabs li a.active img
+{
+	visibility:hidden;
+}
+
+.titles .detailsList li
+{
+	margin-bottom:10px;
+	padding-bottom:5px;
+	border-bottom:dotted 1px #999;
+}
+.titles .detailsList li h3
+{
+	margin-bottom:5px;
+}
+.titles .detailsList li h3 a
+{
+	font-size:14px;
+	text-decoration:none;
+}
+.titles .detailsList li h3 span
+{
+	margin-left:5px;
+	color:#666;
+	font-size:10px;
+	font-weight:normal;
+	text-decoration:none;
+}
+.titles .detailsList li .thumb
+{
+	float:left;
+	width:120px;
+	margin-bottom:10px;
+}
+.titles .detailsList li .description
+{
+	float:right;
+	width:380px;
+}
+.titles .detailsList li table.properties
+{
+	clear:both;
+}
+/** Thumb Type **/
+.titles .thumbList
+{
+	width:510px;
+	margin:auto;
+}
+.titles .thumbList li
+{
+	float:left;
+	width:120px;
+	height:90px;
+	padding-right:10px;
+	padding-bottom:10px;
+}
+.titles .thumbList li.fourth
+{
+	padding-right:0;
+}
+.titles .thumbList li h3,
+.titles .thumbList li .description,
+.titles .thumbList li .properties
+{
+	display:none;
+}

@@ -1,0 +1,334 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*
+{
+	margin:0;
+	padding:0;
+	font-family:"メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+	text-align:left;
+	list-style:none;
+	zoom:1;
+}
+
+#flashMessage,
+#authMessage
+{
+	margin-bottom:10px;
+	padding:8px;
+	border:dotted 2px #f33;
+	background:#fee;
+	color:#f00;
+	font-size:16px;
+	font-weight:bold;
+}
+.error-message
+{
+	color:#f00;
+}
+
+
+/** Main Block
+------------------------------ **/
+
+#header
+{
+	height:60px;
+	margin-bottom:0px;
+	border-bottom:dotted 1px #999;
+}
+#menu
+{
+	float:left;
+	width:200px;
+	border-right:solid 1px #ccc;
+}
+#main
+{
+	margin-left:200px;
+	padding:10px;
+}
+#footer
+{
+	clear:both;
+	height:40px;
+	background:#ccc;
+	line-height:40px;
+	font-size:12px;
+	text-align:center;
+	color:#666;
+}
+
+
+/** Tags Style
+------------------------------ **/
+
+body
+{
+	margin:10px 20px;
+}
+
+form,
+div.form
+{
+	margin-bottom:20px;
+}
+
+a
+{
+	color:#36c;
+}
+
+h1
+{
+	line-height:40px;
+	font-size:20px;
+}
+h2
+{
+	line-height:30px;
+	font-size:16px;
+}
+h3
+{
+	line-height:20px;
+	font-size:14px;
+}
+
+p,th,td,dt,dd
+{
+	font-size:12px;
+}
+p
+{
+	line-height:20px;
+}
+table
+{
+	border-collapse:collapse;
+}
+th,td
+{
+	padding:5px 10px;
+	border:solid 1px #999;
+}
+tr:hover,
+tr:hover td
+{
+	background:#def;
+}
+th
+{
+	background:#def;
+}
+textarea
+{
+	width:300px;
+	height:6em;
+}
+
+.jquerybubblepopup th,
+.jquerybubblepopup td,
+.jquerybubblepopup tr:hover
+{
+	border:0;
+	background:none;
+}
+table.tablesorter thead th.header
+{
+	padding-left:20px;
+	cursor:pointer;
+}
+table.tablesorter thead tr .headerSortDown,
+table.tablesorter thead tr .headerSortUp
+{
+	background-color: #cde;
+}
+table.tablesorter thead tr .header {
+	background-image: url(/img/sys/tablesorter_bg.gif);
+	background-repeat: no-repeat;
+	background-position: center left;
+}
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(/img/sys/tablesorter_asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(/img/sys/tablesorter_desc.gif);
+}
+
+
+
+/** Class Style
+------------------------------ **/
+
+.zero
+{
+	color:#999;
+}
+td.zero
+{
+	background:#eee;
+}
+
+.tCenter
+{
+	text-align:center;
+}
+.tRight
+{
+	text-align:right;
+}
+.tLeft
+{
+	text-align:left;
+}
+input.wide,
+textarea.wide
+{
+	width:100%;
+}
+
+
+/** Menu **/
+dl.sidemenu
+{
+	margin:10px 0;
+}
+dl.sidemenu dt
+{
+	margin-bottom:5px;
+	padding-left:2px;
+	border-left:solid 3px #000;
+	line-height:20px;
+}
+dl.sidemenu dd
+{
+	margin-bottom:20px;
+}
+dl.sidemenu li
+{
+	margin-bottom:4px;
+	border-bottom:dotted 1px #ccc;
+}
+dl.sidemenu li a
+{
+	display:block;
+	padding-left:7px;
+	border-left:solid 3px #999;
+	line-height:20px;
+	text-decoration:none;
+}
+dl.sidemenu li a:hover
+{
+	border-left:solid 3px #333;
+}
+dl.sidemenu li.active a
+{
+	border-left:solid 3px #39f;
+	background:#def;
+	color:#39f;
+	font-weight:bold;
+}
+
+
+/** Table Style
+------------------------------ **/
+
+div.controll
+{
+	padding:5px;
+	font-size:12px;
+}
+div.controll #word_searcher
+{
+	width:160px;
+}
+div.controll span.handling
+{
+	padding:2px 4px;
+	border:dotted 1px #ccc;
+	background:#000;
+	color:#fff;
+}
+
+table .adPreview
+{
+	overflow:hidden;
+	max-width:250px;
+	max-height:200px;
+}
+table .adPreview img
+{
+	max-width:250px;
+	max-height:200px;
+	height:auto;
+}
+
+/** List table **/
+table.list .title span,
+table.list .title a,
+table.list .service span
+{
+	display:block;
+	font-size:10px;
+}
+table.list .adImage
+{
+	text-align:center;
+}
+table.list .adImage img
+{
+	max-width:60px;
+	max-height:60px;
+}
+table.events tr.current td.title a
+{
+	padding-right:65px;
+	background:url(../img/design/icon_event_current.gif) right bottom no-repeat;
+	line-height:20px;
+}
+table.events tr.future td.title a
+{
+	padding-right:65px;
+	background:url(../img/design/icon_event_future.gif) right bottom no-repeat;
+	line-height:20px;
+}
+table.events tr.back td.title a
+{
+	padding-right:65px;
+	background:url(../img/design/icon_event_back.gif) right bottom no-repeat;
+	line-height:20px;
+}
+
+/** Edit table **/
+table.edit div.checkbox
+{
+	float:left;
+	width:45%;
+}
+table.edit div.checkbox label
+{
+	padding-left:5px;
+}
+table.edit textarea.adField
+{
+	width:500px;
+	height:10em;
+}
+table.edit p.ex
+{
+	color:#999;
+	font-size:10px;
+}
+
+/** Spec table **/
+table.spec textarea
+{
+	height:3em;
+}
+
+/** Pc table **/
+table.pc textarea
+{
+	height:5em;
+}

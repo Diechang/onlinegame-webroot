@@ -1,0 +1,663 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+	@ Use : Index
+	
+	* Theme color	: H = 200
+	* Link blue		: #3399cc
+	* Link red		: #ff3366
+*/
+
+
+/** New Games
+------------------------------ **/
+
+#newGames
+{
+	width:960px;
+	height:200px;
+	color:#fff;
+}
+#newGames .thumbs
+{
+	float:left;
+	width:520px;
+	height:200px;
+}
+#newGames .thumbs ul
+{
+	padding:10px 10px 0;
+}
+#newGames .thumbs li
+{
+	display:inline;
+	float:left;
+}
+#newGames .thumbs li a
+{
+	display:block;
+	float:left;
+	width:80px;
+	height:60px;
+	margin-bottom:10px;
+	padding:10px;
+}
+#newGames .thumbs li a.active
+{
+	background:url(/img/design/index_newgames_hoverback.gif);
+}
+#newGames .thumbs li a:hover
+{
+	background:#39f;
+}
+
+#newGames .info
+{
+	position:relative;
+	overflow:hidden;
+	float:right;
+	width:440px;
+	height:200px;
+	background:#000;
+}
+
+#slideContainer
+{
+	position:absolute;
+	top:0;
+	left:0;
+	width:440px;
+}
+#slideContainer .slide
+{
+	position:relative;
+	float:left;
+	width:440px;
+	height:200px;
+}
+#slideContainer .slide .startImage
+{
+	width:240px;
+	height:70px;
+	padding:65px 100px;
+}
+#slideContainer .slide .images
+{
+	float:left;
+	width:160px;
+	height:160px;
+	padding:20px 0 20px 10px;
+}
+#slideContainer .slide .images .thumb
+{
+	width:160px;
+	margin-bottom:10px;
+}
+#slideContainer .slide .images .star100bBack
+{
+	margin:auto;
+}
+#slideContainer .slide .data
+{
+	float:right;
+	overflow:hidden;
+	width:240px;
+	height:160px;
+	padding:20px 10px 20px 0;
+}
+#slideContainer .slide .data h3
+{
+	width:240px;
+	margin-bottom:10px;
+	line-height:20pc;
+}
+#slideContainer .slide .data h3 a
+{
+	line-height:20px;
+	color:#6cf;
+	font-size:14px;
+	text-decoration:none;
+}
+#slideContainer .slide .data h3 a span
+{
+	display:block;
+	line-height:15px;
+	color:#999;
+	font-size:10px;
+}
+#slideContainer .slide .data .description
+{
+	overflow:hidden;
+	width:240px;
+	height:120px;
+	line-height:15px;
+	color:#ccc;
+}
+
+
+/** Information
+------------------------------ **/
+
+.contents .information
+{
+	background:url(../img/design/index_information_body.gif);
+}
+.contents .information .body
+{
+	padding:5px 10px;
+	background:url(../img/design/index_information_bottom.gif) bottom no-repeat;
+}
+
+
+/** Votes
+------------------------------ **/
+
+.contents .votes
+{
+	background:url(../img/design/index_votes_recent_body.gif);
+}
+.contents .votes .body
+{
+	padding-bottom:10px;
+	background:url(../img/design/index_votes_wait_bottom.gif) bottom no-repeat;
+}
+
+.contents .votes .recent
+{
+	padding:0 10px;
+}
+.contents .votes .recent dl dt
+{
+	margin-bottom:5px;
+	padding:5px 0;
+	line-height:20px;
+	font-size:14px;
+}
+.contents .votes .recent dl dd
+{
+	margin-bottom:5px;
+	border-bottom:dotted 1px #999;
+}
+.contents .votes .recent dl dd p
+{
+	margin-bottom:5px;
+	padding:0;
+	line-height:15px;
+	font-size:10px;
+}
+.contents .votes .recent dl dd .thumb
+{
+	float:left;
+	width:60px;
+	margin-bottom:5px;
+}
+.contents .votes .recent dl dd .review
+{
+	float:right;
+	width:420px;
+	margin-bottom:5px;
+}
+.contents .votes .recent dl dd .title
+{
+	clear:both;
+}
+.contents .votes .recent dl dd .title a
+{
+	color:#33c;
+}
+.contents .votes .recent dl dd .data
+{
+	clear:both;
+	margin-bottom:5px;
+}
+.contents .votes .recent dl dd .data th
+{
+	padding-right:5px;
+}
+.contents .votes .recent dl dd .data th.total
+{
+	color:#f36;
+}
+.contents .votes .recent dl dd .data td
+{
+	padding-right:10px;
+}
+
+.contents .votes .wait
+{
+	padding:5px;
+	background:url(../img/design/index_votes_wait_body.gif);
+}
+.contents .votes .wait table
+{
+	width:500px;
+}
+.contents .votes .wait table th,
+.contents .votes .wait table td
+{
+	width:90px;
+	padding:0 5px;
+	font-size:10px;
+	text-align:center;
+	vertical-align:top;
+}
+.contents .votes .wait table td
+{
+	line-height:15px;
+}
+
+
+/** Tests
+------------------------------ **/
+
+.contents .tests
+{
+	background:url(../img/design/index_tests_current_body.gif);
+}
+.contents .tests .body
+{
+	padding-bottom:10px;
+	background:url(../img/design/index_tests_future_bottom.gif) bottom no-repeat;
+}
+.contents .tests .title a
+{
+	color:#c3c;
+}
+
+.contents .tests .current
+{
+	padding:0 10px;
+}
+.contents .tests .current dl dt
+{
+	margin-bottom:5px;
+	padding:5px 0;
+	line-height:20px;
+	font-size:14px;
+}
+.contents .tests .current dl dt.test_open,
+.contents .tests .current dl dt.test_closed
+{
+	padding-left:70px;
+	line-height:20px;
+}
+.contents .tests .current dl dt.test_open
+{
+	background:url(../img/design/icon_test_open.gif) 0 5px no-repeat;
+}
+.contents .tests .current dl dt.test_closed
+{
+	background:url(../img/design/icon_test_closed.gif) 0 5px no-repeat;
+}
+.contents .tests .current dl dt a span
+{
+	display:block;
+	line-height:15px;
+	color:#666;
+	font-size:12px;
+	text-decoration:none;
+}
+.contents .tests .current dl dd
+{
+	margin-bottom:5px;
+	border-bottom:dotted 1px #999;
+}
+.contents .tests .current dl dd p
+{
+	margin-bottom:5px;
+	padding:0;
+}
+.contents .tests .current dl dd .thumb
+{
+	float:left;
+	width:120px;
+	margin-bottom:5px;
+}
+.contents .tests .current dl dd .summary
+{
+	float:right;
+	width:360px;
+	margin-bottom:5px;
+}
+.contents .tests .current dl dd .summary p
+{
+	line-height:20px;
+}
+.contents .tests .current dl dd .title
+{
+	clear:both;
+	font-size:10px;
+}
+.contents .tests .current dl dd .data
+{
+	clear:both;
+	margin-bottom:5px;
+}
+.contents .tests .current dl dd .data th
+{
+	padding-right:5px;
+}
+.contents .tests .current dl dd .data td
+{
+	padding-right:10px;
+}
+
+.contents .tests .future
+{
+	padding:5px 10px 0;
+	background:url(../img/design/index_tests_future_body.gif);
+}
+.contents .tests .future p.none
+{
+	margin:0;
+}
+.contents .tests .future table
+{
+	border-collapse:collapse;
+}
+.contents .tests .future table th,
+.contents .tests .future table td
+{
+	padding:0 0 10px;
+	line-height:20px;
+	vertical-align:top;
+}
+.contents .tests .future table th
+{
+	width:60px;
+	padding-right:10px;
+	vertical-align:top;
+}
+.contents .tests .future table th.test_open,
+.contents .tests .future table th.test_closed
+{
+	padding-top:25px;
+}
+.contents .tests .future table th.test_open
+{
+	background:url(../img/design/icon_test_open.gif) left top no-repeat;
+}
+.contents .tests .future table th.test_closed
+{
+	background:url(../img/design/icon_test_closed.gif) left top no-repeat;
+}
+.contents .tests .future table td h3
+{
+	margin:0;
+	padding:0 0 5px;
+	background:none;
+	font-size:12px;
+}
+.contents .tests .future table td h3 a span
+{
+	display:block;
+	line-height:10px;
+	color:#666;
+	font-size:10px;
+	font-weight:normal;
+	text-decoration:none;
+}
+.contents .tests .future table td p
+{
+	margin:0;
+	font-size:10px;
+}
+
+
+/** Events
+------------------------------ **/
+
+.contents .events
+{
+	background:url(../img/design/index_events_body.gif);
+}
+.contents .events .body
+{
+	padding-bottom:10px;
+	background:url(../img/design/index_events_bottom.gif) bottom no-repeat;
+}
+.contents .events .title a
+{
+	color:#c3c;
+}
+
+.contents .events .current
+{
+	padding:0 10px;
+}
+.contents .events .current dl dt
+{
+	margin-bottom:5px;
+	padding:5px 0;
+	line-height:20px;
+	font-size:14px;
+}
+.contents .events .current dl dd
+{
+	margin-bottom:5px;
+	border-bottom:dotted 1px #999;
+}
+.contents .events .current dl dd p
+{
+	margin-bottom:5px;
+	padding:0;
+}
+.contents .events .current dl dd .thumb
+{
+	float:left;
+	width:120px;
+	margin-bottom:5px;
+}
+.contents .events .current dl dd .summary
+{
+	float:right;
+	width:360px;
+	margin-bottom:5px;
+}
+.contents .events .current dl dd .summary p
+{
+	line-height:20px;
+}
+.contents .events .current dl dd .title
+{
+	clear:both;
+	font-size:10px;
+}
+.contents .events .current dl dd .data
+{
+	clear:both;
+	margin-bottom:5px;
+}
+.contents .events .current dl dd .data th
+{
+	padding-right:5px;
+}
+.contents .events .current dl dd .data td
+{
+	padding-right:10px;
+}
+
+.contents .events .future
+{
+	background:url(../img/design/index_events_future_body.gif);
+}
+.contents .events .future .body
+{
+	padding:5px 10px;
+	background:url(../img/design/index_events_future_bottom.gif) bottom no-repeat;
+}
+.contents .events .future .body table
+{
+	border-collapse:collapse;
+}
+.contents .events .future .body table th,
+.contents .events .future .body table td
+{
+	padding:0 0 5px;
+	line-height:20px;
+}
+.contents .events .future .body table th
+{
+	width:60px;
+	padding-right:10px;
+	vertical-align:top;
+}
+.contents .events .future .body table td h3
+{
+	margin:0;
+	padding:0;
+	background:none;
+	font-size:12px;;
+}
+.contents .events .future .body table td p
+{
+	margin:0;
+	font-size:10px;
+}
+
+.contents .events p.more
+{
+	width:465px;
+	margin:5px auto;
+	padding-left:25px;
+	background:url(../img/design/icon_news20.gif) left center no-repeat;
+}
+.contents .events p.more a
+{
+	color:#f36;
+}
+
+
+/** Newer
+------------------------------ **/
+
+.contents .newer ul
+{
+	margin:0;
+	padding:10px 0 0;
+}
+.contents .newer ul li
+{
+	position:relative;
+	overflow:hidden;
+	width:250px;
+	height:50px;
+	margin-bottom:10px;
+	background:url(../img/design/index_newer_button.gif) top no-repeat;
+}
+.contents .newer ul li.odd
+{
+	float:left;
+}
+.contents .newer ul li.even
+{
+	float:right;
+}
+.contents .newer ul li:hover
+{
+	background:url(../img/design/index_newer_button.gif) bottom no-repeat;
+}
+.contents .newer ul li .thumb
+{
+	position:absolute;
+	top:10px;
+	left:10px;
+	width:40px;
+	height:30px;
+}
+.contents .newer ul li .title
+{
+	position:absolute;
+	top:10px;
+	right:10px;
+	width:180px;
+	height:30px;
+}
+.contents .newer ul li .title a
+{
+	display:block;
+	overflow:hidden;
+	width:170px;
+	height:30px;
+	line-height:15px;
+	font-size:10px;
+	font-weight:bold;
+	text-decoration:none;
+}
+.contents .newer ul li .title span
+{
+	display:block;
+	color:#666;
+	font-weight:normal;
+}
+
+
+/** Fansite
+------------------------------ **/
+
+.contents .fansite
+{
+	float:left;
+	width:250px;
+}
+.contents .fansite h2.image
+{
+	margin-bottom:10px;
+}
+.contents .fansite dl
+{
+	overflow:auto;
+	height:240px;
+	line-height:15px;
+}
+.contents .fansite dl a
+{
+	text-decoration:none;
+}
+.contents .fansite dl a:hover
+{
+	text-decoration:underline;
+}
+.contents .fansite dd
+{
+	margin-bottom:10px;
+}
+.contents .fansite dd a
+{
+	font-size:10px;
+	color:#666;
+}
+
+
+/** Whats New
+------------------------------ **/
+
+.contents .whats
+{
+	float:right;
+	width:250px;
+}
+.contents .whats h2.image
+{
+	margin-bottom:10px;
+}
+.contents .whats dl
+{
+	overflow:auto;
+	height:240px;
+	line-height:15px;
+}
+.contents .whats dt
+{
+	font-size:10px;
+	color:#666;
+}
+.contents .whats dd
+{
+	margin-bottom:10px;
+}
+
+
+/** 
+------------------------------ **/

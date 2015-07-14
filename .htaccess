@@ -1,0 +1,64 @@
+<IfModule mod_rewrite.c>
+
+    RewriteEngine On
+#	503メンテナンス
+#	RewriteRule ^503/ - [L]
+#	RewriteRule ^.*$ 503/503.php
+
+#	www統一
+	RewriteCond %{HTTP_HOST} ^www.onlinegame.dz-life.net
+	RewriteRule (.*) http://onlinegame.dz-life.net/$1 [R=301,L]
+	
+#	引っ越し用リダイレクト
+	RewriteRule ^g_[a-z]+/([a-zA-Z_0-9]+)(/(index¥.html)?)?$ http://%{HTTP_HOST}/titles/$1/review.html [R=301,L]
+	RewriteRule ^g_[a-z]+/([a-zA-Z_0-9]+)/(vote|review)¥.html$ http://%{HTTP_HOST}/titles/$1/review.html [R=301,L]
+	RewriteRule ^g_[a-z]+/([a-zA-Z_0-9]+)/(link|search)¥.html$ http://%{HTTP_HOST}/titles/$1/$2.html [R=301,L]
+	RewriteRule ^([a-zA-Z_0-9]+)/(review|link|search)¥.html$ http://%{HTTP_HOST}/titles/$1/$2.html [R=301,L]
+	
+	RewriteRule ^(search|list)/category/([a-z0-9_]+)¥.html$ http://%{HTTP_HOST}/categories/$2.html [R=301,L]
+	RewriteRule ^(search|list)/style/([a-z0-9_]+)¥.html$ http://%{HTTP_HOST}/styles/$2.html [R=301,L]
+	RewriteRule ^(search|list)/service/([a-z0-9_]+)¥.html$ http://%{HTTP_HOST}/services/$2.html [R=301,L]
+	
+	RewriteRule ^osusume/([a-z0-9]+)¥.html$ http://%{HTTP_HOST}/ranking/$1.html [R=301,L]
+	
+	RewriteRule ^link/$ http://%{HTTP_HOST}/links/index.html [R=301,L]
+	RewriteRule ^link/([a-z0-9]+)¥.html$ http://%{HTTP_HOST}/links/$1.html [R=301,L]
+	
+	RewriteRule ^(about|sitemap)¥.html$ http://%{HTTP_HOST}/pages/$1.html [R=301,L]
+	
+	RewriteRule ^portal/portal_index¥.html$ http://%{HTTP_HOST}/portals/index.html [R=301,L]
+	RewriteRule ^portal/([a-z0-9]+)¥.html$ http://%{HTTP_HOST}/portals/$1.html [R=301,L]
+	
+	RewriteRule ^kodukai/kodukai_index¥.html$ http://%{HTTP_HOST}/monies/index.html [R=301,L]
+	RewriteRule ^kodukai/([a-z0-9]+)¥.html$ http://%{HTTP_HOST}/monies/$1.html [R=301,L]
+#
+#.htmlがないときリダイレクト
+	RewriteRule ^titles/([a-zA-Z_0-9]+)/?$ http://%{HTTP_HOST}/titles/$1/index.html [R=301,L]
+	RewriteRule ^titles/([a-zA-Z_0-9]+)/(index|review|link|search)$ http://%{HTTP_HOST}/titles/$1/$2.html [R=301,L]
+	RewriteRule ^monies/([a-zA-Z_0-9]+)/?$ http://%{HTTP_HOST}/monies/$1.html [R=301,L]
+	RewriteRule ^portals/([a-zA-Z_0-9]+)/?$ http://%{HTTP_HOST}/portals/$1.html [R=301,L]
+	
+#パス変更リダイレクト
+	RewriteRule ^titles/braderush/(.+)$ http://%{HTTP_HOST}/titles/bladerush/$1 [R=301,L]
+	RewriteRule ^titles/karakuriyo/(.+)$ http://%{HTTP_HOST}/titles/kakuriyo/$1 [R=301,L]
+	RewriteRule ^titles/raderz/(.+)$ http://%{HTTP_HOST}/titles/raiderz/$1 [R=301,L]
+	RewriteRule ^titles/soratis/(.+)$ http://%{HTTP_HOST}/titles/sotiras/$1 [R=301,L]
+	RewriteRule ^styles/windows7_(.+)$ http://%{HTTP_HOST}/styles/windows7.html [R=301,L]
+	RewriteRule ^titles/yggdrasil/(.+)$ http://%{HTTP_HOST}/titles/yggdrasill/$1 [R=301,L]
+	
+	#SSL
+#	RewriteCond %{REQUEST_FILENAME} !-d
+#	RewriteCond %{REQUEST_FILENAME} !-f
+#	RewriteCond %{HTTP_HOST} ^secure1560.sakura.ne.jp
+#	RewriteRule	^(.*)$ onlinegame.dz-life.net/index.php?url=$1 [QSA,L]
+	
+#	RewriteCond %{HTTP_HOST} ^secure1560.sakura.ne.jp
+#	RewriteRule ^$  onlinegame.dz-life.net/index.php?url=index [L]
+	
+	#normal
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !-f
+
+	RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+	RewriteBase /
+</IfModule>

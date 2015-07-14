@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/** Head Chaser
+------------------------------ **/
+
+#headChaser
+{
+	position:fixed;
+	top:0;
+	width:100%;
+	background:url(../img/design/headchaser_back.gif) top;
+	z-index:10;
+}
+#headChaser .hcBody
+{
+	width:960px;
+	margin:auto;
+}
+#headChaser .mainNav
+{
+	top:0;
+}
+#headChaser .pankuz
+{
+	padding-top:40px;
+}

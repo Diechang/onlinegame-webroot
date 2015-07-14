@@ -1,0 +1,402 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/** ------------------------------ **/
+/** Bootstrap override
+/** ------------------------------ **/
+.table
+{
+	width:auto;
+}
+input,
+textarea,
+select,
+.uneditable-input
+{
+	height:auto;
+	margin:auto;
+}
+
+
+
+*
+{
+	margin:0;
+	padding:0;
+}
+body
+{
+	color:#333;
+}
+
+#flashMessage,
+#authMessage
+{
+	margin-bottom:10px;
+	padding:8px;
+	border:dotted 2px #f33;
+	background:#fee;
+	color:#f00;
+	font-size:16px;
+	font-weight:bold;
+}
+.error-message
+{
+	color:#f00;
+}
+
+
+/** Main Block
+------------------------------ **/
+#wrap
+{
+	background:url(/img/sys/side_back.gif) left repeat-y;
+}
+#header
+{
+	height:100px;
+	background:#fff;
+}
+#header .logo
+{
+	float:left;
+	width:220px;
+	height:70px;
+}
+#header ul.pankuz
+{
+	clear:both;
+	margin:0;
+	padding:0;
+	background:url(/img/sys/pankuz_back.gif);
+}
+#header ul.pankuz li
+{
+	display:inline-block;
+	padding-left:10px;
+	line-height:30px;
+}
+#header ul.pankuz li a
+{
+	display:block;
+	height:30px;
+	padding-right:20px;
+	line-height:30px;
+	background:url(/img/sys/pankuz_arrow.gif) right center no-repeat;
+}
+
+
+#menu
+{
+	float:left;
+	overflow:visible;
+	width:200px;
+}
+#menu dl
+{
+	overflow:visible;
+	width:200px;
+	margin:0;
+	padding:0;
+}
+#menu dl dt
+{
+	margin:0;
+	padding:0 10px;
+	line-height:20px;
+	background:url(/img/sys/menu_head.gif) left repeat-y;
+	color:#fff;
+}
+#menu dl dd
+{
+	margin:0;
+	padding:0;
+}
+#menu dl dd ul
+{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+#menu dl dd li a
+{
+	display:block;
+	width:179px;
+	padding:4px 10px;
+	border-top:solid 1px #eee;
+	border-bottom:solid 1px #ccc;
+	line-height:20px;
+	color:#333;
+}
+#menu dl dd li a:hover
+{
+	padding:5px 20px 5px 10px;
+	border:none;
+	background:url(/img/sys/menu_hover.gif) left center;
+}
+#menu dl dd li.active a
+{
+	padding:5px 20px 5px 10px;
+	border:none;
+	background:url(/img/sys/menu_active.gif) left center;
+}
+
+#main
+{
+	margin-left:220px;
+	margin-right:10px;
+	padding:10px 0;
+}
+#footer
+{
+	clear:both;
+	height:40px;
+	background:#666;
+	border-top:#333;
+	line-height:40px;
+	font-size:12px;
+	text-align:center;
+	color:#ccc;
+}
+#footer a
+{
+	color:#ccc;
+}
+
+
+/** Tags Style
+------------------------------ **/
+
+form,
+div.form
+{
+	margin-bottom:20px;
+}
+
+a
+{
+	color:#36c;
+}
+
+h1
+{
+	line-height:40px;
+	font-size:20px;
+}
+h2
+{
+	line-height:30px;
+	font-size:16px;
+}
+h3
+{
+	line-height:20px;
+	font-size:14px;
+}
+
+p,th,td,dt,dd
+{
+	font-size:12px;
+}
+p
+{
+	line-height:20px;
+}
+th
+{
+	background:#eee;
+}
+textarea
+{
+	width:300px;
+	height:6em;
+}
+
+
+/** Class Style
+------------------------------ **/
+
+.zero
+{
+	color:#999 !important;
+}
+td.zero
+{
+	background:#eee !important;
+}
+
+.tCenter
+{
+	text-align:center !important;
+}
+.tRight
+{
+	text-align:right !important;
+}
+.tLeft
+{
+	text-align:left !important;
+}
+input.wide,
+textarea.wide
+{
+	width:90%;
+}
+
+.jquerybubblepopup th,
+.jquerybubblepopup td,
+.jquerybubblepopup tr:hover
+{
+	border:0;
+	background:none;
+}
+.jquerybubblepopup .jquerybubblepopup-innerHtml
+{
+	text-align:left;
+}
+table.tablesorter thead th.header
+{
+	padding-left:20px;
+	cursor:pointer;
+}
+table.tablesorter thead tr .headerSortDown,
+table.tablesorter thead tr .headerSortUp
+{
+	background-color: #cde;
+}
+table.tablesorter thead tr .header {
+	background-image: url(/img/sys/tablesorter_bg.gif);
+	background-repeat: no-repeat;
+	background-position: center left;
+}
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(/img/sys/tablesorter_asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(/img/sys/tablesorter_desc.gif);
+}
+
+
+/** Table Style
+------------------------------ **/
+
+div.controll
+{
+	padding:5px;
+	font-size:12px;
+}
+div.controll #word_searcher
+{
+	width:160px;
+}
+div.controll span.handling
+{
+	padding:2px 4px;
+	border:dotted 1px #ccc;
+	background:#000;
+	color:#fff;
+}
+
+table .adPreview
+{
+	overflow:hidden;
+	max-width:250px;
+	max-height:200px;
+}
+table .adPreview img
+{
+	max-width:250px;
+	max-height:200px;
+	height:auto;
+}
+
+/** List table **/
+table.list
+{
+	margin-bottom:5px;
+}
+table.list .title span,
+table.list .title a,
+table.list .service span
+{
+	display:block;
+	font-size:10px;
+}
+table.list .adImage
+{
+	text-align:center;
+}
+table.list .adImage img
+{
+	max-width:60px;
+	max-height:60px;
+}
+table.events tr.current td.title a
+{
+	padding-right:65px;
+	background:url(../img/design/icon_event_current.gif) right bottom no-repeat;
+	line-height:20px;
+}
+table.events tr.future td.title a
+{
+	padding-right:65px;
+	background:url(../img/design/icon_event_future.gif) right bottom no-repeat;
+	line-height:20px;
+}
+table.events tr.back td.title a
+{
+	padding-right:65px;
+	background:url(../img/design/icon_event_back.gif) right bottom no-repeat;
+	line-height:20px;
+}
+
+/** Edit table **/
+table.edit
+{
+	width:100%;
+}
+table.edit th
+{
+	width:160px;
+}
+table.edit div.checkbox
+{
+	float:left;
+	width:45%;
+}
+table.edit div.checkbox label
+{
+	padding-left:5px;
+}
+table.edit textarea.adField
+{
+	width:500px;
+	height:10em;
+}
+table.edit p.ex
+{
+	color:#999;
+	font-size:10px;
+}
+
+/** Spec table **/
+table.spec textarea
+{
+	height:3em;
+}
+
+/** Pc table **/
+table.pc textarea
+{
+	height:5em;
+}
+
+
+/** debug **/
+table.cake-sql-log th,
+table.cake-sql-log td
+{
+	border:solid 1px #999;
+	padding:4px 9px;
+	text-align:left;
+}

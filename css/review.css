@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+	@ Use : Ranking, Properties
+	
+	* Theme color	: H = 200
+	* Link blue		: #3399cc
+	* Link red		: #ff3366
+*/
+
+/** Review
+------------------------------ **/
+
+.review .reviewList li
+{
+	width:510px;
+	background:url(/img/design/review_frame_body.gif);
+}
+.review .reviewList li h3
+{
+	padding:15px 15px 0;
+	line-height:20px;
+	font-size:14px;
+	font-weight:normal;
+	background:url(/img/design/review_frame_top.gif) top no-repeat;
+}
+.review .reviewList li .thumb
+{
+	float:left;
+	width:120px;
+	padding:5px 0 5px 15px;
+}
+.review .reviewList li p.text
+{
+	float:right;
+	width:350px;
+	padding:5px 15px 5px 0;
+	line-height:20px;
+}
+.review .reviewList li p.none
+{
+	color:#999;
+}
+.review .reviewList li p.title
+{
+	clear:both;
+	padding:0 15px;
+	font-size:10px;
+}
+.review .reviewList li .footer
+{
+	padding:0 15px 20px;
+	background:url(/img/design/review_frame_bottom.gif) bottom no-repeat;
+}

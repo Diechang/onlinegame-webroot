@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>System Maintenance</title>
+<link href="/css/sys.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/lib.js"></script>
+<script type="text/javascript" src="/js/sys.js"></script>
+<script type="text/javascript" src="/js/tiny_mce/jquery.tinymce.js"></script>
+
+
+</head>
+
+<body>
+<!--Header-->
+<div id="header">
+	<h1>System Maintenance</h1>
+	<p class="pankuz">SYSTOP > タイトル一覧 > Soul of the Ultimate Nation 編集</p>
+</div>
+<!--Menu-->
+<div id="menu">
+	<dl class="sidemenu">
+		<dt>タイトル管理</dt>
+		<dd>
+			<ul>
+				<li><a href="index.html">タイトル一覧</a></li>
+				<li class="active"><a href="titles_edit.html">新規登録</a></li>
+			</ul>
+		</dd>
+		
+		<dt>投稿管理</dt>
+		<dd>
+			<ul>
+				<li><a href="votes_index.html">投稿一覧</a></li>
+			</ul>
+		</dd>
+		
+		<dt>リンク管理</dt>
+		<dd>
+			<ul>
+				<li><a href="fansites_index.html">攻略・ファンサイト一覧</a></li>
+				<li><a href="links_index.html">相互リンク一覧</a></li>
+				<li><a href="links_edit.html">相互リンク登録</a></li>
+			</ul>
+		</dd>
+		
+		<dt>マスタ管理</dt>
+		<dd>
+			<ul>
+				<li><a href="categories_index.html">カテゴリ</a></li>
+				<li><a href="styles_index.html">スタイル</a></li>
+				<li><a href="fees_index.html">料金設定</a></li>
+				<li><a href="services_index.html">サービス状態</a></li>
+			</ul>
+		</dd>
+		
+		<dt>その他</dt>
+		<dd>
+			<ul>
+				<li><a href="/ra/analyze/" target="_blank">アクセス解析</a></li>
+				<li><a href="/acr_test.html" target="_blank">ACRテキスト</a></li>
+				<li><a href="http://pranking8.ziyu.net/edit.php?id=diechang" target="_blank">ACRページランク</a></li>
+				<li><a href="http://rranking12.ziyu.net/edit.php?id=diechang" target="_blank">ACRアクセスランク</a></li>
+			</ul>
+		</dd>
+	</dl>
+</div>
+<!-- -->
+<!--Main-->
+<div id="main">
+	<div id="flashMessage" class="message">Flash Message</div>
+	<form action="">
+		<table class="edit">
+			<tr>
+				<th nowrap="nowrap">ID</th>
+				<td> </td>
+			</tr>
+			<tr>
+				<th nowrap="nowrap">公開</th>
+				<td>
+					<input name="public" type="checkbox" checked="checked" /> 公開する
+				</td>
+			</tr>
+			<tr>
+				<th nowrap="nowrap">タイトル</th>
+				<td>
+					<input name="title_official" type="text" />
+				</td>
+			</tr>
+			<tr>
+				<th nowrap="nowrap">読み</th>
+				<td>
+					<input name="title_read" type="text" />
+				</td>
+			</tr>
+			<tr>
+				<th nowrap="nowrap">サブタイトル</th>
+				<td>
+					<input name="title_sub" type="text" />
+				</td>
+			</tr>
+			<tr>
+				<th nowrap="nowrap">省略タイトル</th>
+				<td>
+					<input name="title_abbr" type="text" />
+				</td>
+			</tr>
+			<tr>
+				<th nowrap="nowrap">URLパス</th>
+				<td>
+					<input name="url_str" type="text" />
+				</td>
+			</tr>
+			<tr>
+				<th nowrap="nowrap">サムネイル</th>
+				<td>
+					<img src="/img/noimage160.gif" /><br />
+					<input name="thumb_image" type="file" />
+				</td>
+			</tr>
+			<tr>
+				<th nowrap="nowrap">概要</th>
+				<td>
+					<textarea name="description" class="editor"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<th nowrap="nowrap">サービス状態</th>
+				<td>
+					<select name="service_id">
+						<option value="1">休止・終了</option>
+						<option value="2">正式サービス</option>
+						<option value="3">オープンβテスト</option>
+						<option value="4">クローズドβテスト</option>
+						<option value="5">ティザーサイト</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th nowrap="nowrap">正式サービス開始日</th>
+				<td>
+					<input name="service_start_year" size="4" maxlength="4" />年
+					<input name="service_start_month" size="2" maxlength="2" />月
+					<input name="service_start_day" size="2" maxlength="2" />日
+				</td>
+			</tr>
+			<tr>
+				<th nowrap="nowrap">テスト開始日</th>
+				<td>
+					<input name="test_start_year" size="4" maxlength="4" />年
+					<input name="test_start_month" size="2" maxlength="2" />月
+					<input name="test_start_day" size="2" maxlength="2" />日
+				</td>
+			</tr>
+			<tr>
+				<th nowrap="nowrap">テスト終了日</th>
+				<td>
+					<input name="test_end_year" size="4" maxlength="4" />年
+					<input name="test_end_month" size="2" maxlength="2" />月
+					<input name="test_end_day" size="2" maxlength="2" />日
+				</td>
+			</tr>
+			<tr>
+				<th nowrap="nowrap">カテゴリ文字</th>
+				<td>
+					<input name="category_text" type="text" />
+				</td>
+			</tr>
+			<tr>
+				<th nowrap="nowrap">カテゴリ</th>
+				<td>
+					<input name="category[]" value="1" type="checkbox" /> MO<br />
+					<input name="category[]" value="2" type="checkbox" /> MMO<br />
+					<input name="category[]" value="3" type="checkbox" /> アクション<br />
+					<input name="category[]" value="4" type="checkbox" /> シューティング<br />
+					<input name="category[]" value="5" type="checkbox" /> スポーツ<br />
+					<input name="category[]" value="6" type="checkbox" /> レース<br />
+					<input name="category[]" value="7" type="checkbox" /> シミュレーション・育成<br />
+					<input name="category[]" value="8" type="checkbox" /> テーブル・パズル<br />
+					<input name="category[]" value="9" type="checkbox" /> ポータル<br />
+					<input name="category[]" value="10" type="checkbox" /> その他<br />
+				</td>
+			</tr>
+			<tr>
+				<th nowrap="nowrap">スタイル</th>
+				<td>
+					<input name="style[]" value="1" type="checkbox" /> 3D<br />
+					<input name="style[]" value="2" type="checkbox" /> 2D<br />
+					<input name="style[]" value="3" type="checkbox" /> リアル<br />
+					<input name="style[]" value="4" type="checkbox" /> アニメ調<br />
+					<input name="style[]" value="5" type="checkbox" /> じっくり<br />
+					<input name="style[]" value="6" type="checkbox" /> お手軽<br />
+					<input name="style[]" value="7" type="checkbox" /> 低スペック<br />
+					<input name="style[]" value="8" type="checkbox" /> Windows Vista対応<br />
+					<input name="style[]" value="9" type="checkbox" /> ブラウザゲーム<br />
+					<input name="style[]" value="10" type="checkbox" /> Windows7 32bit版対応<br />
+					<input name="style[]" value="11" type="checkbox" /> Windows7 64bit版対応<br />
+				</td>
+			</tr>
+			<tr>
+				<th nowrap="nowrap">課金方式</th>
+				<td>
+					<select name="fee_id">
+						<option value="1">基本プレイ無料（アイテム課金）</option>
+						<option value="2">完全無料</option>
+						<option value="3">月額課金制</option>
+						<option value="4">その他課金</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th nowrap="nowrap">料金</th>
+				<td>
+					<input name="fee_text" type="text" />
+				</td>
+			</tr>
+			<tr>
+				<th nowrap="nowrap">広告利用</th>
+				<td>
+					<input name="ad_use" type="checkbox" /> 広告を利用する
+				</td>
+			</tr>
+			<tr>
+				<th nowrap="nowrap">広告テキスト</th>
+				<td>
+					<textarea name="ad_text"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<th nowrap="nowrap">広告バナーS120</th>
+				<td>
+					<textarea name="ad_banner_s"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<th nowrap="nowrap">広告バナーM234</th>
+				<td>
+					<textarea name="ad_banner_m"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<th nowrap="nowrap">広告バナーL468</th>
+				<td>
+					<textarea name="ad_bannse_l"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<th nowrap="nowrap">公式URL</th>
+				<td>
+					<input name="official_url" />
+				</td>
+			</tr>
+			<tr>
+				<th nowrap="nowrap">登録</th>
+				<td>
+					<input type="submit" value="登録" />
+				</td>
+			</tr>
+		</table>
+	</form>
+</div>
+<!-- -->
+<!--Footer-->
+<div id="footer">
+	ONLINE GAME LIFE - SYSTEM MAINTENANCE　00-00-00- 00:00:00
+</div>
+</body>
+</html>

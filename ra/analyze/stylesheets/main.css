@@ -1,0 +1,48 @@
+@charset 'UTF-8';
+#container {
+  width: 925px;
+  position: relative;
+  margin: 0 auto;
+  text-align: left;
+}
+#banner { 
+  height: 80px;
+  width: 500px;
+  font-size: 120%;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+  padding: 0;
+  display: inline;
+  float: left;
+  clear: right;
+}
+#middlecontainer {
+  width: 850px;
+  float: left;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+div.post {
+  font-size: 80%;
+  width: 672px;
+  float:left;
+  clear:right;
+  padding: 0;
+  margin: 0 0 0 26px;
+}
+div.post a {
+  text-decoration:underline;
+}
+div.main {
+  font-size: 80%;
+  width: 674px;
+  padding: 0 30px;
+  margin: 30px;
+}
+div.main a{
+  text-decoration: underline;
+  margin: 0 10px 0  0;
+}
+div.adjust {
+  text-align: center;
+}

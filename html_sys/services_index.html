@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>System Maintenance</title>
+<link href="/css/sys.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery.metadata.js"></script>
+<script type="text/javascript" src="/js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="/js/lib.js"></script>
+<script type="text/javascript" src="/js/sys.js"></script>
+</head>
+
+<body>
+<!--Header-->
+<div id="header">
+	<h1>System Maintenance</h1>
+	<p class="pankuz">SYSTOP > サービス状態マスタ</p>
+</div>
+<!--Menu-->
+<div id="menu">
+	<dl class="sidemenu">
+		<dt>タイトル管理</dt>
+		<dd>
+			<ul>
+				<li><a href="index.html">タイトル一覧</a></li>
+				<li><a href="titles_edit.html">新規登録</a></li>
+			</ul>
+		</dd>
+		
+		<dt>投稿管理</dt>
+		<dd>
+			<ul>
+				<li><a href="votes_index.html">投稿一覧</a></li>
+			</ul>
+		</dd>
+		
+		<dt>リンク管理</dt>
+		<dd>
+			<ul>
+				<li><a href="fansites_index.html">攻略・ファンサイト一覧</a></li>
+				<li><a href="links_index.html">相互リンク一覧</a></li>
+				<li><a href="links_edit.html">相互リンク登録</a></li>
+			</ul>
+		</dd>
+		
+		<dt>マスタ管理</dt>
+		<dd>
+			<ul>
+				<li><a href="categories_index.html">カテゴリ</a></li>
+				<li><a href="styles_index.html">スタイル</a></li>
+				<li><a href="fees_index.html">料金設定</a></li>
+				<li class="active"><a href="services_index.html">サービス状態</a></li>
+			</ul>
+		</dd>
+		
+		<dt>その他</dt>
+		<dd>
+			<ul>
+				<li><a href="/ra/analyze/" target="_blank">アクセス解析</a></li>
+				<li><a href="/acr_test.html" target="_blank">ACRテキスト</a></li>
+				<li><a href="http://pranking8.ziyu.net/edit.php?id=diechang" target="_blank">ACRページランク</a></li>
+				<li><a href="http://rranking12.ziyu.net/edit.php?id=diechang" target="_blank">ACRアクセスランク</a></li>
+			</ul>
+		</dd>
+	</dl>
+</div>
+<!-- -->
+<!--Main-->
+<div id="main">
+	<div id="flashMessage" class="message">Flash Message</div>
+	<form action="">
+		<h2>サービス状態新規登録</h2>
+		<table class="edit">
+			<tr>
+				<th nowrap="nowrap">ID</th>
+				<td> </td>
+			</tr>
+			<tr>
+				<th nowrap="nowrap">文字列</th>
+				<td>
+					<input name="str" type="text" />
+				</td>
+			</tr>
+			<tr>
+				<th nowrap="nowrap">パス</th>
+				<td>
+					<input name="path" type="text" />
+				</td>
+			</tr>
+			<tr>
+				<th nowrap="nowrap">ソート番号</th>
+				<td>
+					<input name="sort" type="text" />
+				</td>
+			</tr>
+			<tr>
+				<th nowrap="nowrap">登録</th>
+				<td>
+					<input type="submit" value="登録" />
+				</td>
+			</tr>
+		</table>
+	</form>
+	<form action="">
+		<h2>サービス状態一覧</h2>
+		<table class="list tablesorter">
+			<thead>
+				<tr>
+					<th nowrap="nowrap">編集</th>
+					<th nowrap="nowrap">ID</th>
+					<th nowrap="nowrap">文字列</th>
+					<th nowrap="nowrap">パス</th>
+					<th nowrap="nowrap">ソート</th>
+					<th nowrap="nowrap">削除</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="tCenter"><a href="#">編集</a></td>
+					<td>1</td>
+					<td>休止・終了</td>
+					<td>stop</td>
+					<td><input name="sort" type="text" value="5" size="4" maxlength="4" /></td>
+					<td class="tCenter"><a href="#">削除</a></td>
+				</tr>
+				<tr>
+					<td class="tCenter"><a href="#">編集</a></td>
+					<td>2</td>
+					<td>正式サービス</td>
+					<td>official</td>
+					<td><input name="sort" type="text" value="1" size="4" maxlength="4" /></td>
+					<td class="tCenter"><a href="#">削除</a></td>
+				</tr>
+				<tr>
+					<td class="tCenter"><a href="#">編集</a></td>
+					<td>3</td>
+					<td>オープンβ</td>
+					<td>test_open</td>
+					<td><input name="sort" type="text" value="2" size="4" maxlength="4" /></td>
+					<td class="tCenter"><a href="#">削除</a></td>
+				</tr>
+				<tr>
+					<td class="tCenter"><a href="#">編集</a></td>
+					<td>3</td>
+					<td>クローズドβ</td>
+					<td>test_beta</td>
+					<td><input name="sort" type="text" value="3" size="4" maxlength="4" /></td>
+					<td class="tCenter"><a href="#">削除</a></td>
+				</tr>
+				<tr>
+					<td class="tCenter"><a href="#">編集</a></td>
+					<td>4</td>
+					<td>ティザーサイト</td>
+					<td>teaser</td>
+					<td><input name="sort" type="text" value="4" size="4" maxlength="4" /></td>
+					<td class="tCenter"><a href="#">削除</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="controll"><input type="submit" value="一括修正" /></div>
+	</form>
+</div>
+<!-- -->
+<!--Footer-->
+<div id="footer">
+	ONLINE GAME LIFE - SYSTEM MAINTENANCE　00-00-00- 00:00:00
+</div>
+</body>
+</html>

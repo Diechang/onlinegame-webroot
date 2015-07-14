@@ -1,0 +1,14 @@
+AuthUserFile /home/diechang/www/onlinegame.dz-life.net/html/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Maintenance"
+AuthType Basic
+
+require valid-user
+
+<Files ~ "^.(htpasswd|htaccess)$">
+    deny from all
+</Files>
+<Files ~ "\.(html|css|js|inc|txt|jpe?g|gif|png|swf)$">
+#Header set Pragma no-cache
+#Header set Cache-Control no-cache
+</Files>
