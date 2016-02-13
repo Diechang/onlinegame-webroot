@@ -75,6 +75,11 @@ img.countSrc
 	height:1px;
 	border:0;
 }
+#left img,
+#right img
+{
+	max-width: 100%;
+}
 
 input.button,
 button.button
