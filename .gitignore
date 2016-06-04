@@ -1,0 +1,9 @@
+.DS_Store
+_notes/
+_doc/
+dwsync.xml
+*.sublime-project
+*.sublime-workspace
+
+img/thumbs/
+uploads/
