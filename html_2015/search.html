@@ -1,0 +1,58 @@
+<?php 
+	$tag_title = "オンラインゲーム検索";
+	include dirname(__FILE__) . "/_includes/meta_head.html";
+?>
+
+<body class="searches">
+
+<?php include "_includes/header.html";?>
+	
+	<aside class="pankuz">
+		<ul>
+			<li class="top"><a href="./">トップ</a></li>
+			<li><i class="zmdi zmdi-chevron-right"></i> オンラインゲーム検索</li>
+		</ul>
+	</aside>
+
+	<!-- contents -->
+	<div class="contents">
+		<div class="contents-wrap">
+			<div class="contents-body">
+				<!-- Main contents -->
+				<div class="contents-main">
+					<!-- search -->
+					<section class="search">
+						<h1 class="pageTitle">
+							<span class="main">オンラインゲーム検索</span>
+							<span class="sub">自分好みのオンラインゲームを探そう</span>
+						</h1>
+						<div class="form-search">
+<?php 
+	include dirname(__FILE__) . "/_includes/comp_search_form.html";
+?>
+						</div>
+					</section>
+				</div>
+
+
+<?php include "_includes/side.html";?>
+
+
+			</div>
+
+
+<?php include "_includes/sub.html";?>
+
+
+		</div>
+	</div>
+
+
+<?php include "_includes/footer.html";?>
+
+<?php include "_includes/header_floating.html";?>
+
+<!-- JS Libs -->
+<!-- JS -->
+</body>
+</html>

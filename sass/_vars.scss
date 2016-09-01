@@ -1,0 +1,177 @@
+
+@import "compass";
+@import "gm_colors";
+
+
+//--------------------
+// Compass vars
+//--------------------
+$svg-gradient-shim-threshold: 100;
+// $browser-minimum-versions: ("ie": "8");
+
+
+//--------------------
+// vars
+//--------------------
+
+//colors
+$color-white: #fff;
+$color-black: #000;
+
+$color-background-body: $gm-color-grey-50;
+
+$color-text: $gm-color-grey-900;
+$color-text-light: $gm-color-grey-700;
+$color-text-lighter: $gm-color-grey-500;
+$color-text-lightest: $gm-color-grey-300;
+
+$color-link: $gm-color-blue-500;
+$color-link-hover: $gm-color-blue-900;
+
+$color-border: $gm-color-grey-400;
+$color-border-light: $gm-color-grey-200;
+$color-border-dark: $gm-color-grey-600;
+
+$color-primary: $gm-color-blue-500;
+$color-primary-hover: $gm-color-blue-600;
+$color-primary-background: $gm-color-blue-50;
+$color-primary-dark: $gm-color-blue-700;
+$color-success: $gm-color-green-500;
+$color-success-hover: $gm-color-green-600;
+$color-success-background: $gm-color-green-50;
+$color-success-dark: $gm-color-green-700;
+$color-info: $gm-color-light-blue-500;
+$color-info-hover: $gm-color-light-blue-600;
+$color-info-background: $gm-color-light-blue-50;
+$color-info-dark: $gm-color-light-blue-700;
+$color-warning: $gm-color-orange-500;
+$color-warning-hover: $gm-color-orange-600;
+$color-warning-background: $gm-color-orange-50;
+$color-warning-dark: $gm-color-orange-700;
+$color-danger: $gm-color-red-500;
+$color-danger-hover: $gm-color-red-600;
+$color-danger-background: $gm-color-red-50;
+$color-danger-dark: $gm-color-red-700;
+
+$color-theme-official: $gm-color-teal-500;
+$color-theme-official-light: $gm-color-teal-300;
+$color-theme-official-lightest: $gm-color-teal-100;
+$color-theme-official-dark: $gm-color-teal-700;
+$color-theme-official-darkest: $gm-color-teal-900;
+$color-theme-official-hover: $gm-color-teal-600;
+
+$color-theme-genre: $gm-color-blue-500;
+$color-theme-genre-light: $gm-color-blue-300;
+$color-theme-genre-lightest: $gm-color-blue-100;
+$color-theme-genre-dark: $gm-color-blue-700;
+$color-theme-genre-darkest: $gm-color-blue-900;
+$color-theme-genre-hover: $gm-color-blue-600;
+
+$color-theme-style: $gm-color-cyan-500;
+$color-theme-style-light: $gm-color-cyan-300;
+$color-theme-style-lightest: $gm-color-cyan-100;
+$color-theme-style-dark: $gm-color-cyan-700;
+$color-theme-style-darkest: $gm-color-cyan-900;
+$color-theme-style-hover: $gm-color-cyan-600;
+
+$color-theme-service: $gm-color-green-500;
+$color-theme-service-light: $gm-color-green-300;
+$color-theme-service-lightest: $gm-color-green-100;
+$color-theme-service-dark: $gm-color-green-700;
+$color-theme-service-darkest: $gm-color-green-900;
+$color-theme-service-hover: $gm-color-green-600;
+
+$color-theme-fee: $gm-color-amber-500;
+$color-theme-fee-light: $gm-color-amber-300;
+$color-theme-fee-lightest: $gm-color-amber-100;
+$color-theme-fee-dark: $gm-color-amber-700;
+$color-theme-fee-darkest: $gm-color-amber-900;
+$color-theme-fee-hover: $gm-color-amber-600;
+
+$color-theme-open: $gm-color-deep-purple-500;
+$color-theme-open-light: $gm-color-deep-purple-300;
+$color-theme-open-lightest: $gm-color-deep-purple-100;
+$color-theme-open-dark: $gm-color-deep-purple-700;
+$color-theme-open-darkest: $gm-color-deep-purple-900;
+$color-theme-open-hover: $gm-color-deep-purple-600;
+
+$color-theme-closed: $gm-color-indigo-500;
+$color-theme-closed-light: $gm-color-indigo-300;
+$color-theme-closed-lightest: $gm-color-indigo-100;
+$color-theme-closed-dark: $gm-color-indigo-700;
+$color-theme-closed-darkest: $gm-color-indigo-900;
+$color-theme-closed-hover: $gm-color-indigo-600;
+
+$color-theme-ranking: $gm-color-pink-500;
+$color-theme-ranking-light: $gm-color-pink-300;
+$color-theme-ranking-lightest: $gm-color-pink-100;
+$color-theme-ranking-dark: $gm-color-pink-700;
+$color-theme-ranking-darkest: $gm-color-pink-900;
+$color-theme-ranking-hover: $gm-color-pink-600;
+
+$color-theme-feed: $gm-color-deep-orange-500;
+$color-theme-feed-light: $gm-color-deep-orange-300;
+$color-theme-feed-lightest: $gm-color-deep-orange-100;
+$color-theme-feed-dark: $gm-color-deep-orange-700;
+$color-theme-feed-darkest: $gm-color-deep-orange-900;
+$color-theme-feed-hover: $gm-color-deep-orange-600;
+
+
+$color-ec-amazon: #FC9A18;
+$color-ec-rakuten: #BE0000;
+
+
+$color-shadow: rgba($color-black, .2);
+$color-shadow-text: rgba($color-black, .35);
+$color-shadow-hover: rgba($color-black, .5);
+
+//sizes
+$width-content-xl: 1140px;
+$width-content-l: 960px;
+$width-content-m: 740px;
+
+//animation speed
+$speed-fast: .2s;
+$speed-normal: .6s;
+$speed-slow: 1s;
+
+
+//--------------------
+// mixins
+//--------------------
+@mixin text-overflow
+{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+@mixin top-shadow
+{
+	&:before
+	{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 19px;
+		border-top: solid 1px $color-white;
+		@include background(linear-gradient($gm-color-grey-200, rgba($gm-color-grey-200, 0)));
+		z-index: -1;
+	}
+}
+@mixin wrapped-body
+{
+	margin: auto;
+}
+@mixin wrapped-body-xl
+{
+	@include wrapped-body;
+
+	width: $width-content-xl;
+}
+
+
+//--------------------
+// functions
+//--------------------

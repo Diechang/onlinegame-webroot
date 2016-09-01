@@ -1,0 +1,276 @@
+<?php 
+	$tag_title = "SUN : Soul of the Ultimate Nation(ソウル・オブ・ジ・アルティメット・ネイション) の評価点数集計";
+	include dirname(__FILE__) . "/_includes/meta_head.html";
+?>
+
+<body class="titles">
+
+<?php include "_includes/header.html";?>
+	
+	<aside class="pankuz">
+		<ul>
+			<li class="top"><a href="./">トップ</a></li>
+			<li><i class="zmdi zmdi-chevron-right"></i> <a href="titles_index.html">Soul of the Ultimate Nation(ソウル・オブ・ジ・アルティメット・ネイション)</a></li>
+			<li><i class="zmdi zmdi-chevron-right"></i> 評価</li>
+		</ul>
+	</aside>
+	
+<?php include "_includes/title_header.html";?>
+	
+	<!-- contents -->
+	<div class="contents">
+		<div class="contents-wrap">
+			<div class="contents-body">
+				<!-- Main contents -->
+				<div class="contents-main">
+
+<?php $title_current = "rating";?>
+<?php include "_includes/title_nav.html";?>
+
+					<!-- rating -->
+					<section class="title-rating">
+						<h1>
+							<span class="main">プレイヤーの評価</span>
+							<span class="sub">Soul of the Ultimate Nationのプレイヤー評価</span>
+						</h1>
+
+						<section class="total">
+							<div class="counts">
+								<div class="rate">
+									<div class="caption">総合評価</div>
+									<div class="value"><span class="num">5.0</span>点</div>
+									<div class="stars stars-w150 stars-rate50"></div>
+								</div>
+								<div class="count count-review">
+									<div class="caption">レビュー</div>
+									<div class="value"><span class="num">9,999</span>件</div>
+								</div>
+								<div class="count count-vote">
+									<div class="caption">評価投稿</div>
+									<div class="value"><span class="num">9,999</span>件</div>
+								</div>
+							</div>
+
+							<div class="rates">
+								<ul>
+									<li>
+										<div class="caption">単純に面白さ</div>
+										<div class="num">2.5点</div>
+										<div class="stars stars-w150 stars-rate50"></div>
+									</li>
+									<li>
+										<div class="caption">オリジナリティ</div>
+										<div class="num">2.5点</div>
+										<div class="stars stars-w150 stars-rate50"></div>
+									</li>
+									<li>
+										<div class="caption">難易度</div>
+										<div class="num">2.5点</div>
+										<div class="stars stars-w150 stars-rate50"></div>
+									</li>
+									<li>
+										<div class="caption">グラフィック</div>
+										<div class="num">2.5点</div>
+										<div class="stars stars-w150 stars-rate50"></div>
+									</li>
+									<li>
+										<div class="caption">音楽</div>
+										<div class="num">2.5点</div>
+										<div class="stars stars-w150 stars-rate50"></div>
+									</li>
+									<li>
+										<div class="caption">世界観・ストーリ</div>
+										<div class="num">2.5点</div>
+										<div class="stars stars-w150 stars-rate50"></div>
+									</li>
+									<li>
+										<div class="caption">キャラクター</div>
+										<div class="num">2.5点</div>
+										<div class="stars stars-w150 stars-rate50"></div>
+									</li>
+									<li>
+										<div class="caption">コミュニケーション性</div>
+										<div class="num">2.5点</div>
+										<div class="stars stars-w150 stars-rate50"></div>
+									</li>
+									<li>
+										<div class="caption">イベントの充実</div>
+										<div class="num">2.5点</div>
+										<div class="stars stars-w150 stars-rate50"></div>
+									</li>
+									<li>
+										<div class="caption">料金設定</div>
+										<div class="num">2.5点</div>
+										<div class="stars stars-w150 stars-rate50"></div>
+									</li>
+								</ul>
+							</div>
+
+<?php include "_includes/title_officiallink.html";?>
+						</section>
+
+						<section class="separates">
+							<div class="separates-wrap">
+								<div class="separate">
+									<h2>単純に面白さ</h2>
+									<ul>
+<?php for($i=5; $i>0; $i--):?>
+										<li>
+											<div class="graph"><div class="bar" style="width: <?php echo $i * 20;?>%;"></div></div>
+											<div class="point"><?php echo $i;?>点</div>
+											<div class="count"><?php echo $i;?>件</div>
+										</li>
+<?php endfor;?>
+									</ul>
+								</div>
+								<div class="separate">
+									<h2>オリジナリティ</h2>
+									<ul>
+<?php for($i=5; $i>0; $i--):?>
+										<li>
+											<div class="graph"><div class="bar" style="width: <?php echo $i * 20;?>%;"></div></div>
+											<div class="point"><?php echo $i;?>点</div>
+											<div class="count"><?php echo $i;?>件</div>
+										</li>
+<?php endfor;?>
+									</ul>
+								</div>
+								<div class="separate">
+									<h2>難易度</h2>
+									<ul>
+<?php for($i=5; $i>0; $i--):?>
+										<li>
+											<div class="graph"><div class="bar" style="width: <?php echo $i * 20;?>%;"></div></div>
+											<div class="point"><?php echo $i;?>点</div>
+											<div class="count"><?php echo $i;?>件</div>
+										</li>
+<?php endfor;?>
+									</ul>
+								</div>
+								<div class="separate">
+									<h2>グラフィック</h2>
+									<ul>
+<?php for($i=5; $i>0; $i--):?>
+										<li>
+											<div class="graph"><div class="bar" style="width: <?php echo $i * 20;?>%;"></div></div>
+											<div class="point"><?php echo $i;?>点</div>
+											<div class="count"><?php echo $i;?>件</div>
+										</li>
+<?php endfor;?>
+									</ul>
+								</div>
+								<div class="separate">
+									<h2>音楽</h2>
+									<ul>
+<?php for($i=5; $i>0; $i--):?>
+										<li>
+											<div class="graph"><div class="bar" style="width: <?php echo $i * 20;?>%;"></div></div>
+											<div class="point"><?php echo $i;?>点</div>
+											<div class="count"><?php echo $i;?>件</div>
+										</li>
+<?php endfor;?>
+									</ul>
+								</div>
+								<div class="separate">
+									<h2>世界観・ストーリー</h2>
+									<ul>
+<?php for($i=5; $i>0; $i--):?>
+										<li>
+											<div class="graph"><div class="bar" style="width: <?php echo $i * 20;?>%;"></div></div>
+											<div class="point"><?php echo $i;?>点</div>
+											<div class="count"><?php echo $i;?>件</div>
+										</li>
+<?php endfor;?>
+									</ul>
+								</div>
+								<div class="separate">
+									<h2>キャラクター</h2>
+									<ul>
+<?php for($i=5; $i>0; $i--):?>
+										<li>
+											<div class="graph"><div class="bar" style="width: <?php echo $i * 20;?>%;"></div></div>
+											<div class="point"><?php echo $i;?>点</div>
+											<div class="count"><?php echo $i;?>件</div>
+										</li>
+<?php endfor;?>
+									</ul>
+								</div>
+								<div class="separate">
+									<h2>コミュニケーション性</h2>
+									<ul>
+<?php for($i=5; $i>0; $i--):?>
+										<li>
+											<div class="graph"><div class="bar" style="width: <?php echo $i * 20;?>%;"></div></div>
+											<div class="point"><?php echo $i;?>点</div>
+											<div class="count"><?php echo $i;?>件</div>
+										</li>
+<?php endfor;?>
+									</ul>
+								</div>
+								<div class="separate">
+									<h2>イベントの充実</h2>
+									<ul>
+<?php for($i=5; $i>0; $i--):?>
+										<li>
+											<div class="graph"><div class="bar" style="width: <?php echo $i * 20;?>%;"></div></div>
+											<div class="point"><?php echo $i;?>点</div>
+											<div class="count"><?php echo $i;?>件</div>
+										</li>
+<?php endfor;?>
+									</ul>
+								</div>
+								<div class="separate">
+									<h2>料金設定</h2>
+									<ul>
+<?php for($i=5; $i>0; $i--):?>
+										<li>
+											<div class="graph"><div class="bar" style="width: <?php echo $i * 20;?>%;"></div></div>
+											<div class="point"><?php echo $i;?>点</div>
+											<div class="count"><?php echo $i;?>件</div>
+										</li>
+<?php endfor;?>
+									</ul>
+								</div>
+							</div>
+<?php include "_includes/title_officiallink.html";?>
+						</section>
+					</section>
+					
+					<!-- vote form -->
+					<section class="title-form-vote">
+						<h1>
+							<span class="main">レビュー・評価を投稿する</span>
+							<span class="sub">みなさまの投稿がランキングに反映されます</span>
+						</h1>
+
+<?php include "_includes/title_form_vote.html";?>
+					</section>
+
+<?php include "_includes/title_summary_common.html";?>
+
+<?php include "_includes/title_recommend.html";?>
+
+				</div>
+
+
+<?php include "_includes/side.html";?>
+
+
+			</div>
+
+
+<?php include "_includes/sub.html";?>
+
+
+		</div>
+	</div>
+
+
+<?php include "_includes/footer.html";?>
+
+<?php include "_includes/header_floating.html";?>
+
+<!-- JS Libs -->
+<!-- JS -->
+</body>
+</html>

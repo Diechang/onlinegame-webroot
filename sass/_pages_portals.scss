@@ -1,0 +1,92 @@
+
+/** Portals contents
+------------------------------ **/
+.contents-main
+{
+	//about
+	section.portal-about
+	{
+		.capture
+		{
+			float: right;
+			width: 200px;
+			margin-left: 10px;
+			margin-bottom: 10px;
+		}
+
+		p
+		{
+			margin-bottom: 10px;
+		}
+	}
+
+	//sites
+	section.portal-sites
+	{
+		ul.list li
+		{
+			overflow: hidden;
+			margin-bottom: 20px;
+			
+			.title
+			{
+				margin-bottom: 10px;
+
+				a
+				{
+					position: relative;
+					display: block;
+					text-decoration: none;
+					
+					span
+					{
+						display: block;
+						@include text-overflow;
+
+						&.official
+						{
+							line-height: 30px;
+							font-size: 20px;
+							text-decoration: underline;
+						}
+
+						&.read
+						{
+							line-height: 20px;
+							color: $color-text;
+						}
+					}
+				}
+			}
+
+			.images
+			{
+				float: left;
+				width: 160px;
+
+				.thumb
+				{
+					margin-bottom: 5px;
+				}
+			}
+
+			.data
+			{
+				margin-left: 180px;
+
+				p.description
+				{
+					margin-bottom: 10px;
+				}
+
+				p.official
+				{
+					a
+					{
+						color: $color-theme-official;
+					}
+				}
+			}
+		}
+	}
+}

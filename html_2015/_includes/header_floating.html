@@ -1,0 +1,40 @@
+	<!-- header -->
+	<header class="floating">
+		<!-- global navigation -->
+		<nav class="gNav">
+			<ul>
+				<li class="logo"><a href="index.html"><img src="../img/design/logo_header.png" alt="" width="115" height="20"></a></li>
+				<li>
+					<a href="rankings.html" title="人気ランキング">人気ランキング</a>
+					<ul>
+						<li><a href="rankings.html">MMO</a></li>
+						<li><a href="rankings.html">MO</a></li>
+						<li><a href="rankings.html">RPG</a></li>
+					</ul>
+				</li>
+				<li><a href="reviews.html" title="レビュー">レビュー</a></li>
+				<li><a href="portals.html" title="ポータルサイト">ポータルサイト</a></li>
+				<li><a href="monies.html" title="ゲーム代を稼ぐ">ゲーム代を稼ぐ</a></li>
+				<li><a href="monies.html" title="ゲーム用PC">ゲーム用PC</a></li>
+				<li><a href="search.html" title="ゲームを探す">ゲームを探す</a></li>
+				<li class="social"><a href="https://twitter.com/diechang1031" target="_blank"><img src="../img/design/social_twitter.png" alt="Twitter" width="40" height="40"></a></li>
+				<li class="social"><a href="https://www.facebook.com/onlinegame.life" target="_blank"><img src="../img/design/social_facebook.png" alt="Facebook" width="40" height="40"></a></li>
+			</ul>
+		</nav>
+<?php if(preg_match('/^titles_/', basename($_SERVER["REQUEST_URI"]))):?>
+		<nav class="titles">
+			<a href="titles_index.html" class="title">
+				<div class="image"><img src="../img/noimage160.gif" alt="Soul of the Ultimate Nation"></div>
+				<p class="official">Soul of the Ultimate Nation</p>
+			</a>
+			<ul>
+				<li class="current"><a href="titles_index.html">概要</a></li>
+				<li><a href="titles_rating.html">評価</a></li>
+				<li><a href="titles_review.html">レビュー</a></li>
+				<li><a href="titles_pc.html">推奨PC</a></li>
+				<li><a href="titles_link.html">攻略リンク</a></li>
+				<li><a href="titles_search.html">動画・ブログ</a></li>
+			</ul>
+		</nav>
+<?php endif;?>
+	</header>

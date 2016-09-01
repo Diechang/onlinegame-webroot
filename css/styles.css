@@ -1,0 +1,3686 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+body {
+  background: #FAFAFA;
+  font-family: "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", "メイリオ" , Meiryo , Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 14px;
+}
+
+/** Tags
+------------------------------ **/
+a {
+  color: #2196F3;
+}
+a:hover {
+  color: #0D47A1;
+}
+a img {
+  vertical-align: bottom;
+}
+
+p, dt, dd, th, td {
+  line-height: 1.6;
+}
+
+input.input-text, textarea.input-text {
+  width: 100%;
+  *width: 90%;
+  box-sizing: border-box;
+  padding: 9px;
+  border: solid 1px #BDBDBD;
+  border-radius: 5px;
+  font-size: 16px;
+}
+input.input-text:focus, textarea.input-text:focus {
+  border-color: #2196F3;
+}
+input.input-text-s, textarea.input-text-s {
+  width: auto;
+}
+
+select.input-select {
+  border: solid 1px #BDBDBD;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.input-description {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin-top: 5px;
+  color: #616161;
+}
+
+.input-attention {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin-bottom: 5px;
+  color: #F44336;
+}
+
+/** Classes
+------------------------------ **/
+.clPrimary {
+  color: #2196F3 !important;
+}
+
+.clSuccess {
+  color: #4CAF50 !important;
+}
+
+.clInfo {
+  color: #03A9F4 !important;
+}
+
+.clWarning {
+  color: #FF9800 !important;
+}
+
+.clDanger {
+  color: #F44336 !important;
+}
+
+.fwBold {
+  font-weight: bold !important;
+}
+
+.fwNormal {
+  font-weight: normal !important;
+}
+
+.taLeft {
+  text-align: left;
+}
+
+.taCenter {
+  text-align: center;
+}
+
+.taRight {
+  text-align: right;
+}
+
+a.official {
+  color: #009688;
+}
+
+a.feed {
+  color: #FF5722;
+}
+
+.thumb {
+  overflow: hidden;
+  background: #000;
+}
+.thumb img {
+  max-width: 100%;
+  -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+  -o-transition: opacity 0.3s, -o-transform 0.3s;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+a:hover .thumb img,
+.thumb a:hover img {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  max-width: 80%;
+  padding: 9px 19px 8px;
+  border: solid 1px #BDBDBD;
+  border-bottom-width: 2px;
+  border-radius: 3px;
+  outline: none;
+  background: #F5F5F5;
+  line-height: 20px;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+.button:hover {
+  background: #EEEEEE;
+}
+.button:active {
+  padding: 8px 19px 9px;
+  border-width: 2px 1px 1px;
+}
+.button.button-block {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+.button.button-primary {
+  background: #2196F3;
+  border-color: #1976D2;
+  color: #fff;
+}
+.button.button-primary:hover {
+  background: #1E88E5;
+}
+.button.button-success {
+  background: #4CAF50;
+  border-color: #388E3C;
+  color: #fff;
+}
+.button.button-success:hover {
+  background: #43A047;
+}
+.button.button-info {
+  background: #03A9F4;
+  border-color: #0288D1;
+  color: #fff;
+}
+.button.button-info:hover {
+  background: #039BE5;
+}
+.button.button-warning {
+  background: #FF9800;
+  border-color: #F57C00;
+  color: #fff;
+}
+.button.button-warning:hover {
+  background: #FB8C00;
+}
+.button.button-danger {
+  background: #F44336;
+  border-color: #D32F2F;
+  color: #fff;
+}
+.button.button-danger:hover {
+  background: #E53935;
+}
+.button.button-official {
+  background: #009688;
+  border-color: #00796B;
+  color: #fff;
+}
+.button.button-official:hover {
+  background: #00897B;
+}
+.button.button-accent {
+  background: #E91E63;
+  border-color: #C2185B;
+  color: #fff;
+}
+.button.button-accent:hover {
+  background: #D81B60;
+}
+.button.button-search, .button.button-submit {
+  background: #3F51B5;
+  border-color: #303F9F;
+  color: #fff;
+}
+.button.button-search:hover, .button.button-submit:hover {
+  background: #3949AB;
+}
+.button[class*="button-"] {
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.2);
+}
+.button i.md {
+  font-size: 20px;
+}
+
+.label {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  width: 70px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 3px;
+  background: #9E9E9E;
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+}
+.label.label-official {
+  background: #009688;
+}
+.label.label-genre {
+  background: #2196F3;
+}
+.label.label-service {
+  background: #4CAF50;
+}
+.label.label-fee {
+  background: #FFC107;
+}
+.label.label-open {
+  background: #673AB7;
+}
+.label.label-closed {
+  background: #3F51B5;
+}
+.label.label-primary {
+  background: #2196F3;
+}
+.label.label-success {
+  background: #4CAF50;
+}
+.label.label-info {
+  background: #03A9F4;
+}
+.label.label-warning {
+  background: #FF9800;
+}
+.label.label-danger {
+  background: #F44336;
+}
+
+.stars {
+  display: block;
+  margin: auto;
+  background: url('../img/design/images_sprite.png') no-repeat;
+}
+.stars.stars-w150 {
+  width: 150px;
+  height: 20px;
+}
+.stars.stars-w150.stars-rate100 {
+  background-position: 0px 0px;
+}
+.stars.stars-w150.stars-rate90 {
+  background-position: 0px -20px;
+}
+.stars.stars-w150.stars-rate80 {
+  background-position: -30px 0px;
+}
+.stars.stars-w150.stars-rate70 {
+  background-position: -30px -20px;
+}
+.stars.stars-w150.stars-rate60 {
+  background-position: -60px 0px;
+}
+.stars.stars-w150.stars-rate50 {
+  background-position: -60px -20px;
+}
+.stars.stars-w150.stars-rate40 {
+  background-position: -90px 0px;
+}
+.stars.stars-w150.stars-rate30 {
+  background-position: -90px -20px;
+}
+.stars.stars-w150.stars-rate20 {
+  background-position: -120px 0px;
+}
+.stars.stars-w150.stars-rate10 {
+  background-position: -120px -20px;
+}
+.stars.stars-w150.stars-rate0 {
+  background-position: -150px 0px;
+}
+.stars.stars-w100 {
+  width: 100px;
+  height: 15px;
+}
+.stars.stars-w100.stars-rate100 {
+  background-position: 0px -40px;
+}
+.stars.stars-w100.stars-rate90 {
+  background-position: 0px -55px;
+}
+.stars.stars-w100.stars-rate80 {
+  background-position: -20px -40px;
+}
+.stars.stars-w100.stars-rate70 {
+  background-position: -20px -55px;
+}
+.stars.stars-w100.stars-rate60 {
+  background-position: -40px -40px;
+}
+.stars.stars-w100.stars-rate50 {
+  background-position: -40px -55px;
+}
+.stars.stars-w100.stars-rate40 {
+  background-position: -60px -40px;
+}
+.stars.stars-w100.stars-rate30 {
+  background-position: -60px -55px;
+}
+.stars.stars-w100.stars-rate20 {
+  background-position: -80px -40px;
+}
+.stars.stars-w100.stars-rate10 {
+  background-position: -80px -55px;
+}
+.stars.stars-w100.stars-rate0 {
+  background-position: -100px -40px;
+}
+
+i.icon {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  width: 16px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  vertical-align: text-bottom;
+}
+i.icon.icon-feed {
+  background-image: url('../img/design/icon_feed16.png');
+}
+
+.flash {
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  border-left: solid 5px #9E9E9E;
+  background: #F5F5F5;
+}
+.flash .flash-title {
+  margin-bottom: 10px;
+  line-height: 20px;
+  font-size: 16px;
+}
+.flash .flash-body {
+  line-height: 20px;
+  font-size: 14px;
+}
+.flash.flash-primary {
+  border-left-color: #2196F3;
+  background: #E3F2FD;
+}
+.flash.flash-primary .flash-title {
+  color: #1976D2;
+}
+.flash.flash-success {
+  border-left-color: #4CAF50;
+  background: #E8F5E9;
+}
+.flash.flash-success .flash-title {
+  color: #388E3C;
+}
+.flash.flash-info {
+  border-left-color: #03A9F4;
+  background: #E1F5FE;
+}
+.flash.flash-info .flash-title {
+  color: #0288D1;
+}
+.flash.flash-warning {
+  border-left-color: #FF9800;
+  background: #FFF3E0;
+}
+.flash.flash-warning .flash-title {
+  color: #F57C00;
+}
+.flash.flash-danger {
+  border-left-color: #F44336;
+  background: #FFEBEE;
+}
+.flash.flash-danger .flash-title {
+  color: #D32F2F;
+}
+
+/** Main blocks
+------------------------------ **/
+header {
+  position: relative;
+  background: #fff;
+  z-index: 1;
+}
+header .header-body {
+  margin: auto;
+  width: 1140px;
+  padding: 0 10px;
+  position: relative;
+  height: 70px;
+  margin: auto;
+}
+header .logo {
+  float: left;
+  width: 230px;
+  height: 40px;
+  padding: 15px 80px 15px 0;
+}
+header .search {
+  float: left;
+  width: 320px;
+  height: 30px;
+  padding: 20px 0;
+}
+header .gSearch {
+  position: relative;
+}
+header .gSearch .gSearch-text {
+  width: 310px;
+  height: 20px;
+  padding: 4px;
+  border: solid 1px #BDBDBD;
+  border-radius: 15px;
+  outline: none;
+}
+header .gSearch .gSearch-text:focus {
+  border-color: #757575;
+}
+header .gSearch .gSearch-button {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  background: none;
+  color: #BDBDBD;
+  cursor: pointer;
+}
+header .shares {
+  float: right;
+  width: 480px;
+  height: 30px;
+  padding-top: 10px;
+}
+header .shares ul {
+  text-align: right;
+}
+header .shares ul li {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin-left: 10px;
+}
+header .counts {
+  float: right;
+  width: 480px;
+  height: 30px;
+}
+header .counts ul {
+  text-align: right;
+}
+header .counts ul li {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin-left: 15px;
+  line-height: 20px;
+}
+header .counts ul li .count {
+  font-weight: bold;
+}
+header nav.gNav {
+  height: 40px;
+  border-top: solid 1px #BDBDBD;
+  border-bottom: solid 1px #BDBDBD;
+  background: #FAFAFA;
+}
+header nav.gNav ul {
+  margin: auto;
+  width: 1140px;
+  height: 40px;
+  margin: auto;
+}
+header nav.gNav ul li {
+  float: left;
+  position: relative;
+  height: 40px;
+}
+header nav.gNav ul li a {
+  display: block;
+  position: relative;
+  padding: 0 10px;
+  line-height: 40px;
+  color: #212121;
+  font-size: 16px;
+  text-decoration: none;
+  z-index: 1;
+  -moz-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+header nav.gNav ul li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0;
+  background: #2196F3;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2196f3), color-stop(100%, #0c7cd5));
+  background: -moz-linear-gradient(#2196f3, #0c7cd5);
+  background: -webkit-linear-gradient(#2196f3, #0c7cd5);
+  background: linear-gradient(#2196f3, #0c7cd5);
+  -moz-transition: height, 0.2s;
+  -o-transition: height, 0.2s;
+  -webkit-transition: height, 0.2s;
+  transition: height, 0.2s;
+}
+header nav.gNav ul li:hover:before {
+  height: 100%;
+}
+header nav.gNav ul li:hover a {
+  color: #fff;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
+header nav.gNav ul li.social {
+  float: right;
+}
+header nav.gNav ul li.social a {
+  padding: 0;
+}
+header nav.gNav ul li ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  height: auto;
+  -moz-transition: box-shadow, 0.2s;
+  -o-transition: box-shadow, 0.2s;
+  -webkit-transition: box-shadow, 0.2s;
+  transition: box-shadow, 0.2s;
+}
+header nav.gNav ul li ul li {
+  overflow: hidden;
+  float: none;
+  position: relative;
+  height: 0;
+  background: #616161;
+  -moz-transition: height, 0.2s;
+  -o-transition: height, 0.2s;
+  -webkit-transition: height, 0.2s;
+  transition: height, 0.2s;
+}
+header nav.gNav ul li ul li:before, header nav.gNav ul li ul li:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 0;
+  background: #212121;
+  z-index: 0;
+  -moz-transition: height, 0.2s;
+  -o-transition: height, 0.2s;
+  -webkit-transition: height, 0.2s;
+  transition: height, 0.2s;
+}
+header nav.gNav ul li ul li:before {
+  top: 0;
+}
+header nav.gNav ul li ul li:after {
+  bottom: 0;
+}
+header nav.gNav ul li ul li:hover:before, header nav.gNav ul li ul li:hover:after {
+  height: 50%;
+}
+header nav.gNav ul li ul li a {
+  padding: 5px;
+  border: solid 1px #fff;
+  border-top: none;
+  border-left: solid 2px #2196F3;
+  line-height: 19px;
+  color: #fff;
+}
+header nav.gNav ul li:hover ul {
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+}
+header nav.gNav ul li:hover li {
+  height: 30px;
+}
+header.floating {
+  position: fixed;
+  top: -50px;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  background: none;
+  -moz-transition: top 0.2s ease;
+  -o-transition: top 0.2s ease;
+  -webkit-transition: top 0.2s ease;
+  transition: top 0.2s ease;
+}
+header.floating.floating-active {
+  top: 0;
+}
+header.floating nav.gNav {
+  background: rgba(250, 250, 250, 0.9);
+}
+header.floating nav.gNav ul {
+  width: auto;
+}
+header.floating nav.gNav ul li.logo {
+  width: auto;
+  padding: 0;
+}
+header.floating nav.gNav ul li.logo a {
+  padding: 10px;
+  line-height: 20px;
+}
+header.floating nav.gNav ul li ul {
+  width: 200px;
+}
+header.floating nav.titles {
+  position: absolute;
+  top: -100%;
+  right: 0;
+  width: 240px;
+  height: 40px;
+  border: solid 1px #BDBDBD;
+  border-right: 0;
+  background: #212121;
+  background: linear-gradient(#424242, #000000);
+  z-index: 1;
+  -moz-transition: top 0.2s ease;
+  -o-transition: top 0.2s ease;
+  -webkit-transition: top 0.2s ease;
+  transition: top 0.2s ease;
+}
+header.floating nav.titles.floating-active {
+  top: 0;
+}
+header.floating nav.titles a.title {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-decoration: none;
+}
+header.floating nav.titles a.title .image {
+  overflow: hidden;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+}
+header.floating nav.titles a.title .image img {
+  position: relative;
+  top: -2px;
+  left: -8px;
+  width: 48px;
+  height: 36px;
+  max-width: 48px;
+  max-height: 36px;
+}
+header.floating nav.titles a.title .official {
+  width: 190px;
+  height: 30px;
+  margin-left: 40px;
+  padding: 5px;
+  line-height: 30px;
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+header.floating nav.titles ul {
+  position: relative;
+  left: -1px;
+  width: 240px;
+  border: solid 1px #BDBDBD;
+  background: #212121;
+  background: linear-gradient(#424242, #000000);
+}
+header.floating nav.titles ul li {
+  overflow: hidden;
+  height: 0;
+  -moz-transition: height 0.2s ease;
+  -o-transition: height 0.2s ease;
+  -webkit-transition: height 0.2s ease;
+  transition: height 0.2s ease;
+}
+header.floating nav.titles ul li a {
+  display: block;
+  padding: 5px 10px;
+  line-height: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+header.floating nav.titles ul li a:hover {
+  background: #2196F3;
+}
+header.floating nav.titles ul li.current a {
+  background: #303F9F;
+  background: linear-gradient(#3f51b5, #1a237e);
+}
+header.floating nav.titles.floating-active {
+  top: 0;
+}
+header.floating nav.titles.floating-active:hover ul {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+header.floating nav.titles.floating-active:hover ul li {
+  height: 30px;
+  border-bottom: solid 1px #BDBDBD;
+}
+
+aside.pankuz {
+  background: #616161;
+  background: linear-gradient(#212121, #616161);
+  color: #EEEEEE;
+}
+aside.pankuz ul {
+  margin: auto;
+  width: 1140px;
+  padding: 5px 0;
+}
+aside.pankuz li {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin-right: 5px;
+  font-size: 12px;
+}
+aside.pankuz li.top:before {
+  content: none;
+}
+aside.pankuz a {
+  color: inherit;
+}
+
+footer .navigations {
+  height: 300px;
+  background: #424242;
+  color: #EEEEEE;
+}
+footer .navigations nav {
+  float: left;
+  position: relative;
+  width: 320px;
+  height: 300px;
+  background: #000;
+}
+footer .navigations nav ul {
+  padding: 20px;
+}
+footer .navigations nav ul li {
+  margin-bottom: 5px;
+  line-height: 20px;
+}
+footer .navigations nav ul li a {
+  color: inherit;
+}
+footer .navigations nav .browsers {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 280px;
+  height: 80px;
+  background: url('../img/design/images_sprite.png') 0 -70px;
+}
+footer .navigations .rankings {
+  float: right;
+  width: 800px;
+  padding: 20px 0;
+}
+footer .navigations .rankings .access {
+  float: left;
+  width: 390px;
+}
+footer .navigations .rankings .page {
+  float: right;
+  width: 390px;
+}
+footer .navigations .rankings .ranking {
+  overflow: auto;
+  height: 215px;
+}
+footer .navigations .rankings .ranking table td {
+  padding: 5px;
+}
+footer .navigations .rankings h2 {
+  margin-bottom: 5px;
+}
+footer .navigations .rankings h2 span {
+  display: block;
+  line-height: 20px;
+}
+footer .navigations .rankings h2 span.main {
+  font-weight: bold;
+}
+footer .navigations .rankings h2 span.sub {
+  color: #EEEEEE;
+  font-size: 12px;
+}
+footer .copyright {
+  height: 80px;
+  padding-top: 20px;
+}
+footer .copyright:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 19px;
+  border-top: solid 1px #fff;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eeeeee), color-stop(100%, rgba(238, 238, 238, 0)));
+  background: -moz-linear-gradient(#eeeeee, rgba(238, 238, 238, 0));
+  background: -webkit-linear-gradient(#eeeeee, rgba(238, 238, 238, 0));
+  background: linear-gradient(#eeeeee, rgba(238, 238, 238, 0));
+  z-index: -1;
+}
+footer .copyright .text {
+  float: left;
+  line-height: 20px;
+  color: #616161;
+}
+footer .copyright .logo {
+  float: right;
+}
+footer .navigations-body,
+footer .copyright-body {
+  margin: auto;
+  width: 1140px;
+}
+
+/** Contents layouts
+------------------------------ **/
+.contents {
+  position: relative;
+}
+.contents:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 19px;
+  border-top: solid 1px #fff;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eeeeee), color-stop(100%, rgba(238, 238, 238, 0)));
+  background: -moz-linear-gradient(#eeeeee, rgba(238, 238, 238, 0));
+  background: -webkit-linear-gradient(#eeeeee, rgba(238, 238, 238, 0));
+  background: linear-gradient(#eeeeee, rgba(238, 238, 238, 0));
+  z-index: -1;
+}
+.contents .contents-wrap {
+  margin: auto;
+  width: 1140px;
+  overflow: hidden;
+  padding: 30px 10px;
+}
+.contents .contents-body {
+  float: left;
+  width: 820px;
+}
+.contents .contents-body .contents-main {
+  float: left;
+  width: 640px;
+}
+.contents .contents-body .contents-side {
+  float: right;
+  width: 160px;
+}
+.contents .contents-sub {
+  float: right;
+  width: 300px;
+}
+
+/** Side contents
+------------------------------ **/
+.contents-side {
+  position: relative;
+}
+.contents-side section {
+  margin-bottom: 20px;
+  background: #EEEEEE;
+  border-radius: 3px;
+  -moz-transition: box-shadow 0.2s;
+  -o-transition: box-shadow 0.2s;
+  -webkit-transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+}
+.contents-side section:hover {
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+}
+.contents-side section h1 {
+  padding: 5px 10px;
+  border-bottom: solid 2px;
+}
+.contents-side section h1 span {
+  display: block;
+}
+.contents-side section h1 span.main {
+  line-height: 20px;
+}
+.contents-side section h1 span.sub {
+  line-height: 15px;
+  font-size: 10px;
+}
+.contents-side section ul {
+  padding: 5px 0;
+}
+.contents-side section ul li {
+  position: relative;
+}
+.contents-side section ul li:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #616161;
+  z-index: 0;
+  -moz-transition: width 0.3s;
+  -o-transition: width 0.3s;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+.contents-side section ul li a {
+  display: block;
+  position: relative;
+  padding: 5px 10px;
+  line-height: 15px;
+  color: inherit;
+  font-size: 12px;
+  text-decoration: none;
+  z-index: 1;
+}
+.contents-side section ul li a:hover {
+  color: #fff;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
+.contents-side section ul li:hover:before {
+  width: 100%;
+}
+.contents-side section.pr {
+  background: #212121;
+  padding: 5px;
+}
+.contents-side section.pr h1 {
+  margin-bottom: 5px;
+  padding: 0;
+  border: none;
+  line-height: 20px;
+  font-size: 14px;
+}
+.contents-side section.pr h1 a {
+  color: #FF80AB;
+}
+.contents-side section.pr .banner {
+  margin-bottom: 5px;
+  text-align: center;
+}
+.contents-side section.pr .banner img {
+  max-width: 100%;
+}
+.contents-side section.pr .comment {
+  line-height: 15px;
+  color: #fff;
+  font-size: 12px;
+}
+.contents-side section.genres h1 {
+  border-color: #2196F3;
+}
+.contents-side section.genres ul li:before {
+  background-color: #2196F3;
+}
+.contents-side section.styles h1 {
+  border-color: #00BCD4;
+}
+.contents-side section.styles ul li:before {
+  background-color: #00BCD4;
+}
+.contents-side section.services h1 {
+  border-color: #4CAF50;
+}
+.contents-side section.services ul li:before {
+  background-color: #4CAF50;
+}
+.contents-side section.sites h1 {
+  border-color: #AFB42B;
+}
+.contents-side section.sites ul li:before {
+  background-color: #AFB42B;
+}
+.contents-side section.shops h1 {
+  border-color: #FF9800;
+}
+.contents-side section.shops ul li:before {
+  background-color: #FF9800;
+}
+.contents-side section.feeds h1 {
+  border-color: #FF5722;
+}
+.contents-side section.feeds ul li:before {
+  background-color: #FF5722;
+}
+.contents-side section.ranking {
+  margin-bottom: 40px;
+}
+.contents-side section.ranking h1 {
+  border-color: #E91E63;
+}
+.contents-side section.ranking ul li:before {
+  background-color: #E91E63;
+}
+.contents-side section.ranking ul li a {
+  height: 30px;
+  padding: 5px 10px;
+  line-height: 1;
+}
+.contents-side section.ranking ul li a .image {
+  position: relative;
+  float: left;
+  width: 40px;
+}
+.contents-side section.ranking ul li a .title {
+  overflow: hidden;
+  float: right;
+  width: 90px;
+  height: 30px;
+  line-height: 15px;
+}
+.contents-side section.ranking ul li:nth-child(-n+10) .image:after {
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 0 0 20px 0;
+  background: #E91E63;
+  line-height: 15px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  text-indent: -2px;
+}
+.contents-side section.ranking ul li:nth-child(1) .image:after {
+  content: "1";
+}
+.contents-side section.ranking ul li:nth-child(2) .image:after {
+  content: "2";
+}
+.contents-side section.ranking ul li:nth-child(3) .image:after {
+  content: "3";
+}
+.contents-side section.ranking ul li:nth-child(4) .image:after {
+  content: "4";
+}
+.contents-side section.ranking ul li:nth-child(5) .image:after {
+  content: "5";
+}
+.contents-side section.ranking ul li:nth-child(6) .image:after {
+  content: "6";
+}
+.contents-side section.ranking ul li:nth-child(7) .image:after {
+  content: "7";
+}
+.contents-side section.ranking ul li:nth-child(8) .image:after {
+  content: "8";
+}
+.contents-side section.ranking ul li:nth-child(9) .image:after {
+  content: "9";
+}
+.contents-side section.ranking ul li:nth-child(10) .image:after {
+  content: "10";
+}
+.contents-side section.ranking .more {
+  border-bottom: solid 1px #E91E63;
+}
+.contents-side section.ranking .more a {
+  display: block;
+  margin: 0 20px;
+  line-height: 19px;
+  border-radius: 3px 3px 0 0;
+  background: #E91E63;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+}
+.contents-side .floating.floating-active {
+  position: fixed;
+  bottom: 0;
+}
+.contents-side .floating.floating-limited {
+  position: absolute;
+}
+
+/** Sub contents
+------------------------------ **/
+.contents-sub {
+  position: relative;
+}
+.contents-sub .gAds {
+  width: 300px;
+  height: 250px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.contents-sub section {
+  margin-bottom: 40px;
+}
+.contents-sub section.framed {
+  background: #EEEEEE;
+  padding: 4px;
+}
+.contents-sub section.framed .framed-body {
+  padding: 10px;
+  border: solid 1px #BDBDBD;
+  background: #fff;
+}
+.contents-sub section h1 {
+  margin-bottom: 10px;
+}
+.contents-sub section h1 span {
+  display: block;
+}
+.contents-sub section h1 span.main {
+  line-height: 20px;
+  font-size: 16px;
+}
+.contents-sub section h1 span.sub {
+  line-height: 15px;
+  font-size: 12px;
+}
+.contents-sub section ul.titles li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: solid 1px #BDBDBD;
+}
+.contents-sub section ul.titles li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.contents-sub section ul.titles li .title {
+  height: 40px;
+  margin-left: 70px;
+  margin-bottom: 10px;
+}
+.contents-sub section ul.titles li .title a {
+  text-decoration: none;
+}
+.contents-sub section ul.titles li .title span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+  line-height: 20px;
+}
+.contents-sub section ul.titles li .title span.official {
+  text-decoration: underline;
+}
+.contents-sub section ul.titles li .title span.read {
+  color: #212121;
+}
+.contents-sub section ul.titles li .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 45px;
+}
+.contents-sub section ul.titles li p {
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+.contents-sub section ul.titles li p.description {
+  line-height: 15px;
+  font-size: 12px;
+}
+.contents-sub section ul.titles li p.data {
+  position: relative;
+  min-height: 20px;
+  padding-left: 70px;
+  line-height: 20px;
+  font-size: 12px;
+}
+.contents-sub section ul.titles li p.data .label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 65px;
+}
+.contents-sub section ul.titles li p.data.data-official a {
+  color: #009688;
+}
+.contents-sub section ul.titles li p.more {
+  margin: 0;
+  text-align: right;
+}
+.contents-sub section.fbPage {
+  height: 480px;
+}
+.contents-sub section.banners ul li {
+  padding: 5px 0;
+  text-align: center;
+}
+.contents-sub section.banners ul li img {
+  max-width: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.contents-sub section.banners ul li a:hover img {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.contents-sub .floating.floating-active {
+  position: fixed;
+  bottom: 0;
+}
+.contents-sub .floating.floating-limited {
+  position: absolute;
+}
+
+/** Main contents - classes & tags
+------------------------------ **/
+.contents-main .more {
+  text-align: right;
+}
+.contents-main .gAds {
+  margin: 20px auto;
+  text-align: center;
+}
+.contents-main .gAds-left {
+  margin-left: 0;
+  text-align: left;
+}
+.contents-main .gAds-right {
+  margin-right: 0;
+  text-align: right;
+}
+.contents-main h1 {
+  margin-bottom: 20px;
+  line-height: 30px;
+  font-size: 24px;
+}
+.contents-main h1.pageTitle {
+  margin-bottom: 40px;
+}
+.contents-main h1 span.main {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+.contents-main h1 span.sub {
+  display: block;
+  line-height: 20px;
+  font-size: 14px;
+}
+.contents-main h1 span.label {
+  width: auto;
+  margin-right: 5px;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+.contents-main h2.headline {
+  margin: 20px 0;
+  line-height: 20px;
+  font-size: 20px;
+}
+.contents-main h2.headline:first-child {
+  margin-top: 0;
+}
+.contents-main h2.headline span {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+.contents-main h2.headline span.sub {
+  font-size: 12px;
+}
+.contents-main p.headline-description {
+  margin-bottom: 10px;
+}
+
+/** Main contents - sections
+------------------------------ **/
+.contents-main section {
+  margin-bottom: 60px;
+}
+.contents-main section section {
+  margin-bottom: 40px;
+}
+
+/** Global components
+------------------------------ **/
+.contents-main nav.pages {
+  overflow: hidden;
+  margin-bottom: 10px;
+  padding: 5px;
+  background: #EEEEEE;
+}
+.contents-main nav.pages:last-child {
+  margin-bottom: 0;
+}
+.contents-main nav.pages .counts {
+  float: right;
+  line-height: 30px;
+}
+.contents-main nav.pages ul.paging {
+  float: left;
+}
+.contents-main nav.pages ul.paging li {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin: 0;
+}
+.contents-main nav.pages ul.paging li a, .contents-main nav.pages ul.paging li span {
+  display: block;
+  line-height: 20px;
+  color: inherit;
+}
+.contents-main nav.pages ul.paging li a {
+  padding: 4px 9px;
+  border: solid 1px #BDBDBD;
+  border-radius: 3px;
+  background: #fff;
+  text-decoration: none;
+}
+.contents-main nav.pages ul.paging li a:hover {
+  background: #F5F5F5;
+}
+.contents-main nav.pages ul.paging li span {
+  padding: 5px 10px;
+  color: #9E9E9E;
+}
+.contents-main nav.pages ul.paging li.current a {
+  background: #2196F3;
+  color: #fff;
+}
+.contents-main .copyright {
+  padding: 10px;
+  border-radius: 3px;
+  background: #BDBDBD;
+  color: #fff;
+  font-size: 12px;
+}
+.contents-main .officiallink,
+.contents-main .shoplink {
+  clear: both;
+  position: relative;
+  margin: 10px 0 20px;
+  border-bottom: solid 2px #004D40;
+  border-radius: 5px;
+  background: #009688;
+  line-height: 30px;
+  color: #fff;
+}
+.contents-main .officiallink:first-child,
+.contents-main .shoplink:first-child {
+  margin-top: 0;
+}
+.contents-main .officiallink:last-child,
+.contents-main .shoplink:last-child {
+  margin-bottom: 0;
+}
+.contents-main .officiallink:before,
+.contents-main .shoplink:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0;
+  background: #00796B;
+  z-index: 0;
+  -moz-transition: height 0.25s ease;
+  -o-transition: height 0.25s ease;
+  -webkit-transition: height 0.25s ease;
+  transition: height 0.25s ease;
+}
+.contents-main .officiallink:hover:before,
+.contents-main .shoplink:hover:before {
+  height: 50%;
+}
+.contents-main .officiallink a, .contents-main .officiallink span, .contents-main .officiallink i,
+.contents-main .shoplink a,
+.contents-main .shoplink span,
+.contents-main .shoplink i {
+  z-index: 1;
+}
+.contents-main .officiallink span.caption, .contents-main .officiallink i,
+.contents-main .shoplink span.caption,
+.contents-main .shoplink i {
+  position: absolute;
+  top: 50%;
+  height: 30px;
+  margin-top: -15px;
+  margin-top: -15px;
+  pointer-events: none;
+}
+.contents-main .officiallink span.caption, .contents-main .officiallink a,
+.contents-main .shoplink span.caption,
+.contents-main .shoplink a {
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.35);
+}
+.contents-main .officiallink span.caption,
+.contents-main .shoplink span.caption {
+  left: 10px;
+}
+.contents-main .officiallink i,
+.contents-main .shoplink i {
+  right: 0px;
+  width: 30px;
+  line-height: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+.contents-main .officiallink a,
+.contents-main .shoplink a {
+  position: relative;
+  display: block;
+  color: inherit;
+  font-size: 20px;
+  text-align: right;
+  text-decoration: none;
+}
+.contents-main .officiallink span.caption {
+  font-size: 16px;
+}
+.contents-main .officiallink a {
+  padding: 10px 30px 10px 110px;
+}
+.contents-main .shoplink span.caption {
+  font-size: 14px;
+}
+.contents-main .shoplink a {
+  padding: 10px 30px 10px 200px;
+}
+.contents-main .shares {
+  margin: 20px 0;
+  padding: 10px;
+  border-top: solid 1px #E0E0E0;
+  border-radius: 5px;
+  background: #EEEEEE;
+}
+.contents-main .shares li {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin-right: 5px;
+}
+.contents-main .form {
+  padding: 4px;
+  background: #EEEEEE;
+}
+.contents-main .form form {
+  border: solid 1px #BDBDBD;
+  background: #fff;
+}
+.contents-main .form table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.contents-main .form table th, .contents-main .form table td {
+  padding: 10px;
+  border-bottom: solid 1px #BDBDBD;
+}
+.contents-main .form table th {
+  width: 180px;
+  line-height: 20px;
+}
+.contents-main .form table th.must:before {
+  content: "必須";
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  float: right;
+  padding: 4px 5px;
+  border-radius: 3px;
+  background: #F44336;
+  line-height: 1;
+  color: #fff;
+  font-size: 12px;
+}
+.contents-main .form table tr:hover {
+  background: #FAFAFA;
+}
+.contents-main .form table tr:last-child th, .contents-main .form table tr:last-child td {
+  border-bottom: none;
+}
+.contents-main .form table tr.head th, .contents-main .form table tr.head td {
+  padding: 5px 10px;
+  background: #3F51B5;
+  color: #fff;
+}
+.contents-main .form table tr.submit td {
+  text-align: right;
+}
+.contents-main .form table tr.notes {
+  background: #F5F5F5;
+}
+.contents-main .form table tr.notes dl dt {
+  font-weight: bold;
+}
+.contents-main .form table tr.notes dl dd {
+  margin-bottom: 10px;
+}
+.contents-main .form table tr.notes dl dd:last-child {
+  margin-bottom: 0;
+}
+.contents-main .form table tr.notes dl dd p {
+  margin-bottom: 10px;
+}
+.contents-main .form table tr.notes dl dd p input.url {
+  width: 100%;
+  *width: 90%;
+  box-sizing: border-box;
+  padding: 4px;
+  border: solid 1px #BDBDBD;
+  background: #EEEEEE;
+}
+.contents-main .form table tr.notes dl dd p:last-child {
+  margin-bottom: 0;
+}
+.contents-main .form-vote label.rate {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/** Archive components
+------------------------------ **/
+.contents-main section.archive-about p {
+  margin-bottom: 10px;
+}
+.contents-main section.archive-pickups ul.list {
+  overflow: hidden;
+}
+.contents-main section.archive-pickups ul.list li {
+  float: left;
+  width: 20%;
+  margin-bottom: 10px;
+}
+.contents-main section.archive-pickups ul.list li a {
+  display: block;
+  padding: 0 5px;
+}
+.contents-main section.archive-pickups .thumb {
+  max-width: 100px;
+  margin: 0 auto 5px;
+}
+.contents-main section.archive-pickups .stars {
+  margin-bottom: 5px;
+}
+.contents-main section.archive-pickups .title {
+  overflow: hidden;
+  height: 30px;
+  line-height: 15px;
+  font-size: 12px;
+  text-align: center;
+}
+.contents-main section.archive-titles ul.list li {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.contents-main section.archive-titles ul.list li .title {
+  margin-bottom: 10px;
+}
+.contents-main section.archive-titles ul.list li .title a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+.contents-main section.archive-titles ul.list li .title a span {
+  display: block;
+}
+.contents-main section.archive-titles ul.list li .title a span.official {
+  line-height: 30px;
+  font-size: 20px;
+  text-decoration: underline;
+}
+.contents-main section.archive-titles ul.list li .title a span.read {
+  line-height: 20px;
+  color: #212121;
+}
+.contents-main section.archive-titles ul.list li .summary .images {
+  float: left;
+  width: 160px;
+}
+.contents-main section.archive-titles ul.list li .summary .description {
+  margin-left: 180px;
+}
+.contents-main section.archive-titles ul.list li .summary .description p {
+  position: relative;
+  overflow: hidden;
+  height: 120px;
+  line-height: 20px;
+}
+.contents-main section.archive-titles ul.list li .summary .description p:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 40px;
+  background: linear-gradient(rgba(250, 250, 250, 0), #fafafa);
+  pointer-events: none;
+}
+.contents-main section.archive-titles ul.list li .data {
+  overflow: hidden;
+  margin-top: 5px;
+  padding: 5px;
+  background: #EEEEEE;
+}
+.contents-main section.archive-titles ul.list li .data .rates {
+  float: left;
+  width: 100px;
+  height: 60px;
+}
+.contents-main section.archive-titles ul.list li .data .rates .rate {
+  width: 90px;
+  height: 50px;
+  padding: 4px;
+  border: solid 1px #BDBDBD;
+  border-radius: 3px;
+  background: #fff;
+}
+.contents-main section.archive-titles ul.list li .data .rates .rate .caption {
+  line-height: 20px;
+  text-align: center;
+}
+.contents-main section.archive-titles ul.list li .data .rates .rate .value {
+  line-height: 30px;
+  text-align: center;
+}
+.contents-main section.archive-titles ul.list li .data .rates .rate .value .num {
+  font-size: 20px;
+  font-weight: bold;
+}
+.contents-main section.archive-titles ul.list li .data .attributes {
+  margin-left: 110px;
+}
+.contents-main section.archive-titles ul.list li .data .attributes p {
+  line-height: 25px;
+}
+
+/** Search components
+------------------------------ **/
+.contents-main section.search .form-search {
+  padding: 19px;
+  border: solid 1px #BDBDBD;
+  border-radius: 5px;
+  background: #EEEEEE;
+}
+.contents-main section.search .inputs {
+  overflow: hidden;
+  padding: 13px 14px 14px;
+  border: solid 1px #BDBDBD;
+  border-top-width: 2px;
+  border-radius: 3px;
+  background: #fff;
+}
+.contents-main section.search fieldset {
+  margin-bottom: 10px;
+}
+.contents-main section.search fieldset legend {
+  line-height: 20px;
+}
+.contents-main section.search fieldset ul li {
+  line-height: 20px;
+}
+.contents-main section.search fieldset.keyword .inputs {
+  padding: 0;
+}
+.contents-main section.search fieldset.keyword input {
+  width: 580px;
+  padding: 3px 9px 4px;
+  border: none;
+  outline: none;
+  background: #fff;
+  line-height: 30px;
+  font-size: 20px;
+}
+.contents-main section.search fieldset.genres {
+  float: left;
+  width: 290px;
+}
+.contents-main section.search fieldset.styles {
+  float: right;
+  width: 290px;
+}
+.contents-main section.search fieldset.services {
+  clear: both;
+}
+.contents-main section.search fieldset.services ul li {
+  float: left;
+  width: 50%;
+}
+.contents-main section.search .submit {
+  text-align: center;
+}
+.contents-main section.search-result ul.list li {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.contents-main section.search-result ul.list li .title {
+  margin-bottom: 10px;
+}
+.contents-main section.search-result ul.list li .title a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+.contents-main section.search-result ul.list li .title a span {
+  display: block;
+}
+.contents-main section.search-result ul.list li .title a span.official {
+  line-height: 30px;
+  font-size: 20px;
+  text-decoration: underline;
+}
+.contents-main section.search-result ul.list li .title a span.read {
+  line-height: 20px;
+  color: #212121;
+}
+.contents-main section.search-result ul.list li .images {
+  float: left;
+  width: 160px;
+}
+.contents-main section.search-result ul.list li .data {
+  overflow: hidden;
+  margin-left: 180px;
+}
+.contents-main section.search-result ul.list li .data .counts {
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.contents-main section.search-result ul.list li .data .counts .count {
+  float: left;
+  width: 90px;
+  height: 50px;
+  margin-right: 10px;
+  padding: 4px;
+  border: solid 1px #BDBDBD;
+  border-radius: 3px;
+  background: #fff;
+}
+.contents-main section.search-result ul.list li .data .counts .count .caption {
+  line-height: 20px;
+  text-align: center;
+}
+.contents-main section.search-result ul.list li .data .counts .count .value {
+  line-height: 30px;
+  text-align: center;
+}
+.contents-main section.search-result ul.list li .data .counts .count .value .num {
+  font-size: 20px;
+  font-weight: bold;
+}
+.contents-main section.search-result ul.list li .data .attributes p {
+  line-height: 25px;
+}
+
+/** Ranking components
+------------------------------ **/
+.contents-main section.ranking section.all ul.list li {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.contents-main section.ranking section.all ul.list li.no1 .images {
+  width: 160px;
+}
+.contents-main section.ranking section.all ul.list li.no1 .data {
+  margin-left: 180px;
+}
+.contents-main section.ranking section.all .title {
+  margin-bottom: 10px;
+}
+.contents-main section.ranking section.all .title a {
+  position: relative;
+  display: block;
+  padding-left: 50px;
+  text-decoration: none;
+}
+.contents-main section.ranking section.all .title a span {
+  display: block;
+}
+.contents-main section.ranking section.all .title a span.num {
+  overflow: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 3px 3px 0 0;
+  background: #E91E63;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+.contents-main section.ranking section.all .title a span.num:before, .contents-main section.ranking section.all .title a span.num:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100%;
+  width: 0;
+  height: 0;
+  border: solid 10px #E91E63;
+  border-bottom-color: transparent;
+}
+.contents-main section.ranking section.all .title a span.num:before {
+  left: 0;
+  border-right-color: transparent;
+}
+.contents-main section.ranking section.all .title a span.num:after {
+  right: 0;
+  border-left-color: transparent;
+}
+.contents-main section.ranking section.all .title a span.official {
+  line-height: 30px;
+  font-size: 20px;
+  text-decoration: underline;
+}
+.contents-main section.ranking section.all .title a span.read {
+  line-height: 20px;
+  color: #212121;
+}
+.contents-main section.ranking section.all .images {
+  float: left;
+  width: 120px;
+}
+.contents-main section.ranking section.all .images .thumb {
+  margin-bottom: 5px;
+}
+.contents-main section.ranking section.all .data {
+  margin-left: 140px;
+}
+.contents-main section.ranking section.all .data .description {
+  margin-bottom: 10px;
+}
+.contents-main section.ranking section.all .data .rates {
+  overflow: hidden;
+  height: 60px;
+  margin-left: -20px;
+  margin-bottom: 10px;
+}
+.contents-main section.ranking section.all .data .rates .rate {
+  float: left;
+  width: 90px;
+  height: 50px;
+  margin-left: 20px;
+  padding: 4px;
+  border: solid 1px #BDBDBD;
+  border-radius: 3px;
+  background: #fff;
+}
+.contents-main section.ranking section.all .data .rates .rate .caption {
+  line-height: 20px;
+  text-align: center;
+}
+.contents-main section.ranking section.all .data .rates .rate .value {
+  line-height: 30px;
+  text-align: center;
+}
+.contents-main section.ranking section.all .data .rates .rate .value .num {
+  font-size: 20px;
+  font-weight: bold;
+}
+.contents-main section.ranking section.all .data .official {
+  position: relative;
+  padding-left: 80px;
+  line-height: 20px;
+}
+.contents-main section.ranking section.all .data .official .label {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.contents-main section.ranking section.all .data .official a {
+  color: #009688;
+}
+.contents-main section.ranking section.genres ul.list {
+  overflow: hidden;
+}
+.contents-main section.ranking section.genres ul.list li {
+  overflow: hidden;
+  float: left;
+  width: 50%;
+  height: 70px;
+  margin-bottom: 10px;
+}
+.contents-main section.ranking section.genres h3 {
+  margin-bottom: 5px;
+  line-height: 20px;
+  font-size: 16px;
+}
+.contents-main section.ranking section.genres h3 a {
+  color: inherit;
+}
+.contents-main section.ranking section.genres .thumb {
+  float: left;
+  width: 60px;
+}
+.contents-main section.ranking section.genres a.title {
+  display: block;
+  padding: 0 10px 0 70px;
+  text-decoration: none;
+}
+.contents-main section.ranking section.genres a.title span {
+  display: block;
+  line-height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.contents-main section.ranking section.genres a.title span.official {
+  text-decoration: underline;
+}
+.contents-main section.ranking section.genres a.title span.read {
+  color: #212121;
+  font-size: 12px;
+}
+.contents-main section.ranking section.waits ul.list li {
+  margin-bottom: 10px;
+  line-height: 20px;
+}
+.contents-main section.ranking section.waits ul.list li:last-child {
+  margin-bottom: 0;
+}
+.contents-main section.ranking section.waits ul.list li a {
+  display: block;
+  padding-left: 7px;
+  border-left: solid 3px #2196F3;
+  font-size: 14px;
+}
+.contents-main section.ranking section.waits ul.list li a:hover {
+  border-left-color: #0D47A1;
+}
+.contents-main section.ranking section.waits ul.list li a span {
+  display: block;
+}
+.contents-main section.ranking section.waits ul.list li a span.read {
+  line-height: 15px;
+  color: #616161;
+  font-size: 12px;
+}
+.contents-main section.ranking .more a {
+  color: #E91E63;
+}
+
+/** Review components
+------------------------------ **/
+.contents-main section.review section.recents ul.list li {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.contents-main section.review section.recents .title {
+  margin-bottom: 10px;
+  line-height: 30px;
+  font-size: 20px;
+}
+.contents-main section.review section.recents .title span.rate {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  position: relative;
+  margin-right: 15px;
+  padding: 0 5px;
+  border-radius: 3px;
+  background: #2196F3;
+  color: #fff;
+  font-weight: bold;
+}
+.contents-main section.review section.recents .title span.rate:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border: solid 5px #2196F3;
+  border-color: #2196F3 transparent transparent #2196F3;
+}
+.contents-main section.review section.recents .title span.rate .unit {
+  font-size: 16px;
+  font-weight: normal;
+}
+.contents-main section.review section.recents .thumb {
+  float: left;
+  width: 120px;
+}
+.contents-main section.review section.recents .data {
+  margin-left: 140px;
+}
+.contents-main section.review section.recents .data .review {
+  margin-bottom: 5px;
+}
+.contents-main section.review section.recents .data .date {
+  float: right;
+  font-size: 12px;
+}
+.contents-main section.review section.recents .data a {
+  font-size: 12px;
+}
+.contents-main section.review section.waits ul.list {
+  overflow: hidden;
+}
+.contents-main section.review section.waits ul.list li {
+  float: left;
+  width: 20%;
+  margin-bottom: 10px;
+}
+.contents-main section.review section.waits ul.list li a {
+  display: block;
+  padding: 0 5px;
+}
+.contents-main section.review section.waits .thumb {
+  max-width: 100px;
+  margin: 0 auto 5px;
+}
+.contents-main section.review section.waits .title {
+  overflow: hidden;
+  height: 30px;
+  line-height: 15px;
+  font-size: 12px;
+  text-align: center;
+}
+
+/** Index contents
+------------------------------ **/
+body.index {
+  /** Main contents
+  ------------------------------ **/
+}
+body.index .newGames {
+  height: 240px;
+  background: #616161;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #616161), color-stop(100%, #424242));
+  background: -moz-linear-gradient(#616161, #424242);
+  background: -webkit-linear-gradient(#616161, #424242);
+  background: linear-gradient(#616161, #424242);
+}
+body.index .newGames .newGames-body {
+  margin: auto;
+  width: 1140px;
+}
+body.index .newGames .thumbs {
+  float: left;
+  width: 650px;
+}
+body.index .newGames .thumbs ul {
+  margin-left: -5px;
+  padding-top: 15px;
+}
+body.index .newGames .thumbs ul li {
+  float: left;
+  width: 130px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+body.index .newGames .thumbs ul li a {
+  display: block;
+  width: 120px;
+  height: 90px;
+  padding: 5px;
+  -moz-transition: background 0.2s;
+  -o-transition: background 0.2s;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+}
+body.index .newGames .thumbs ul li a:hover, body.index .newGames .thumbs ul li.current a {
+  background: #2196F3;
+}
+body.index .newGames .slide {
+  overflow: hidden;
+  float: right;
+  width: 490px;
+  height: 240px;
+  background: #000;
+}
+body.index .newGames .slide ul li {
+  float: left;
+  width: 490px;
+  height: 240px;
+}
+body.index .newGames .slide ul li a {
+  display: block;
+  width: 470px;
+  height: 220px;
+  padding: 20px 10px 10px;
+}
+body.index .newGames .slide ul li a:hover {
+  background: #303F9F;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #303f9f), color-stop(100%, #1a237e));
+  background: -moz-linear-gradient(#303f9f, #1a237e);
+  background: -webkit-linear-gradient(#303f9f, #1a237e);
+  background: linear-gradient(#303f9f, #1a237e);
+}
+body.index .newGames .slide ul li a .images {
+  float: left;
+  width: 160px;
+}
+body.index .newGames .slide ul li a .images .thumb {
+  margin-bottom: 5px;
+}
+body.index .newGames .slide ul li a .texts {
+  float: right;
+  width: 290px;
+}
+body.index .newGames .slide ul li a .texts .title {
+  margin-bottom: 5px;
+}
+body.index .newGames .slide ul li a .texts .title span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+  height: 20px;
+}
+body.index .newGames .slide ul li a .texts .title span.official {
+  color: #fff;
+  font-size: 16px;
+}
+body.index .newGames .slide ul li a .texts .title span.read {
+  color: #BDBDBD;
+  font-size: 12px;
+}
+body.index .newGames .slide ul li a .texts .description {
+  overflow: hidden;
+  height: 160px;
+  line-height: 20px;
+  color: #EEEEEE;
+  font-size: 14px;
+}
+body.index .contents-main section.information {
+  background: #EEEEEE;
+  border-radius: 0 10px;
+}
+body.index .contents-main section.information h1 {
+  position: relative;
+  padding: 10px 20px;
+  line-height: 20px;
+  font-size: 18px;
+}
+body.index .contents-main section.information h1:before, body.index .contents-main section.information h1:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+body.index .contents-main section.information h1:before {
+  width: 100%;
+  height: 1px;
+  background: #9E9E9E;
+}
+body.index .contents-main section.information h1:after {
+  width: 50%;
+  height: 2px;
+  background: #2196F3;
+}
+body.index .contents-main section.information .text {
+  padding: 0 20px 20px;
+}
+body.index .contents-main section.information .text p {
+  margin-bottom: .8em;
+}
+body.index .contents-main section.test section.current ul li {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+body.index .contents-main section.test section.current .title {
+  position: relative;
+  margin-bottom: 5px;
+}
+body.index .contents-main section.test section.current .title .label {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body.index .contents-main section.test section.current .title a {
+  display: block;
+  margin-left: 80px;
+  text-decoration: none;
+}
+body.index .contents-main section.test section.current .title a span {
+  display: block;
+  line-height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+body.index .contents-main section.test section.current .title a span.official {
+  font-size: 18px;
+  text-decoration: underline;
+}
+body.index .contents-main section.test section.current .title a span.read {
+  color: #212121;
+}
+body.index .contents-main section.test section.current .thumb {
+  float: left;
+  width: 120px;
+}
+body.index .contents-main section.test section.current .data {
+  margin-left: 140px;
+}
+body.index .contents-main section.test section.current .data .description {
+  margin-bottom: 5px;
+}
+body.index .contents-main section.test section.current .data .date {
+  text-align: right;
+}
+body.index .contents-main section.test section.future ul li {
+  overflow: hidden;
+  position: relative;
+  min-height: 60px;
+  margin-bottom: 20px;
+}
+body.index .contents-main section.test section.future .thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+}
+body.index .contents-main section.test section.future .title {
+  margin-left: 90px;
+}
+body.index .contents-main section.test section.future .title a {
+  display: block;
+  text-decoration: none;
+}
+body.index .contents-main section.test section.future .title a span {
+  display: block;
+  line-height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+body.index .contents-main section.test section.future .title a span.official {
+  font-size: 16px;
+  text-decoration: underline;
+}
+body.index .contents-main section.test section.future .title a span.read {
+  color: #212121;
+  font-size: 12px;
+}
+body.index .contents-main section.test section.future .date {
+  margin-left: 90px;
+  line-height: 20px;
+  font-size: 12px;
+}
+body.index .contents-main section.news {
+  overflow: hidden;
+}
+body.index .contents-main section.news h1 {
+  margin-bottom: 10px;
+  line-height: 20px;
+  font-size: 20px;
+}
+body.index .contents-main section.news section.title ul {
+  overflow: hidden;
+}
+body.index .contents-main section.news section.title li {
+  overflow: hidden;
+  float: left;
+  width: 50%;
+  height: 70px;
+  margin-bottom: 10px;
+}
+body.index .contents-main section.news section.title a {
+  display: block;
+  position: relative;
+  height: 60px;
+  padding: 5px;
+  text-decoration: none;
+}
+body.index .contents-main section.news section.title .thumb {
+  float: left;
+}
+body.index .contents-main section.news section.title p {
+  margin-left: 90px;
+}
+body.index .contents-main section.news section.title p span {
+  display: block;
+  line-height: 20px;
+}
+body.index .contents-main section.news section.title p span.official {
+  text-decoration: underline;
+}
+body.index .contents-main section.news section.title p span.read {
+  color: #212121;
+  font-size: 12px;
+}
+body.index .contents-main section.news section.fansite {
+  float: left;
+  width: 310px;
+}
+body.index .contents-main section.news section.fansite li {
+  margin-bottom: 10px;
+}
+body.index .contents-main section.news section.fansite li a {
+  display: block;
+}
+body.index .contents-main section.news section.fansite li a.site {
+  line-height: 20px;
+}
+body.index .contents-main section.news section.fansite li a.title {
+  line-height: 20px;
+  color: inherit;
+  font-size: 12px;
+}
+body.index .contents-main section.news section.info {
+  float: right;
+  width: 310px;
+}
+body.index .contents-main section.news section.info dt {
+  line-height: 20px;
+  font-size: 12px;
+}
+body.index .contents-main section.news section.info dd {
+  margin-bottom: 10px;
+  line-height: 20px;
+}
+body.index .contents-main section.news section.fansite ul,
+body.index .contents-main section.news section.info dl {
+  overflow: auto;
+  height: 250px;
+}
+
+/** Title contents
+------------------------------ **/
+.title-comp-rate {
+  width: 90px;
+  padding: 10px 5px;
+  border-top: solid 5px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+.title-comp-rate .caption,
+.title-comp-rate .icon {
+  line-height: 20px;
+}
+.title-comp-rate .point {
+  line-height: 30px;
+}
+.title-comp-rate .point .num {
+  font-size: 24px;
+  font-weight: bold;
+  vertical-align: bottom;
+}
+
+.title-comp-rate-good {
+  border-top-color: #0D47A1;
+  background: #2196F3;
+}
+
+.title-comp-rate-bad {
+  border-top-color: #4A148C;
+  background: #9C27B0;
+}
+
+.title-header {
+  background: #1A237E;
+  background: linear-gradient(#1a237e, #303f9f);
+}
+.title-header .title-header-body {
+  margin: auto;
+  width: 1140px;
+  padding: 15px 10px;
+}
+.title-header h1 {
+  color: #fff;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.35);
+}
+.title-header h1 a {
+  color: inherit;
+  text-decoration: none;
+}
+.title-header h1 span {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+.title-header h1 span.official {
+  line-height: 30px;
+  font-size: 24px;
+}
+.title-header h1 span.sub {
+  font-size: 16px;
+}
+.title-header h1 span.read {
+  display: block;
+  margin-top: 5px;
+  color: #EEEEEE;
+  font-size: 14px;
+}
+
+.contents-main .title-nav {
+  margin-bottom: 20px;
+  padding: 4px;
+  background: #EEEEEE;
+}
+.contents-main .title-nav ul {
+  height: 30px;
+  border: solid 1px #BDBDBD;
+  background: #fff;
+  background: linear-gradient(#ffffff, #f5f5f5);
+}
+.contents-main .title-nav ul li {
+  float: left;
+  border-right: solid 1px #BDBDBD;
+}
+.contents-main .title-nav ul li a {
+  display: block;
+  padding: 5px 10px;
+  line-height: 20px;
+  color: inherit;
+  text-decoration: none;
+}
+.contents-main .title-nav ul li a:hover {
+  background: #2196F3;
+  color: #fff;
+}
+.contents-main .title-nav ul li.current a {
+  position: relative;
+  background: #303F9F;
+  background: linear-gradient(#3f51b5, #1a237e);
+  color: #fff;
+}
+.contents-main .title-nav ul li.current a:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border: solid 5px transparent;
+  border-top-color: #303F9F;
+}
+.contents-main .moreLink a {
+  display: block;
+  padding: 9px;
+  border: solid 1px #BDBDBD;
+  border-bottom-width: 2px;
+  border-radius: 5px;
+  background: #EEEEEE;
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+}
+.contents-main .moreLink a:hover {
+  background: #fff;
+}
+.contents-main section.title-summary h2 {
+  margin-bottom: 10px;
+}
+.contents-main section.title-summary h2 span {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+.contents-main section.title-summary h2 span.official {
+  line-height: 30px;
+  font-size: 20px;
+}
+.contents-main section.title-summary h2 span.read {
+  line-height: 20px;
+  color: #616161;
+  font-size: 16px;
+}
+.contents-main section.title-summary section {
+  margin-bottom: 20px;
+}
+.contents-main section.title-summary section.data {
+  overflow: hidden;
+}
+.contents-main section.title-summary section.data .data-counts {
+  float: left;
+  width: 160px;
+  border: solid 1px #BDBDBD;
+  background: #fff;
+}
+.contents-main section.title-summary section.data .data-counts .rate {
+  padding: 4px 4px 9px;
+}
+.contents-main section.title-summary section.data .data-counts .rate .value {
+  line-height: 40px;
+  font-size: 16px;
+  text-align: center;
+}
+.contents-main section.title-summary section.data .data-counts .rate .value span.num {
+  margin: 0 5px;
+  color: #F44336;
+  font-size: 24px;
+  font-weight: bold;
+}
+.contents-main section.title-summary section.data .data-counts .count {
+  overflow: hidden;
+  padding: 4px 9px;
+  border-top: solid 1px #BDBDBD;
+  line-height: 20px;
+}
+.contents-main section.title-summary section.data .data-counts .count .caption {
+  float: left;
+}
+.contents-main section.title-summary section.data .data-counts .count .value {
+  float: right;
+}
+.contents-main section.title-summary section.data .data-counts .count .value span.num {
+  margin-right: 5px;
+  font-weight: bold;
+}
+.contents-main section.title-summary section.data .data-properties {
+  float: right;
+  width: 460px;
+}
+.contents-main section.title-summary section.data .data-properties table {
+  width: 100%;
+  margin-bottom: 10px;
+  border-collapse: collapse;
+}
+.contents-main section.title-summary section.data .data-properties table th, .contents-main section.title-summary section.data .data-properties table td {
+  padding: 5px 10px;
+  border-bottom: solid 1px #BDBDBD;
+}
+.contents-main section.title-summary section.data .data-properties .actions {
+  overflow: hidden;
+}
+.contents-main section.title-summary section.data .data-properties .actions .vote {
+  float: left;
+  width: 220px;
+}
+.contents-main section.title-summary section.data .data-properties .actions .link {
+  float: right;
+  width: 220px;
+}
+.contents-main section.title-summary section.intro {
+  padding: 4px;
+  background: #EEEEEE;
+}
+.contents-main section.title-summary section.intro .intro-body {
+  position: relative;
+  min-height: 130px;
+  padding: 10px 10px 0;
+  border: solid 1px #BDBDBD;
+  background: #fff;
+}
+.contents-main section.title-summary section.intro h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: -2px;
+  padding: 8px 10px;
+  border: solid 1px #BDBDBD;
+  background: linear-gradient(#ffffff, #eeeeee);
+  font-size: 14px;
+}
+.contents-main section.title-summary section.intro .image {
+  position: relative;
+  float: right;
+  width: 160px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.contents-main section.title-summary section.intro .body {
+  margin-top: 30px;
+}
+.contents-main section.title-summary section.intro .body p {
+  margin-bottom: 10px;
+}
+.contents-main section.title-recommend ul.list {
+  padding: 9px;
+  border: solid 1px #BDBDBD;
+  border-radius: 5px;
+  background: #F5F5F5;
+}
+.contents-main section.title-recommend ul.list li {
+  overflow: hidden;
+  position: relative;
+  min-height: 90px;
+  margin-bottom: 20px;
+}
+.contents-main section.title-recommend ul.list li:last-child {
+  margin: 0;
+}
+.contents-main section.title-recommend ul.list li .title {
+  margin-left: 140px;
+  margin-bottom: 5px;
+}
+.contents-main section.title-recommend ul.list li .title a {
+  display: block;
+  text-decoration: none;
+}
+.contents-main section.title-recommend ul.list li .title a span {
+  display: block;
+  line-height: 20px;
+}
+.contents-main section.title-recommend ul.list li .title a span.official {
+  font-size: 16px;
+  text-decoration: underline;
+}
+.contents-main section.title-recommend ul.list li .title a span.read {
+  color: #212121;
+  font-size: 12px;
+}
+.contents-main section.title-recommend ul.list li .images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+}
+.contents-main section.title-recommend ul.list li .data {
+  margin-left: 140px;
+}
+.contents-main section.title-recommend ul.list li .data .rates {
+  overflow: hidden;
+  height: 45px;
+  margin-left: -20px;
+}
+.contents-main section.title-recommend ul.list li .data .rates .rate {
+  float: left;
+  width: 90px;
+  height: 35px;
+  margin-left: 20px;
+  padding: 4px;
+  border: solid 1px #BDBDBD;
+  border-radius: 3px;
+  background: #fff;
+}
+.contents-main section.title-recommend ul.list li .data .rates .rate .caption {
+  line-height: 15px;
+  font-size: 12px;
+  text-align: center;
+}
+.contents-main section.title-recommend ul.list li .data .rates .rate .value {
+  line-height: 20px;
+  text-align: center;
+}
+.contents-main section.title-recommend ul.list li .data .rates .rate .value .num {
+  font-size: 16px;
+  font-weight: bold;
+}
+.contents-main section.title-spec table {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.contents-main section.title-spec table th, .contents-main section.title-spec table td {
+  border: solid 1px #BDBDBD;
+  padding: 5px 10px;
+  vertical-align: top;
+}
+.contents-main section.title-spec table thead th {
+  background: #E0E0E0;
+  text-align: left;
+}
+.contents-main section.title-spec table thead td {
+  border: none;
+}
+.contents-main section.title-spec table tbody th, .contents-main section.title-spec table tbody td {
+  text-align: left;
+}
+.contents-main section.title-spec table tbody th {
+  background: #F5F5F5;
+}
+.contents-main section.title-spec table tbody td {
+  background: #fff;
+}
+.contents-main section.title-spec table tfoot td {
+  padding: 5px;
+  background: #F44336;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+.contents-main section.title-movie .video {
+  margin-bottom: 10px;
+  background: #000;
+}
+.contents-main section.title-package ul.list li {
+  position: relative;
+  overflow: hidden;
+  padding: 9px;
+  border: solid 1px #BDBDBD;
+  background: #fff;
+  margin-bottom: -1px;
+}
+.contents-main section.title-package ul.list li:last-child {
+  margin-bottom: 0;
+}
+.contents-main section.title-package ul.list li .thumb {
+  float: left;
+  width: 100px;
+  text-align: center;
+}
+.contents-main section.title-package ul.list li .thumb img {
+  max-width: 100px;
+  max-height: 100px;
+}
+.contents-main section.title-package ul.list li .data {
+  margin-left: 120px;
+}
+.contents-main section.title-package ul.list li .data .title {
+  margin-bottom: 5px;
+  line-height: 20px;
+}
+.contents-main section.title-package ul.list li .data .title a {
+  color: #FC9A18;
+  font-weight: bold;
+}
+.contents-main section.title-package ul.list li .data .date {
+  margin-bottom: 5px;
+  line-height: 20px;
+  font-size: 12px;
+}
+.contents-main section.title-package ul.list li .data .price {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  border-bottom: double 3px #F44336;
+  line-height: 20px;
+  color: #F44336;
+  font-size: 20px;
+  font-weight: bold;
+}
+.contents-main section.title-package ul.list li .data .price span.unit {
+  font-size: 16px;
+}
+.contents-main section.title-package ul.list li .rakuten {
+  position: absolute;
+  right: 9px;
+  bottom: 9px;
+  margin-top: 10px;
+  margin-left: 120px;
+  line-height: 16px;
+}
+.contents-main section.title-package ul.list li .rakuten:before {
+  content: "R";
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  border-radius: 8px;
+  background: #BE0000;
+  line-height: 16px;
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+.contents-main section.title-package ul.list li .rakuten a {
+  color: #BE0000;
+}
+.contents-main section.title-rating section.total {
+  overflow: hidden;
+}
+.contents-main section.title-rating section.total .counts {
+  float: left;
+  width: 160px;
+  margin-bottom: 20px;
+  border: solid 1px #BDBDBD;
+  background: #fff;
+}
+.contents-main section.title-rating section.total .counts .rate {
+  padding: 9px 4px;
+}
+.contents-main section.title-rating section.total .counts .rate .caption {
+  line-height: 30px;
+  font-size: 24px;
+  text-align: center;
+}
+.contents-main section.title-rating section.total .counts .rate .value {
+  line-height: 40px;
+  font-size: 24px;
+  text-align: center;
+}
+.contents-main section.title-rating section.total .counts .rate .value span.num {
+  margin: 0 5px;
+  color: #F44336;
+  font-size: 32px;
+  font-weight: bold;
+}
+.contents-main section.title-rating section.total .counts .count {
+  overflow: hidden;
+  padding: 4px 9px;
+  border-top: solid 1px #BDBDBD;
+  line-height: 20px;
+}
+.contents-main section.title-rating section.total .counts .count .caption {
+  float: left;
+}
+.contents-main section.title-rating section.total .counts .count .value {
+  float: right;
+}
+.contents-main section.title-rating section.total .counts .count .value span.num {
+  margin-right: 5px;
+  font-weight: bold;
+}
+.contents-main section.title-rating section.total .rates {
+  float: right;
+  width: 460px;
+  margin-bottom: 20px;
+}
+.contents-main section.title-rating section.total .rates ul {
+  border: solid 1px #BDBDBD;
+  background: #fff;
+}
+.contents-main section.title-rating section.total .rates ul li {
+  overflow: hidden;
+  position: relative;
+  padding: 10px 15px;
+  border-bottom: solid 1px #BDBDBD;
+  font-size: 16px;
+}
+.contents-main section.title-rating section.total .rates ul li:last-child {
+  border-bottom: none;
+}
+.contents-main section.title-rating section.total .rates ul li .caption {
+  line-height: 20px;
+}
+.contents-main section.title-rating section.total .rates ul li .num {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  line-height: 20px;
+}
+.contents-main section.title-rating section.total .rates ul li .stars {
+  position: absolute;
+  top: 10px;
+  left: 240px;
+}
+.contents-main section.title-rating section.separates .separates-wrap {
+  overflow: hidden;
+  margin-left: -40px;
+}
+.contents-main section.title-rating section.separates .separate {
+  float: left;
+  width: 300px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+.contents-main section.title-rating section.separates .separate h2 {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  line-height: 20px;
+  border-radius: 3px;
+  background: #9E9E9E;
+  color: #fff;
+}
+.contents-main section.title-rating section.separates .separate ul li {
+  position: relative;
+  height: 30px;
+}
+.contents-main section.title-rating section.separates .separate ul li .point,
+.contents-main section.title-rating section.separates .separate ul li .count {
+  position: absolute;
+  top: 5px;
+  line-height: 20px;
+}
+.contents-main section.title-rating section.separates .separate ul li .point {
+  left: 0;
+}
+.contents-main section.title-rating section.separates .separate ul li .count {
+  right: 0;
+}
+.contents-main section.title-rating section.separates .separate ul li .graph {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  width: 200px;
+  height: 10px;
+}
+.contents-main section.title-rating section.separates .separate ul li .graph .bar {
+  height: 100%;
+  background: #2196F3;
+}
+.contents-main section.title-review ul li {
+  position: relative;
+  margin-bottom: 20px;
+}
+.contents-main section.title-review .post {
+  width: 539px;
+  margin-left: 96px;
+  padding: 4px;
+  background: #EEEEEE;
+  z-index: 0;
+}
+.contents-main section.title-review .post .post-body {
+  min-height: 110px;
+  border: solid 1px #BDBDBD;
+  background: #fff;
+}
+.contents-main section.title-review .post .review {
+  padding: 15px 20px;
+}
+.contents-main section.title-review .post .review h2 {
+  margin-bottom: 10px;
+  line-height: 30px;
+  font-size: 20px;
+}
+.contents-main section.title-review .post ul.data {
+  padding: 10px 20px;
+  background: #EEEEEE;
+}
+.contents-main section.title-review .post ul.data li {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin-right: 10px;
+  margin-bottom: 0;
+  line-height: 20px;
+}
+.contents-main section.title-review .post ul.data li a {
+  color: inherit;
+}
+.contents-main section.title-review .title-comp-rate {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  z-index: 1;
+}
+.contents-main section.title-review-single ul.data {
+  margin-bottom: 20px;
+}
+.contents-main section.title-review-single ul.data li {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin-right: 10px;
+  margin-bottom: 0;
+  line-height: 20px;
+}
+.contents-main section.title-review-single ul.data li a {
+  color: inherit;
+}
+.contents-main section.title-review-single .review {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.contents-main section.title-review-single .rate {
+  position: relative;
+}
+.contents-main section.title-review-single .rate .points {
+  width: 539px;
+  margin-left: 96px;
+  padding: 4px;
+  background: #EEEEEE;
+  z-index: 0;
+}
+.contents-main section.title-review-single .rate .points .points-body {
+  height: 110px;
+  border: solid 1px #BDBDBD;
+  background: #fff;
+}
+.contents-main section.title-review-single .rate .points ul {
+  width: 530px;
+  height: 100px;
+  margin: 5px auto;
+}
+.contents-main section.title-review-single .rate .points ul li {
+  float: left;
+  width: 106px;
+  height: 50px;
+  text-align: center;
+}
+.contents-main section.title-review-single .rate .points ul li.good {
+  background: #E3F2FD;
+}
+.contents-main section.title-review-single .rate .points ul li.bad {
+  background: #F3E5F5;
+}
+.contents-main section.title-review-single .rate .points ul li .caption {
+  line-height: 20px;
+  font-size: 12px;
+}
+.contents-main section.title-review-single .rate .points ul li .num {
+  line-height: 30px;
+  font-size: 20px;
+}
+.contents-main section.title-review-single .rate .points ul li .num .unit {
+  font-size: 14px;
+}
+.contents-main section.title-review-single .rate .title-comp-rate {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  z-index: 1;
+}
+.contents-main section.title-review-neighbors {
+  overflow: hidden;
+}
+.contents-main section.title-review-neighbors .neighbor {
+  width: 300px;
+  padding: 4px;
+  background: #EEEEEE;
+}
+.contents-main section.title-review-neighbors .neighbor .neighbor-body {
+  border: solid 1px #BDBDBD;
+  background: #fff;
+}
+.contents-main section.title-review-neighbors .neighbor .caption {
+  color: #fff;
+  font-size: 14px;
+}
+.contents-main section.title-review-neighbors .neighbor .caption.caption-good {
+  background: #2196F3;
+}
+.contents-main section.title-review-neighbors .neighbor .caption.caption-bad {
+  background: #9C27B0;
+}
+.contents-main section.title-review-neighbors .neighbor .caption .rate, .contents-main section.title-review-neighbors .neighbor .caption a {
+  display: block;
+  padding: 5px 10px;
+  line-height: 20px;
+}
+.contents-main section.title-review-neighbors .neighbor .caption .rate {
+  float: right;
+}
+.contents-main section.title-review-neighbors .neighbor .caption a {
+  color: inherit;
+  text-decoration: none;
+}
+.contents-main section.title-review-neighbors .neighbor .caption a:hover {
+  display: block;
+  text-decoration: underline;
+}
+.contents-main section.title-review-neighbors .neighbor .review {
+  padding: 10px;
+}
+.contents-main section.title-review-neighbors .neighbor .review h2 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.contents-main section.title-review-neighbors .neighbor ul.data {
+  padding: 10px;
+  background: #F5F5F5;
+}
+.contents-main section.title-review-neighbors .neighbor ul.data li {
+  line-height: 20px;
+}
+.contents-main section.title-review-neighbors .neighbor-prev {
+  float: left;
+}
+.contents-main section.title-review-neighbors .neighbor-next {
+  float: right;
+}
+.contents-main section.title-pc section.pickup {
+  overflow: hidden;
+  position: relative;
+}
+.contents-main section.title-pc section.pickup span.ribbon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  padding: 5px;
+  background: #E91E63;
+  line-height: 15px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  z-index: 1;
+}
+.contents-main section.title-pc section.pickup span.ribbon:after, .contents-main section.title-pc section.pickup span.ribbon:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  top: 100%;
+  border: solid 10px transparent;
+  border-top-color: #E91E63;
+}
+.contents-main section.title-pc section.pickup span.ribbon:before {
+  left: 0;
+  border-left-color: #E91E63;
+}
+.contents-main section.title-pc section.pickup span.ribbon:after {
+  right: 0;
+  border-right-color: #E91E63;
+}
+.contents-main section.title-pc section.pickup h2 {
+  margin-bottom: 10px;
+  padding-left: 40px;
+  line-height: 30px;
+  font-size: 20px;
+}
+.contents-main section.title-pc section.pickup .image {
+  float: left;
+  width: 160px;
+}
+.contents-main section.title-pc section.pickup .data {
+  margin-left: 180px;
+  margin-bottom: 20px;
+}
+.contents-main section.title-pc section.pickup .data table {
+  width: 100%;
+  margin-bottom: 10px;
+  border-collapse: collapse;
+}
+.contents-main section.title-pc section.pickup .data table th, .contents-main section.title-pc section.pickup .data table td {
+  padding: 5px 10px;
+  border-bottom: solid 1px #BDBDBD;
+}
+.contents-main section.title-pc section.pickup .data table td.price {
+  color: #F44336;
+  font-size: 16px;
+  font-weight: bold;
+}
+.contents-main section.title-pc section.pickup .special {
+  position: relative;
+  margin-bottom: 20px;
+}
+.contents-main section.title-pc section.pickup .special span.caption {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 70px;
+  line-height: 20px;
+  border-radius: 3px;
+  background: #616161;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+.contents-main section.title-pc section.pickup .special .body {
+  margin-left: 20px;
+  padding: 19px 19px 19px 68px;
+  border: solid 1px #BDBDBD;
+  border-radius: 5px;
+  background: #fff;
+}
+.contents-main section.title-pc section.list h2 {
+  margin-bottom: 20px;
+  line-height: 30px;
+  font-size: 20px;
+}
+.contents-main section.title-pc section.list h3 {
+  margin-bottom: 10px;
+  padding-left: 7px;
+  border-left: solid 3px;
+  line-height: 30px;
+}
+.contents-main section.title-pc section.list h3.high {
+  background: #FFF3E0;
+  border-left-color: #FF9800;
+  color: #FF9800;
+}
+.contents-main section.title-pc section.list h3.middle {
+  background: #ECEFF1;
+  border-left-color: #607D8B;
+  color: #607D8B;
+}
+.contents-main section.title-pc section.list h3.low {
+  background: #EFEBE9;
+  border-left-color: #795548;
+  color: #795548;
+}
+.contents-main section.title-pc section.list dl dt {
+  margin-bottom: 10px;
+  line-height: 20px;
+  font-size: 16px;
+}
+.contents-main section.title-pc section.list dl dd {
+  margin-bottom: 20px;
+}
+.contents-main section.title-pc section.list dl dd .image {
+  float: left;
+  width: 120px;
+}
+.contents-main section.title-pc section.list dl dd .image img {
+  max-width: 100%;
+}
+.contents-main section.title-pc section.list dl dd .data {
+  margin-left: 140px;
+  margin-bottom: 10px;
+}
+.contents-main section.title-pc section.list dl dd .data table {
+  width: 100%;
+  margin-bottom: 10px;
+  border-collapse: collapse;
+}
+.contents-main section.title-pc section.list dl dd .data table th, .contents-main section.title-pc section.list dl dd .data table td {
+  padding: 5px 10px;
+  border-bottom: solid 1px #BDBDBD;
+}
+.contents-main section.title-pc section.list dl dd .data table td.price {
+  color: #F44336;
+  font-size: 16px;
+  font-weight: bold;
+}
+.contents-main section.title-pc section.list dl dd .shop {
+  text-align: right;
+}
+.contents-main section.title-link section h2 {
+  margin-bottom: 20px;
+  line-height: 30px;
+  font-size: 20px;
+}
+.contents-main section.title-link ul li {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.contents-main section.title-link ul li .image {
+  float: left;
+  width: 200px;
+}
+.contents-main section.title-link ul li .data {
+  margin-left: 220px;
+}
+.contents-main section.title-link ul li .data h3 {
+  margin-bottom: 10px;
+  line-height: 20px;
+  font-size: 16px;
+}
+.contents-main section.title-link ul li .data p.description {
+  margin-bottom: 10px;
+}
+.contents-main section.title-link ul li .data p.report {
+  color: #9E9E9E;
+  font-size: 12px;
+  text-align: right;
+}
+.contents-main section.title-link ul li .data p.report a {
+  color: inherit;
+}
+
+/** Portals contents
+------------------------------ **/
+.contents-main section.portal-about .capture {
+  float: right;
+  width: 200px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.contents-main section.portal-about p {
+  margin-bottom: 10px;
+}
+.contents-main section.portal-sites ul.list li {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.contents-main section.portal-sites ul.list li .title {
+  margin-bottom: 10px;
+}
+.contents-main section.portal-sites ul.list li .title a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+.contents-main section.portal-sites ul.list li .title a span {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.contents-main section.portal-sites ul.list li .title a span.official {
+  line-height: 30px;
+  font-size: 20px;
+  text-decoration: underline;
+}
+.contents-main section.portal-sites ul.list li .title a span.read {
+  line-height: 20px;
+  color: #212121;
+}
+.contents-main section.portal-sites ul.list li .images {
+  float: left;
+  width: 160px;
+}
+.contents-main section.portal-sites ul.list li .images .thumb {
+  margin-bottom: 5px;
+}
+.contents-main section.portal-sites ul.list li .data {
+  margin-left: 180px;
+}
+.contents-main section.portal-sites ul.list li .data p.description {
+  margin-bottom: 10px;
+}
+.contents-main section.portal-sites ul.list li .data p.official a {
+  color: #009688;
+}
+
+/** Monies contents
+------------------------------ **/
+.contents-main section.money-about p {
+  margin-bottom: 10px;
+}
+.contents-main section.money-docs p {
+  margin-bottom: 10px;
+}
+.contents-main section.money-categories ul.list li {
+  margin-bottom: 20px;
+}
+.contents-main section.money-categories ul.list li .title {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.contents-main section.money-sites ul.list li {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.contents-main section.money-sites ul.list li .title {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.contents-main section.money-sites ul.list li .banner {
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+/** PCs contents
+------------------------------ **/
+.contents-main section.pc-about p {
+  margin-bottom: 10px;
+}
+.contents-main section.pc-titles ul.list {
+  overflow: hidden;
+  margin-left: -20px;
+}
+.contents-main section.pc-titles ul.list li {
+  float: left;
+  width: 200px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.contents-main section.pc-titles ul.list li .images {
+  position: relative;
+  width: 200px;
+  height: 120px;
+  margin-bottom: 5px;
+}
+.contents-main section.pc-titles ul.list li .images .thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  height: 120px;
+}
+.contents-main section.pc-titles ul.list li .images .counts {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 38px;
+  height: 120px;
+}
+.contents-main section.pc-titles ul.list li .images .counts .count {
+  width: 36px;
+  height: 58px;
+  border: solid 1px #BDBDBD;
+}
+.contents-main section.pc-titles ul.list li .images .counts .count span {
+  display: block;
+  line-height: 29px;
+  text-align: center;
+}
+.contents-main section.pc-titles ul.list li .images .counts .count span.caption {
+  font-size: 16px;
+}
+.contents-main section.pc-titles ul.list li .images .counts .count span.number {
+  font-weight: bold;
+}
+.contents-main section.pc-titles ul.list li .images .counts .count-none {
+  background: #EEEEEE;
+  color: #BDBDBD;
+}
+.contents-main section.pc-titles ul.list li .title {
+  margin-bottom: 5px;
+}
+.contents-main section.pc-titles ul.list li .title a {
+  position: relative;
+  display: block;
+  height: 40px;
+  text-decoration: none;
+}
+.contents-main section.pc-titles ul.list li .title a span {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.contents-main section.pc-titles ul.list li .title a span.official {
+  line-height: 20px;
+  font-size: 14px;
+  text-decoration: underline;
+}
+.contents-main section.pc-titles ul.list li .title a span.read {
+  line-height: 20px;
+  color: #212121;
+}
+.contents-main section.pc-titles ul.list li .price {
+  overflow: hidden;
+}
+.contents-main section.pc-titles ul.list li .price .caption {
+  display: block;
+  float: left;
+  width: 50px;
+  padding: 4px 0;
+  line-height: 1;
+  border-radius: 3px;
+  background: #F44336;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+.contents-main section.pc-titles ul.list li .price .number {
+  display: block;
+  margin-left: 55px;
+  line-height: 20px;
+  color: #F44336;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: right;
+}
+.contents-main section.pc-titles ul.list li .price .number .unit {
+  font-size: 14px;
+}
+
+/** Links contents
+------------------------------ **/
+.contents-main section.link-about p {
+  margin-bottom: 10px;
+}
+.contents-main section.link-about ul.categories {
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 3px;
+  background: #EEEEEE;
+}
+.contents-main section.link-about ul.categories li {
+  float: left;
+  margin-right: 5px;
+  padding-right: 5px;
+  border-right: solid 1px #BDBDBD;
+}
+.contents-main section.link-about ul.categories li:last-child {
+  margin-right: 0;
+  padding-right: 0;
+  border-right: 0;
+}
+.contents-main section.link-about ul.categories li.current {
+  font-weight: bold;
+}
+.contents-main section.link-about section.sites ul.list li {
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: dotted 1px #BDBDBD;
+}
+.contents-main section.link-about section.sites ul.list li:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+.contents-main section.link-about section.sites ul.list li .thumb {
+  float: left;
+  width: 120px;
+}
+.contents-main section.link-about section.sites ul.list li .title {
+  margin-left: 130px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.contents-main section.link-about section.sites ul.list li .description {
+  position: relative;
+  margin-left: 130px;
+  padding: 9px;
+  background: #fff;
+  border: solid 1px #BDBDBD;
+  border-radius: 5px;
+}
+.contents-main section.link-about section.sites ul.list li .description:before, .contents-main section.link-about section.sites ul.list li .description:after {
+  position: absolute;
+  content: "";
+  bottom: 100%;
+}
+.contents-main section.link-about section.sites ul.list li .description:before {
+  left: 10px;
+  border: solid 5px transparent;
+  border-bottom-color: #BDBDBD;
+}
+.contents-main section.link-about section.sites ul.list li .description:after {
+  left: 11px;
+  border: solid 4px transparent;
+  border-bottom-color: #fff;
+}
+
+/** Abouts contents
+------------------------------ **/
+.contents-main section.about-doc section {
+  margin-top: 20px;
+}
+.contents-main section.about-doc dl dt {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.contents-main section.about-doc dl dd {
+  margin-bottom: 10px;
+}
+.contents-main section.about-doc p {
+  margin-bottom: 10px;
+}
+.contents-main section.about-sitemap section {
+  margin-bottom: 20px;
+}
+.contents-main section.about-sitemap section h2 {
+  margin-bottom: 10px;
+  padding-left: 5px;
+  border-left: solid 5px #2196F3;
+}
+.contents-main section.about-sitemap section ul {
+  padding: 9px 14px;
+  border: solid 1px #BDBDBD;
+  border-radius: 5px;
+  background: #fff;
+}
+.contents-main section.about-sitemap section ul li {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  min-width: 200px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  line-height: 20px;
+}
+.contents-main section.about-sitemap section ul.titles li {
+  width: 300px;
+}
+.contents-main section.about-sitemap section ul.titles li span.official {
+  display: block;
+}
+.contents-main section.about-sitemap section ul.titles li span.read {
+  display: block;
+  line-height: 15px;
+  color: #616161;
+  font-size: 12px;
+}

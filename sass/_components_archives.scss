@@ -1,0 +1,179 @@
+
+/** Archive components
+------------------------------ **/
+.contents-main
+{
+	//about
+	section.archive-about
+	{
+		p
+		{
+			margin-bottom: 10px;
+		}
+	}
+
+	section.archive-pickups
+	{
+		ul.list
+		{
+			overflow: hidden;
+
+			li
+			{
+				float: left;
+				width: 20%;
+				margin-bottom: 10px;
+
+				a
+				{
+					display: block;
+					padding: 0 5px;
+				}
+			}
+		}
+
+		.thumb
+		{
+			max-width: 100px;
+			margin: 0 auto 5px;
+		}
+		.stars
+		{
+			margin-bottom: 5px;
+		}
+		.title
+		{
+			overflow: hidden;
+			height: 30px;
+			line-height: 15px;
+			font-size: 12px;
+			text-align: center;
+		}
+	}
+
+	//titles
+	section.archive-titles
+	{
+		ul.list li
+		{
+			overflow: hidden;
+			margin-bottom: 20px;
+
+			.title
+			{
+				margin-bottom: 10px;
+
+				a
+				{
+					position: relative;
+					display: block;
+					text-decoration: none;
+					
+					span
+					{
+						display: block;
+
+						&.official
+						{
+							line-height: 30px;
+							font-size: 20px;
+							text-decoration: underline;
+						}
+
+						&.read
+						{
+							line-height: 20px;
+							color: $color-text;
+						}
+					}
+				}
+			}
+			
+			.summary
+			{
+				.images
+				{
+					float: left;
+					width: 160px;
+				}
+
+				.description
+				{
+					margin-left: 180px;
+
+					p
+					{
+						position: relative;
+						overflow: hidden;
+						height: 120px;
+						line-height: 20px;
+
+						&:after
+						{
+							content: "";
+							position: absolute;
+							left: 0;
+							right: 0;
+							bottom: 0;
+							height: 40px;
+							background: linear-gradient(rgba($color-background-body, 0), $color-background-body);
+							pointer-events: none;
+						}
+					}
+				}
+			}
+
+			.data
+			{
+				overflow: hidden;
+				margin-top: 5px;
+				padding: 5px;
+				background: $gm-color-grey-200;
+
+				.rates
+				{
+					float: left;
+					width: 100px;
+					height: 60px;
+
+					.rate
+					{
+						width: 90px;
+						height: 50px;
+						padding: 4px;
+						border: solid 1px $color-border;
+						border-radius: 3px;
+						background: $color-white;
+
+						.caption
+						{
+							line-height: 20px;
+							text-align: center;
+						}
+						.value
+						{
+							line-height: 30px;
+							text-align: center;
+
+							.num
+							{
+								font-size: 20px;
+								font-weight: bold;
+							}
+						}
+					}
+				}
+
+				.attributes
+				{
+					margin-left: 110px;
+
+					p
+					{
+						line-height: 25px;
+					}
+				}
+			}
+		}
+	}
+}

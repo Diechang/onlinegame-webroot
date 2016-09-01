@@ -1,0 +1,94 @@
+<?php 
+	$tag_title = "オンラインゲームポータルサイト";
+	include dirname(__FILE__) . "/_includes/meta_head.html";
+?>
+
+<body class="portals">
+
+<?php include "_includes/header.html";?>
+	
+	<aside class="pankuz">
+		<ul>
+			<li class="top"><a href="./">トップ</a></li>
+			<li><i class="zmdi zmdi-chevron-right"></i> オンラインゲームポータルサイト</li>
+		</ul>
+	</aside>
+
+	<!-- contents -->
+	<div class="contents">
+		<div class="contents-wrap">
+			<div class="contents-body">
+				<!-- Main contents -->
+				<div class="contents-main">
+					<!-- about -->
+					<section class="portal-about">
+						<h1 class="pageTitle">
+							<span class="main">オンラインゲームポータルサイト</span>
+							<span class="sub">一つのサイトでいろんなゲームが楽しめる</span>
+						</h1>
+						<section>
+							<h2 class="headline">オンラインゲームポータルサイトとは</h2>
+							<div class="capture"><img src="http://capture.heartrails.com/200x300?http://wwww.hangame.co.jp/" alt="ハンゲーム" width="200" /></div>
+							<p> オンラインゲームポータルサイトとは複数のゲームを提供しているサイトのことです。</p>
+							<p>一般的に言われるポータルサイトとは、YahooやGoogleなどのように、インターネットの入り口となるような巨大なWebサイトのことで、「インターネットを始めるならまずはここから」と言われるようなサイトのことですね。</p>
+							<p>オンラインゲームポータルサイトはそのオンラインゲーム版です。<br />
+							つまり、「オンラインゲームを始めるならまずはここから」と言われるサイトのことです。<br />
+							オンラインゲームポータルサイトでは、自社のゲームはもちろん、他社とも提携し、たくさんのゲームを扱っています。</p>
+							<p>同じタイトルのゲームであっても、特定のポータルサイトのみでのイベントやキャンペーンなどが行われる場合もあります。。各オンラインゲームのアカウントの管理もポータルサイトからの登録になればわかりやすいですね。</p>
+						</section>
+						<section>
+							<h2 class="headline">友達の輪を広げよう</h2>
+							<p>オンラインゲームポータルサイトでは、ハンゲームや@gamesのように、<strong>アバター</strong>と呼ばれる「オンライン上の自分の分身」を持つことができるサービスもあります。<br />
+							オシャレな服を着せて、ペットを連れて街を歩いて、アバター同士で会話して。</p>
+							<p>ゲームの世界を超えた新しい友情や出会いがあるかもしれません。</p>
+							<div class="gAds"><!-- adsense --></div>
+						</section>
+					</section>
+					<!-- sites -->
+					<section class="portal-sites">
+						<h1>オンラインゲームポータルサイト一覧</h1>
+						<ul class="list">
+<?php for($i=0; $i<10; $i++):?>
+							<li>
+								<h2 class="title">
+									<a href="portals_index.html">
+										<span class="official">ハンゲーム</span>
+										<span class="read">hangame</span>
+									</a>
+								</h2>
+								<div class="images">
+									<div class="thumb"><a href="portals_index.html"><img src="../img/noimage160.gif" alt=""></a></div>
+								</div>
+								<div class="data">
+									<p class="description">ID登録数2000万以上の日本最大級オンラインゲームポータルサイト。160種類以上のゲームの多くが基本プレイ無料で遊ぶことができ、常に約10万人がログインしています。人気・規模ともにNo.1のポータルサイトです。
+人気のMMORPGからアクション、スポーツやカードゲーム、登録なしで楽しめるフラッシュゲームまで、さまざまなゲームが楽しめ、アバターを使ったコミュニティ要素なども豊富で、No.1オンラインゲームサイトといわれるのも納得ですね。</p>
+									<p class="official"><span class="label label-official">公式サイト</span> <a href="#">ハンゲーム</a></p>
+								</div>
+							</li>
+<?php endfor;?>
+						</ul>
+					</section>
+				</div>
+
+
+<?php include "_includes/side.html";?>
+
+
+			</div>
+
+
+<?php include "_includes/sub.html";?>
+
+
+		</div>
+	</div>
+
+
+<?php include "_includes/footer.html";?>
+
+<?php include "_includes/header_floating.html";?>
+
+<!-- JS Libs -->
+<!-- JS -->
+</body>
+</html>

@@ -1,0 +1,447 @@
+
+@import "compass";
+@import "gm_colors";
+
+/** ------------------------------ **/
+/** Bootstrap override
+/** ------------------------------ **/
+.table
+{
+	width:auto;
+}
+input,
+textarea,
+select,
+.uneditable-input
+{
+	height:auto;
+	margin:auto;
+}
+
+
+
+*
+{
+	margin:0;
+	padding:0;
+}
+body
+{
+	color:#333;
+}
+
+#flashMessage,
+#authMessage
+{
+	margin-bottom:10px;
+	padding:8px;
+	border:dotted 2px #f33;
+	background:#fee;
+	color:#f00;
+	font-size:16px;
+	font-weight:bold;
+}
+.error-message
+{
+	color:#f00;
+}
+
+
+/** Main Block
+------------------------------ **/
+#wrap
+{
+	background:image-url("../sys/side_back.gif") left repeat-y;
+}
+
+#header
+{
+	height:100px;
+	background:#fff;
+
+	.logo
+	{
+		float:left;
+		width:220px;
+		height:70px;
+	}
+
+	ul.pankuz
+	{
+		clear:both;
+		margin:0;
+		padding:0;
+		background:image-url("../sys/pankuz_back.gif");
+
+		li
+		{
+			display:inline-block;
+			padding-left:10px;
+			line-height:30px;
+			
+			a
+			{
+				display:block;
+				height:30px;
+				padding-right:20px;
+				line-height:30px;
+				background:image-url("../sys/pankuz_arrow.gif") right center no-repeat;
+			}
+		}
+	}
+}
+
+
+#menu
+{
+	float:left;
+	overflow:visible;
+	width:200px;
+
+	dl
+	{
+		overflow:visible;
+		width:200px;
+		margin:0;
+		padding:0;
+
+		dt
+		{
+			margin:0;
+			padding:0 10px;
+			line-height:20px;
+			background:image-url("../sys/menu_head.gif") left repeat-y;
+			color:#fff;
+		}
+		dd
+		{
+			margin:0;
+			padding:0;
+
+			ul
+			{
+				margin:0;
+				padding:0;
+				list-style:none;
+
+				li
+				{
+					a
+					{
+						display:block;
+						width:179px;
+						padding:4px 10px;
+						border-top:solid 1px #eee;
+						border-bottom:solid 1px #ccc;
+						line-height:20px;
+						color:#333;
+
+						&:hover
+						{
+							padding:5px 20px 5px 10px;
+							border:none;
+							background:image-url("../sys/menu_hover.gif") left center;
+						}
+					}
+
+					&.active a
+					{
+						padding:5px 20px 5px 10px;
+						border:none;
+						background:image-url("../sys/menu_active.gif") left center;
+					}
+				}
+			}
+		}
+	}
+}
+
+#main
+{
+	margin-left:220px;
+	margin-right:10px;
+	padding:10px 0;
+}
+#footer
+{
+	clear:both;
+	height:40px;
+	background:#666;
+	border-top:#333;
+	line-height:40px;
+	font-size:12px;
+	text-align:center;
+	color:#ccc;
+
+	a
+	{
+		color:#ccc;
+	}
+}
+
+
+/** Tags Style
+------------------------------ **/
+
+form,
+div.form
+{
+	margin-bottom:20px;
+}
+
+a
+{
+	color:#36c;
+}
+
+h1
+{
+	line-height:40px;
+	font-size:20px;
+}
+h2
+{
+	line-height:30px;
+	font-size:16px;
+}
+h3
+{
+	line-height:20px;
+	font-size:14px;
+}
+
+p,th,td,dt,dd
+{
+	font-size:12px;
+}
+p
+{
+	line-height:20px;
+}
+th
+{
+	background:#eee;
+}
+textarea
+{
+	width:300px;
+	height:6em;
+}
+
+
+/** Class Style
+------------------------------ **/
+
+.zero
+{
+	color:#999 !important;
+}
+td.zero
+{
+	background:#eee !important;
+}
+
+.tCenter
+{
+	text-align:center !important;
+}
+.tRight
+{
+	text-align:right !important;
+}
+.tLeft
+{
+	text-align:left !important;
+}
+input.wide,
+textarea.wide
+{
+	width:90%;
+}
+
+.jquerybubblepopup
+{
+	th,
+	td,
+	tr:hover
+	{
+		border:0;
+		background:none;
+	}
+	.jquerybubblepopup-innerHtml
+	{
+		text-align:left;
+	}
+}
+
+table.tablesorter
+{
+	thead
+	{
+		th.header
+		{
+			padding-left:20px;
+			cursor:pointer;
+		}
+		tr
+		{
+			.headerSortDown,
+			.headerSortUp
+			{
+				background-color: #cde;
+			}
+			.header
+			{
+				background-image: image-url("../sys/tablesorter_bg.gif");
+				background-repeat: no-repeat;
+				background-position: center left;
+			}
+			.headerSortUp
+			{
+				background-image: image-url("../sys/tablesorter_asc.gif");
+			}
+			.headerSortDown
+			{
+				background-image: image-url("../sys/tablesorter_desc.gif");
+			}
+		}
+	}
+}
+
+
+/** Table Style
+------------------------------ **/
+
+div.controll
+{
+	padding:5px;
+	font-size:12px;
+
+	#word_searcher
+	{
+		width:160px;
+	}
+	span.handling
+	{
+		padding:2px 4px;
+		border:dotted 1px #ccc;
+		background:#000;
+		color:#fff;
+	}
+}
+
+table .adPreview
+{
+	overflow:hidden;
+	max-width:250px;
+	max-height:200px;
+
+	img
+	{
+		max-width:250px;
+		max-height:200px;
+		height:auto;
+	}
+}
+
+/** List table **/
+table.list
+{
+	margin-bottom:5px;
+
+	.title span,
+	.title a,
+	.service span
+	{
+		display:block;
+		font-size:10px;
+	}
+	.adImage
+	{
+		text-align:center;
+
+		img
+		{
+			max-width:60px;
+			max-height:60px;
+		}
+	}
+}
+
+// table.events
+// {
+// 	tr.current td.title a
+// 	{
+// 		padding-right:65px;
+// 		background:url(../img/design/icon_event_current.gif) right bottom no-repeat;
+// 		line-height:20px;
+// 	}
+// 	tr.future td.title a
+// 	{
+// 		padding-right:65px;
+// 		background:url(../img/design/icon_event_future.gif) right bottom no-repeat;
+// 		line-height:20px;
+// 	}
+// 	tr.back td.title a
+// 	{
+// 		padding-right:65px;
+// 		background:url(../img/design/icon_event_back.gif) right bottom no-repeat;
+// 		line-height:20px;
+// 	}
+// }
+
+/** Edit table **/
+table.edit
+{
+	width:100%;
+
+	th
+	{
+		width:160px;
+	}
+	div.checkbox
+	{
+		float:left;
+		width:45%;
+
+		label
+		{
+			padding-left:5px;
+		}
+	}
+	textarea.adField
+	{
+		width:500px;
+		height:10em;
+	}
+	p.ex
+	{
+		color:#999;
+		font-size:10px;
+	}
+}
+
+/** Spec table **/
+table.spec textarea
+{
+	height:3em;
+}
+
+/** Pc table **/
+table.pc textarea
+{
+	height:5em;
+}
+
+
+/** debug **/
+table.cake-sql-log
+{
+	th,
+	td
+	{
+		border:solid 1px #999;
+		padding:4px 9px;
+		text-align:left;
+	}
+}

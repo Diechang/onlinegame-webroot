@@ -1,0 +1,155 @@
+
+/** PCs contents
+------------------------------ **/
+.contents-main
+{
+	//about
+	section.pc-about
+	{
+		p
+		{
+			margin-bottom: 10px;
+		}
+	}
+
+
+	//titles
+	section.pc-titles
+	{
+		ul.list
+		{
+			overflow: hidden;
+			margin-left: -20px;
+
+			li
+			{
+				float: left;
+				width: 200px;
+				margin-left: 20px;
+				margin-bottom: 20px;
+
+				.images
+				{
+					position: relative;
+					width: 200px;
+					height: 120px;
+					margin-bottom: 5px;
+
+					.thumb
+					{
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 160px;
+						height: 120px;
+					}
+
+					.counts
+					{
+						position: absolute;
+						top: 0;
+						right: 0;
+						width: 38px;
+						height: 120px;
+
+						.count
+						{
+							width: 36px;
+							height: 58px;
+							border: solid 1px $color-border;
+
+							span
+							{
+								display: block;
+								line-height: 29px;
+								text-align: center;
+
+								&.caption
+								{
+									font-size: 16px;
+								}
+
+								&.number
+								{
+									font-weight: bold;
+								}
+							}
+						}
+						.count-none
+						{
+							background: $gm-color-grey-200;
+							color: $gm-color-grey-400;
+						}
+					}
+				}
+				
+				.title
+				{
+					margin-bottom: 5px;
+
+					a
+					{
+						position: relative;
+						display: block;
+						height: 40px;
+						text-decoration: none;
+						
+						span
+						{
+							display: block;
+							@include text-overflow;
+
+							&.official
+							{
+								line-height: 20px;
+								font-size: 14px;
+								text-decoration: underline;
+							}
+
+							&.read
+							{
+								line-height: 20px;
+								color: $color-text;
+							}
+						}
+					}
+				}
+
+				.price
+				{
+					overflow: hidden;
+
+					.caption
+					{
+						display: block;
+						float: left;
+						width: 50px;
+						padding: 4px 0;
+						line-height: 1;
+						border-radius: 3px;
+						background: $color-danger;
+						color: $color-white;
+						font-size: 12px;
+						text-align: center;
+					}
+
+					.number
+					{
+						display: block;
+						margin-left: 55px;
+						line-height: 20px;
+						color: $color-danger;
+						font-size: 16px;
+						font-weight: bold;
+						text-align: right;
+
+						.unit
+						{
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

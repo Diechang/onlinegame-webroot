@@ -1,0 +1,61 @@
+
+/** Monies contents
+------------------------------ **/
+.contents-main
+{
+	//about
+	section.money-about
+	{
+		p
+		{
+			margin-bottom: 10px;
+		}
+	}
+
+	//documents
+	section.money-docs
+	{
+		p
+		{
+			margin-bottom: 10px;
+		}
+	}
+
+	//categories
+	section.money-categories
+	{
+		ul.list li
+		{
+			margin-bottom: 20px;
+
+			.title
+			{
+				margin-bottom: 10px;
+				font-size: 20px;
+			}
+		}
+	}
+
+	//sites
+	section.money-sites
+	{
+		ul.list li
+		{
+			overflow: hidden;
+			margin-bottom: 20px;
+
+			.title
+			{
+				margin-bottom: 10px;
+				font-size: 20px;
+			}
+
+			.banner
+			{
+				float: right;
+				margin-left: 10px;
+				margin-bottom: 10px;
+			}
+		}
+	}
+}

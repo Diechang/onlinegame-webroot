@@ -1,0 +1,108 @@
+
+/** Main contents - classes & tags
+------------------------------ **/
+.contents-main
+{
+	//more link
+	.more
+	{
+		text-align: right;
+	}
+	
+	//adsense
+	.gAds
+	{
+		margin: 20px auto;
+		text-align: center;
+	}
+	.gAds-left
+	{
+		margin-left: 0;
+		text-align: left;
+	}
+	.gAds-right
+	{
+		margin-right: 0;
+		text-align: right;
+	}
+	
+	//tags
+	h1
+	{
+		margin-bottom: 20px;
+		line-height: 30px;
+		font-size: 24px;
+
+		&.pageTitle
+		{
+			margin-bottom: 40px;
+		}
+		
+		span
+		{
+			&.main
+			{
+				@include inline-block;
+			}
+			&.sub
+			{
+				display: block;
+				line-height: 20px;
+				font-size: 14px;
+			}
+
+			&.label
+			{
+				width: auto;
+				margin-right: 5px;
+				padding: 5px 10px;
+				font-size: 16px;
+			}
+		}
+	}
+
+	h2.headline
+	{
+		margin: 20px 0;
+		line-height: 20px;
+		font-size: 20px;
+
+		&:first-child
+		{
+			margin-top: 0;
+		}
+
+		span
+		{
+			@include inline-block;
+
+			&.main
+			{
+			}
+			&.sub
+			{
+				font-size: 12px;
+			}
+		}
+	}
+	
+	p.headline-description
+	{
+		margin-bottom: 10px;
+	}
+}
+
+/** Main contents - sections
+------------------------------ **/
+.contents-main
+{
+	section
+	{
+		margin-bottom: 60px;
+
+		section
+		{
+			margin-bottom: 40px;
+		}
+	}
+}

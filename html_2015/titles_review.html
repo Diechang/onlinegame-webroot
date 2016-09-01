@@ -1,0 +1,130 @@
+<?php 
+	$tag_title = "SUN : Soul of the Ultimate Nation(ソウル・オブ・ジ・アルティメット・ネイション) のレビュー";
+	include dirname(__FILE__) . "/_includes/meta_head.html";
+?>
+
+<body class="titles">
+
+<?php include "_includes/header.html";?>
+	
+	<aside class="pankuz">
+		<ul>
+			<li class="top"><a href="./">トップ</a></li>
+			<li><i class="zmdi zmdi-chevron-right"></i> <a href="titles_index.html">Soul of the Ultimate Nation(ソウル・オブ・ジ・アルティメット・ネイション)</a></li>
+			<li><i class="zmdi zmdi-chevron-right"></i> レビュー</li>
+		</ul>
+	</aside>
+	
+<?php include "_includes/title_header.html";?>
+	
+	<!-- contents -->
+	<div class="contents">
+		<div class="contents-wrap">
+			<div class="contents-body">
+				<!-- Main contents -->
+				<div class="contents-main">
+
+<?php $title_current = "review";?>
+<?php include "_includes/title_nav.html";?>
+
+					<!-- review -->
+					<section class="title-review">
+						<h1>
+							<span class="main">プレイヤーのレビュー・評価投稿一覧（9,999）</span>
+							<span class="sub">Soul of the Ultimate Nationへのレビュー・評価</span>
+						</h1>
+
+						<ul>
+<?php for($i=5; $i>0; $i--):?>
+							<li>
+								<div class="post">
+									<div class="post-body">
+										<div class="review">
+											<h2><a href="titles_review_single.html">名無しさんのレビュー</a></h2>
+											<p>テキストテキスト<br>
+											テキストテキストテキスト<br>
+											テキストテキストテキストテキスト<br>
+											テキストテキストテキスト<br>
+											テキストテキスト...<a href="titles_review_single.html">続き</a></p>
+										</div>
+										<ul class="data">
+											<li><i class="zmdi zmdi-account"></i> 名無しさん</li>
+											<li><i class="zmdi zmdi-time"></i> 2016年12月31日</li>
+											<li><i class="zmdi zmdi-edit"></i> <a href="titles_review_edit.html">編集</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="title-comp-rate title-comp-rate-good">
+									<div class="caption">総合評価</div>
+									<div class="point"><span class="num">5.0</span>点</div>
+									<div class="icon"><i class="zmdi zmdi-thumb-up"></i> Good</div>
+								</div>
+							</li>
+							<li>
+								<div class="post">
+									<div class="post-body">
+										<div class="review">
+											<h2><a href="titles_review_single.html">名無しさんのレビュー</a></h2>
+											<p>テキストテキスト<br>
+											テキストテキストテキスト<br>
+											テキストテキストテキストテキスト<br>
+											テキストテキストテキスト<br>
+											テキストテキスト...<a href="titles_review_single.html">続き</a></p>
+										</div>
+										<ul class="data">
+											<li><i class="zmdi zmdi-account"></i> 名無しさん</li>
+											<li><i class="zmdi zmdi-time"></i> 2016年12月31日</li>
+											<li><i class="zmdi zmdi-edit"></i> <a href="titles_review_edit.html">編集</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="title-comp-rate title-comp-rate-bad">
+									<div class="caption">総合評価</div>
+									<div class="point"><span class="num">2.0</span>点</div>
+									<div class="icon"><i class="zmdi zmdi-thumb-down"></i> Bad</div>
+								</div>
+							</li>
+<?php endfor;?>
+						</ul>
+
+<?php include "_includes/title_officiallink.html";?>
+					</section>
+					
+					<!-- vote form -->
+					<section class="title-form-vote">
+						<h1>
+							<span class="main">レビュー・評価を投稿する</span>
+							<span class="sub">みなさまの投稿がランキングに反映されます</span>
+						</h1>
+
+<?php include "_includes/title_form_vote.html";?>
+					</section>
+
+<?php include "_includes/title_summary_common.html";?>
+
+<?php include "_includes/title_recommend.html";?>
+
+				</div>
+
+
+<?php include "_includes/side.html";?>
+
+
+			</div>
+
+
+<?php include "_includes/sub.html";?>
+
+
+		</div>
+	</div>
+
+
+<?php include "_includes/footer.html";?>
+
+<?php include "_includes/header_floating.html";?>
+
+<!-- JS Libs -->
+<!-- JS -->
+</body>
+</html>
