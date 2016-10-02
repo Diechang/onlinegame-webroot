@@ -188,6 +188,14 @@ body.index
 		//test
 		section.test
 		{
+			p.none
+			{
+				padding: 10px;
+				border-radius: 3px;
+				background: $gm-color-grey-200;
+				text-align: center;
+			}
+			
 			section.current
 			{
 				ul li

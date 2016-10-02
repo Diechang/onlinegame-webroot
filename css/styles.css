@@ -1009,6 +1009,9 @@ footer .copyright-body {
 .contents-side section:hover {
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
 }
+.contents-side section:last-child {
+  margin-bottom: 40px;
+}
 .contents-side section h1 {
   padding: 5px 10px;
   border-bottom: solid 2px;
@@ -1122,9 +1125,6 @@ footer .copyright-body {
 .contents-side section.feeds ul li:before {
   background-color: #FF5722;
 }
-.contents-side section.ranking {
-  margin-bottom: 40px;
-}
 .contents-side section.ranking h1 {
   border-color: #E91E63;
 }
@@ -1207,6 +1207,21 @@ footer .copyright-body {
   font-size: 12px;
   text-align: center;
   text-decoration: none;
+}
+.contents-side section.ads {
+  background: none;
+}
+.contents-side section.ads .ad {
+  margin-bottom: 20px;
+}
+.contents-side section.ads .ad:last-child {
+  margin-bottom: 0;
+}
+.contents-side section.ads .ad-banner {
+  height: 600px;
+}
+.contents-side section.ads .ad-linkunit {
+  height: 90px;
 }
 .contents-side .floating.floating-active {
   position: fixed;
@@ -1303,14 +1318,18 @@ footer .copyright-body {
 .contents-sub section ul.titles li p.data {
   position: relative;
   min-height: 20px;
-  padding-left: 70px;
   line-height: 20px;
   font-size: 12px;
 }
+.contents-sub section ul.titles li p.data .label,
+.contents-sub section ul.titles li p.data .value, .contents-sub section ul.titles li p.data.data-official a {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
 .contents-sub section ul.titles li p.data .label {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 65px;
 }
 .contents-sub section ul.titles li p.data.data-official a {
@@ -1350,6 +1369,12 @@ footer .copyright-body {
 .contents-main .gAds {
   margin: 20px auto;
   text-align: center;
+}
+.contents-main .gAds:first-child {
+  margin-top: 0;
+}
+.contents-main .gAds:last-child {
+  margin-bottom: 0;
 }
 .contents-main .gAds-left {
   margin-left: 0;
@@ -1414,6 +1439,9 @@ footer .copyright-body {
 }
 .contents-main section section {
   margin-bottom: 40px;
+}
+.contents-main section.adCenterBottom {
+  text-align: center;
 }
 
 /** Global components
@@ -2296,6 +2324,12 @@ body.index .contents-main section.information .text {
 }
 body.index .contents-main section.information .text p {
   margin-bottom: .8em;
+}
+body.index .contents-main section.test p.none {
+  padding: 10px;
+  border-radius: 3px;
+  background: #EEEEEE;
+  text-align: center;
 }
 body.index .contents-main section.test section.current ul li {
   overflow: hidden;

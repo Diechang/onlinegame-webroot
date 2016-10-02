@@ -18,6 +18,11 @@
 			box-shadow: 0 2px 3px 0 $color-shadow;
 		}
 
+		&:last-child
+		{
+			margin-bottom: 40px;
+		}
+
 		h1
 		{
 			padding: 5px 10px;
@@ -193,8 +198,6 @@
 		}
 		&.ranking
 		{
-			margin-bottom: 40px;
-			
 			h1
 			{
 				border-color: $color-theme-ranking;
@@ -270,6 +273,30 @@
 					text-align: center;
 					text-decoration: none;
 				}
+			}
+		}
+		&.ads
+		{
+			background: none;
+
+			.ad
+			{
+				margin-bottom: 20px;
+
+				&:last-child
+				{
+					margin-bottom: 0;
+				}
+			}
+
+			.ad-banner
+			{
+				height: 600px;
+			}
+
+			.ad-linkunit
+			{
+				height: 90px;
 			}
 		}
 	}

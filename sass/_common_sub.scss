@@ -119,15 +119,18 @@
 					{
 						position: relative;
 						min-height: 20px;
-						padding-left: 70px;
 						line-height: 20px;
 						font-size: 12px;
+						
+						.label,
+						.value,
+						&.data-official a
+						{
+							@include inline-block;
+						}
 
 						.label
 						{
-							position: absolute;
-							top: 0;
-							left: 0;
 							width: 65px;
 						}
 

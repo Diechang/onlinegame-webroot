@@ -14,6 +14,15 @@
 	{
 		margin: 20px auto;
 		text-align: center;
+		
+		&:first-child
+		{
+			margin-top: 0;
+		}
+		&:last-child
+		{
+			margin-bottom: 0;
+		}
 	}
 	.gAds-left
 	{
@@ -103,6 +112,11 @@
 		section
 		{
 			margin-bottom: 40px;
+		}
+
+		&.adCenterBottom
+		{
+			text-align: center;
 		}
 	}
 }
