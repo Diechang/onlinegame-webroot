@@ -1012,17 +1012,17 @@ footer .copyright-body {
 .contents-side section:last-child {
   margin-bottom: 40px;
 }
-.contents-side section h1 {
+.contents-side section h2 {
   padding: 5px 10px;
   border-bottom: solid 2px;
 }
-.contents-side section h1 span {
+.contents-side section h2 span {
   display: block;
 }
-.contents-side section h1 span.main {
+.contents-side section h2 span.main {
   line-height: 20px;
 }
-.contents-side section h1 span.sub {
+.contents-side section h2 span.sub {
   line-height: 15px;
   font-size: 10px;
 }
@@ -1067,14 +1067,14 @@ footer .copyright-body {
   background: #212121;
   padding: 5px;
 }
-.contents-side section.pr h1 {
+.contents-side section.pr h2 {
   margin-bottom: 5px;
   padding: 0;
   border: none;
   line-height: 20px;
   font-size: 14px;
 }
-.contents-side section.pr h1 a {
+.contents-side section.pr h2 a {
   color: #FF80AB;
 }
 .contents-side section.pr .banner {
@@ -1089,43 +1089,43 @@ footer .copyright-body {
   color: #fff;
   font-size: 12px;
 }
-.contents-side section.genres h1 {
+.contents-side section.genres h2 {
   border-color: #2196F3;
 }
 .contents-side section.genres ul li:before {
   background-color: #2196F3;
 }
-.contents-side section.styles h1 {
+.contents-side section.styles h2 {
   border-color: #00BCD4;
 }
 .contents-side section.styles ul li:before {
   background-color: #00BCD4;
 }
-.contents-side section.services h1 {
+.contents-side section.services h2 {
   border-color: #4CAF50;
 }
 .contents-side section.services ul li:before {
   background-color: #4CAF50;
 }
-.contents-side section.sites h1 {
+.contents-side section.sites h2 {
   border-color: #AFB42B;
 }
 .contents-side section.sites ul li:before {
   background-color: #AFB42B;
 }
-.contents-side section.shops h1 {
+.contents-side section.shops h2 {
   border-color: #FF9800;
 }
 .contents-side section.shops ul li:before {
   background-color: #FF9800;
 }
-.contents-side section.feeds h1 {
+.contents-side section.feeds h2 {
   border-color: #FF5722;
 }
 .contents-side section.feeds ul li:before {
   background-color: #FF5722;
 }
-.contents-side section.ranking h1 {
+.contents-side section.ranking h2 {
   border-color: #E91E63;
 }
 .contents-side section.ranking ul li:before {
@@ -1254,17 +1254,17 @@ footer .copyright-body {
   border: solid 1px #BDBDBD;
   background: #fff;
 }
-.contents-sub section h1 {
+.contents-sub section h2 {
   margin-bottom: 10px;
 }
-.contents-sub section h1 span {
+.contents-sub section h2 span {
   display: block;
 }
-.contents-sub section h1 span.main {
+.contents-sub section h2 span.main {
   line-height: 20px;
   font-size: 16px;
 }
-.contents-sub section h1 span.sub {
+.contents-sub section h2 span.sub {
   line-height: 15px;
   font-size: 12px;
 }
@@ -2293,36 +2293,45 @@ body.index .newGames .slide ul li a .texts .description {
   color: #EEEEEE;
   font-size: 14px;
 }
-body.index .contents-main section.information {
-  background: #EEEEEE;
+body.index .contents-main .information {
+  margin-bottom: 40px;
   border-radius: 0 10px;
 }
-body.index .contents-main section.information h1 {
+body.index .contents-main .information h1.siteTitle {
   position: relative;
-  padding: 10px 20px;
-  line-height: 20px;
-  font-size: 18px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
 }
-body.index .contents-main section.information h1:before, body.index .contents-main section.information h1:after {
+body.index .contents-main .information h1.siteTitle:before, body.index .contents-main .information h1.siteTitle:after {
   content: "";
   position: absolute;
-  left: 0;
   bottom: 0;
-}
-body.index .contents-main section.information h1:before {
-  width: 100%;
-  height: 1px;
-  background: #9E9E9E;
-}
-body.index .contents-main section.information h1:after {
-  width: 50%;
   height: 2px;
+}
+body.index .contents-main .information h1.siteTitle:before {
+  left: 0;
+  right: 0;
+  background: #BDBDBD;
+}
+body.index .contents-main .information h1.siteTitle:after {
+  left: 120px;
+  right: 120px;
   background: #2196F3;
 }
-body.index .contents-main section.information .text {
-  padding: 0 20px 20px;
+body.index .contents-main .information h1.siteTitle span {
+  display: block;
 }
-body.index .contents-main section.information .text p {
+body.index .contents-main .information h1.siteTitle span.caption {
+  line-height: 20px;
+  color: #616161;
+  font-size: 14px;
+}
+body.index .contents-main .information .text {
+  padding: 20px;
+  background: #EEEEEE;
+}
+body.index .contents-main .information .text p {
   margin-bottom: .8em;
 }
 body.index .contents-main section.test p.none {

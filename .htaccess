@@ -2,7 +2,7 @@
 
     RewriteEngine On
 	RewriteBase /
-	
+
 #	503メンテナンス
 #	RewriteRule ^503/ - [L]
 #	RewriteRule ^.*$ 503/503.php
@@ -10,6 +10,11 @@
 #	www統一
 	RewriteCond %{HTTP_HOST} ^www.onlinegame.dz-life.net
 	RewriteRule (.*) http://onlinegame.dz-life.net/$1 [R=301,L]
+
+#	除外
+	RewriteCond %{REQUEST_FILENAME} -d [OR]
+	RewriteCond %{REQUEST_FILENAME} -f
+	RewriteRule (.*) - [L]
 	
 #	引っ越し用リダイレクト
 	RewriteRule ^g_[a-z]+/([a-zA-Z_0-9]+)(/(index\.html)?)?$ http://%{HTTP_HOST}/titles/$1/review.html [R=301,L]
@@ -56,10 +61,8 @@
 	
 #	RewriteCond %{HTTP_HOST} ^secure1560.sakura.ne.jp
 #	RewriteRule ^$  onlinegame.dz-life.net/index.php?url=index [L]
-	
-	#normal
-	RewriteCond %{REQUEST_FILENAME} !-d
-	RewriteCond %{REQUEST_FILENAME} !-f
+
+
 
 	RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
 </IfModule>

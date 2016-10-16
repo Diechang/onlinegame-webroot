@@ -23,7 +23,7 @@
 			margin-bottom: 40px;
 		}
 
-		h1
+		h2
 		{
 			padding: 5px 10px;
 			border-bottom: solid 2px;
@@ -99,7 +99,7 @@
 			background: $gm-color-grey-900;
 			padding: 5px;
 
-			h1
+			h2
 			{
 				margin-bottom: 5px;
 				padding: 0;
@@ -132,7 +132,7 @@
 		}
 		&.genres
 		{
-			h1
+			h2
 			{
 				border-color: $color-theme-genre;
 			}
@@ -143,7 +143,7 @@
 		}
 		&.styles
 		{
-			h1
+			h2
 			{
 				border-color: $color-theme-style;
 			}
@@ -154,7 +154,7 @@
 		}
 		&.services
 		{
-			h1
+			h2
 			{
 				border-color: $color-theme-service;
 			}
@@ -165,7 +165,7 @@
 		}
 		&.sites
 		{
-			h1
+			h2
 			{
 				border-color: $gm-color-lime-700;
 			}
@@ -176,7 +176,7 @@
 		}
 		&.shops
 		{
-			h1
+			h2
 			{
 				border-color: $gm-color-orange-500;
 			}
@@ -187,7 +187,7 @@
 		}
 		&.feeds
 		{
-			h1
+			h2
 			{
 				border-color: $color-theme-feed;
 			}
@@ -198,7 +198,7 @@
 		}
 		&.ranking
 		{
-			h1
+			h2
 			{
 				border-color: $color-theme-ranking;
 			}
