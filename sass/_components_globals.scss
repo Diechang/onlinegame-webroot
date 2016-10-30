@@ -20,6 +20,11 @@
 		{
 			float: right;
 			line-height: 30px;
+
+			span.total
+			{
+				font-weight: bold;
+			}
 		}
 
 		ul.paging

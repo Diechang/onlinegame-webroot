@@ -1366,6 +1366,19 @@ footer .copyright-body {
 .contents-main .more {
   text-align: right;
 }
+.contents-main .noData {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 3px;
+  background: #EEEEEE;
+  text-align: center;
+}
+.contents-main .noData:first-child {
+  margin-top: 0;
+}
+.contents-main .noData:last-child {
+  margin-bottom: 0;
+}
 .contents-main .gAds {
   margin: 20px auto;
   text-align: center;
@@ -1458,6 +1471,9 @@ footer .copyright-body {
 .contents-main nav.pages .counts {
   float: right;
   line-height: 30px;
+}
+.contents-main nav.pages .counts span.total {
+  font-weight: bold;
 }
 .contents-main nav.pages ul.paging {
   float: left;
