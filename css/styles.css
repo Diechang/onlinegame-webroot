@@ -1456,6 +1456,9 @@ footer .copyright-body {
 .contents-main section.adCenterBottom {
   text-align: center;
 }
+.contents-main section.adCenterBottom img {
+  max-width: 100%;
+}
 
 /** Global components
 ------------------------------ **/
