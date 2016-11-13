@@ -68,11 +68,13 @@
 		
 		span
 		{
-			&.main
+			&.main,
+			&.official
 			{
 				@include inline-block;
 			}
-			&.sub
+			&.sub,
+			&.read
 			{
 				display: block;
 				line-height: 20px;

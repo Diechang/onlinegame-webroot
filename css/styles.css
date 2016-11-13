@@ -1405,14 +1405,14 @@ footer .copyright-body {
 .contents-main h1.pageTitle {
   margin-bottom: 40px;
 }
-.contents-main h1 span.main {
+.contents-main h1 span.main, .contents-main h1 span.official {
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
   *zoom: 1;
   *display: inline;
 }
-.contents-main h1 span.sub {
+.contents-main h1 span.sub, .contents-main h1 span.read {
   display: block;
   line-height: 20px;
   font-size: 14px;
@@ -3436,14 +3436,20 @@ body.index .contents-main section.news section.info dl {
 
 /** Portals contents
 ------------------------------ **/
-.contents-main section.portal-about .capture {
+.contents-main .portal-about {
+  margin-bottom: 40px;
+}
+.contents-main .portal-about .capture {
   float: right;
   width: 200px;
   margin-left: 10px;
   margin-bottom: 10px;
 }
-.contents-main section.portal-about p {
+.contents-main .portal-about p {
   margin-bottom: 10px;
+}
+.contents-main .portal-about .portal-summary {
+  margin-bottom: 20px;
 }
 .contents-main section.portal-sites ul.list li {
   overflow: hidden;

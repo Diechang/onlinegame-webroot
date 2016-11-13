@@ -4,8 +4,10 @@
 .contents-main
 {
 	//about
-	section.portal-about
+	.portal-about
 	{
+		margin-bottom: 40px;
+
 		.capture
 		{
 			float: right;
@@ -17,6 +19,11 @@
 		p
 		{
 			margin-bottom: 10px;
+		}
+		
+		.portal-summary
+		{
+			margin-bottom: 20px;
 		}
 	}
 
