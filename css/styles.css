@@ -3497,7 +3497,10 @@ body.index .contents-main section.news section.info dl {
 
 /** Monies contents
 ------------------------------ **/
-.contents-main section.money-about p {
+.contents-main .money-about {
+  margin-bottom: 40px;
+}
+.contents-main .money-about p {
   margin-bottom: 10px;
 }
 .contents-main section.money-docs p {
