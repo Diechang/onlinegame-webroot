@@ -1638,6 +1638,9 @@ footer .copyright-body {
   border: solid 1px #BDBDBD;
   background: #fff;
 }
+.contents-main .form .error-message {
+  color: #F44336;
+}
 .contents-main .form table {
   width: 100%;
   border-collapse: collapse;
