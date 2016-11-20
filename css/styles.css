@@ -3640,50 +3640,50 @@ body.index .contents-main section.news section.info dl {
 
 /** Links contents
 ------------------------------ **/
-.contents-main section.link-about p {
+.contents-main .link-about p {
   margin-bottom: 10px;
 }
-.contents-main section.link-about ul.categories {
+.contents-main .link-about ul.categories {
   overflow: hidden;
   margin-bottom: 20px;
   padding: 10px;
   border-radius: 3px;
   background: #EEEEEE;
 }
-.contents-main section.link-about ul.categories li {
+.contents-main .link-about ul.categories li {
   float: left;
   margin-right: 5px;
   padding-right: 5px;
   border-right: solid 1px #BDBDBD;
 }
-.contents-main section.link-about ul.categories li:last-child {
+.contents-main .link-about ul.categories li:last-child {
   margin-right: 0;
   padding-right: 0;
   border-right: 0;
 }
-.contents-main section.link-about ul.categories li.current {
+.contents-main .link-about ul.categories li.current {
   font-weight: bold;
 }
-.contents-main section.link-about section.sites ul.list li {
+.contents-main .link-about section.sites ul.list li {
   overflow: hidden;
   margin-bottom: 20px;
   padding-bottom: 10px;
   border-bottom: dotted 1px #BDBDBD;
 }
-.contents-main section.link-about section.sites ul.list li:last-child {
+.contents-main .link-about section.sites ul.list li:last-child {
   padding-bottom: 0;
   border-bottom: 0;
 }
-.contents-main section.link-about section.sites ul.list li .thumb {
+.contents-main .link-about section.sites ul.list li .thumb {
   float: left;
   width: 120px;
 }
-.contents-main section.link-about section.sites ul.list li .title {
+.contents-main .link-about section.sites ul.list li .title {
   margin-left: 130px;
   margin-bottom: 10px;
   font-size: 16px;
 }
-.contents-main section.link-about section.sites ul.list li .description {
+.contents-main .link-about section.sites ul.list li .description {
   position: relative;
   margin-left: 130px;
   padding: 9px;
@@ -3691,17 +3691,17 @@ body.index .contents-main section.news section.info dl {
   border: solid 1px #BDBDBD;
   border-radius: 5px;
 }
-.contents-main section.link-about section.sites ul.list li .description:before, .contents-main section.link-about section.sites ul.list li .description:after {
+.contents-main .link-about section.sites ul.list li .description:before, .contents-main .link-about section.sites ul.list li .description:after {
   position: absolute;
   content: "";
   bottom: 100%;
 }
-.contents-main section.link-about section.sites ul.list li .description:before {
+.contents-main .link-about section.sites ul.list li .description:before {
   left: 10px;
   border: solid 5px transparent;
   border-bottom-color: #BDBDBD;
 }
-.contents-main section.link-about section.sites ul.list li .description:after {
+.contents-main .link-about section.sites ul.list li .description:after {
   left: 11px;
   border: solid 4px transparent;
   border-bottom-color: #fff;
