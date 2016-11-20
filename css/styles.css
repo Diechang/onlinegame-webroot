@@ -3527,7 +3527,7 @@ body.index .contents-main section.news section.info dl {
 
 /** PCs contents
 ------------------------------ **/
-.contents-main section.pc-about p {
+.contents-main .pc-about p {
   margin-bottom: 10px;
 }
 .contents-main section.pc-titles ul.list {
