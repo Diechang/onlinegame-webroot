@@ -451,6 +451,9 @@ i.icon.icon-feed {
   line-height: 20px;
   font-size: 16px;
 }
+.flash .flash-title:last-child {
+  margin-bottom: 0;
+}
 .flash .flash-body {
   line-height: 20px;
   font-size: 14px;
