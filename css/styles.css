@@ -1447,16 +1447,20 @@ footer .copyright-body {
 
 /** Main contents - sections
 ------------------------------ **/
-.contents-main section {
+.contents-main section,
+.contents-main .pageInfo {
   margin-bottom: 60px;
 }
-.contents-main section section {
+.contents-main section section,
+.contents-main .pageInfo section {
   margin-bottom: 40px;
 }
-.contents-main section.adCenterBottom {
+.contents-main section.adCenterBottom,
+.contents-main .pageInfo.adCenterBottom {
   text-align: center;
 }
-.contents-main section.adCenterBottom img {
+.contents-main section.adCenterBottom img,
+.contents-main .pageInfo.adCenterBottom img {
   max-width: 100%;
 }
 
@@ -3436,9 +3440,6 @@ body.index .contents-main section.news section.info dl {
 
 /** Portals contents
 ------------------------------ **/
-.contents-main .portal-about {
-  margin-bottom: 40px;
-}
 .contents-main .portal-about .capture {
   float: right;
   width: 200px;
@@ -3497,9 +3498,6 @@ body.index .contents-main section.news section.info dl {
 
 /** Monies contents
 ------------------------------ **/
-.contents-main .money-about {
-  margin-bottom: 40px;
-}
 .contents-main .money-about p {
   margin-bottom: 10px;
 }
