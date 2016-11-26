@@ -1,0 +1,30 @@
+
+//cake log
+table.cake-sql-log
+{
+	margin: 20px;
+	border-collapse: collapse;
+
+	th, td
+	{
+		padding: 5px;
+		border: solid 1px #333;
+	}
+
+	th
+	{
+		background: #eee;
+	}
+}
+
+.cake-debug-output
+{
+	margin: 20px;
+
+	pre
+	{
+		padding: 10px;
+		border: solid 1px #333;
+		background: #eee;
+	}
+}

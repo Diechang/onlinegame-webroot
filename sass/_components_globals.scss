@@ -164,6 +164,17 @@
 			font-size: 20px;
 			text-align: right;
 			text-decoration: none;
+
+			span
+			{
+				display: block;
+
+				&.read
+				{
+					line-height: 15px;
+					font-size: 12px;
+				}
+			}
 		}
 	}
 	.officiallink

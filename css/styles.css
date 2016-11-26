@@ -1606,6 +1606,15 @@ footer .copyright-body {
   text-align: right;
   text-decoration: none;
 }
+.contents-main .officiallink a span,
+.contents-main .shoplink a span {
+  display: block;
+}
+.contents-main .officiallink a span.read,
+.contents-main .shoplink a span.read {
+  line-height: 15px;
+  font-size: 12px;
+}
 .contents-main .officiallink span.caption {
   font-size: 16px;
 }
@@ -2731,6 +2740,9 @@ body.index .contents-main section.news section.info dl {
   padding: 5px 10px;
   border-bottom: solid 1px #BDBDBD;
 }
+.contents-main section.title-summary section.data .data-properties table th {
+  white-space: nowrap;
+}
 .contents-main section.title-summary section.data .data-properties .actions {
   overflow: hidden;
 }
@@ -2858,6 +2870,9 @@ body.index .contents-main section.news section.info dl {
   padding: 5px 10px;
   vertical-align: top;
 }
+.contents-main section.title-spec table th {
+  white-space: nowrap;
+}
 .contents-main section.title-spec table thead th {
   background: #E0E0E0;
   text-align: left;
@@ -2873,6 +2888,13 @@ body.index .contents-main section.news section.info dl {
 }
 .contents-main section.title-spec table tbody td {
   background: #fff;
+}
+.contents-main section.title-spec table tbody tr.caption th {
+  background: #616161;
+  line-height: 15px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
 }
 .contents-main section.title-spec table tfoot td {
   padding: 5px;
