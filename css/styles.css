@@ -1523,6 +1523,7 @@ footer .copyright-body {
   padding: 10px;
   border-radius: 3px;
   background: #BDBDBD;
+  line-height: 15px;
   color: #fff;
   font-size: 12px;
 }
@@ -1723,6 +1724,30 @@ footer .copyright-body {
 .contents-main .form-vote label.rate {
   padding-left: 15px;
   padding-right: 15px;
+}
+.contents-main .noneTitles li {
+  margin-bottom: 10px;
+}
+.contents-main .noneTitles li a {
+  text-decoration: none;
+}
+.contents-main .noneTitles li a:hover {
+  text-decoration: underline;
+}
+.contents-main .noneTitles li a .official,
+.contents-main .noneTitles li a .read {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+.contents-main .noneTitles li a .official {
+  margin-right: 5px;
+}
+.contents-main .noneTitles li a .read {
+  color: #616161;
+  font-size: 12px;
 }
 
 /** Archive components
@@ -2782,6 +2807,7 @@ body.index .contents-main section.news section.info dl {
   width: 160px;
   margin-left: 10px;
   margin-bottom: 10px;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
 }
 .contents-main section.title-summary section.intro .body {
   margin-top: 30px;

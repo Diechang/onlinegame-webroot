@@ -15,7 +15,7 @@
 
 		&:hover
 		{
-			box-shadow: 0 2px 3px 0 $color-shadow;
+			@include shadow-card;
 		}
 
 		&:last-child
