@@ -206,6 +206,7 @@ a:hover .thumb img,
   background: #F5F5F5;
   line-height: 20px;
   font-size: 14px;
+  color: inherit;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -1752,7 +1753,7 @@ footer .copyright-body {
 
 /** Archive components
 ------------------------------ **/
-.contents-main section.archive-about p {
+.contents-main .archive-about p {
   margin-bottom: 10px;
 }
 .contents-main section.archive-pickups ul.list {
@@ -3203,6 +3204,9 @@ body.index .contents-main section.news section.info dl {
   margin-bottom: 20px;
   font-size: 16px;
 }
+.contents-main section.title-review-single .review p {
+  margin-bottom: 20px;
+}
 .contents-main section.title-review-single .rate {
   position: relative;
 }
@@ -3355,6 +3359,9 @@ body.index .contents-main section.news section.info dl {
 .contents-main section.title-pc section.pickup .image {
   float: left;
   width: 160px;
+}
+.contents-main section.title-pc section.pickup .image img {
+  max-width: 100%;
 }
 .contents-main section.title-pc section.pickup .data {
   margin-left: 180px;
