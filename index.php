@@ -60,7 +60,7 @@ if (!defined('ROOT')) {
  *
  */
 if (!defined('APP_DIR')) {
-	define('APP_DIR', 'onlinegame');
+	define('APP_DIR', ($_SERVER['SERVER_NAME'] == "test-onlinegame.dz-life.net") ? 'test-onlinegame' : 'onlinegame');
 }
 
 /**
