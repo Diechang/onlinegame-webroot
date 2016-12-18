@@ -709,6 +709,7 @@ header.floating {
   top: -50px;
   left: 0;
   right: 0;
+  min-width: 1140px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
   background: none;
   -moz-transition: top 0.2s ease;
@@ -830,6 +831,20 @@ header.floating nav.titles.floating-active:hover ul {
 header.floating nav.titles.floating-active:hover ul li {
   height: 30px;
   border-bottom: solid 1px #BDBDBD;
+}
+@media screen and (min-width: 1600px) {
+  header.floating nav.titles.floating-active ul {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  }
+  header.floating nav.titles.floating-active ul li {
+    height: 30px;
+    border-bottom: solid 1px #BDBDBD;
+  }
+}
+@media screen and (max-width: 1100px) {
+  header.floating nav.titles.floating-active {
+    display: none;
+  }
 }
 
 aside.pankuz {
@@ -1530,6 +1545,7 @@ footer .copyright-body {
 }
 .contents-main .officiallink,
 .contents-main .shoplink {
+  overflow: hidden;
   clear: both;
   position: relative;
   margin: 10px 0 20px;
@@ -1600,7 +1616,9 @@ footer .copyright-body {
   text-align: center;
 }
 .contents-main .officiallink a,
-.contents-main .shoplink a {
+.contents-main .officiallink span.ended,
+.contents-main .shoplink a,
+.contents-main .shoplink span.ended {
   position: relative;
   display: block;
   color: inherit;
@@ -1609,13 +1627,23 @@ footer .copyright-body {
   text-decoration: none;
 }
 .contents-main .officiallink a span,
-.contents-main .shoplink a span {
+.contents-main .officiallink span.ended span,
+.contents-main .shoplink a span,
+.contents-main .shoplink span.ended span {
   display: block;
 }
 .contents-main .officiallink a span.read,
-.contents-main .shoplink a span.read {
+.contents-main .officiallink span.ended span.read,
+.contents-main .shoplink a span.read,
+.contents-main .shoplink span.ended span.read {
   line-height: 15px;
   font-size: 12px;
+}
+.contents-main .officiallink span.ended,
+.contents-main .shoplink span.ended {
+  background: #004D40;
+  padding: 10px 30px;
+  text-align: center;
 }
 .contents-main .officiallink span.caption {
   font-size: 16px;

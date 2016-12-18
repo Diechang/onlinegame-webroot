@@ -825,6 +825,7 @@ header
 		top: -50px;
 		left: 0;
 		right: 0;
+		min-width: $width-content-xl;
 		box-shadow: 0 0 5px 0 $color-shadow;
 		background: none;
 		@include transition(top $speed-fast ease);
@@ -980,6 +981,25 @@ header
 							border-bottom: solid 1px $color-border;
 						}
 					}
+				}
+
+				@media screen and (min-width: 1600px)
+				{
+					ul
+					{
+						box-shadow: 0 3px 5px $color-shadow;
+
+						li
+						{
+							height: 30px;
+							border-bottom: solid 1px $color-border;
+						}
+					}
+				}
+
+				@media screen and (max-width: 1100px)
+				{
+					display: none;
 				}
 			}
 		}

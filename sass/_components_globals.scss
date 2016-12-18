@@ -87,6 +87,7 @@
 	.officiallink,
 	.shoplink
 	{
+		overflow: hidden;
 		clear: both;
 		position: relative;
 		margin: 10px 0 20px;
@@ -157,7 +158,8 @@
 			text-align: center;
 		}
 
-		a
+		a,
+		span.ended
 		{
 			position: relative;
 			display: block;
@@ -176,6 +178,13 @@
 					font-size: 12px;
 				}
 			}
+		}
+
+		span.ended
+		{
+			background: $color-theme-official-darkest;
+			padding: 10px 30px;
+			text-align: center
 		}
 	}
 	.officiallink
