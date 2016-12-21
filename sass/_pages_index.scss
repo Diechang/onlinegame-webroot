@@ -17,8 +17,35 @@ body.index
 
 		.thumbs
 		{
+			position: relative;
 			float: left;
 			width: 650px;
+			height: 240px;
+
+			.caption
+			{
+				position: absolute;
+				top: 80px;
+				left: 0;
+				height: 80px;
+				z-index: 1;
+				pointer-events: none;
+				@include transition(opacity .5s);
+
+				img
+				{
+					width: 640px;
+					height: 80px;
+				}
+			}
+
+			&:hover
+			{
+				.caption
+				{
+					opacity: 0;
+				}
+			}
 
 			ul
 			{

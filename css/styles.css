@@ -2298,8 +2298,29 @@ body.index .newGames .newGames-body {
   width: 1140px;
 }
 body.index .newGames .thumbs {
+  position: relative;
   float: left;
   width: 650px;
+  height: 240px;
+}
+body.index .newGames .thumbs .caption {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  height: 80px;
+  z-index: 1;
+  pointer-events: none;
+  -moz-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+body.index .newGames .thumbs .caption img {
+  width: 640px;
+  height: 80px;
+}
+body.index .newGames .thumbs:hover .caption {
+  opacity: 0;
 }
 body.index .newGames .thumbs ul {
   margin-left: -5px;
