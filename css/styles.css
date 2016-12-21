@@ -500,7 +500,7 @@ i.icon.icon-feed {
 header {
   position: relative;
   background: #fff;
-  z-index: 1;
+  z-index: 10;
 }
 header .header-body {
   margin: auto;
