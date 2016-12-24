@@ -366,6 +366,16 @@ table.list
 			max-height:60px;
 		}
 	}
+	.adBanner
+	{
+		text-align:center;
+
+		a, img, iframe
+		{
+			max-width:100px;
+			max-height:60px;
+		}
+	}
 }
 
 // table.events
