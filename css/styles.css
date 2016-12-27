@@ -1752,8 +1752,7 @@ footer .copyright-body {
   margin-bottom: 0;
 }
 .contents-main .form-vote label.rate {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 5px 15px;
 }
 .contents-main .noneTitles li {
   margin-bottom: 10px;
