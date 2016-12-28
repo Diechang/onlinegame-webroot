@@ -58,6 +58,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 body {
   min-width: 1160px;
   background: #FAFAFA;
+  color: #212121;
   font-family: "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", "メイリオ" , Meiryo , Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-size: 14px;
 }
@@ -522,6 +523,33 @@ header .search {
   width: 320px;
   height: 30px;
   padding: 20px 0;
+}
+header .search form.search-form {
+  position: relative;
+}
+header .search form.search-form input.search-text {
+  width: 300px;
+  height: 20px;
+  padding: 4px 9px;
+  border: solid 1px #BDBDBD;
+  border-radius: 15px;
+  outline: none;
+  font-size: 14px;
+}
+header .search form.search-form input.search-text:focus {
+  border-color: #757575;
+}
+header .search form.search-form button.search-button {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  background: none;
+  color: #BDBDBD;
+  cursor: pointer;
 }
 header .gSearch {
   position: relative;
