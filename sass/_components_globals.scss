@@ -1,0 +1,398 @@
+
+/** Global components
+------------------------------ **/
+.contents-main
+{
+	//pages navigation
+	nav.pages
+	{
+		overflow: hidden;
+		margin-bottom: 10px;
+		padding: 5px;
+		background: $gm-color-grey-200;
+
+		&:last-child
+		{
+			margin-bottom: 0;
+		}
+
+		.counts
+		{
+			float: right;
+			line-height: 30px;
+
+			span.total
+			{
+				font-weight: bold;
+			}
+		}
+
+		ul.paging
+		{
+			float: left;
+
+			li
+			{
+				@include inline-block;
+
+				margin: 0;
+
+				a,span
+				{
+					display: block;
+					line-height: 20px;
+					color: inherit;
+				}
+				
+				a
+				{
+					padding: 4px 9px;
+					border: solid 1px $color-border;
+					border-radius: 3px;
+					background: $color-white;
+					text-decoration: none;
+				}
+				a:hover
+				{
+					background: $gm-color-grey-100;
+				}
+
+				span
+				{
+					padding: 5px 10px;
+					color: $color-text-lighter;
+				}
+
+				&.current a
+				{
+					background: $color-link;
+					color: $color-white;
+				}
+			}
+		}
+	}
+
+	//copyright
+	.copyright
+	{
+		padding: 10px;
+		border-radius: 3px;
+		background: $gm-color-grey-400;
+		line-height: 15px;
+		color: $color-white;
+		font-size: 12px;
+	}
+
+	//official & shop link
+	.officiallink,
+	.shoplink
+	{
+		overflow: hidden;
+		clear: both;
+		position: relative;
+		margin: 10px 0 20px;
+		border-bottom: solid 2px $color-theme-official-darkest;
+		border-radius: 5px;
+		background: $color-theme-official;
+		line-height: 30px;
+		color: $color-white;
+
+		&:first-child
+		{
+			margin-top: 0;
+		}
+
+		&:last-child
+		{
+			margin-bottom: 0;
+		}
+		
+		&:before
+		{
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			height: 0;
+			background: $color-theme-official-dark;
+			z-index: 0;
+			@include transition(height .25s ease);
+		}
+		&:hover:before
+		{
+			height: 50%;
+		}
+	
+		a, span, i
+		{
+			z-index: 1;
+		}
+
+		span.caption, i
+		{
+			position: absolute;
+			top: 50%;
+			height: 30px;
+			margin-top: -15px;
+			margin-top: -15px;
+			pointer-events: none;
+		}
+
+		span.caption, a
+		{
+			text-shadow: 0px 1px 1px $color-shadow-text;
+		}
+		
+		span.caption
+		{
+			left: 10px;
+		}
+
+		i
+		{
+			right: 0px;
+			width: 30px;
+			line-height: 30px;
+			font-size: 20px;
+			text-align: center;
+		}
+
+		a,
+		span.ended
+		{
+			position: relative;
+			display: block;
+			color: inherit;
+			font-size: 20px;
+			text-align: right;
+			text-decoration: none;
+
+			span
+			{
+				display: block;
+
+				&.read
+				{
+					line-height: 15px;
+					font-size: 12px;
+				}
+			}
+		}
+
+		span.ended
+		{
+			background: $color-theme-official-darkest;
+			padding: 10px 30px;
+			text-align: center
+		}
+	}
+	.officiallink
+	{
+		span.caption
+		{
+			font-size: 16px;
+		}
+
+		a
+		{
+			padding: 10px 30px 10px 110px;
+		}
+	}
+	.shoplink
+	{
+		span.caption
+		{
+			font-size: 14px;
+		}
+
+		a
+		{
+			padding: 10px 30px 10px 200px;
+		}
+	}
+
+	//shares
+	.shares
+	{
+		margin: 20px 0;
+		padding: 10px;
+		border-top: solid 1px $gm-color-grey-300;
+		border-radius: 5px;
+		background: $gm-color-grey-200;
+
+		li
+		{
+			@include inline-block;
+
+			margin-right: 5px;
+		}
+	}
+
+	//form
+	.form
+	{
+		padding: 4px;
+		background: $gm-color-grey-200;
+		
+		form
+		{
+			border: solid 1px $color-border;
+			background: $color-white;
+		}
+
+		.error-message
+		{
+			color: $color-danger;
+		}
+
+		table
+		{
+			width: 100%;
+			border-collapse: collapse;
+
+			th,td
+			{
+				padding: 10px;
+				border-bottom: solid 1px $color-border;
+			}
+			
+			th
+			{
+				width: 180px;
+				line-height: 20px;
+
+				&.must:before
+				{
+					content: "必須";
+					@include inline-block;
+					
+					float: right;
+					padding: 4px 5px;
+					border-radius: 3px;
+					background: $color-danger;
+					line-height: 1;
+					color: $color-white;
+					font-size: 12px;
+				}
+			}
+
+			tr
+			{
+				&:hover
+				{
+					background: $gm-color-grey-50;
+				}
+
+				&:last-child
+				{
+					th, td
+					{
+						border-bottom: none;
+					}
+				}
+
+				&.head
+				{
+					th, td
+					{
+						padding: 5px 10px;
+						background: $gm-color-indigo-500;
+						color: $color-white;
+					}
+				}
+
+				&.submit
+				{
+					td
+					{
+						text-align: right;
+					}
+				}
+
+				&.notes
+				{
+					background: $gm-color-grey-100;
+
+					dl
+					{
+						dt
+						{
+							font-weight: bold;
+						}
+						dd
+						{
+							margin-bottom: 10px;
+
+							&:last-child
+							{
+								margin-bottom: 0;
+							}
+
+							p
+							{
+								margin-bottom: 10px;
+
+								input.url
+								{
+									width: 100%;
+									*width: 90%;
+									box-sizing: border-box;
+									padding: 4px;
+									border: solid 1px $color-border;
+									background: $gm-color-grey-200;
+								}
+
+								&:last-child
+								{
+									margin-bottom: 0;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	//vote form
+	.form-vote
+	{
+		label.rate
+		{
+			padding: 5px 15px;
+		}
+	}
+	//none titles
+	.noneTitles
+	{
+		li
+		{
+			margin-bottom: 10px;
+			
+			a
+			{
+				text-decoration: none;
+
+				&:hover
+				{
+					text-decoration: underline;
+				}
+
+				.official,
+				.read
+				{
+					@include inline-block;
+				}
+				.official
+				{
+					margin-right: 5px;
+				}
+				.read
+				{
+					color: $color-text-light;
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}

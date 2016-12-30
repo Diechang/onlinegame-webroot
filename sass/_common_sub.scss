@@ -1,0 +1,214 @@
+
+/** Sub contents
+------------------------------ **/
+.contents-sub
+{
+	position: relative;
+
+	.gAds
+	{
+		width: 300px;
+		height: 250px;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+	
+	section
+	{
+		margin-bottom: 40px;
+
+		&.framed
+		{
+			background: $gm-color-grey-200;
+			padding: 4px;
+
+			.framed-body
+			{
+				padding: 10px;
+				border: solid 1px $color-border;
+				background: $color-white;
+			}
+		}
+
+		h2
+		{
+			margin-bottom: 10px;
+
+			span
+			{
+				display: block;
+
+				&.main
+				{
+					line-height: 20px;
+					font-size: 16px;
+				}
+				&.sub
+				{
+					line-height: 15px;
+					font-size: 12px;
+				}
+			}
+		}
+
+		ul.titles
+		{
+			li
+			{
+				position: relative;
+				margin-bottom: 10px;
+				padding-bottom: 10px;
+				border-bottom: solid 1px $color-border;
+
+				&:last-child
+				{
+					margin-bottom: 0;
+					padding-bottom: 0;
+					border-bottom: none;
+				}
+
+				.title
+				{
+					height: 40px;
+					margin-left: 70px;
+					margin-bottom: 10px;
+
+					a
+					{
+						text-decoration: none;
+					}
+
+					span
+					{
+						@include text-overflow;
+
+						display: block;
+						line-height: 20px;
+
+						&.official
+						{
+							text-decoration: underline;
+						}
+						&.read
+						{
+							color: $color-text;
+						}
+					}
+				}
+
+				.image
+				{
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 60px;
+					height: 45px;
+				}
+				
+				p
+				{
+					margin-bottom: 5px;
+					font-size: 12px;
+
+					&.description
+					{
+						line-height: 15px;
+						font-size: 12px;
+					}
+					&.data
+					{
+						position: relative;
+						min-height: 20px;
+						line-height: 20px;
+						font-size: 12px;
+						
+						.label,
+						.value,
+						&.data-official a
+						{
+							@include inline-block;
+						}
+
+						.label
+						{
+							width: 65px;
+						}
+
+						&.data-official a
+						{
+							color: $color-theme-official;
+						}
+					}
+					&.more
+					{
+						margin: 0;
+						text-align: right;
+					}
+				}
+			}
+		}
+
+		//section classes
+		&.tests
+		{
+
+		}
+
+		&.pickups
+		{
+
+		}
+
+		&.myPosts
+		{
+
+		}
+
+		&.fbPage
+		{
+			height: 480px;
+		}
+
+		&.banners
+		{
+
+			ul
+			{
+				li
+				{
+					padding: 5px 0;
+					text-align: center;
+
+					img
+					{
+						max-width: 100%;
+						box-shadow: 0 0 5px $color-shadow;
+					}
+
+					a:hover
+					{
+						img
+						{
+							box-shadow: 0 0 5px $color-shadow-hover;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	//floating
+	.floating
+	{
+		&.floating-active
+		{
+			position: fixed;
+			bottom: 0;
+		}
+
+		&.floating-limited
+		{
+			position: absolute;
+		}
+	}
+}

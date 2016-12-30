@@ -1,0 +1,158 @@
+<?php 
+	$tag_title = "リンク集";
+	include dirname(__FILE__) . "/_includes/meta_head.html";
+?>
+
+<body class="links">
+
+<?php include "_includes/header.html";?>
+	
+	<aside class="pankuz">
+		<ul>
+			<li class="top"><a href="./">トップ</a></li>
+			<li><i class="zmdi zmdi-chevron-right"></i> リンク集</li>
+		</ul>
+	</aside>
+
+	<!-- contents -->
+	<div class="contents">
+		<div class="contents-wrap">
+			<div class="contents-body">
+				<!-- Main contents -->
+				<div class="contents-main">
+					<!-- about -->
+					<div class="link-about pageInfo">
+						<h1 class="pageTitle">
+							<span class="main"><span class="label label-primary">おすすめ</span>リンク集</span>
+							<span class="sub">相互リンクしていただいているおすすめサイト集です</span>
+						</h1>
+						
+						<p>当サイトでは相互リンク集に登録していただけるサイト様を募集中です。<br>
+						<a href="#form">依頼フォーム</a>より登録をお願いします。</p>
+
+						<ul class="categories">
+							<li class="current"><span>おすすめ</span></li>
+							<li><a href="">ゲーム紹介・情報</a></li>
+							<li><a href="">攻略</a></li>
+							<li><a href="">ニュース</a></li>
+							<li><a href="">プレイ日記・ブログ</a></li>
+							<li><a href="">その他</a></li>
+						</ul>
+						<!-- sites -->
+						<section class="sites">
+							<ul class="list">
+<?php for($i=0; $i<10; $i++):?>
+								<li>
+									<div class="thumb"><a href="http://ongetone.com/" target="_blank"><img src="http://capture.heartrails.com/small?http://ongetone.com/" alt="オンゲトネ"></a></div>
+									<div class="title"><a href="http://ongetone.com/">オンゲトネ</a></div>
+									<p class="description">無料で遊べるオンラインゲームや、レビュー・アップデート・イベント・テスト・情報まで幅広くご紹介しています。</p>
+								</li>
+<?php endfor;?>
+							</ul>
+						</section>
+					</div>
+					<!-- form -->
+					<section class="link-form">
+						<h1>相互リンク集登録依頼フォーム</h1>
+						<div class="form">
+							<form action="">
+								<table>
+									<tr>
+										<th class="must">サイト名</th>
+										<td><input type="text" class="input-text"></td>
+									</tr>
+									<tr>
+										<th class="must">サイトURL</th>
+										<td><input type="text" class="input-text"></td>
+									</tr>
+									<tr>
+										<th class="must">リンク設置URL</th>
+										<td><input type="text" class="input-text"></td>
+									</tr>
+									<tr>
+										<th>サイト紹介文</th>
+										<td><textarea class="input-text" rows="5"></textarea>
+											<span class="input-description">全角100文字まで</span>
+										</td>
+									</tr>
+									<tr>
+										<th>登録カテゴリ</th>
+										<td>
+											<select name="" id="" class="input-select">
+												<option value="">ゲーム紹介・情報</option>
+												<option value="">攻略</option>
+												<option value="">ニュース</option>
+												<option value="">プレイ日記・ブログ</option>
+												<option value="">その他</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<th class="must">管理者のお名前</th>
+										<td><input type="text" class="input-text"></td>
+									</tr>
+									<tr>
+										<th class="must">メールアドレス</th>
+										<td><input type="text" class="input-text"></td>
+									</tr>
+									<tr>
+										<th>メッセージ</th>
+										<td><textarea class="input-text" rows="5"></textarea>
+											<span class="input-description">ありましたらどうぞ</span>
+										</td>
+									</tr>
+									<tr>
+										<th>認証番号</th>
+										<td><img src="http://onlinegame.dz-life.net/img/design/spamnum.gif" alt=""></td>
+									</tr>
+									<tr>
+										<th class="must">認証</th>
+										<td>
+											<span class="input-attention">スパム防止のため上記認証番号を半角で入力してください。</span>
+											<input type="text" class="input-text input-text-s" size="4" maxlength="4">
+										</td>
+									</tr>
+									<tr class="submit">
+										<td colspan="2"><button class="button button-submit">相互リンク申込</button></td>
+									</tr>
+									<tr class="notes">
+										<td colspan="2">
+											<dl>
+												<dt>ご依頼内容が必ず掲載されるとは限りません</dt>
+												<dd>ご依頼頂いたURLを確認し、登録内容を修正する場合があります。<br>
+												また、更新の滞っているサイト様、当サイトのリンク掲載に不適切だと判断した場合はリンク掲載を中止する場合があります。</dd>
+												<dt>クオリティの高いサイト様を募集しています</dt>
+												<dd>当サイトでは、クオリティの高いサイト様のリンク掲載に努めています。<br>
+												作りたてのサイト様や、内容の薄いサイト様など、当サイトのリンク掲載基準に達していないサイト様はリンクを掲載できない場合があります。</dd>
+											</dl>
+										</td>
+									</tr>
+								</table>
+							</form>
+
+						</div>
+					</section>
+				</div>
+
+
+<?php include "_includes/side.html";?>
+
+
+			</div>
+
+
+<?php include "_includes/sub.html";?>
+
+
+		</div>
+	</div>
+
+
+<?php include "_includes/footer.html";?>
+
+<?php include "_includes/header_floating.html";?>
+
+<!-- JS Libs -->
+<!-- JS -->
+</body>
+</html>

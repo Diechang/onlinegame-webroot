@@ -1,0 +1,23 @@
+SELECT CONCAT( "<li><a href='http://onlinegame.dz-life.net/titles/", titles.url_str, "/review.html#voteform' target='_blank'>" ) AS url,
+				CONCAT_WS( " : ", titles.title_official, titles.title_read ) AS title,
+				CONCAT( "</a></li>", titles.id) AS id,
+				titles.service_start, titles.ad_use, titlesummaries.vote_count_review
+FROM titles
+INNER JOIN titlesummaries ON titles.id = titlesummaries.title_id
+WHERE ((
+titles.ad_use =1
+AND titles.service_id NOT 
+IN ( 1, 2, 5 )
+)
+OR (
+titles.service_start > "2013-01-01"
+AND titles.service_id =2
+AND titles.ad_use =1
+)
+OR (
+titles.service_start > "2015-01-01"
+AND titles.service_id =2
+))
+AND titlesummaries.vote_count_review < 30
+ORDER BY titles.ad_use DESC , titles.service_id DESC , titles.service_start DESC 
+LIMIT 0 , 1000

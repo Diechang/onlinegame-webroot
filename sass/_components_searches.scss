@@ -1,0 +1,193 @@
+
+/** Search components
+------------------------------ **/
+.contents-main
+{
+	//search
+	section.search
+	{
+		.form-search
+		{
+			padding: 19px;
+			border: solid 1px $color-border;
+			border-radius: 5px;
+			background: $gm-color-grey-200;
+		}
+
+		.inputs
+		{
+			overflow: hidden;
+			padding: 13px 14px 14px;
+			border: solid 1px $color-border;
+			border-top-width: 2px;
+			border-radius: 3px;
+			background: $color-white;
+		}
+		
+		fieldset
+		{
+			margin-bottom: 10px;
+
+			legend
+			{
+				line-height: 20px;
+			}
+
+			ul li
+			{
+				line-height: 20px;
+			}
+
+			&.keyword
+			{
+				.inputs
+				{
+					padding: 0;
+				}
+				input
+				{
+					width: 580px;
+					padding: 3px 9px 4px;
+					border: none;
+					outline: none;
+					background: $color-white;
+					line-height: 30px;
+					font-size: 20px;
+				}
+			}
+
+			&.genres
+			{
+				float: left;
+				width: 290px;
+			}
+
+			&.styles
+			{
+				float: right;
+				width: 290px;
+			}
+
+			&.services
+			{
+				clear: both;
+
+				ul li
+				{
+					float: left;
+					width: 50%;
+				}
+			}
+
+			&.other
+			{
+
+			}
+
+			&.order
+			{
+
+			}
+		}
+
+		.submit
+		{
+			text-align: center;
+		}
+	}
+
+	//result
+	section.search-result
+	{
+		ul.list li
+		{
+			overflow: hidden;
+			margin-bottom: 20px;
+
+			.title
+			{
+				margin-bottom: 10px;
+
+				a
+				{
+					position: relative;
+					display: block;
+					text-decoration: none;
+					
+					span
+					{
+						display: block;
+
+						&.official
+						{
+							line-height: 30px;
+							font-size: 20px;
+							text-decoration: underline;
+						}
+
+						&.read
+						{
+							line-height: 20px;
+							color: $color-text;
+						}
+					}
+				}
+			}
+
+			.images
+			{
+				float: left;
+				width: 160px;
+			}
+
+			.data
+			{
+				overflow: hidden;
+				margin-left: 180px;
+
+				.counts
+				{
+					overflow: hidden;
+					margin-bottom: 5px;
+
+					.count
+					{
+						float: left;
+						width: 90px;
+						height: 50px;
+						margin-right: 10px;
+						padding: 4px;
+						border: solid 1px $color-border;
+						border-radius: 3px;
+						background: $color-white;
+
+						.caption
+						{
+							line-height: 20px;
+							text-align: center;
+						}
+						.value
+						{
+							line-height: 30px;
+							text-align: center;
+
+							.num
+							{
+								font-size: 20px;
+								font-weight: bold;
+							}
+						}
+					}
+				}
+
+				.attributes
+				{
+					p
+					{
+						line-height: 25px;
+					}
+				}
+			}
+		}
+	}
+}

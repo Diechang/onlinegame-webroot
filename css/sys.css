@@ -1,334 +1,332 @@
-@charset "UTF-8";
-/* CSS Document */
+/** ------------------------------ **/
+/** Bootstrap override
+/** ------------------------------ **/
+.table {
+  width: auto;
+}
 
-*
-{
-	margin:0;
-	padding:0;
-	font-family:"メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
-	text-align:left;
-	list-style:none;
-	zoom:1;
+input,
+textarea,
+select,
+.uneditable-input {
+  height: auto;
+  margin: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #333;
 }
 
 #flashMessage,
-#authMessage
-{
-	margin-bottom:10px;
-	padding:8px;
-	border:dotted 2px #f33;
-	background:#fee;
-	color:#f00;
-	font-size:16px;
-	font-weight:bold;
-}
-.error-message
-{
-	color:#f00;
+#authMessage {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: dotted 2px #f33;
+  background: #fee;
+  color: #f00;
+  font-size: 16px;
+  font-weight: bold;
 }
 
+.error-message {
+  color: #f00;
+}
 
 /** Main Block
 ------------------------------ **/
-
-#header
-{
-	height:60px;
-	margin-bottom:0px;
-	border-bottom:dotted 1px #999;
-}
-#menu
-{
-	float:left;
-	width:200px;
-	border-right:solid 1px #ccc;
-}
-#main
-{
-	margin-left:200px;
-	padding:10px;
-}
-#footer
-{
-	clear:both;
-	height:40px;
-	background:#ccc;
-	line-height:40px;
-	font-size:12px;
-	text-align:center;
-	color:#666;
+#wrap {
+  background: url('../img/design/../sys/side_back.gif') left repeat-y;
 }
 
+#header {
+  height: 100px;
+  background: #fff;
+}
+#header .logo {
+  float: left;
+  width: 220px;
+  height: 70px;
+}
+#header ul.pankuz {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  background: url('../img/design/../sys/pankuz_back.gif');
+}
+#header ul.pankuz li {
+  display: inline-block;
+  padding-left: 10px;
+  line-height: 30px;
+}
+#header ul.pankuz li a {
+  display: block;
+  height: 30px;
+  padding-right: 20px;
+  line-height: 30px;
+  background: url('../img/design/../sys/pankuz_arrow.gif') right center no-repeat;
+}
+
+#menu {
+  float: left;
+  overflow: visible;
+  width: 200px;
+}
+#menu dl {
+  overflow: visible;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+}
+#menu dl dt {
+  margin: 0;
+  padding: 0 10px;
+  line-height: 20px;
+  background: url('../img/design/../sys/menu_head.gif') left repeat-y;
+  color: #fff;
+}
+#menu dl dd {
+  margin: 0;
+  padding: 0;
+}
+#menu dl dd ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#menu dl dd ul li a {
+  display: block;
+  width: 179px;
+  padding: 4px 10px;
+  border-top: solid 1px #eee;
+  border-bottom: solid 1px #ccc;
+  line-height: 20px;
+  color: #333;
+}
+#menu dl dd ul li a:hover {
+  padding: 5px 20px 5px 10px;
+  border: none;
+  background: url('../img/design/../sys/menu_hover.gif') left center;
+}
+#menu dl dd ul li.active a {
+  padding: 5px 20px 5px 10px;
+  border: none;
+  background: url('../img/design/../sys/menu_active.gif') left center;
+}
+
+#main {
+  margin-left: 220px;
+  margin-right: 10px;
+  padding: 10px 0;
+}
+
+#footer {
+  clear: both;
+  height: 40px;
+  background: #666;
+  border-top: #333;
+  line-height: 40px;
+  font-size: 12px;
+  text-align: center;
+  color: #ccc;
+}
+#footer a {
+  color: #ccc;
+}
 
 /** Tags Style
 ------------------------------ **/
-
-body
-{
-	margin:10px 20px;
-}
-
 form,
-div.form
-{
-	margin-bottom:20px;
+div.form {
+  margin-bottom: 20px;
 }
 
-a
-{
-	color:#36c;
+a {
+  color: #36c;
 }
 
-h1
-{
-	line-height:40px;
-	font-size:20px;
-}
-h2
-{
-	line-height:30px;
-	font-size:16px;
-}
-h3
-{
-	line-height:20px;
-	font-size:14px;
+h1 {
+  line-height: 40px;
+  font-size: 20px;
 }
 
-p,th,td,dt,dd
-{
-	font-size:12px;
+h2 {
+  line-height: 30px;
+  font-size: 16px;
 }
-p
-{
-	line-height:20px;
+
+h3 {
+  line-height: 20px;
+  font-size: 14px;
 }
-table
-{
-	border-collapse:collapse;
+
+p, th, td, dt, dd {
+  font-size: 12px;
 }
-th,td
-{
-	padding:5px 10px;
-	border:solid 1px #999;
+
+p {
+  line-height: 20px;
 }
-tr:hover,
-tr:hover td
-{
-	background:#def;
+
+th {
+  background: #eee;
 }
-th
-{
-	background:#def;
+
+textarea {
+  width: 300px;
+  height: 6em;
 }
-textarea
-{
-	width:300px;
-	height:6em;
+
+/** Class Style
+------------------------------ **/
+.zero {
+  color: #999 !important;
+}
+
+td.zero {
+  background: #eee !important;
+}
+
+.tCenter {
+  text-align: center !important;
+}
+
+.tRight {
+  text-align: right !important;
+}
+
+.tLeft {
+  text-align: left !important;
+}
+
+input.wide,
+textarea.wide {
+  width: 90%;
 }
 
 .jquerybubblepopup th,
 .jquerybubblepopup td,
-.jquerybubblepopup tr:hover
-{
-	border:0;
-	background:none;
+.jquerybubblepopup tr:hover {
+  border: 0;
+  background: none;
 }
-table.tablesorter thead th.header
-{
-	padding-left:20px;
-	cursor:pointer;
+.jquerybubblepopup .jquerybubblepopup-innerHtml {
+  text-align: left;
+}
+
+table.tablesorter thead th.header {
+  padding-left: 20px;
+  cursor: pointer;
 }
 table.tablesorter thead tr .headerSortDown,
-table.tablesorter thead tr .headerSortUp
-{
-	background-color: #cde;
+table.tablesorter thead tr .headerSortUp {
+  background-color: #cde;
 }
 table.tablesorter thead tr .header {
-	background-image: url(/img/sys/tablesorter_bg.gif);
-	background-repeat: no-repeat;
-	background-position: center left;
+  background-image: url('../img/design/../sys/tablesorter_bg.gif');
+  background-repeat: no-repeat;
+  background-position: center left;
 }
 table.tablesorter thead tr .headerSortUp {
-	background-image: url(/img/sys/tablesorter_asc.gif);
+  background-image: url('../img/design/../sys/tablesorter_asc.gif');
 }
 table.tablesorter thead tr .headerSortDown {
-	background-image: url(/img/sys/tablesorter_desc.gif);
+  background-image: url('../img/design/../sys/tablesorter_desc.gif');
 }
-
-
-
-/** Class Style
------------------------------- **/
-
-.zero
-{
-	color:#999;
-}
-td.zero
-{
-	background:#eee;
-}
-
-.tCenter
-{
-	text-align:center;
-}
-.tRight
-{
-	text-align:right;
-}
-.tLeft
-{
-	text-align:left;
-}
-input.wide,
-textarea.wide
-{
-	width:100%;
-}
-
-
-/** Menu **/
-dl.sidemenu
-{
-	margin:10px 0;
-}
-dl.sidemenu dt
-{
-	margin-bottom:5px;
-	padding-left:2px;
-	border-left:solid 3px #000;
-	line-height:20px;
-}
-dl.sidemenu dd
-{
-	margin-bottom:20px;
-}
-dl.sidemenu li
-{
-	margin-bottom:4px;
-	border-bottom:dotted 1px #ccc;
-}
-dl.sidemenu li a
-{
-	display:block;
-	padding-left:7px;
-	border-left:solid 3px #999;
-	line-height:20px;
-	text-decoration:none;
-}
-dl.sidemenu li a:hover
-{
-	border-left:solid 3px #333;
-}
-dl.sidemenu li.active a
-{
-	border-left:solid 3px #39f;
-	background:#def;
-	color:#39f;
-	font-weight:bold;
-}
-
 
 /** Table Style
 ------------------------------ **/
-
-div.controll
-{
-	padding:5px;
-	font-size:12px;
+div.controll {
+  padding: 5px;
+  font-size: 12px;
 }
-div.controll #word_searcher
-{
-	width:160px;
+div.controll #word_searcher {
+  width: 160px;
 }
-div.controll span.handling
-{
-	padding:2px 4px;
-	border:dotted 1px #ccc;
-	background:#000;
-	color:#fff;
+div.controll span.handling {
+  padding: 2px 4px;
+  border: dotted 1px #ccc;
+  background: #000;
+  color: #fff;
 }
 
-table .adPreview
-{
-	overflow:hidden;
-	max-width:250px;
-	max-height:200px;
+table .adPreview {
+  overflow: hidden;
+  max-width: 250px;
+  max-height: 200px;
 }
-table .adPreview img
-{
-	max-width:250px;
-	max-height:200px;
-	height:auto;
+table .adPreview img {
+  max-width: 250px;
+  max-height: 200px;
+  height: auto;
 }
 
 /** List table **/
+table.list {
+  margin-bottom: 5px;
+}
 table.list .title span,
 table.list .title a,
-table.list .service span
-{
-	display:block;
-	font-size:10px;
+table.list .service span {
+  display: block;
+  font-size: 10px;
 }
-table.list .adImage
-{
-	text-align:center;
+table.list .adImage {
+  text-align: center;
 }
-table.list .adImage img
-{
-	max-width:60px;
-	max-height:60px;
+table.list .adImage img {
+  max-width: 60px;
+  max-height: 60px;
 }
-table.events tr.current td.title a
-{
-	padding-right:65px;
-	background:url(../img/design/icon_event_current.gif) right bottom no-repeat;
-	line-height:20px;
+table.list .adBanner {
+  text-align: center;
 }
-table.events tr.future td.title a
-{
-	padding-right:65px;
-	background:url(../img/design/icon_event_future.gif) right bottom no-repeat;
-	line-height:20px;
-}
-table.events tr.back td.title a
-{
-	padding-right:65px;
-	background:url(../img/design/icon_event_back.gif) right bottom no-repeat;
-	line-height:20px;
+table.list .adBanner a, table.list .adBanner img, table.list .adBanner iframe {
+  max-width: 100px;
+  max-height: 60px;
 }
 
 /** Edit table **/
-table.edit div.checkbox
-{
-	float:left;
-	width:45%;
+table.edit {
+  width: 100%;
 }
-table.edit div.checkbox label
-{
-	padding-left:5px;
+table.edit th {
+  width: 160px;
 }
-table.edit textarea.adField
-{
-	width:500px;
-	height:10em;
+table.edit div.checkbox {
+  float: left;
+  width: 45%;
 }
-table.edit p.ex
-{
-	color:#999;
-	font-size:10px;
+table.edit div.checkbox label {
+  padding-left: 5px;
+}
+table.edit textarea.adField {
+  width: 500px;
+  height: 10em;
+}
+table.edit p.ex {
+  color: #999;
+  font-size: 10px;
 }
 
 /** Spec table **/
-table.spec textarea
-{
-	height:3em;
+table.spec textarea {
+  height: 3em;
 }
 
 /** Pc table **/
-table.pc textarea
-{
-	height:5em;
+table.pc textarea {
+  height: 5em;
+}
+
+/** debug **/
+table.cake-sql-log th,
+table.cake-sql-log td {
+  border: solid 1px #999;
+  padding: 4px 9px;
+  text-align: left;
 }

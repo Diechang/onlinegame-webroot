@@ -1,0 +1,168 @@
+<?php 
+	$tag_title = "サイトマップ";
+	include dirname(__FILE__) . "/_includes/meta_head.html";
+?>
+
+<body class="abouts">
+
+<?php include "_includes/header.html";?>
+	
+	<aside class="pankuz">
+		<ul>
+			<li class="top"><a href="./">トップ</a></li>
+			<li><i class="zmdi zmdi-chevron-right"></i> サイトマップ</li>
+		</ul>
+	</aside>
+
+	<!-- contents -->
+	<div class="contents">
+		<div class="contents-wrap">
+			<div class="contents-body">
+				<!-- Main contents -->
+				<div class="contents-main">
+					<!-- sitemap -->
+					<section class="about-sitemap">
+						<h1 class="pageTitle">サイトマップ</h1>
+
+						<section>
+							<h2 class="headline">人気オンラインゲームランキング</h2>
+							<ul>
+								<li><a href="rankings.html">総合</a></li>
+								<li><a href="rankings.html">MMO</a></li>
+								<li><a href="rankings.html">MO</a></li>
+								<li><a href="rankings.html">RPG</a></li>
+								<li><a href="rankings.html">アクション</a></li>
+								<li><a href="rankings.html">MOBA</a></li>
+								<li><a href="rankings.html">シューティング</a></li>
+								<li><a href="rankings.html">スポーツ</a></li>
+								<li><a href="rankings.html">レース</a></li>
+								<li><a href="rankings.html">シミュレーション・育成</a></li>
+								<li><a href="rankings.html">カード</a></li>
+								<li><a href="rankings.html">テーブル・パズル</a></li>
+								<li><a href="rankings.html">その他</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2 class="headline">ジャンル別オンラインゲーム</h2>
+							<ul>
+								<li><a href="archive_titles.html">MMO</a></li>
+								<li><a href="archive_titles.html">MO</a></li>
+								<li><a href="archive_titles.html">RPG</a></li>
+								<li><a href="archive_titles.html">アクション</a></li>
+								<li><a href="archive_titles.html">MOBA</a></li>
+								<li><a href="archive_titles.html">シューティング</a></li>
+								<li><a href="archive_titles.html">スポーツ</a></li>
+								<li><a href="archive_titles.html">レース</a></li>
+								<li><a href="archive_titles.html">シミュレーション・育成</a></li>
+								<li><a href="archive_titles.html">カード</a></li>
+								<li><a href="archive_titles.html">テーブル・パズル</a></li>
+								<li><a href="archive_titles.html">その他</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2 class="headline">スタイル・環境別オンラインゲーム</h2>
+							<ul>
+								<li><a href="archive_titles.html">3D</a></li>
+								<li><a href="archive_titles.html">2D</a></li>
+								<li><a href="archive_titles.html">リアル</a></li>
+								<li><a href="archive_titles.html">アニメ調</a></li>
+								<li><a href="archive_titles.html">じっくり</a></li>
+								<li><a href="archive_titles.html">お手軽</a></li>
+								<li><a href="archive_titles.html">低スペック</a></li>
+								<li><a href="archive_titles.html">ブラウザゲーム</a></li>
+								<li><a href="archive_titles.html">Windows Vista対応</a></li>
+								<li><a href="archive_titles.html">Windows7対応</a></li>
+								<li><a href="archive_titles.html">Windows8対応</a></li>
+								<li><a href="archive_titles.html">Windows10対応</a></li>
+								<li><a href="archive_titles.html">Mac対応</a></li>
+								<li><a href="archive_titles.html">スマホ対応</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2 class="headline">サービス状態別オンラインゲーム</h2>
+							<ul>
+								<li><a href="archive_titles.html">正式サービス</a></li>
+								<li><a href="archive_titles.html">オープンβテスト</a></li>
+								<li><a href="archive_titles.html">クローズドβテスト</a></li>
+								<li><a href="archive_titles.html">ティザーサイト</a></li>
+								<li><a href="archive_titles.html">休止・終了</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2 class="headline">オンラインゲーム一覧</h2>
+							<ul class="titles">
+<?php for($i=0; $i<20; $i++):?>
+								<li>
+									<a href="titles_index.html">
+										<span class="official">Soul of the Ultimate Nation</span>
+	<?php if($i % 3 != 0):?>
+										<span class="read">ソウル・オブ・ジ・アルティメット・ネイション</span>
+	<?php endif;?>
+									</a>
+								</li>
+<?php endfor;?>
+							</ul>
+						</section>
+						<section>
+							<h2 class="headline">オンラインゲームポータル一覧</h2>
+							<ul class="titles">
+<?php for($i=0; $i<20; $i++):?>
+								<li>
+									<a href="portals_index.html">
+										<span class="official">ハンゲーム</span>
+	<?php if($i % 3 != 0):?>
+										<span class="read">hangame</span>
+	<?php endif;?>
+									</a>
+								</li>
+<?php endfor;?>
+						</section>
+						<section>
+							<h2 class="headline">ゲーム用PC</h2>
+							<ul>
+								<li><a href="pcs.html">ゲーム用PC</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2 class="headline">ゲーム代を稼ぐ</h2>
+							<ul>
+								<li><a href="monies.html">無料でお小遣い稼ぎ</a></li>
+								<li><a href="monies_index.html">アンケートサイト</a></li>
+								<li><a href="monies_index.html">アフィリエイト</a></li>
+								<li><a href="monies_index.html">在宅ワーク</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2 class="headline">サイトメニュー</h2>
+							<ul>
+								<li><a href="about.html">当サイトについて</a></li>
+								<li><a href="links.html">リンク集</a></li>
+								<li><a href="sitemap.html">サイトマップ</a></li>
+								<li><a href="contact.html">お問合せ</a></li>
+							</ul>
+						</section>
+					</section>
+				</div>
+
+
+<?php include "_includes/side.html";?>
+
+
+			</div>
+
+
+<?php include "_includes/sub.html";?>
+
+
+		</div>
+	</div>
+
+
+<?php include "_includes/footer.html";?>
+
+<?php include "_includes/header_floating.html";?>
+
+<!-- JS Libs -->
+<!-- JS -->
+</body>
+</html>

@@ -1,0 +1,106 @@
+
+/** Links contents
+------------------------------ **/
+.contents-main
+{
+	//about
+	.link-about
+	{
+		p
+		{
+			margin-bottom: 10px;
+		}
+
+		ul.categories
+		{
+			overflow: hidden;
+			margin-bottom: 20px;
+			padding: 10px;
+			border-radius: 3px;
+			background: $gm-color-grey-200;
+
+			li
+			{
+				float: left;
+				margin-right: 5px;
+				padding-right: 5px;
+				border-right: solid 1px $color-border;
+
+				&:last-child
+				{
+					margin-right: 0;
+					padding-right: 0;
+					border-right: 0;
+				}
+
+				&.current
+				{
+					font-weight: bold;
+				}
+			}
+		}
+
+		section.sites
+		{
+			ul.list
+			{
+				li
+				{
+					overflow: hidden;
+					margin-bottom: 20px;
+					padding-bottom: 10px;
+					border-bottom: dotted 1px $color-border;
+
+					&:last-child
+					{
+						padding-bottom: 0;
+						border-bottom: 0;
+					}
+
+					.thumb
+					{
+						float: left;
+						width: 120px;
+					}
+
+					.title
+					{
+						margin-left: 130px;
+						margin-bottom: 10px;
+						font-size: 16px;
+					}
+
+					.description
+					{
+						position: relative;
+						margin-left: 130px;
+						padding: 9px;
+						background: $color-white;
+						border: solid 1px $color-border;
+						border-radius: 5px;
+
+						&:before,
+						&:after,
+						{
+							position: absolute;
+							content: "";
+							bottom: 100%;
+						}
+						&:before
+						{
+							left: 10px;
+							border: solid 5px transparent;
+							border-bottom-color: $color-border;
+						}
+						&:after
+						{
+							left: 11px;
+							border: solid 4px transparent;
+							border-bottom-color: $color-white;
+						}
+					}
+				}
+			}
+		}
+	}
+}

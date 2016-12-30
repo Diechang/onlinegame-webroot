@@ -1,0 +1,87 @@
+
+/** Abouts contents
+------------------------------ **/
+.contents-main
+{
+	//documents
+	section.about-doc
+	{
+		section
+		{
+			margin-top: 20px;
+		}
+
+		dl
+		{
+			dt
+			{
+				margin-bottom: 5px;
+				font-weight: bold;
+			}
+			dd
+			{
+				margin-bottom: 10px;
+			}
+		}
+
+		p
+		{
+			margin-bottom: 10px;
+		}
+	}
+
+	section.about-contact
+	{
+
+	}
+
+	section.about-sitemap
+	{
+		section
+		{
+			margin-bottom: 20px;
+
+			h2
+			{
+				margin-bottom: 10px;
+				padding-left: 5px;
+				border-left: solid 5px $color-primary;
+			}
+
+			ul
+			{
+				padding: 9px 14px;
+				border: solid 1px $color-border;
+				border-radius: 5px;
+				background: $color-white;
+
+				li
+				{
+					@include inline-block;
+
+					min-width: 200px;
+					margin-top: 5px;
+					margin-bottom: 5px;
+					line-height: 20px;
+				}
+
+				&.titles li
+				{
+					width: 300px;
+
+					span.official
+					{
+						display: block;
+					}
+					span.read
+					{
+						display: block;
+						line-height: 15px;
+						color: $color-text-light;
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
+}

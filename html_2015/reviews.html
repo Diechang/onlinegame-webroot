@@ -1,0 +1,99 @@
+<?php 
+	$tag_title = "オンラインゲームレビュー一覧 1ページ目";
+	include dirname(__FILE__) . "/_includes/meta_head.html";
+?>
+
+<body class="reviews">
+
+<?php include "_includes/header.html";?>
+	
+	<aside class="pankuz">
+		<ul>
+			<li class="top"><a href="./">トップ</a></li>
+			<li><i class="zmdi zmdi-chevron-right"></i> レビュー一覧</li>
+		</ul>
+	</aside>
+
+	<!-- contents -->
+	<div class="contents">
+		<div class="contents-wrap">
+			<div class="contents-body">
+				<!-- Main contents -->
+				<div class="contents-main">
+					<!-- review -->
+					<section class="review">
+						<h1 class="pageTitle">
+							<span class="main">ユーザーレビュー投稿一覧</span>
+							<span class="sub">オンラインゲーム選びの参考にどうぞ</span>
+						</h1>
+
+						<section class="recents">
+
+<?php include dirname(__FILE__) . "/_includes/comp_pages.html"; ?>
+
+							<ul class="list">
+<?php for($i=0; $i<10; $i++):?>
+								<li>
+									<h2 class="title">
+										<a href="titles_vote_single.html">
+											<span class="rate">2.5<span class="unit">点</span></span>レビュータイトル
+										</a>
+									</h2>
+									<div class="thumb"><a href="titles_index.html"><img src="../img/noimage160.gif" alt="" width="120" height="90"></a></div>
+									<div class="data">
+										<p class="review">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+										<div class="date">2015年12月31日 00時00分</div>
+										<a href="titles_vote_list.html">Soul of the Ultimate Nation</a>
+									</div>
+								</li>
+<?php endfor;?>
+							</ul>
+
+<?php include dirname(__FILE__) . "/_includes/comp_pages.html"; ?>
+
+						</section>
+
+						<section class="waits">
+							<h2 class="headline">
+								<span class="main">レビュー・評価投稿募集中！</span>
+								<span class="sub">まだ投稿がされていないオンラインゲームの一部です</span>
+							</h2>
+							<ul class="list">
+<?php for($i=0; $i<10; $i++):?>
+								<li>
+									<a href="titles_index.html">
+										<div class="thumb"><img src="../img/noimage160.gif" alt=""></div>
+										<div class="title">Soul of the Ultimate Nation</div>
+									</a>
+								</li>
+<?php endfor;?>
+							</ul>
+							<div class="more"><a href="http://feeds.feedburner.com/dz-game/review" class="feed"><i class="icon icon-feed"></i> 新着レビューをRSSで！</a></div>
+						</section>
+					</section>
+				</div>
+
+
+<?php include "_includes/side.html";?>
+
+
+			</div>
+
+
+<?php include "_includes/sub.html";?>
+
+
+		</div>
+	</div>
+
+
+<?php include "_includes/footer.html";?>
+
+<?php include "_includes/header_floating.html";?>
+
+<!-- JS Libs -->
+<script src="../js/libs/slick-1.5.0/slick.min.js"></script>
+<!-- JS -->
+<script src="../js/ogl.newgames.js"></script>
+</body>
+</html>
