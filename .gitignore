@@ -5,5 +5,8 @@ dwsync.xml
 *.sublime-project
 *.sublime-workspace
 
+robots.*
+
 img/thumb/
 uploads/
+
