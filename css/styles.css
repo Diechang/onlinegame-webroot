@@ -966,6 +966,9 @@ footer .navigations .rankings h2 span.sub {
   color: #EEEEEE;
   font-size: 12px;
 }
+footer .navigations .rankings table {
+  width: 100%;
+}
 footer .copyright {
   height: 80px;
   padding-top: 20px;
