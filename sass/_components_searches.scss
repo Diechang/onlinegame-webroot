@@ -56,6 +56,17 @@
 				}
 			}
 
+			&.platforms
+			{
+				clear: both;
+
+				ul li
+				{
+					float: left;
+					width: 50%;
+				}
+			}
+
 			&.genres
 			{
 				float: left;

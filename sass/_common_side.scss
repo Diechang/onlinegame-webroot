@@ -130,6 +130,17 @@
 				font-size: 12px;
 			}
 		}
+		&.platforms
+		{
+			h2
+			{
+				border-color: $color-theme-platform;
+			}
+			ul li:before
+			{
+				background-color: $color-theme-platform;
+			}
+		}
 		&.genres
 		{
 			h2

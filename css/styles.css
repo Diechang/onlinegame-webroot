@@ -316,6 +316,9 @@ a:hover .thumb img,
 .label.label-official {
   background: #009688;
 }
+.label.label-platform {
+  background: #616161;
+}
 .label.label-genre {
   background: #2196F3;
 }
@@ -345,6 +348,25 @@ a:hover .thumb img,
 }
 .label.label-danger {
   background: #F44336;
+}
+
+.platformLabels a {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin-bottom: 5px;
+  padding: 3px 5px;
+  border-radius: 3px;
+  background: #616161;
+  line-height: 14px;
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+}
+.platformLabels a:hover {
+  background: #424242;
 }
 
 .stars {
@@ -1139,6 +1161,12 @@ footer .copyright-body {
   line-height: 15px;
   color: #fff;
   font-size: 12px;
+}
+.contents-side section.platforms h2 {
+  border-color: #616161;
+}
+.contents-side section.platforms ul li:before {
+  background-color: #616161;
 }
 .contents-side section.genres h2 {
   border-color: #2196F3;
@@ -1963,6 +1991,13 @@ footer .copyright-body {
   line-height: 30px;
   font-size: 20px;
 }
+.contents-main section.search fieldset.platforms {
+  clear: both;
+}
+.contents-main section.search fieldset.platforms ul li {
+  float: left;
+  width: 50%;
+}
 .contents-main section.search fieldset.genres {
   float: left;
   width: 290px;
@@ -2687,6 +2722,28 @@ body.index .contents-main section.news section.info dl {
   margin: auto;
   width: 1140px;
   padding: 15px 10px;
+}
+.title-header .title-platforms {
+  margin-top: 10px;
+}
+.title-header .title-platforms a {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin-right: 3px;
+  padding: 2px 4px;
+  border: solid 1px #BDBDBD;
+  border-radius: 3px;
+  background: rgba(97, 97, 97, 0.5);
+  line-height: 14px;
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+}
+.title-header .title-platforms a:hover {
+  background: #424242;
 }
 .title-header h1 {
   color: #fff;

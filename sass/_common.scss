@@ -313,6 +313,10 @@ a:hover .thumb img,
 	{
 		background: $color-theme-official;
 	}
+	&.label-platform
+	{
+		background: $color-theme-platform;
+	}
 	&.label-genre
 	{
 		background: $color-theme-genre;
@@ -353,6 +357,27 @@ a:hover .thumb img,
 	&.label-danger
 	{
 		background: $color-danger;
+	}
+}
+//platform labels
+.platformLabels
+{
+	a
+	{
+		@include inline-block;
+		margin-bottom: 5px;
+		padding: 3px 5px;
+		border-radius: 3px;
+		background: $color-theme-platform;
+		line-height: 14px;
+		color: $color-white;
+		font-size: 12px;
+		text-decoration: none;
+
+		&:hover
+		{
+			background: $color-theme-platform-hover;
+		}
 	}
 }
 //stars
