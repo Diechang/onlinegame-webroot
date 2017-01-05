@@ -1,8 +1,0 @@
-User-Agent: *
-Disallow: /jump/
-Disallow: /events/
-Disallow: /fansites/
-#Disallow: /links.html
-#Disallow: /links/
-Noindex: /votes/edit/*
-Sitemap: http://onlinegame.dz-life.net/sitemaps/index.xml
