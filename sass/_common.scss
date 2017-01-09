@@ -313,6 +313,10 @@ a:hover .thumb img,
 	{
 		background: $color-theme-official;
 	}
+	&.label-app
+	{
+		background: $color-theme-app;
+	}
 	&.label-genre
 	{
 		background: $color-theme-genre;

@@ -135,7 +135,6 @@
 			top: 50%;
 			height: 30px;
 			margin-top: -15px;
-			margin-top: -15px;
 			pointer-events: none;
 		}
 
@@ -209,6 +208,40 @@
 		a
 		{
 			padding: 10px 30px 10px 200px;
+		}
+	}
+
+	.applink
+	{
+		overflow: hidden;
+		position: relative;
+		height: 40px;
+		margin: 10px 0 20px;
+		padding: 5px;
+		border-bottom: solid 2px $color-theme-app-darkest;
+		border-radius: 5px;
+		background: $color-theme-app;
+		text-align: right;
+
+		&:first-child
+		{
+			margin-top: 0;
+		}
+
+		&:last-child
+		{
+			margin-bottom: 0;
+		}
+
+		span.caption
+		{
+			position: absolute;
+			top: 50%;
+			left: 10px;
+			margin-top: -20px;
+			line-height: 40px;
+			color: $color-white;
+			font-size: 16px;
 		}
 	}
 

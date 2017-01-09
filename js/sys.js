@@ -5,20 +5,31 @@ $(function()
 	CTR.init();
 	ET.init();
 	LT.init();
+
+	//Title ads
+	$("table.titleAds-table").each(function()
+	{
+		new TA($(this));
+	});
 	
 	//WYSIWYG Editor
 	if($("textarea.editor").length > 0) TinyMceInit();
+
+	//Datepicker
+	$(".datePicker").datepicker({
+		dateFormat : "yy-mm-dd"
+	});
 	
 	//Focus select
 	var bPreventMouseUp = true;
-	$(".focusSelect").focus(function()
+	$(".focusSelect").on("focus", function()
 	{
 		if($(this).val().length)
 		{
 			this.select();
 		}
 	})
-	.mouseup(function(e)
+	.on("mouseup", function(e)
 	{
 		if(bPreventMouseUp)
 		{
@@ -26,7 +37,7 @@ $(function()
 			bPreventMouseUp = false;
 		}
 	})
-	.blur(function(e)
+	.on("blur", function(e)
 	{
 		bPreventMouseUp = true;
 	});
@@ -98,6 +109,68 @@ $(function()
 
 	}
 });
+
+/** Title ads
+------------------------------ **/
+var TA = function($table)
+{
+	this.$table = $table;
+
+	this.$adText		= this.$table.find(".titleAds-ad-text");
+	this.$adImage		= this.$table.find(".titleAds-ad-image");
+	this.$getText		= this.$table.find(".titleAds-get-text");
+	this.$getImage		= this.$table.find(".titleAds-get-image");
+	this.$previewText	= this.$table.find(".titleAds-preview-text");
+	this.$previewImage	= this.$table.find(".titleAds-preview-image");
+	this.$partUrl		= this.$table.find(".titleAds-part-url");
+	this.$partText		= this.$table.find(".titleAds-part-text");
+	this.$partImgSrc	= this.$table.find(".titleAds-part-img-src");
+	this.$partTrackSrc	= this.$table.find(".titleAds-part-track-src");
+
+	this.init();
+}
+TA.prototype = 
+{
+	init : function()
+	{
+		var _self = this;
+
+		_self.$getText.on("click", function()
+		{
+			_self.getText();
+		});
+		_self.$getImage.on("click", function()
+		{
+			_self.getImage();
+		});
+	},
+	getText : function()
+	{
+		this.$previewText.html(this.$adText.val());
+
+		this.setText();
+	},
+	getImage : function()
+	{
+		this.$previewImage.html(this.$adImage.val());
+
+		this.setImage();
+	},
+	setText : function()
+	{
+		var $a			= this.$previewText.find("a:eq(0)");
+		var $trackImg	= $a.find("img:eq(0)");
+
+		this.$partUrl.val($a.attr("href"));
+		this.$partText.val($a.text());
+		this.$partTrackSrc.val($trackImg.attr("src"));
+	},
+	setImage : function()
+	{
+		var $img = this.$previewImage.find("img:eq(0)");
+		this.$partImgSrc.val($img.attr("src"));
+	}
+}
 
 /** Controll
 ------------------------------ **/
