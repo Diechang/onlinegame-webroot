@@ -16,9 +16,9 @@ $(function()
 	if($("textarea.editor").length > 0) TinyMceInit();
 
 	//Datepicker
-	$(".datePicker").datepicker({
-		dateFormat : "yy-mm-dd"
-	});
+	// $(".datePicker").datepicker({
+	// 	dateFormat : "yy-mm-dd"
+	// });
 	
 	//Focus select
 	var bPreventMouseUp = true;
