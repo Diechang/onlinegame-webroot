@@ -2877,6 +2877,14 @@ body.index .contents-main section.news section.info dl {
 .contents-main section.title-summary section.data .data-properties table th {
   white-space: nowrap;
 }
+.contents-main section.title-summary section.data .data-properties table a {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  word-break: break-all;
+}
 .contents-main section.title-summary section.data .data-properties .actions {
   overflow: hidden;
 }

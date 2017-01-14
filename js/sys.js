@@ -167,7 +167,10 @@ TA.prototype =
 	},
 	setImage : function()
 	{
-		var $img = this.$previewImage.find("img:eq(0)");
+		var $a		= this.$previewImage.find("a:eq(0)");
+		var $img	= this.$previewImage.find("img:eq(0)");
+
+		if(!this.$partUrl.val()) this.$partUrl.val($a.attr("href"));
 		this.$partImgSrc.val($img.attr("src"));
 	}
 }
