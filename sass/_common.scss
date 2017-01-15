@@ -29,6 +29,11 @@ p, dt, dd, th, td
 {
 	line-height: 1.6;
 }
+//ad tracking img
+img.adTrack
+{
+	position: absolute !important;
+}
 
 //inputs
 input,textarea

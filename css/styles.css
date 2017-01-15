@@ -79,6 +79,10 @@ p, dt, dd, th, td {
   line-height: 1.6;
 }
 
+img.adTrack {
+  position: absolute !important;
+}
+
 input.input-text, textarea.input-text {
   width: 100%;
   *width: 90%;
