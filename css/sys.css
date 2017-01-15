@@ -286,7 +286,7 @@ table.list .adBanner {
   text-align: center;
 }
 table.list .adBanner a, table.list .adBanner img, table.list .adBanner iframe {
-  max-width: 100px;
+  max-width: 200px;
   max-height: 60px;
 }
 

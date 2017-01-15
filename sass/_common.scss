@@ -29,6 +29,11 @@ p, dt, dd, th, td
 {
 	line-height: 1.6;
 }
+//ad tracking img
+img.adTrack
+{
+	position: absolute !important;
+}
 
 //inputs
 input,textarea
@@ -312,6 +317,10 @@ a:hover .thumb img,
 	&.label-official
 	{
 		background: $color-theme-official;
+	}
+	&.label-app
+	{
+		background: $color-theme-app;
 	}
 	&.label-genre
 	{
