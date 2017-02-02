@@ -376,6 +376,15 @@ table.list
 			max-height:60px;
 		}
 	}
+	.adInactive
+	{
+		background: #eee !important;
+
+		*
+		{
+			color: #999;
+		}
+	}
 }
 
 // table.events
