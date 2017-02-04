@@ -79,6 +79,10 @@ p, dt, dd, th, td {
   line-height: 1.6;
 }
 
+img.adTrack {
+  position: absolute !important;
+}
+
 input.input-text, textarea.input-text {
   width: 100%;
   *width: 90%;
@@ -317,6 +321,9 @@ a:hover .thumb img,
   background: #009688;
 }
 .label.label-platform {
+  background: #616161;
+}
+.label.label-app {
   background: #616161;
 }
 .label.label-genre {
@@ -1655,7 +1662,6 @@ footer .copyright-body {
   top: 50%;
   height: 30px;
   margin-top: -15px;
-  margin-top: -15px;
   pointer-events: none;
 }
 .contents-main .officiallink span.caption, .contents-main .officiallink a,
@@ -1716,6 +1722,32 @@ footer .copyright-body {
 }
 .contents-main .shoplink a {
   padding: 10px 30px 10px 200px;
+}
+.contents-main .applink {
+  overflow: hidden;
+  position: relative;
+  height: 40px;
+  margin: 10px 0 20px;
+  padding: 5px;
+  border-bottom: solid 2px #212121;
+  border-radius: 5px;
+  background: #616161;
+  text-align: right;
+}
+.contents-main .applink:first-child {
+  margin-top: 0;
+}
+.contents-main .applink:last-child {
+  margin-bottom: 0;
+}
+.contents-main .applink span.caption {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  margin-top: -20px;
+  line-height: 40px;
+  color: #fff;
+  font-size: 16px;
 }
 .contents-main .shares {
   margin: 20px 0;
@@ -2905,6 +2937,14 @@ body.index .contents-main section.news section.info dl {
 }
 .contents-main section.title-summary section.data .data-properties table th {
   white-space: nowrap;
+}
+.contents-main section.title-summary section.data .data-properties table a {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  word-break: break-all;
 }
 .contents-main section.title-summary section.data .data-properties .actions {
   overflow: hidden;

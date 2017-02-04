@@ -302,6 +302,12 @@
 					{
 						white-space: nowrap;
 					}
+
+					a
+					{
+						@include inline-block;
+						word-break: break-all;
+					}
 				}
 
 				.actions

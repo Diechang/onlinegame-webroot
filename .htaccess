@@ -52,6 +52,9 @@
 	RewriteRule ^titles/soratis/(.+)$ http://%{HTTP_HOST}/titles/sotiras/$1 [R=301,L]
 	RewriteRule ^styles/windows7_(.+)$ http://%{HTTP_HOST}/styles/windows7.html [R=301,L]
 	RewriteRule ^titles/yggdrasil/(.+)$ http://%{HTTP_HOST}/titles/yggdrasill/$1 [R=301,L]
+
+#ページ削除リダイレクト2016
+	RewriteRule ^titles/([a-zA-Z_0-9]+)/allvotes\.html$ http://%{HTTP_HOST}/titles/$1/review.html [R=301,L]
 	
 	#SSL
 #	RewriteCond %{REQUEST_FILENAME} !-d
