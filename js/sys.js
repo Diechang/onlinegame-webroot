@@ -41,6 +41,16 @@ $(function()
 	{
 		bPreventMouseUp = true;
 	});
+
+	//Date field
+	$(".dateField").each(function()
+	{
+		var $this	= $(this);
+		var $input	= $this.find(".dateField-input");
+		var $remove	= $this.find(".dateField-remove");
+
+		$remove.on("click", function(e){ $input.val(""); });
+	});
 	
 	//Bubble popup - $
 	$('td[title]').each(function()
