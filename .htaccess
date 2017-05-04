@@ -50,11 +50,16 @@
 	RewriteRule ^titles/karakuriyo/(.+)$ http://%{HTTP_HOST}/titles/kakuriyo/$1 [R=301,L]
 	RewriteRule ^titles/raderz/(.+)$ http://%{HTTP_HOST}/titles/raiderz/$1 [R=301,L]
 	RewriteRule ^titles/soratis/(.+)$ http://%{HTTP_HOST}/titles/sotiras/$1 [R=301,L]
-	RewriteRule ^styles/windows7_(.+)$ http://%{HTTP_HOST}/styles/windows7.html [R=301,L]
 	RewriteRule ^titles/yggdrasil/(.+)$ http://%{HTTP_HOST}/titles/yggdrasill/$1 [R=301,L]
+	RewriteRule ^styles/windows7_(.+)$ http://%{HTTP_HOST}/styles/windows7.html [R=301,L]
 
 #ページ削除リダイレクト2016
 	RewriteRule ^titles/([a-zA-Z_0-9]+)/allvotes\.html$ http://%{HTTP_HOST}/titles/$1/review.html [R=301,L]
+
+#プラットフォームリダイレクト2017
+	RewriteRule ^styles/(vista|windows7|windows8|windows10)\.html$ http://%{HTTP_HOST}/platforms/windows.html [R=301,L]
+	RewriteRule ^styles/mac\.html$ http://%{HTTP_HOST}/platforms/mac.html [R=301,L]
+	RewriteRule ^styles/browser\.html$ http://%{HTTP_HOST}/platforms/pcbrowser.html [R=301,L]
 	
 	#SSL
 #	RewriteCond %{REQUEST_FILENAME} !-d
