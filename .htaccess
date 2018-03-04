@@ -7,9 +7,13 @@
 #	RewriteRule ^503/ - [L]
 #	RewriteRule ^.*$ 503/503.php
 
+#	SSL
+	RewriteCond %{ HTTPS} off
+	RewriteRule ^(.*)$ https://%{ HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
 #	www統一
 	RewriteCond %{HTTP_HOST} ^www.onlinegame.dz-life.net
-	RewriteRule (.*) http://onlinegame.dz-life.net/$1 [R=301,L]
+	RewriteRule (.*) https://onlinegame.dz-life.net/$1 [R=301,L]
 
 #	除外
 	RewriteCond %{REQUEST_FILENAME} -d [OR]
@@ -17,49 +21,49 @@
 	RewriteRule (.*) - [L]
 	
 #	引っ越し用リダイレクト
-	RewriteRule ^g_[a-z]+/([a-zA-Z_0-9]+)(/(index\.html)?)?$ http://%{HTTP_HOST}/titles/$1/review.html [R=301,L]
-	RewriteRule ^g_[a-z]+/([a-zA-Z_0-9]+)/(vote|review)\.html$ http://%{HTTP_HOST}/titles/$1/review.html [R=301,L]
-	RewriteRule ^g_[a-z]+/([a-zA-Z_0-9]+)/(link|search)\.html$ http://%{HTTP_HOST}/titles/$1/$2.html [R=301,L]
-	RewriteRule ^([a-zA-Z_0-9]+)/(review|link|search)\.html$ http://%{HTTP_HOST}/titles/$1/$2.html [R=301,L]
+	RewriteRule ^g_[a-z]+/([a-zA-Z_0-9]+)(/(index\.html)?)?$ https://%{HTTP_HOST}/titles/$1/review.html [R=301,L]
+	RewriteRule ^g_[a-z]+/([a-zA-Z_0-9]+)/(vote|review)\.html$ https://%{HTTP_HOST}/titles/$1/review.html [R=301,L]
+	RewriteRule ^g_[a-z]+/([a-zA-Z_0-9]+)/(link|search)\.html$ https://%{HTTP_HOST}/titles/$1/$2.html [R=301,L]
+	RewriteRule ^([a-zA-Z_0-9]+)/(review|link|search)\.html$ https://%{HTTP_HOST}/titles/$1/$2.html [R=301,L]
 	
-	RewriteRule ^(search|list)/category/([a-z0-9_]+)\.html$ http://%{HTTP_HOST}/categories/$2.html [R=301,L]
-	RewriteRule ^(search|list)/style/([a-z0-9_]+)\.html$ http://%{HTTP_HOST}/styles/$2.html [R=301,L]
-	RewriteRule ^(search|list)/service/([a-z0-9_]+)\.html$ http://%{HTTP_HOST}/services/$2.html [R=301,L]
+	RewriteRule ^(search|list)/category/([a-z0-9_]+)\.html$ https://%{HTTP_HOST}/categories/$2.html [R=301,L]
+	RewriteRule ^(search|list)/style/([a-z0-9_]+)\.html$ https://%{HTTP_HOST}/styles/$2.html [R=301,L]
+	RewriteRule ^(search|list)/service/([a-z0-9_]+)\.html$ https://%{HTTP_HOST}/services/$2.html [R=301,L]
 	
-	RewriteRule ^osusume/([a-z0-9]+)\.html$ http://%{HTTP_HOST}/ranking/$1.html [R=301,L]
+	RewriteRule ^osusume/([a-z0-9]+)\.html$ https://%{HTTP_HOST}/ranking/$1.html [R=301,L]
 	
-	RewriteRule ^link/$ http://%{HTTP_HOST}/links/index.html [R=301,L]
-	RewriteRule ^link/([a-z0-9]+)\.html$ http://%{HTTP_HOST}/links/$1.html [R=301,L]
+	RewriteRule ^link/$ https://%{HTTP_HOST}/links/index.html [R=301,L]
+	RewriteRule ^link/([a-z0-9]+)\.html$ https://%{HTTP_HOST}/links/$1.html [R=301,L]
 	
-	RewriteRule ^(about|sitemap)\.html$ http://%{HTTP_HOST}/pages/$1.html [R=301,L]
+	RewriteRule ^(about|sitemap)\.html$ https://%{HTTP_HOST}/pages/$1.html [R=301,L]
 	
-	RewriteRule ^portal/portal_index\.html$ http://%{HTTP_HOST}/portals/index.html [R=301,L]
-	RewriteRule ^portal/([a-z0-9]+)\.html$ http://%{HTTP_HOST}/portals/$1.html [R=301,L]
+	RewriteRule ^portal/portal_index\.html$ https://%{HTTP_HOST}/portals/index.html [R=301,L]
+	RewriteRule ^portal/([a-z0-9]+)\.html$ https://%{HTTP_HOST}/portals/$1.html [R=301,L]
 	
-	RewriteRule ^kodukai/kodukai_index\.html$ http://%{HTTP_HOST}/monies/index.html [R=301,L]
-	RewriteRule ^kodukai/([a-z0-9]+)\.html$ http://%{HTTP_HOST}/monies/$1.html [R=301,L]
+	RewriteRule ^kodukai/kodukai_index\.html$ https://%{HTTP_HOST}/monies/index.html [R=301,L]
+	RewriteRule ^kodukai/([a-z0-9]+)\.html$ https://%{HTTP_HOST}/monies/$1.html [R=301,L]
 #
 #.htmlがないときリダイレクト
-	RewriteRule ^titles/([a-zA-Z_0-9]+)/?$ http://%{HTTP_HOST}/titles/$1/index.html [R=301,L]
-	RewriteRule ^titles/([a-zA-Z_0-9]+)/(index|review|link|search)$ http://%{HTTP_HOST}/titles/$1/$2.html [R=301,L]
-	RewriteRule ^monies/([a-zA-Z_0-9]+)/?$ http://%{HTTP_HOST}/monies/$1.html [R=301,L]
-	RewriteRule ^portals/([a-zA-Z_0-9]+)/?$ http://%{HTTP_HOST}/portals/$1.html [R=301,L]
+	RewriteRule ^titles/([a-zA-Z_0-9]+)/?$ https://%{HTTP_HOST}/titles/$1/index.html [R=301,L]
+	RewriteRule ^titles/([a-zA-Z_0-9]+)/(index|review|link|search)$ https://%{HTTP_HOST}/titles/$1/$2.html [R=301,L]
+	RewriteRule ^monies/([a-zA-Z_0-9]+)/?$ https://%{HTTP_HOST}/monies/$1.html [R=301,L]
+	RewriteRule ^portals/([a-zA-Z_0-9]+)/?$ https://%{HTTP_HOST}/portals/$1.html [R=301,L]
 	
 #パス変更リダイレクト
-	RewriteRule ^titles/braderush/(.+)$ http://%{HTTP_HOST}/titles/bladerush/$1 [R=301,L]
-	RewriteRule ^titles/karakuriyo/(.+)$ http://%{HTTP_HOST}/titles/kakuriyo/$1 [R=301,L]
-	RewriteRule ^titles/raderz/(.+)$ http://%{HTTP_HOST}/titles/raiderz/$1 [R=301,L]
-	RewriteRule ^titles/soratis/(.+)$ http://%{HTTP_HOST}/titles/sotiras/$1 [R=301,L]
-	RewriteRule ^titles/yggdrasil/(.+)$ http://%{HTTP_HOST}/titles/yggdrasill/$1 [R=301,L]
-	RewriteRule ^styles/windows7_(.+)$ http://%{HTTP_HOST}/styles/windows7.html [R=301,L]
+	RewriteRule ^titles/braderush/(.+)$ https://%{HTTP_HOST}/titles/bladerush/$1 [R=301,L]
+	RewriteRule ^titles/karakuriyo/(.+)$ https://%{HTTP_HOST}/titles/kakuriyo/$1 [R=301,L]
+	RewriteRule ^titles/raderz/(.+)$ https://%{HTTP_HOST}/titles/raiderz/$1 [R=301,L]
+	RewriteRule ^titles/soratis/(.+)$ https://%{HTTP_HOST}/titles/sotiras/$1 [R=301,L]
+	RewriteRule ^titles/yggdrasil/(.+)$ https://%{HTTP_HOST}/titles/yggdrasill/$1 [R=301,L]
+	RewriteRule ^styles/windows7_(.+)$ https://%{HTTP_HOST}/styles/windows7.html [R=301,L]
 
 #ページ削除リダイレクト2016
-	RewriteRule ^titles/([a-zA-Z_0-9]+)/allvotes\.html$ http://%{HTTP_HOST}/titles/$1/review.html [R=301,L]
+	RewriteRule ^titles/([a-zA-Z_0-9]+)/allvotes\.html$ https://%{HTTP_HOST}/titles/$1/review.html [R=301,L]
 
 #プラットフォームリダイレクト2017
-	RewriteRule ^styles/(vista|windows7|windows8|windows10)\.html$ http://%{HTTP_HOST}/platforms/windows.html [R=301,L]
-	RewriteRule ^styles/mac\.html$ http://%{HTTP_HOST}/platforms/mac.html [R=301,L]
-	RewriteRule ^styles/browser\.html$ http://%{HTTP_HOST}/platforms/pcbrowser.html [R=301,L]
+	RewriteRule ^styles/(vista|windows7|windows8|windows10)\.html$ https://%{HTTP_HOST}/platforms/windows.html [R=301,L]
+	RewriteRule ^styles/mac\.html$ https://%{HTTP_HOST}/platforms/mac.html [R=301,L]
+	RewriteRule ^styles/browser\.html$ https://%{HTTP_HOST}/platforms/pcbrowser.html [R=301,L]
 	
 	#SSL
 #	RewriteCond %{REQUEST_FILENAME} !-d
