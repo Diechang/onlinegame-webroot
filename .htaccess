@@ -8,8 +8,8 @@
 #	RewriteRule ^.*$ 503/503.php
 
 #	SSL
-	RewriteCond %{HTTPS} off
-	RewriteRule ^(.*)$ https://%{ HTTP_HOST}%{REQUEST_URI} [L,R=301]
+	RewriteCond %{ENV:HTTPS} !on 
+	RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 #	www統一
 	RewriteCond %{HTTP_HOST} ^www.onlinegame.dz-life.net
