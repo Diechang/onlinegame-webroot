@@ -8,7 +8,7 @@
 #	RewriteRule ^.*$ 503/503.php
 
 #	SSL
-	RewriteCond %{ HTTPS} off
+	RewriteCond %{HTTPS} off
 	RewriteRule ^(.*)$ https://%{ HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 #	www統一
