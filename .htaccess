@@ -13,7 +13,7 @@
 
 #	SSL
 	RewriteCond %{ENV:HTTPS} !^on$
-	RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+	RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
 
 #	除外
 	RewriteCond %{REQUEST_FILENAME} -d [OR]
