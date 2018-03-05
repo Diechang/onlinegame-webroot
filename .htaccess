@@ -7,13 +7,14 @@
 #	RewriteRule ^503/ - [L]
 #	RewriteRule ^.*$ 503/503.php
 
-#	SSL
-	RewriteCond %{ENV:HTTPS} !on 
-	RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
 #	www統一
 	RewriteCond %{HTTP_HOST} ^www.onlinegame.dz-life.net
 	RewriteRule (.*) https://onlinegame.dz-life.net/$1 [R=301,L]
+
+#	SSL
+	RewriteCond %{REMOTE_ADDR} !=127.0.0.1
+	RewriteCond %{ENV:HTTPS} !^on$
+	RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 #	除外
 	RewriteCond %{REQUEST_FILENAME} -d [OR]
