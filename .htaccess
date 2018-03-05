@@ -70,5 +70,5 @@
 
 
 
-	RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+	RewriteRule ^ index.php [QSA,L]
 </IfModule>
