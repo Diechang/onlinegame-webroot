@@ -64,6 +64,7 @@
 
 
 #	SSL
+	RewriteCond %{REMOTE_ADDR} !=127.0.0.1
 	RewriteCond %{ENV:HTTPS} !^on$
 	RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
 
