@@ -12,13 +12,8 @@
 	RewriteRule (.*) https://onlinegame.dz-life.net/$1 [R=301,L]
 
 #	SSL
-	RewriteCond %{HTTP_HOST} onlinegame.dz-life.net
 	RewriteCond %{ENV:HTTPS} !^on$
-	RewriteRule ^(.*)$ https://onlinegame.dz-life.net/$1 [R=301,L]
-	
-	RewriteCond %{HTTP_HOST} test-onlinegame.dz-life.net
-	RewriteCond %{ENV:HTTPS} !^on$
-	RewriteRule ^(.*)$ https://test-onlinegame.dz-life.net/$1 [R=301,L]
+	RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 #	除外
 	RewriteCond %{REQUEST_FILENAME} -d [OR]
