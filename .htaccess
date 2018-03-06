@@ -13,7 +13,8 @@
 
 #	除外
 	RewriteCond %{REQUEST_FILENAME} -d [OR]
-	RewriteCond %{REQUEST_FILENAME} -f
+	RewriteCond %{REQUEST_FILENAME} -f [OR]
+	RewriteCond %{REQUEST_URI} ^/(img|css|js)/(.*)$
 	RewriteRule (.*) - [L]
 	
 #	引っ越し用リダイレクト
