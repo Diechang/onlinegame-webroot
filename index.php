@@ -25,22 +25,6 @@ if (!defined('DS')) {
 	define('DS', DIRECTORY_SEPARATOR);
 }
 
-
-/**
- * SSL check on SAKURA server
- */
-	if (isset($_SERVER['HTTP_X_SAKURA_FORWARDED_FOR']))
-	{
-		define('FULL_BASE_URL', 'https://secure1560.sakura.ne.jp');
-		$domain_str = 'onlinegame.dz-life.net';
-		$base = DS . $domain_str;
-	}
-	else
-	{
-		$base = false;
-	}
-
-
 /**
  * These defines should only be edited if you have CakePHP installed in
  * a directory layout other than the way it is distributed.
