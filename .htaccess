@@ -10,6 +10,13 @@
 #	www統一
 	RewriteCond %{HTTP_HOST} ^www.onlinegame.dz-life.net
 	RewriteRule (.*) https://onlinegame.dz-life.net/$1 [R=301,L]
+	
+
+#	SSL
+	RewriteCond %{ENV:HTTPS} !^on$
+	RewriteCond %{HTTP:X-SAKURA-FORWARDED-FOR} ^$
+	RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
 
 #	除外
 	RewriteCond %{REQUEST_FILENAME} -d [OR]
@@ -61,13 +68,6 @@
 	RewriteRule ^styles/(vista|windows7|windows8|windows10)\.html$ https://%{HTTP_HOST}/platforms/windows.html [R=301,L]
 	RewriteRule ^styles/mac\.html$ https://%{HTTP_HOST}/platforms/mac.html [R=301,L]
 	RewriteRule ^styles/browser\.html$ https://%{HTTP_HOST}/platforms/pcbrowser.html [R=301,L]
-	
-
-
-#	SSL
-	RewriteCond %{ENV:HTTPS} !^on$
-	RewriteCond %{HTTP:X-SAKURA-FORWARDED-FOR} ^$
-	RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 
 
