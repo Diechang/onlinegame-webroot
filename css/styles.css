@@ -3667,12 +3667,12 @@ body.index .contents-main section.news section.info dl {
 .contents-main section.title-link ul li .data p.description {
   margin-bottom: 10px;
 }
-.contents-main section.title-link ul li .data p.report {
+.contents-main section.title-link ul li .data .report {
   color: #9E9E9E;
   font-size: 12px;
   text-align: right;
 }
-.contents-main section.title-link ul li .data p.report a {
+.contents-main section.title-link ul li .data .report a {
   color: inherit;
 }
 
