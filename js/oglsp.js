@@ -28,11 +28,6 @@
 		$header		= $("header:first");
 		$footer		= $("footer:first");
 		$contents	= $(".contents:first");
-		$contentsBody	= $contents.find(".contents-body:first");
-		$contentsWrap	= $contents.find(".contents-wrap:first");
-		$main		= $contents.find(".contents-main:first");
-		$side		= $contents.find(".contents-side:first");
-		$sub		= $contents.find(".contents-sub:first");
 	}
 
 
@@ -53,12 +48,7 @@
 			//$objects
 			$header			: $header,
 			$footer			: $footer,
-			$contents		: $contents,
-			$contentsBody	: $contentsBody,
-			$contentsWrap	: $contentsWrap,
-			$main			: $main,
-			$side			: $side,
-			$sub			: $sub
+			$contents		: $contents
 		});
 	});
 

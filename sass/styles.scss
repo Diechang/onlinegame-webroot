@@ -5,24 +5,24 @@
 //******************************
 // common
 //******************************
-@import "common";
+@import "pc/common";
 
 //******************************
 // components
 //******************************
-@import "components_globals";
-@import "components_archives";
-@import "components_searches";
-@import "components_rankings";
-@import "components_reviews";
+@import "pc/components_globals";
+@import "pc/components_archives";
+@import "pc/components_searches";
+@import "pc/components_rankings";
+@import "pc/components_reviews";
 
 //******************************
 // pages
 //******************************
-@import "pages_index";
-@import "pages_titles";
-@import "pages_portals";
-@import "pages_monies";
-@import "pages_pcs";
-@import "pages_links";
-@import "pages_abouts";
+@import "pc/pages_index";
+@import "pc/pages_titles";
+@import "pc/pages_portals";
+@import "pc/pages_monies";
+@import "pc/pages_pcs";
+@import "pc/pages_links";
+@import "pc/pages_abouts";
