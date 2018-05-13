@@ -1,0 +1,152 @@
+
+/** Main contents - classes & tags
+------------------------------ **/
+.contents
+{
+	position: relative;
+
+	@include top-shadow;
+
+	// tags
+	h2
+	{
+		padding: 5px 10px;
+		border-top: solid 1px $color-border;
+		border-bottom: solid 1px $color-border;
+		background: linear-gradient($color-white, $gm-color-grey-100);
+		line-height: 20px;
+		font-size: 14px;
+		font-weight: bold;
+	}
+
+	h3
+	{
+		padding: 5px 10px;
+		border-bottom: solid 1px $color-border;
+		background: $gm-color-grey-100;
+		line-height: 20px;
+		font-size: 12px;
+		font-weight: bold;
+	}
+
+	//more link
+	.more
+	{
+		background: $gm-color-grey-100;
+
+		a
+		{
+			padding: 5px 10px;
+			line-height: 20px;
+			font-size: 12px;
+			text-align: right;
+		}
+	}
+	
+	//adsense
+	.gAds
+	{
+		padding: 10px;
+		background: $gm-color-grey-100;
+		text-align: center;
+	}
+	.gAds-left
+	{
+		text-align: left;
+	}
+	.gAds-right
+	{
+		text-align: right;
+	}
+}
+
+.contents-main
+{
+
+	//no data
+	.noData
+	{
+		margin: 10px 0;
+		padding: 10px;
+		border-radius: 3px;
+		background: $gm-color-grey-200;
+		text-align: center;
+
+		&:first-child
+		{
+			margin-top: 0;
+		}
+		&:last-child
+		{
+			margin-bottom: 0;
+		}
+	}
+	
+	//tags
+	h1
+	{
+		margin-bottom: 20px;
+		line-height: 30px;
+		font-size: 24px;
+
+		&.pageTitle
+		{
+			margin-bottom: 40px;
+		}
+		
+		span
+		{
+			&.main,
+			&.official
+			{
+				@include inline-block;
+			}
+			&.sub,
+			&.read
+			{
+				display: block;
+				line-height: 20px;
+				font-size: 14px;
+			}
+
+			&.label
+			{
+				width: auto;
+				margin-right: 5px;
+				padding: 5px 10px;
+				font-size: 16px;
+			}
+		}
+	}
+	
+	p.headline-description
+	{
+		margin-bottom: 10px;
+	}
+}
+
+/** Main contents - sections
+------------------------------ **/
+.contents-main
+{
+	section,
+	.pageInfo
+	{
+		margin-bottom: 60px;
+
+		section
+		{
+			margin-bottom: 40px;
+		}
+
+		&.adCenterBottom
+		{
+			text-align: center;
+
+			img
+			{
+				max-width: 100%;
+			}
+		}
+	}
+}

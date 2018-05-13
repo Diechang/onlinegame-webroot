@@ -1,11 +1,11 @@
-//(c)2015 ONLINEGAME LIFE. by diechang
+//(c)2018 ONLINEGAME LIFE. by diechang
 (function($)
 {
 	/** Vars
 	------------------------------ **/
-	var BASENAME = "OGL";
+	var BASENAME = "OGLSP";
 
-	var PREFIX = "ogl";
+	var PREFIX = "oglsp";
 
 	var CLASS_ACTIVE	= "active";
 	var CLASS_CURRENT	= "current";
@@ -28,6 +28,26 @@
 		$header		= $("header:first");
 		$footer		= $("footer:first");
 		$contents	= $(".contents:first");
+
+		initTopMenu();
+	}
+	// Top menu toggle
+	var initTopMenu = function()
+	{
+		var $topMenu		= $header.find(".topMenu").eq(0);
+		var $topMenuItems	= $topMenu.find(".topMenu-item");
+		
+		$topMenuItems.each(function()
+		{
+			var $this		= $(this);
+			var $trigger	= $this.find(".topMenu-trigger").eq(0);
+
+			$trigger.on("click." + BASENAME, function(e)
+			{
+				$this[$this.hasClass(CLASS_ACTIVE) ? "removeClass" : "addClass"](CLASS_ACTIVE);
+				$this.siblings().removeClass(CLASS_ACTIVE);
+			});
+		});
 	}
 
 
@@ -37,7 +57,7 @@
 	{
 		init();
 		//public object - $obj
-		$.extend(window.OGL, 
+		$.extend(window.OGLSP, 
 		{
 			//base objects
 			_w			: _w,
@@ -55,9 +75,12 @@
 	//public object - vars
 	window.OGL = 
 	{
-		//vars
-		BASENAME		: BASENAME,
-		CLASS_ACTIVE	: CLASS_ACTIVE,
-		CLASS_CURRENT	: CLASS_CURRENT
+		SP : 
+		{
+			//vars
+			BASENAME		: BASENAME,
+			CLASS_ACTIVE	: CLASS_ACTIVE,
+			CLASS_CURRENT	: CLASS_CURRENT
+		}
 	}
 })(jQuery);

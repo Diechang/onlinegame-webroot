@@ -10,19 +10,19 @@
 //******************************
 // components
 //******************************
-// @import "components_globals";
-// @import "components_archives";
-// @import "components_searches";
-// @import "components_rankings";
-// @import "components_reviews";
+@import "sp/components_globals";
+// @import "sp/components_archives";
+// @import "sp/components_searches";
+@import "sp/components_rankings";
+@import "sp/components_reviews";
 
 //******************************
 // pages
 //******************************
-// @import "pages_index";
-// @import "pages_titles";
-// @import "pages_portals";
-// @import "pages_monies";
-// @import "pages_pcs";
-// @import "pages_links";
-// @import "pages_abouts";
+@import "sp/pages_index";
+// @import "sp/pages_titles";
+// @import "sp/pages_portals";
+// @import "sp/pages_monies";
+// @import "sp/pages_pcs";
+// @import "sp/pages_links";
+// @import "sp/pages_abouts";

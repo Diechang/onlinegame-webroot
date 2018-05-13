@@ -6,14 +6,257 @@
 
 <?php include "_includes/header.html";?>
 
+<!-- index slider -->
+<div class="newGames">
+	<h2>New Games</h2>
+	<div class="slide">
+<?php for($i = 1; $i <= 10; $i++):?>
+		<div class="slide-item">
+			<a href="titles_index.html">
+				<div class="images">
+					<div class="thumb"><img src="../img/noimage160.gif" alt="" width="80" height="60"></div>
+					<div class="stars stars-w150 stars-rate<?php echo $i ?>0"></div>
+				</div>
+				<div class="texts">
+					<p class="title">
+						<span class="official"><?php echo $i ?>:Soul of the Ultimate Nation</span>
+						<span class="read">ソウル・オブ・ジ・アルティメット・ネイション</span>
+					</p>
+					<p class="description">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+				</div>
+			</a>
+		</div>
+<?php endfor;?>
+	</div>
+</div>
 <!-- contents -->
-<div class="contents"></div>
+<div class="contents">
+	<!-- ranking -->
+	<section class="ranking">
+		<h2>人気オンラインゲームランキング</h2>
+		<section class="all">
+			<ul class="list">
+<?php for($i=1; $i<=5; $i++):?>
+				<li>
+					<a href="titles_index.html">
+						<div class="images">
+							<div class="num"><?php echo $i;?></div>
+							<div class="thumb"><img src="../img/noimage160.gif" alt="" width="80" height="60"></div>
+						</div>
+						<div class="data">
+							<div class="title">
+								<div class="official">Soul of the Ultimate Nation</div>
+								<div class="read">ソウル・オブ・ジ・アルティメット・ネイション</div>
+							</div>
+							<div class="rate">
+								<div class="star">
+									<div class="stars stars-w150 stars-rate<?php echo $i ?>0"></div>
+								</div>
+								<div class="value">
+									<span class="num">5.0</span>
+									<span class="unit">点</span>
+								</div>
+							</div>
+							<div class="platforms">
+								<ul class="platformLabels">
+									<li>Windows</li>
+									<li>Mac</li>
+									<li>PCブラウザ</li>
+								</ul>
+							</div>
+							<div class="genres">
+								<ul class="categoryLabels">
+									<li>MMO</li>
+									<li>MO</li>
+									<li>RPG</li>
+								</ul>
+							</div>
+						</div>
+					</a>
+				</li>
+<?php endfor;?>
+			</ul>
+		</section>
+		<section class="genres">
+			<h3>ジャンル別ランキング</h3>
+			<ul class="list">
+				<li>
+					<a href="title_index.html">
+						<div class="thumb"><img src="../img/noimage160.gif" alt="" width="40" height="30"></div>
+						<div class="genre">MMOランキング <i class="zmdi zmdi-chevron-right"></i></div>
+					</a>
+				</li>
+				<li>
+					<a href="title_index.html">
+						<div class="thumb"><img src="../img/noimage160.gif" alt="" width="40" height="30"></div>
+						<div class="genre">MOランキング <i class="zmdi zmdi-chevron-right"></i></div>
+					</a>
+				</li>
+				<li>
+					<a href="title_index.html">
+						<div class="thumb"><img src="../img/noimage160.gif" alt="" width="40" height="30"></div>
+						<div class="genre">RPGランキング <i class="zmdi zmdi-chevron-right"></i></div>
+					</a>
+				</li>
+				<li>
+					<a href="title_index.html">
+						<div class="thumb"><img src="../img/noimage160.gif" alt="" width="40" height="30"></div>
+						<div class="genre">アクションランキング <i class="zmdi zmdi-chevron-right"></i></div>
+					</a>
+				</li>
+			</ul>
+		</section>
+		<div class="more"><a href="rankings.html">人気オンラインゲームランキング一覧 <i class="zmdi zmdi-chevron-right"></i></a></div>
+	</section>
+	<!-- review -->
+	<section class="review">
+		<h2>新着ユーザーレビュー</h2>
+		<section class="recents">
+			<ul class="list">
+<?php for($i=0; $i<10; $i++):?>
+				<li>
+					<a href="titles_vote_single.html">
+						<div class="images">
+							<div class="thumb"><img src="../img/noimage160.gif" alt="" width="80" height="60"></div>
+							<div class="rate">2.5<span class="unit">点</span></div>
+						</div>
+						<div class="data">
+							<div class="title">レビュータイトル</div>
+							<p class="review">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト <span class="continue">...続き</span></p>
+							<div class="date">2015年12月31日 00時00分</div>
+							<div class="official">Soul of the Ultimate Nation</div>
+						</div>
+					</a>
+				</li>
+<?php endfor;?>
+			</ul>
+		</section>
+		<section class="waits">
+			<h3>レビュー・評価投稿募集中</h3>
+			<ul class="list">
+<?php for($i=0; $i<5; $i++):?>
+				<li>
+					<a href="titles_index.html">
+						<div class="thumb"><img src="../img/noimage160.gif" alt="" width="40" height="30"></div>
+						<div class="title">Soul of the Ultimate Nation</div>
+					</a>
+				</li>
+<?php endfor;?>
+			</ul>
+			<div class="more"><a href="reviews.html">ユーザーレビュー一覧 <i class="zmdi zmdi-chevron-right"></i></a></div>
+		</section>
+	</section>
+	<!-- test -->
+	<section class="test">
+		<h2>無料テスト実施中タイトル</h2>
+		<section class="current">
+			<ul class="list">
+<?php for($i=0; $i<2; $i++):?>
+				<li>
+					<a href="titles_vote_single.html">
+						<div class="thumb"><img src="../img/noimage160.gif" alt="" width="40" height="30"></div>
+						<div class="data">
+							<div class="title">
+								<span class="official">Soul of the Ultimate Nation</span>
+								<span class="read">ソウル・オブ・ジ・アルティメット・ネイション</span>
+							</div>
+							<span class="label label-open">オープンβ</span>
+							<span class="date">2015年1月1日〜2015年12月31日</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="titles_vote_single.html">
+						<div class="thumb"><img src="../img/noimage160.gif" alt="" width="40" height="30"></div>
+						<div class="data">
+							<div class="title">
+								<span class="official">Soul of the Ultimate Nation</span>
+								<span class="read">ソウル・オブ・ジ・アルティメット・ネイション</span>
+							</div>
+							<span class="label label-closed">クローズドβ</span>
+							<span class="date">2015年1月1日〜2015年12月31日</span>
+						</div>
+					</a>
+				</li>
+<?php endfor;?>
+			</ul>
+		</section>
+		<section class="future">
+			<h3>もうすぐ実施予定</h3>
+			<ul class="list">
+				<li>
+					<a href="titles_vote_single.html">
+						<div class="thumb"><img src="../img/noimage160.gif" alt="" width="40" height="30"></div>
+						<div class="data">
+							<div class="title">
+								<span class="official">Soul of the Ultimate Nation</span>
+								<span class="read">ソウル・オブ・ジ・アルティメット・ネイション</span>
+							</div>
+							<span class="label label-open">オープンβ</span>
+							<span class="date">2015年1月1日〜2015年12月31日</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="titles_vote_single.html">
+						<div class="thumb"><img src="../img/noimage160.gif" alt="" width="40" height="30"></div>
+						<div class="data">
+							<div class="title">
+								<span class="official">Soul of the Ultimate Nation</span>
+								<span class="read">ソウル・オブ・ジ・アルティメット・ネイション</span>
+							</div>
+							<span class="label label-closed">クローズドβ</span>
+							<span class="date">2015年1月1日〜2015年12月31日</span>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</section>
+	</section>
+
+	<div class="gAds"><!-- adsense --></div>
+
+	<!-- news -->
+	<section class="news">
+		<section class="title">
+			<h2>新着オンラインゲーム</h2>
+			<ul class="list">
+<?php for($i=0; $i<5; $i++):?>
+				<li>
+					<a href="titles_index.html">
+						<div class="thumb"><img src="../img/noimage160.gif" alt="" width="80" height="60"></div>
+						<div class="data">
+							<div class="main">Soul of the Ultimate Nation</div>
+							<div class="sub">ソウル・オブ・ジ・アルティメット・ネイション</div>
+						</div>
+					</a>
+				</li>
+<?php endfor;?>
+			</ul>
+		</section>
+		<section class="fansite">
+			<h2>新着ファンサイト</h2>
+			<ul class="list">
+<?php for($i=0; $i<5; $i++):?>
+				<li>
+					<a href="#" target="_blank">
+						<div class="main">サイト名</div>
+						<div class="sub">Soul of the Ultimate Nation</div>
+					</a>
+				</li>
+<?php endfor;?>
+			</ul>
+		</section>
+	</section>
+
+	<div class="gAds"><!-- adsense --></div>
+</div>
 
 <?php include "_includes/footer.html";?>
 
 <!-- JS Libs -->
-<script src="../js/libs/slick-1.5.0/slick.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <!-- JS -->
-<script src="../js/ogl.newgames.js"></script>
+<script src="../js/oglsp.newgames.js"></script>
 </body>
 </html>

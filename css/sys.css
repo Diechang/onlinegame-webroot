@@ -40,7 +40,7 @@ body {
 /** Main Block
 ------------------------------ **/
 #wrap {
-  background: url('../img/design/../sys/side_back.gif') left repeat-y;
+  background: url('../img/../sys/side_back.gif') left repeat-y;
 }
 
 #header {
@@ -62,7 +62,7 @@ body {
   clear: both;
   margin: 0;
   padding: 0;
-  background: url('../img/design/../sys/pankuz_back.gif');
+  background: url('../img/../sys/pankuz_back.gif');
 }
 #header ul.pankuz li {
   display: inline-block;
@@ -74,7 +74,7 @@ body {
   height: 30px;
   padding-right: 20px;
   line-height: 30px;
-  background: url('../img/design/../sys/pankuz_arrow.gif') right center no-repeat;
+  background: url('../img/../sys/pankuz_arrow.gif') right center no-repeat;
 }
 
 #menu {
@@ -92,7 +92,7 @@ body {
   margin: 0;
   padding: 0 10px;
   line-height: 20px;
-  background: url('../img/design/../sys/menu_head.gif') left repeat-y;
+  background: url('../img/../sys/menu_head.gif') left repeat-y;
   color: #fff;
 }
 #menu dl dd {
@@ -116,12 +116,12 @@ body {
 #menu dl dd ul li a:hover {
   padding: 5px 20px 5px 10px;
   border: none;
-  background: url('../img/design/../sys/menu_hover.gif') left center;
+  background: url('../img/../sys/menu_hover.gif') left center;
 }
 #menu dl dd ul li.active a {
   padding: 5px 20px 5px 10px;
   border: none;
-  background: url('../img/design/../sys/menu_active.gif') left center;
+  background: url('../img/../sys/menu_active.gif') left center;
 }
 
 #main {
@@ -233,15 +233,15 @@ table.tablesorter thead tr .headerSortUp {
   background-color: #cde;
 }
 table.tablesorter thead tr .header {
-  background-image: url('../img/design/../sys/tablesorter_bg.gif');
+  background-image: url('../img/../sys/tablesorter_bg.gif');
   background-repeat: no-repeat;
   background-position: center left;
 }
 table.tablesorter thead tr .headerSortUp {
-  background-image: url('../img/design/../sys/tablesorter_asc.gif');
+  background-image: url('../img/../sys/tablesorter_asc.gif');
 }
 table.tablesorter thead tr .headerSortDown {
-  background-image: url('../img/design/../sys/tablesorter_desc.gif');
+  background-image: url('../img/../sys/tablesorter_desc.gif');
 }
 
 /** Table Style

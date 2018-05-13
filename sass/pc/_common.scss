@@ -394,7 +394,7 @@ a:hover .thumb img,
 {
 	display: block;
 	margin: auto;
-	background: image-url("images_sprite.png") no-repeat;
+	background: image-url("design/images_sprite.png") no-repeat;
 
 	&.stars-w150
 	{
@@ -510,7 +510,7 @@ i.icon
 
 	&.icon-feed
 	{
-		background-image: image-url("icon_feed16.png");
+		background-image: image-url("design/icon_feed16.png");
 	}
 }
 
@@ -1150,7 +1150,7 @@ footer
 				bottom: 20px;
 				width: 280px;
 				height: 80px;
-				background: image-url("images_sprite.png") 0 -70px;
+				background: image-url("design/images_sprite.png") 0 -70px;
 			}
 		}
 		//acr rankings

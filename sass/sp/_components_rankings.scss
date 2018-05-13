@@ -1,0 +1,194 @@
+
+/** Ranking components
+------------------------------ **/
+.contents
+{
+	//ranking
+	section.ranking
+	{
+		ul.list li
+		{
+			border-bottom: solid 1px $color-border;
+
+			a
+			{
+				overflow: hidden;
+				padding: 10px;
+			}
+
+			ul li
+			{
+				border: none;
+			}
+		}
+
+		//all ranking
+		section.all
+		{
+
+			.images
+			{
+				position: relative;
+				float: left;
+				width: 80px;
+
+				.thumb
+				{
+					img
+					{
+						width: 80px;
+						height: 60px;
+					}
+				}
+
+				.num
+				{
+					position: absolute;
+					top: -5px;
+					left: -5px;
+					width: 20px;
+					height: 15px;
+					line-height: 15px;
+					background: $color-theme-ranking;
+					color: $color-white;
+					font-size: 10px;
+					text-align: center;
+					z-index: 1;
+
+					&:before,
+					&:after
+					{
+						content: "";
+						display: block;
+						position: absolute;
+						top: 100%;
+						width: 0;
+						height: 0;
+						border: solid 5px $color-theme-ranking;
+						border-bottom-color: transparent;
+					}
+					&:before
+					{
+						left: 0;
+						border-right-color: transparent;
+					}
+					&:after
+					{
+						right: 0;
+						border-left-color: transparent;
+					}
+				}
+			}
+
+			.data
+			{
+				margin-left: 90px;
+
+				.title
+				{
+					margin-bottom: 5px;
+	
+					.official
+					{
+						line-height: 15px;
+						color: $color-link;
+						font-size: 14px;
+					}
+	
+					.read
+					{
+						line-height: 10px;
+						font-size: 10px;
+					}
+				}
+
+				.rate
+				{
+					overflow: hidden;
+					margin-bottom: 5px;
+
+					.star
+					{
+						display: inline-block;
+						width: 75px;
+						line-height: 15px;
+						padding: 3px 0 2px;
+					}
+
+					.value
+					{
+						display: inline-block;
+						color: $color-theme-ranking;
+						line-height: 15px;
+
+						.num
+						{
+							font-size: 14px;
+						}
+
+						.unit
+						{
+							font-size: 10px;
+						}
+					}
+				}
+			}
+		}
+
+		//genres ranking
+		section.genres
+		{
+			.thumb
+			{
+				float: left;
+				width: 40px;
+				height: 30px;
+
+				img
+				{
+					width: 40px;
+					height: 30px;
+				}
+			}
+
+			.genre
+			{
+				display: block;
+				margin-left: 50px;
+				line-height: 30px;
+			}
+		}
+
+		//waiting titles
+		section.waits
+		{
+			.thumb
+			{
+				float: left;
+				width: 40px;
+				height: 30px;
+
+				img
+				{
+					width: 40px;
+					height: 30px;
+				}
+			}
+
+			.title
+			{
+				display: block;
+				margin-left: 50px;
+				line-height: 30px;
+			}
+		}
+
+		.more
+		{
+			a
+			{
+				color: $color-theme-ranking;
+			}
+		}
+	}
+}

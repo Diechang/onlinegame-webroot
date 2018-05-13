@@ -8,7 +8,7 @@ add_import_path "/Users/daisuke/Dropbox/_materials/compass_imports";	# home
 http_path = "/"
 css_dir = "css"
 sass_dir = "sass"
-images_dir = "img/design"
+images_dir = "img"
 javascripts_dir = "js"
 
 output_style = :expanded
