@@ -6,20 +6,11 @@
 	//ranking
 	section.ranking
 	{
-		ul.list li
+		@include bordered-links;
+
+		ul.list li ul li
 		{
-			border-bottom: solid 1px $color-border;
-
-			a
-			{
-				overflow: hidden;
-				padding: 10px;
-			}
-
-			ul li
-			{
-				border: none;
-			}
+			border: none;
 		}
 
 		//all ranking

@@ -6,16 +6,7 @@
 	//review
 	section.review
 	{
-		ul.list li
-		{
-			border-bottom: solid 1px $color-border;
-
-			a
-			{
-				overflow: hidden;
-				padding: 10px;
-			}
-		}
+		@include bordered-links;
 		
 		//recent reviews
 		section.recents

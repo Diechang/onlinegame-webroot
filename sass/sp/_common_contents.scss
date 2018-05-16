@@ -8,6 +8,43 @@
 	@include top-shadow;
 
 	// tags
+	h1
+	{
+		padding: 10px;
+		line-height: 1;
+		font-size: 20px;
+
+		&.pageTitle
+		{
+			padding: 20px 10px;
+		}
+		
+		span
+		{
+			display: inline-block;
+
+			&.main,
+			&.official
+			{
+				line-height: 25px;
+			}
+			&.sub,
+			&.read
+			{
+				line-height: 15px;
+				font-size: 12px;
+			}
+
+			&.label
+			{
+				width: auto;
+				margin-right: 5px;
+				padding: 5px 10px;
+				font-size: 12px;
+			}
+		}
+	}
+
 	h2
 	{
 		padding: 5px 10px;
@@ -22,6 +59,7 @@
 	h3
 	{
 		padding: 5px 10px;
+		border-top: solid 1px $color-border;
 		border-bottom: solid 1px $color-border;
 		background: $gm-color-grey-100;
 		line-height: 20px;
@@ -32,6 +70,7 @@
 	//more link
 	.more
 	{
+		border-top: solid 1px $color-border;
 		background: $gm-color-grey-100;
 
 		a

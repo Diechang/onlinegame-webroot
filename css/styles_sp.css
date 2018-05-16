@@ -746,6 +746,30 @@ footer .copyright .site {
   background: linear-gradient(#eeeeee, rgba(238, 238, 238, 0));
   z-index: -1;
 }
+.contents h1 {
+  padding: 10px;
+  line-height: 1;
+  font-size: 20px;
+}
+.contents h1.pageTitle {
+  padding: 20px 10px;
+}
+.contents h1 span {
+  display: inline-block;
+}
+.contents h1 span.main, .contents h1 span.official {
+  line-height: 25px;
+}
+.contents h1 span.sub, .contents h1 span.read {
+  line-height: 15px;
+  font-size: 12px;
+}
+.contents h1 span.label {
+  width: auto;
+  margin-right: 5px;
+  padding: 5px 10px;
+  font-size: 12px;
+}
 .contents h2 {
   padding: 5px 10px;
   border-top: solid 1px #BDBDBD;
@@ -757,6 +781,7 @@ footer .copyright .site {
 }
 .contents h3 {
   padding: 5px 10px;
+  border-top: solid 1px #BDBDBD;
   border-bottom: solid 1px #BDBDBD;
   background: #F5F5F5;
   line-height: 20px;
@@ -764,6 +789,7 @@ footer .copyright .site {
   font-weight: bold;
 }
 .contents .more {
+  border-top: solid 1px #BDBDBD;
   background: #F5F5F5;
 }
 .contents .more a {
@@ -1171,6 +1197,9 @@ footer .copyright .site {
 .contents section.ranking ul.list li {
   border-bottom: solid 1px #BDBDBD;
 }
+.contents section.ranking ul.list li:last-child {
+  border-bottom: 0;
+}
 .contents section.ranking ul.list li a {
   overflow: hidden;
   padding: 10px;
@@ -1290,6 +1319,9 @@ footer .copyright .site {
 ------------------------------ **/
 .contents section.review ul.list li {
   border-bottom: solid 1px #BDBDBD;
+}
+.contents section.review ul.list li:last-child {
+  border-bottom: 0;
 }
 .contents section.review ul.list li a {
   overflow: hidden;
@@ -1460,6 +1492,9 @@ body.index section.test p.none {
 body.index section.test ul.list li {
   border-bottom: solid 1px #BDBDBD;
 }
+body.index section.test ul.list li:last-child {
+  border-bottom: 0;
+}
 body.index section.test ul.list li a {
   overflow: hidden;
   padding: 10px;
@@ -1499,6 +1534,9 @@ body.index section.test .data .date {
 body.index section.news ul.list li {
   border-bottom: solid 1px #BDBDBD;
 }
+body.index section.news ul.list li:last-child {
+  border-bottom: 0;
+}
 body.index section.news ul.list li a {
   overflow: hidden;
   padding: 10px;
@@ -1522,9 +1560,6 @@ body.index section.news .sub {
   line-height: 10px;
   color: #212121;
   font-size: 10px;
-}
-body.index section.news section.title ul.list li:last-child {
-  border-bottom: 0;
 }
 body.index .contents-main .information {
   margin-bottom: 40px;
@@ -1566,4 +1601,32 @@ body.index .contents-main .information .text {
 }
 body.index .contents-main .information .text p {
   margin-bottom: .8em;
+}
+
+/** Abouts contents
+------------------------------ **/
+.contents section.about-doc dl {
+  padding: 10px;
+}
+.contents section.about-doc dl dt {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.contents section.about-doc dl dd {
+  margin-bottom: 10px;
+}
+.contents section.about-doc p {
+  padding: 10px;
+}
+.contents section.about-sitemap ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contents section.about-sitemap ul li {
+  width: 50%;
+}
+.contents section.about-sitemap ul li a {
+  padding: 10px;
+  line-height: 20px;
+  color: #2196F3;
 }

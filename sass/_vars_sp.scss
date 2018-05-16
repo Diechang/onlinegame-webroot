@@ -1,0 +1,26 @@
+
+//--------------------
+// vars
+//--------------------
+
+//--------------------
+// mixins
+//--------------------
+@mixin bordered-links($ulClass: "list")
+{
+	ul.#{$ulClass} li
+	{
+		border-bottom: solid 1px $color-border;
+
+		&:last-child
+		{
+			border-bottom: 0;
+		}
+
+		a
+		{
+			overflow: hidden;
+			padding: 10px;
+		}
+	}
+}

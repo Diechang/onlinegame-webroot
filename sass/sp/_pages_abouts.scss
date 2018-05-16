@@ -1,0 +1,54 @@
+
+/** Abouts contents
+------------------------------ **/
+.contents
+{
+	//documents
+	section.about-doc
+	{
+		dl
+		{
+			padding: 10px;
+
+			dt
+			{
+				margin-bottom: 5px;
+				font-weight: bold;
+			}
+			dd
+			{
+				margin-bottom: 10px;
+			}
+		}
+
+		p
+		{
+			padding: 10px;
+		}
+	}
+
+	section.about-contact
+	{
+
+	}
+
+	section.about-sitemap
+	{
+		ul
+		{
+			display: flex;
+			flex-wrap: wrap;
+
+			li
+			{
+				width: 50%;
+				a
+				{
+					padding: 10px;
+					line-height: 20px;
+					color: $color-link;
+				}
+			}
+		}
+	}
+}

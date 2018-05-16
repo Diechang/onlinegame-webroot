@@ -140,16 +140,7 @@ body.index
 			text-align: center;
 		}
 		
-		ul.list li
-		{
-			border-bottom: solid 1px $color-border;
-
-			a
-			{
-				overflow: hidden;
-				padding: 10px;
-			}
-		}
+		@include bordered-links;
 
 		.thumb
 		{
@@ -201,16 +192,7 @@ body.index
 	//new titles & fansites
 	section.news
 	{
-		ul.list li
-		{
-			border-bottom: solid 1px $color-border;
-
-			a
-			{
-				overflow: hidden;
-				padding: 10px;
-			}
-		}
+		@include bordered-links;
 
 		.thumb
 		{
@@ -240,14 +222,6 @@ body.index
 			line-height: 10px;
 			color: $color-text;
 			font-size: 10px;
-		}
-
-		section.title
-		{
-			ul.list li:last-child
-			{
-				border-bottom: 0;
-			}
 		}
 	}
 
