@@ -6,6 +6,11 @@
 //--------------------
 // mixins
 //--------------------
+@mixin border-sand($color: $color-border)
+{
+	border-top: solid 1px $color;
+	border-bottom: solid 1px $color;
+}
 @mixin bordered-links($ulClass: "list")
 {
 	ul.#{$ulClass} li

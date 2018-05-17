@@ -1,47 +1,36 @@
 
 /** Global components
 ------------------------------ **/
-.contents-main
+.contents
 {
 	//pages navigation
 	nav.pages
 	{
-		overflow: hidden;
-		margin-bottom: 10px;
 		padding: 5px;
+		@include border-sand;
 		background: $gm-color-grey-200;
-
-		&:last-child
-		{
-			margin-bottom: 0;
-		}
-
-		.counts
-		{
-			float: right;
-			line-height: 30px;
-
-			span.total
-			{
-				font-weight: bold;
-			}
-		}
 
 		ul.paging
 		{
-			float: left;
+			display: flex;
+			flex-wrap: wrap;
 
 			li
 			{
-				@include inline-block;
+				float: left;
+				margin-right: 5px;
 
-				margin: 0;
+				&:last-child
+				{
+					margin: 0;
+				}
 
 				a,span
 				{
 					display: block;
-					line-height: 20px;
+					line-height: 15px;
 					color: inherit;
+					font-size: 12px;
 				}
 				
 				a
@@ -51,10 +40,6 @@
 					border-radius: 3px;
 					background: $color-white;
 					text-decoration: none;
-				}
-				a:hover
-				{
-					background: $gm-color-grey-100;
 				}
 
 				span
@@ -67,6 +52,7 @@
 				{
 					background: $color-link;
 					color: $color-white;
+					font-weight: bold;
 				}
 			}
 		}
@@ -265,13 +251,10 @@
 	//form
 	.form
 	{
-		padding: 4px;
-		background: $gm-color-grey-200;
-		
 		form
 		{
-			border: solid 1px $color-border;
 			background: $color-white;
+			box-shadow: 0 0 5px $color-shadow;
 		}
 
 		.error-message
@@ -283,24 +266,18 @@
 		{
 			width: 100%;
 			border-collapse: collapse;
-
-			th,td
-			{
-				padding: 10px;
-				border-bottom: solid 1px $color-border;
-			}
 			
 			th
 			{
-				width: 180px;
-				line-height: 20px;
+				padding: 10px 10px 5px;
 
 				&.must:before
 				{
 					content: "必須";
 					@include inline-block;
 					
-					float: right;
+					float: left;
+					margin-right: 5px;
 					padding: 4px 5px;
 					border-radius: 3px;
 					background: $color-danger;
@@ -310,13 +287,14 @@
 				}
 			}
 
+			td
+			{
+				padding: 5px 10px 10px;
+				border-bottom: solid 1px $color-border;
+			}
+
 			tr
 			{
-				&:hover
-				{
-					background: $gm-color-grey-50;
-				}
-
 				&:last-child
 				{
 					th, td
@@ -339,13 +317,18 @@
 				{
 					td
 					{
-						text-align: right;
+						padding: 10px;
 					}
 				}
 
 				&.notes
 				{
 					background: $gm-color-grey-100;
+
+					td
+					{
+						padding: 10px;
+					}
 
 					dl
 					{
@@ -369,8 +352,6 @@
 								input.url
 								{
 									width: 100%;
-									*width: 90%;
-									box-sizing: border-box;
 									padding: 4px;
 									border: solid 1px $color-border;
 									background: $gm-color-grey-200;

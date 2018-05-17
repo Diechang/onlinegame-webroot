@@ -38,9 +38,12 @@
 			&.label
 			{
 				width: auto;
+				height: auto;
 				margin-right: 5px;
-				padding: 5px 10px;
+				padding: 3px 5px;
+				line-height: 14px;
 				font-size: 12px;
+				vertical-align: text-bottom;
 			}
 		}
 	}

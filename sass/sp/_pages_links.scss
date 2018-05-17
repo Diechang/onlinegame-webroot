@@ -1,0 +1,92 @@
+
+/** Links contents
+------------------------------ **/
+.contents
+{
+	//about
+	section.link-about
+	{
+		p
+		{
+			padding: 10px;
+		}
+
+		ul.categories
+		{
+			display: flex;
+			overflow: auto;
+			width: 100%;
+			background: $gm-color-grey-200;
+			@include border-sand;
+			-webkit-overflow-scrolling: touch;
+
+			li
+			{
+				float: left;
+				border-right: solid 1px $color-border;
+
+				&:last-child
+				{
+					border-right: none;
+				}
+
+				a, span
+				{
+					display: block;
+					padding: 5px 10px;
+					font-size: 12px;
+					white-space: nowrap;
+				}
+
+				&.current
+				{
+					span
+					{
+						background: $color-link;
+						color: $color-white;
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+
+	section.sites
+	{
+		@include bordered-links;
+
+		ul.list
+		{
+			li
+			{
+				.thumb
+				{
+					float: left;
+					width: 80px;
+
+					img
+					{
+						max-width: 80px;
+					}
+				}
+				
+				.data
+				{
+					margin-left: 90px;
+					
+					.title
+					{
+						margin-bottom: 5px;
+						color: $color-link;
+					}
+
+					.description
+					{
+						color: $color-text-light;
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
+}

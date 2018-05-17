@@ -1,0 +1,157 @@
+<?php 
+	include dirname(__FILE__) . "/_includes/meta_head.html";
+?>
+
+<body class="links">
+
+<?php include "_includes/header.html";?>
+
+<!-- contents -->
+<div class="contents">
+	<h1 class="pageTitle">
+		<span class="main"><span class="label label-primary">おすすめ</span>リンク集</span>
+		<span class="sub">相互リンクしていただいているおすすめサイト集です</span>
+	</h1>
+	<!-- about -->
+	<section class="link-about">
+		<p>当サイトでは相互リンク集に登録していただけるサイト様を募集中です。<br>
+		<a href="#form" class="inline">依頼フォーム</a>より登録をお願いします。</p>
+
+		<ul class="categories">
+			<li class="current"><span>おすすめ</span></li>
+			<li><a href="">ゲーム紹介・情報</a></li>
+			<li><a href="">攻略</a></li>
+			<li><a href="">ニュース</a></li>
+			<li><a href="">プレイ日記・ブログ</a></li>
+			<li><a href="">その他</a></li>
+		</ul>
+	</section>
+	<!-- sites -->
+	<section class="sites">
+		<ul class="list">
+<?php for($i=0; $i<10; $i++):?>
+			<li>
+				<a href="http://ongetone.com/" target="_blank">
+					<div class="thumb"><img src="http://capture.heartrails.com/small?http://ongetone.com/" alt="オンゲトネ"></div>
+					<div class="data">
+						<div class="title">オンゲトネ</div>
+						<p class="description">無料で遊べるオンラインゲームや、レビュー・アップデート・イベント・テスト・情報まで幅広くご紹介しています。</p>
+					</div>
+				</a>
+			</li>
+<?php endfor;?>
+		</ul>
+		<?php include dirname(__FILE__) . "/_includes/comp_pages.html"; ?>
+	</section>
+	<div class="gAds"><!-- adsense --></div>
+	<!-- form -->
+	<section class="link-form" id="form">
+		<h2>相互リンク集登録依頼フォーム</h2>
+		<div class="form">
+			<form action="">
+				<table>
+					<tr>
+						<th class="must">サイト名</th>
+					</tr>
+					<tr>
+						<td><input type="text" class="input-text"></td>
+					</tr>
+					<tr>
+						<th class="must">サイトURL</th>
+					</tr>
+					<tr>
+						<td><input type="text" class="input-text"></td>
+					</tr>
+					<tr>
+						<th class="must">リンク設置URL</th>
+					</tr>
+					<tr>
+						<td><input type="text" class="input-text"></td>
+					</tr>
+					<tr>
+						<th>サイト紹介文</th>
+					</tr>
+					<tr>
+						<td><textarea class="input-text" rows="5"></textarea>
+							<span class="input-description">全角100文字まで</span>
+						</td>
+					</tr>
+					<tr>
+						<th>登録カテゴリ</th>
+					</tr>
+					<tr>
+						<td>
+							<select name="" id="" class="input-select">
+								<option value="">ゲーム紹介・情報</option>
+								<option value="">攻略</option>
+								<option value="">ニュース</option>
+								<option value="">プレイ日記・ブログ</option>
+								<option value="">その他</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th class="must">管理者のお名前</th>
+					</tr>
+					<tr>
+						<td><input type="text" class="input-text"></td>
+					</tr>
+					<tr>
+						<th class="must">メールアドレス</th>
+					</tr>
+					<tr>
+						<td><input type="text" class="input-text"></td>
+					</tr>
+					<tr>
+						<th>メッセージ</th>
+					</tr>
+					<tr>
+						<td><textarea class="input-text" rows="5"></textarea>
+							<span class="input-description">ありましたらどうぞ</span>
+						</td>
+					</tr>
+					<tr>
+						<th>認証番号</th>
+					</tr>
+					<tr>
+						<td><img src="http://onlinegame.dz-life.net/img/design/spamnum.gif" alt=""></td>
+					</tr>
+					<tr>
+						<th class="must">認証</th>
+					</tr>
+					<tr>
+						<td>
+							<span class="input-attention">スパム防止のため上記認証番号を半角で入力してください。</span>
+							<input type="text" class="input-text input-text-s" size="4" maxlength="4">
+						</td>
+					</tr>
+					<tr class="submit">
+						<td><button class="button button-block button-submit">相互リンク申込</button></td>
+					</tr>
+					<tr class="notes">
+						<td>
+							<dl>
+								<dt>ご依頼内容が必ず掲載されるとは限りません</dt>
+								<dd>ご依頼頂いたURLを確認し、登録内容を修正する場合があります。<br>
+								また、更新の滞っているサイト様、当サイトのリンク掲載に不適切だと判断した場合はリンク掲載を中止する場合があります。</dd>
+								<dt>クオリティの高いサイト様を募集しています</dt>
+								<dd>当サイトでは、クオリティの高いサイト様のリンク掲載に努めています。<br>
+								作りたてのサイト様や、内容の薄いサイト様など、当サイトのリンク掲載基準に達していないサイト様はリンクを掲載できない場合があります。</dd>
+							</dl>
+						</td>
+					</tr>
+				</table>
+			</form>
+
+		</div>
+	</section>
+</div>
+
+<?php include "_includes/footer.html";?>
+
+<!-- JS Libs -->
+<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!-- JS -->
+<script src="../js/oglsp.newgames.js"></script>
+</body>
+</html>
