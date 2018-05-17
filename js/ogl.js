@@ -10,6 +10,9 @@
 	var CLASS_ACTIVE	= "active";
 	var CLASS_CURRENT	= "current";
 
+	var HEADER_HEIGHT			= 110;
+	var HEADER_HEIGHT_FLOATINTG	= 40;
+
 	//base objects
 	var _w, _d, _h, _b, _hb,
 	$header, $footer, $contents, $main, $side, $sub;

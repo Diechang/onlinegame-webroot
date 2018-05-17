@@ -3,12 +3,15 @@
 {
 	/** Vars
 	------------------------------ **/
-	var BASENAME = "OGLSP";
+	var BASENAME	= "OGL";
+	var MODE		= "SP";
 
-	var PREFIX = "oglsp";
+	var PREFIX = "ogl";
 
 	var CLASS_ACTIVE	= "active";
 	var CLASS_CURRENT	= "current";
+
+	var HEADER_HEIGHT	= 50;
 
 	//base objects
 	var _w, _d, _h, _b, _hb,
@@ -29,7 +32,26 @@
 		$footer		= $("footer:first");
 		$contents	= $(".contents:first");
 
+		initHash();
 		initTopMenu();
+	}
+	// Hash change
+	var initHash = function()
+	{
+		// load
+		// _w.on("load." + BASENAME, function(e)
+		// {
+		// 	if(!!location.hash) OGL.utils.scrollTo(_hb.scrollTop() - HEADER_HEIGHT);
+		// });
+		if(!!location.hash) _hb.scrollTop(_hb.scrollTop() - HEADER_HEIGHT);
+		// link
+		$("a[href^='#']").on("click." + BASENAME, function(e)
+		{
+			var href= $(this).attr("href");
+			var $target = $(href == "#" || href == "" ? 'html' : href);
+			OGL.utils.scrollTo($target.offset().top - HEADER_HEIGHT);
+			OGL.utils.cancelEvent(e);
+		});
 	}
 	// Top menu toggle
 	var initTopMenu = function()
@@ -57,30 +79,28 @@
 	{
 		init();
 		//public object - $obj
-		$.extend(window.OGLSP, 
+		$.extend(window.OGL, 
 		{
 			//base objects
-			_w			: _w,
-			_d			: _d,
-			_h			: _h,
-			_b			: _b,
-			_hb			: _hb,
+			_w	: _w,
+			_d	: _d,
+			_h	: _h,
+			_b	: _b,
+			_hb	: _hb,
 			//$objects
-			$header			: $header,
-			$footer			: $footer,
-			$contents		: $contents
+			$header		: $header,
+			$footer		: $footer,
+			$contents	: $contents
 		});
 	});
 
 	//public object - vars
 	window.OGL = 
 	{
-		SP : 
-		{
-			//vars
-			BASENAME		: BASENAME,
-			CLASS_ACTIVE	: CLASS_ACTIVE,
-			CLASS_CURRENT	: CLASS_CURRENT
-		}
+		//vars
+		BASENAME		: BASENAME,
+		MODE			: MODE,
+		CLASS_ACTIVE	: CLASS_ACTIVE,
+		CLASS_CURRENT	: CLASS_CURRENT
 	}
 })(jQuery);
