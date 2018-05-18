@@ -105,6 +105,9 @@ img.adTrack {
   position: absolute !important;
 }
 
+input, textarea {
+  font-size: 16px;
+}
 input.input-text, textarea.input-text {
   width: 100%;
   box-sizing: border-box;
@@ -123,6 +126,7 @@ select.input-select {
   height: 32px;
   border: solid 1px #BDBDBD;
   border-radius: 5px;
+  font-size: 16px;
 }
 
 .input-description {

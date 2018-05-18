@@ -67,6 +67,8 @@ img.adTrack
 //inputs
 input,textarea
 {
+	font-size: 16px;
+
 	&.input-text
 	{
 		width: 100%;
@@ -91,6 +93,7 @@ select.input-select
 	height: 32px;
 	border: solid 1px $color-border;
 	border-radius: 5px;
+	font-size: 16px;
 }
 .input-description
 {
