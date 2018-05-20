@@ -1,411 +1,146 @@
 
-/** Global components
+/** Review components
 ------------------------------ **/
 .contents
 {
-	//pages navigation
-	nav.pages
+	ul.borderedLinks
 	{
-		padding: 5px;
-		@include border-sand;
-		background: $gm-color-grey-200;
-
-		ul.paging
+		> li
 		{
-			display: flex;
-			flex-wrap: wrap;
-
-			li
+			border-bottom: solid 1px $color-border;
+	
+			&:last-child
 			{
-				float: left;
-				margin-right: 5px;
+				border-bottom: 0;
+			}
+	
+			a
+			{
+				overflow: hidden;
+				padding: 10px;
+			}
+		}
 
-				&:last-child
+		&:first-child > li:first-child
+		{
+			border-top: solid 1px $color-border;
+		}
+	}
+
+	ul.textLinks
+	{
+		.main
+		{
+			line-height: 20px;
+			color: $color-link;
+			font-size: 16px;
+		}
+
+		.sub
+		{
+			line-height: 10px;
+			color: $color-text-light;
+			font-size: 10px;
+		}
+
+		.description
+		{
+			color: $color-text;
+
+			p
+			{
+				margin-bottom: 5px;
+
+				&:last-of-type
+				{
+					margin: 0;
+				}
+			}
+		}
+	}
+
+	ul.imageLinks
+	{
+		> li
+		{
+			> a
+			{
+				overflow: hidden;
+			}
+		}
+
+		.images
+		{
+			float: left;
+			width: 80px;
+
+			.thumb
+			{
+				width: 80px;
+				margin-bottom: 5px;
+
+				&:only-child
 				{
 					margin: 0;
 				}
 
-				a,span
+				img
 				{
-					display: block;
-					line-height: 15px;
-					color: inherit;
-					font-size: 12px;
-				}
-				
-				a
-				{
-					padding: 4px 9px;
-					border: solid 1px $color-border;
-					border-radius: 3px;
-					background: $color-white;
-					text-decoration: none;
-				}
-
-				span
-				{
-					padding: 5px 10px;
-					color: $color-text-lighter;
-				}
-
-				&.current a
-				{
-					background: $color-link;
-					color: $color-white;
-					font-weight: bold;
-				}
-			}
-		}
-	}
-
-	//copyright
-	.copyright
-	{
-		padding: 10px;
-		border-radius: 3px;
-		background: $gm-color-grey-400;
-		line-height: 15px;
-		color: $color-white;
-		font-size: 12px;
-	}
-
-	//official & shop link
-	.officiallink,
-	.shoplink
-	{
-		overflow: hidden;
-		clear: both;
-		position: relative;
-		margin: 10px 0 20px;
-		border-bottom: solid 2px $color-theme-official-darkest;
-		border-radius: 5px;
-		background: $color-theme-official;
-		line-height: 30px;
-		color: $color-white;
-
-		&:first-child
-		{
-			margin-top: 0;
-		}
-
-		&:last-child
-		{
-			margin-bottom: 0;
-		}
-		
-		&:before
-		{
-			content: "";
-			position: absolute;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			height: 0;
-			background: $color-theme-official-dark;
-			z-index: 0;
-			@include transition(height .25s ease);
-		}
-		&:hover:before
-		{
-			height: 50%;
-		}
-	
-		a, span, i
-		{
-			z-index: 1;
-		}
-
-		span.caption, i
-		{
-			position: absolute;
-			top: 50%;
-			height: 30px;
-			margin-top: -15px;
-			pointer-events: none;
-		}
-
-		span.caption, a
-		{
-			text-shadow: 0px 1px 1px $color-shadow-text;
-		}
-		
-		span.caption
-		{
-			left: 10px;
-		}
-
-		i
-		{
-			right: 0px;
-			width: 30px;
-			line-height: 30px;
-			font-size: 20px;
-			text-align: center;
-		}
-
-		a,
-		span.ended
-		{
-			position: relative;
-			display: block;
-			color: inherit;
-			font-size: 20px;
-			text-align: right;
-			text-decoration: none;
-
-			span
-			{
-				display: block;
-
-				&.read
-				{
-					line-height: 15px;
-					font-size: 12px;
+					width: 80px;
+					height: 60px;
 				}
 			}
 		}
 
-		span.ended
+		.data
 		{
-			background: $color-theme-official-darkest;
-			padding: 10px 30px;
-			text-align: center
-		}
-	}
-	.officiallink
-	{
-		span.caption
-		{
-			font-size: 16px;
-		}
+			margin-left: 90px;
 
-		a
-		{
-			padding: 10px 30px 10px 110px;
-		}
-	}
-	.shoplink
-	{
-		span.caption
-		{
-			font-size: 14px;
-		}
-
-		a
-		{
-			padding: 10px 30px 10px 200px;
-		}
-	}
-
-	.applink
-	{
-		overflow: hidden;
-		position: relative;
-		height: 40px;
-		margin: 10px 0 20px;
-		padding: 5px;
-		border-bottom: solid 2px $color-theme-app-darkest;
-		border-radius: 5px;
-		background: $color-theme-app;
-		text-align: right;
-
-		&:first-child
-		{
-			margin-top: 0;
-		}
-
-		&:last-child
-		{
-			margin-bottom: 0;
-		}
-
-		span.caption
-		{
-			position: absolute;
-			top: 50%;
-			left: 10px;
-			margin-top: -20px;
-			line-height: 40px;
-			color: $color-white;
-			font-size: 16px;
-		}
-	}
-
-	//shares
-	.shares
-	{
-		margin: 20px 0;
-		padding: 10px;
-		border-top: solid 1px $gm-color-grey-300;
-		border-radius: 5px;
-		background: $gm-color-grey-200;
-
-		li
-		{
-			@include inline-block;
-
-			margin-right: 5px;
-		}
-	}
-
-	//form
-	.form
-	{
-		form
-		{
-			background: $color-white;
-			box-shadow: 0 0 5px $color-shadow;
-		}
-
-		.error-message
-		{
-			color: $color-danger;
-		}
-
-		table
-		{
-			width: 100%;
-			border-collapse: collapse;
-			
-			th
+			.title
 			{
-				padding: 10px 10px 5px;
+				margin-bottom: 5px;
 
-				&.must:before
+				&:only-child
 				{
-					content: "必須";
-					@include inline-block;
-					
-					float: left;
-					margin-right: 5px;
-					padding: 4px 5px;
-					border-radius: 3px;
-					background: $color-danger;
-					line-height: 1;
-					color: $color-white;
-					font-size: 12px;
-				}
-			}
-
-			td
-			{
-				padding: 5px 10px 10px;
-				border-bottom: solid 1px $color-border;
-			}
-
-			tr
-			{
-				&:last-child
-				{
-					th, td
-					{
-						border-bottom: none;
-					}
+					margin: 0;
 				}
 
-				&.head
-				{
-					th, td
-					{
-						padding: 5px 10px;
-						background: $gm-color-indigo-500;
-						color: $color-white;
-					}
-				}
-
-				&.submit
-				{
-					td
-					{
-						padding: 10px;
-					}
-				}
-
-				&.notes
-				{
-					background: $gm-color-grey-100;
-
-					td
-					{
-						padding: 10px;
-					}
-
-					dl
-					{
-						dt
-						{
-							font-weight: bold;
-						}
-						dd
-						{
-							margin-bottom: 10px;
-
-							&:last-child
-							{
-								margin-bottom: 0;
-							}
-
-							p
-							{
-								margin-bottom: 10px;
-
-								input.url
-								{
-									width: 100%;
-									padding: 4px;
-									border: solid 1px $color-border;
-									background: $gm-color-grey-200;
-								}
-
-								&:last-child
-								{
-									margin-bottom: 0;
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-	//vote form
-	.form-vote
-	{
-		label.rate
-		{
-			padding: 5px 15px;
-		}
-	}
-	//none titles
-	.noneTitles
-	{
-		li
-		{
-			margin-bottom: 10px;
-			
-			a
-			{
-				text-decoration: none;
-
-				&:hover
-				{
-					text-decoration: underline;
-				}
-
-				.official,
-				.read
-				{
-					@include inline-block;
-				}
 				.official
 				{
-					margin-right: 5px;
+					line-height: 20px;
+					color: $color-link;
+					font-size: 16px;
 				}
+
 				.read
 				{
-					color: $color-text-light;
-					font-size: 12px;
+					line-height: 10px;
+					font-size: 10px;
 				}
+			}
+		}
+
+		&.imageLinks-s
+		{
+			.images
+			{
+				width: 40px;
+
+				.thumb
+				{
+					width: 40px;
+
+					img
+					{
+						width: 40px;
+						height: 30px;
+					}
+				}
+			}
+
+			.data
+			{
+				margin-left: 50px;
 			}
 		}
 	}

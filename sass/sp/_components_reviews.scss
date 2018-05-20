@@ -6,30 +6,14 @@
 	//review
 	section.review
 	{
-		@include bordered-links;
-		
 		//recent reviews
 		section.recents
 		{
 			.images
 			{
-				float: left;
-				width: 80px;
-
-				.thumb
-				{
-					margin-bottom: 5px;
-
-					img
-					{
-						width: 80px;
-						height: 60px;
-					}
-				}
-
 				.rate
 				{
-					border-radius: 2px;
+					border-radius: $border-radius;
 					background: $color-primary;
 					line-height: 20px;
 					color: $color-white;
@@ -45,22 +29,21 @@
 
 			.data
 			{
-				margin-left: 90px;
-
 				*
 				{
 					line-height: 15px;
+					font-size: 12px;
 				}
 
-				.title
+				.main
 				{
-					color: $color-link;
+					font-size: 16px;
 				}
 
 				.review
 				{
+					margin-top: 5px;
 					margin-bottom: 5px;
-					font-size: 12px;
 
 					.continue
 					{
@@ -71,13 +54,11 @@
 				.date
 				{
 					color: $color-text-light;
-					font-size: 12px;
 				}
 				
 				.official
 				{
 					color: $color-theme-official;
-					font-size: 12px;
 				}
 			}
 		}
@@ -85,23 +66,8 @@
 		//waiting titles
 		section.waits
 		{
-			.thumb
-			{
-				float: left;
-				width: 40px;
-				height: 30px;
-
-				img
-				{
-					width: 40px;
-					height: 30px;
-				}
-			}
-
 			.title
 			{
-				display: block;
-				margin-left: 50px;
 				line-height: 30px;
 			}
 		}

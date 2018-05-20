@@ -1,0 +1,77 @@
+<?php 
+	include dirname(__FILE__) . "/_includes/meta_head.html";
+?>
+
+<body class="links">
+
+<?php include "_includes/header.html";?>
+
+<!-- contents -->
+<div class="contents">
+	<div class="pageInfo">
+		<h1 class="pageTitle">
+			<span class="main">お問い合わせ</span>
+			<span class="sub">当サイトへのお問い合わせは、こちらから</span>
+		</h1>
+	</div>
+	<!-- contact -->
+	<section class="about-contact">
+		<h2>お問い合わせフォーム</h2>
+		<div class="form">
+			<form action="">
+				<table>
+					<tr>
+						<th class="must">お名前</th>
+					</tr>
+					<tr>
+						<td><input type="text" class="input-text"></td>
+					</tr>
+					<tr>
+						<th class="must">メールアドレス</th>
+					</tr>
+					<tr>
+						<td><input type="text" class="input-text"></td>
+					</tr>
+					<tr>
+						<th class="must">本文</th>
+					</tr>
+					<tr>
+						<td><textarea class="input-text" rows="10"></textarea></td>
+					</tr>
+					<tr>
+						<th>認証番号</th>
+					</tr>
+					<tr>
+						<td><img src="http://onlinegame.dz-life.net/img/design/spamnum.gif" alt=""></td>
+					</tr>
+					<tr>
+						<th class="must">認証</th>
+					</tr>
+					<tr>
+						<td>
+							<span class="input-attention">スパム防止のため上記認証番号を半角で入力してください。</span>
+							<input type="text" class="input-text" size="4" maxlength="4">
+						</td>
+					</tr>
+					<tr class="submit">
+						<td><button class="button button-block button-submit">お問い合わせを送信</button></td>
+					</tr>
+					<tr class="notes">
+						<td>
+							<dl>
+								<dt>返信を保証するものではありません</dt>
+								<dd>セールスのお問い合わせなどについては、お返事を控えさせていただく場合がありますのでご了承ください。</dd>
+							</dl>
+						</td>
+					</tr>
+				</table>
+			</form>
+
+		</div>
+	</section>
+</div>
+
+<?php include "_includes/footer.html";?>
+
+</body>
+</html>

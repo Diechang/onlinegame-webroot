@@ -1,0 +1,62 @@
+<?php 
+	include dirname(__FILE__) . "/_includes/meta_head.html";
+?>
+
+<body class="pcs">
+
+<?php include "_includes/header.html";?>
+
+<!-- contents -->
+<div class="contents">
+	<div class="pageInfo">
+		<h1 class="pageTitle">
+			<span class="main">オンラインゲーム用PC(パソコン)</span>
+			<span class="sub">快適プレイを楽しむための推奨スペックPC</span>
+		</h1>
+		<div class="pageDescription">
+			<p>派手な演出や、美しいグラフィックスが楽しめる3Dオンラインゲームなどでは、BTOパソコンショップなどからそれぞれのゲームの動作スペックを満たす推奨PCが販売されています。中にはPCを買うことで特典としてゲーム内アイテムや、非売品グッズがもらえるショップもありますので、ゲームをより楽しみたい方はオンラインゲーム用PCを一度チェックしてみてください。</p>
+		</div>
+	</div>
+	<div class="gAds"><!-- adsense --></div>
+	<!-- titles -->
+	<section class="pc-titles">
+		<h2>タイトル別推奨PCを探す</h2>
+		<ul class="borderedLinks imageLinks">
+<?php for($i=0; $i<15; $i++):?>
+			<li>
+				<a href="titles_pc.html">
+					<div class="images">
+						<div class="thumb"><img src="../img/noimage160.gif" alt=""></div>
+					</div>
+					<div class="data">
+						<div class="title">
+							<div class="official">Soul of the ultimate nation</div>
+							<div class="read">ソウル・オブ・ジ・アルティメット・ネイション</div>
+						</div>
+						<div class="counts">
+							<div class="count count-desktop">
+								<span class="caption"><i class="zmdi zmdi-desktop-windows"></i></span>
+								<span class="number">5</span>
+							</div>
+							<div class="count count-none count-note">
+								<span class="caption"><i class="zmdi zmdi-laptop"></i></span>
+								<span class="number">0</span>
+							</div>
+						</div>
+						<div class="price">
+							<span class="caption">価格</span>
+							<span class="number">100,000<span class="unit">円〜</span></span>
+						</div>
+					</div>
+				</a>
+			</li>
+<?php endfor;?>
+		</ul>
+	</section>
+	<div class="gAds"><!-- adsense --></div>
+</div>
+
+<?php include "_includes/footer.html";?>
+
+</body>
+</html>

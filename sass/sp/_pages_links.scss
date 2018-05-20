@@ -1,16 +1,10 @@
 
 /** Links contents
 ------------------------------ **/
-.contents
+body.links
 {
-	//about
-	section.link-about
+	section.sites
 	{
-		p
-		{
-			padding: 10px;
-		}
-
 		ul.categories
 		{
 			display: flex;
@@ -45,45 +39,6 @@
 						background: $color-link;
 						color: $color-white;
 						font-weight: bold;
-					}
-				}
-			}
-		}
-	}
-
-	section.sites
-	{
-		@include bordered-links;
-
-		ul.list
-		{
-			li
-			{
-				.thumb
-				{
-					float: left;
-					width: 80px;
-
-					img
-					{
-						max-width: 80px;
-					}
-				}
-				
-				.data
-				{
-					margin-left: 90px;
-					
-					.title
-					{
-						margin-bottom: 5px;
-						color: $color-link;
-					}
-
-					.description
-					{
-						color: $color-text-light;
-						font-size: 12px;
 					}
 				}
 			}

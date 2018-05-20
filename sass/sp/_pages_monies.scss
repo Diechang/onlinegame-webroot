@@ -1,0 +1,80 @@
+
+/** Monies contents
+------------------------------ **/
+body.monies
+{
+	// doc
+	section.money-doc
+	{
+		.money-doc-body
+		{
+			padding: 10px;
+		}
+	}
+
+	section.money-sites
+	{
+		ul.list
+		{
+			li
+			{
+				padding: 10px;
+				border-bottom: solid 1px $color-border;
+			}
+		}
+
+		.banner
+		{
+			float: right;
+			margin-left: 10px;
+			margin-bottom: 5px;
+		}
+
+		.title
+		{
+			margin-bottom: 5px;
+			
+			a
+			{
+				color: $color-link;
+			}
+		}
+
+		.description
+		{
+			p
+			{
+				margin-bottom: 5px;
+
+				&:last-of-type
+				{
+					margin: 0;
+				}
+			}
+		}
+	}
+
+	section.money-categories
+	{
+		@include bordered-links;
+		
+		.title
+		{
+			margin-bottom: 5px;
+			color: $color-link;
+		}
+
+		.description
+		{
+			p
+			{
+				margin-bottom: 5px;
+
+				&:last-of-type
+				{
+					margin: 0;
+				}
+			}
+		}
+	}
+}

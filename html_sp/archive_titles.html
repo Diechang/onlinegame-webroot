@@ -1,0 +1,97 @@
+<?php 
+	include dirname(__FILE__) . "/_includes/meta_head.html";
+?>
+
+<body class="archives">
+
+<?php include "_includes/header.html";?>
+
+<!-- contents -->
+<div class="contents">
+	<div class="pageInfo">
+		<h1 class="pageTitle">
+			<span class="main">MMO</span>
+			<span class="sub">Massively Multiplayer Online</span>
+		</h1>
+		<div class="pageDescription editorDoc">
+			<p>数百～数千といった大人数での同時プレイが楽しめるオンラインゲームの主流形態のひとつ。</p>
+			<p>主に少人数でチームを組んで遊ぶ<a href="archive_titles.html">MO</a>とは違い迫力ある大規模な戦争などが楽しめます。<br />その半面一つの社会が形成され、プレイヤー同士の人間関係などの問題も起こりやすいので注意が必要です。</p>
+		</div>
+	</div>
+	<div class="gAds"><!-- adsense --></div>
+	<!-- pickups -->
+	<section class="archive-pickups">
+		<h2><span class="label label-primary">MMO</span>おすすめタイトル</h2>
+		<div class="slide slide-s">
+<?php for($i=0; $i<5; $i++):?>
+			<div class="slide-item">
+				<a href="titles_index.html">
+					<div class="images">
+						<div class="thumb"><img src="../img/noimage160.gif" alt=""></div>
+					</div>
+					<div class="texts">
+						<div class="title">
+							<div class="official"><?php echo $i ?>:Soul of the Ultimate Nation</div>
+							<div class="read">ソウル・オブ・ジ・アルティメット・ネイション</div>
+						</div>
+						<div class="stars stars-w100 stars-rate50"></div>
+					</div>
+				</a>
+			</div>
+<?php endfor;?>
+		</ul>
+	</section>
+	<!-- titles -->
+	<section class="archive-titles">
+		<h2><span class="label label-primary">MMO</span>オンラインゲーム一覧</h2>
+
+		<ul class="borderedLinks imageLinks">
+<?php for($i=0; $i<10; $i++):?>
+			<li>
+				<a href="titles_index.html">
+					<div class="images">
+						<div class="thumb"><img src="../img/noimage160.gif" alt=""></div>
+						<div class="rate">
+							<div class="caption">総合評価</div>
+							<div class="value">
+								<span class="num">5.0</span>
+								<span class="unit">点</span>
+							</div>
+						</div>
+					</div>
+					<div class="data">
+						<div class="title">
+							<div class="official">Soul of the ultimate nation</div>
+							<div class="read">ソウル・オブ・ジ・アリティメット・ネイション</div>
+						</div>
+						<div class="platforms">
+							<ul class="platformLabels">
+								<li>Windows</li>
+								<li>Mac</li>
+								<li>PCブラウザ</li>
+							</ul>
+						</div>
+						<dl class="attributes">
+							<dt><span class="label label-service">サービス</span></dt>
+							<dd>正式サービス</dd>
+							<dt><span class="label label-fee">料金</span></dt>
+							<dd>基本プレイ無料</dd>
+							<dt><span class="label label-genre">ジャンル</span></dt>
+							<dd>MMO MO RPG アクション</dd>
+						</dl>
+					</div>
+				</a>
+			</li>
+<?php endfor;?>
+		</ul>
+
+<?php include dirname(__FILE__) . "/_includes/comp_pages.html"; ?>
+
+	</section>
+	<div class="gAds"><!-- adsense --></div>
+</div>
+
+<?php include "_includes/footer.html";?>
+
+</body>
+</html>

@@ -9,123 +9,12 @@ body.index
 		h2
 		{
 			padding: 5px 10px;
+			border: none;
 			background: $gm-color-indigo-500;
+			line-height: 15px;
 			color: $color-white;
 			font-size: 10px;
 			font-weight: bold;
-		}
-
-		.slide
-		{
-			overflow: hidden;
-			width: 100%;
-			height: 120px;
-
-			.slide-item
-			{
-				float: left;
-				width: 100%;
-				height: 120px;
-				background: $gm-color-grey-100;
-
-				a
-				{
-					display: block;
-					padding: 10px;
-					color: inherit;
-					text-decoration: none;
-
-					.images
-					{
-						float: left;
-						width: 80px;
-
-						.thumb
-						{
-							margin-bottom: 5px;
-						}
-					}
-
-					.texts
-					{
-						margin-left: 85px;
-
-						.title
-						{
-							span
-							{
-								@include text-overflow;
-								
-								display: block;
-								height: 20px;
-
-								&.official
-								{
-									font-size: 16px;
-								}
-								&.read
-								{
-									color: $color-text-light;
-									font-size: 12px;
-								}
-							}
-						}
-
-						.description
-						{
-							overflow: hidden;
-							height: 60px;
-							line-height: 15px;
-							font-size: 12px;
-						}
-					}
-				}
-			}
-			// with dots
-			&.slick-dotted
-			{
-				position: relative;
-				height: 150px;
-
-				ul.slick-dots
-				{
-					position: absolute;
-					left: 0;
-					right: 0;
-					bottom: 0;
-					height: 10px;
-					margin: 10px 0;
-					text-align: center;
-
-					li
-					{
-						display: inline-block;
-						vertical-align: top;
-
-						button
-						{
-							display: block;
-							width: 8px;
-							height: 8px;
-							margin: 0 4px;
-							padding: 0;
-							border: none;
-							border-radius: 2px;
-							outline: 0;
-							background: $color-text-lightest;
-							font-size: 0;	
-						}
-
-						&.slick-active
-						{
-							button
-							{
-								background: $gm-color-indigo-500;
-							}
-						}
-					}
-				}
-			}
 		}
 	}
 
@@ -135,51 +24,16 @@ body.index
 		p.none
 		{
 			padding: 10px;
-			border-radius: 3px;
+			border-radius: $border-radius;
 			background: $gm-color-grey-200;
 			text-align: center;
-		}
-		
-		@include bordered-links;
-
-		.thumb
-		{
-			float: left;
-			width: 40px;
-
-			img
-			{
-				width: 40px;
-				height: 30px;
-			}
 		}
 
 		.data
 		{
-			margin-left: 50px;
-
-			.title
+			.label
 			{
-				margin-bottom: 5px;
-				
-				span
-				{
-					display: block;
-					@include text-overflow;
-
-					&.official
-					{
-						line-height: 20px;
-						color: $color-link;
-					}
-
-					&.read
-					{
-						line-height: 15px;
-						color: $color-text;
-						font-size: 10px;
-					}
-				}
+				width: 60px;
 			}
 
 			.date
@@ -192,100 +46,5 @@ body.index
 	//new titles & fansites
 	section.news
 	{
-		@include bordered-links;
-
-		.thumb
-		{
-			float: left;
-			width: 40px;
-
-			img
-			{
-				width: 40px;
-				height: 30px;
-			}
-		}
-
-		.data
-		{
-			margin-left: 50px;
-		}
-
-		.main
-		{
-			line-height: 20px;
-			color: $color-link;
-		}
-
-		.sub
-		{
-			line-height: 10px;
-			color: $color-text;
-			font-size: 10px;
-		}
-	}
-
-	/** Main contents
-	------------------------------ **/
-	.contents-main
-	{
-		//information
-		.information
-		{
-			margin-bottom: 40px;
-			border-radius: 0 10px;
-
-			h1.siteTitle
-			{
-				position: relative;
-				margin: 0 auto;
-				padding: 20px;
-				text-align: center;
-
-				&:before,
-				&:after
-				{
-					content: "";
-					position: absolute;
-					bottom: 0;
-					height: 2px;
-				}
-				&:before
-				{
-					left: 0;
-					right: 0;
-					background: $color-border;
-				}
-				&:after
-				{
-					left: 120px;
-					right: 120px;
-					background: $color-primary;
-				}
-
-				span
-				{
-					display: block;
-
-					&.caption
-					{
-						line-height: 20px;
-						color: $color-text-light;
-						font-size: 14px;
-					}
-				}
-			}
-
-			.text
-			{
-				padding: 20px;
-				background: $gm-color-grey-200;
-
-				p
-				{
-					margin-bottom: .8em;
-				}
-			}
-		}
 	}
 }

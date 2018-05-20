@@ -106,12 +106,13 @@ img.adTrack {
 }
 
 input, textarea {
+  line-height: 20px;
   font-size: 16px;
 }
 input.input-text, textarea.input-text {
   width: 100%;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 5px 10px;
   border: solid 1px #BDBDBD;
   border-radius: 5px;
 }
@@ -123,6 +124,7 @@ input.input-text-s, textarea.input-text-s {
 }
 
 select.input-select {
+  width: 100%;
   height: 32px;
   border: solid 1px #BDBDBD;
   border-radius: 5px;
@@ -133,12 +135,14 @@ select.input-select {
   display: inline-block;
   margin-top: 5px;
   color: #616161;
+  font-size: 12px;
 }
 
 .input-attention {
   display: inline-block;
   margin-bottom: 5px;
   color: #F44336;
+  font-size: 12px;
 }
 
 /** Classes
@@ -201,7 +205,7 @@ select.input-select {
   padding: 10px;
   border: solid 1px #BDBDBD;
   border-bottom-width: 2px;
-  border-radius: 3px;
+  border-radius: 2px;
   outline: none;
   background: #F5F5F5;
   line-height: 20px;
@@ -265,7 +269,7 @@ select.input-select {
 
 .label {
   display: inline-block;
-  width: 65px;
+  width: 50px;
   height: 15px;
   line-height: 15px;
   border-radius: 2px;
@@ -486,6 +490,18 @@ i.icon.icon-feed {
   color: #D32F2F;
 }
 
+.editorDoc a {
+  display: inline;
+  color: #2196F3;
+  text-decoration: underline;
+}
+.editorDoc p {
+  margin-bottom: 5px;
+}
+.editorDoc p:last-child {
+  margin: 0;
+}
+
 /** Main blocks
 ------------------------------ **/
 header {
@@ -701,6 +717,10 @@ footer .copyright .site {
 ------------------------------ **/
 .contents {
   position: relative;
+  /** Tags
+  ------------------------------ **/
+  /** Classes
+  ------------------------------ **/
 }
 .contents:before {
   content: "";
@@ -720,9 +740,6 @@ footer .copyright .site {
   padding: 10px;
   line-height: 1;
   font-size: 20px;
-}
-.contents h1.pageTitle {
-  padding: 20px 10px;
 }
 .contents h1 span {
   display: inline-block;
@@ -752,6 +769,19 @@ footer .copyright .site {
   font-size: 14px;
   font-weight: bold;
 }
+.contents h2 span {
+  display: inline-block;
+}
+.contents h2 span.label {
+  width: auto;
+  height: auto;
+  margin-right: 5px;
+  padding: 3px 5px;
+  line-height: 14px;
+  font-size: 12px;
+  font-weight: normal;
+  vertical-align: text-bottom;
+}
 .contents h3 {
   padding: 5px 10px;
   border-top: solid 1px #BDBDBD;
@@ -760,6 +790,25 @@ footer .copyright .site {
   line-height: 20px;
   font-size: 12px;
   font-weight: bold;
+}
+.contents p.headline-description {
+  padding: 5px 10px;
+  line-height: 15px;
+  font-size: 12px;
+}
+.contents .pageInfo {
+  padding: 20px 10px;
+}
+.contents .pageInfo h1.pageTitle {
+  margin-bottom: 10px;
+  padding: 0;
+}
+.contents .pageInfo h1.pageTitle:only-child {
+  margin: 0;
+}
+.contents .pageInfo .pageDescription {
+  line-height: 15px;
+  font-size: 12px;
 }
 .contents .more {
   border-top: solid 1px #BDBDBD;
@@ -770,6 +819,19 @@ footer .copyright .site {
   line-height: 20px;
   font-size: 12px;
   text-align: right;
+}
+.contents .noData {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 2px;
+  background: #EEEEEE;
+  text-align: center;
+}
+.contents .noData:first-child {
+  margin-top: 0;
+}
+.contents .noData:last-child {
+  margin-bottom: 0;
 }
 .contents .gAds {
   padding: 10px;
@@ -782,71 +844,123 @@ footer .copyright .site {
 .contents .gAds-right {
   text-align: right;
 }
-
-.contents-main .noData {
-  margin: 10px 0;
-  padding: 10px;
-  border-radius: 3px;
-  background: #EEEEEE;
-  text-align: center;
+.contents .slide {
+  overflow: hidden;
+  width: 100%;
+  height: 120px;
 }
-.contents-main .noData:first-child {
-  margin-top: 0;
+.contents .slide .slide-item {
+  float: left;
+  width: 100%;
+  height: 120px;
+  background: #F5F5F5;
 }
-.contents-main .noData:last-child {
-  margin-bottom: 0;
-}
-.contents-main h1 {
-  margin-bottom: 20px;
-  line-height: 30px;
-  font-size: 24px;
-}
-.contents-main h1.pageTitle {
-  margin-bottom: 40px;
-}
-.contents-main h1 span.main, .contents-main h1 span.official {
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
-}
-.contents-main h1 span.sub, .contents-main h1 span.read {
+.contents .slide .slide-item a {
   display: block;
-  line-height: 20px;
-  font-size: 14px;
+  padding: 10px;
+  color: inherit;
+  text-decoration: none;
 }
-.contents-main h1 span.label {
-  width: auto;
-  margin-right: 5px;
-  padding: 5px 10px;
+.contents .slide .slide-item a .images {
+  float: left;
+  width: 80px;
+}
+.contents .slide .slide-item a .images .thumb {
+  margin-bottom: 5px;
+}
+.contents .slide .slide-item a .images .thumb img {
+  width: 80px;
+  height: 60px;
+}
+.contents .slide .slide-item a .texts {
+  margin-left: 85px;
+}
+.contents .slide .slide-item a .texts .title span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+  height: 20px;
+}
+.contents .slide .slide-item a .texts .title span.official {
   font-size: 16px;
 }
-.contents-main p.headline-description {
-  margin-bottom: 10px;
+.contents .slide .slide-item a .texts .title span.read {
+  color: #616161;
+  font-size: 12px;
 }
-
-/** Main contents - sections
------------------------------- **/
-.contents-main section,
-.contents-main .pageInfo {
-  margin-bottom: 60px;
+.contents .slide .slide-item a .texts .description {
+  overflow: hidden;
+  height: 60px;
+  line-height: 15px;
+  font-size: 12px;
 }
-.contents-main section section,
-.contents-main .pageInfo section {
-  margin-bottom: 40px;
+.contents .slide.slide-s {
+  height: 65px;
 }
-.contents-main section.adCenterBottom,
-.contents-main .pageInfo.adCenterBottom {
+.contents .slide.slide-s .slide-item {
+  height: 65px;
+}
+.contents .slide.slide-s .slide-item a .images {
+  width: 60px;
+}
+.contents .slide.slide-s .slide-item a .images .thumb {
+  margin: 0;
+}
+.contents .slide.slide-s .slide-item a .images .thumb img {
+  width: 60px;
+  height: 45px;
+}
+.contents .slide.slide-s .slide-item a .texts {
+  margin-left: 65px;
+}
+.contents .slide.slide-s .slide-item a .texts .title span {
+  height: 15px;
+}
+.contents .slide.slide-s .slide-item a .texts .title span.official {
+  font-size: 14px;
+}
+.contents .slide.slide-s .slide-item a .texts .title span.read {
+  font-size: 12px;
+}
+.contents .slide.slide-s .slide-item a .texts .stars {
+  margin-left: 0;
+}
+.contents .slide.slick-dotted {
+  position: relative;
+  height: 150px;
+}
+.contents .slide.slick-dotted.slide-s {
+  height: 95px;
+}
+.contents .slide.slick-dotted ul.slick-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 10px;
+  margin: 10px 0;
   text-align: center;
 }
-.contents-main section.adCenterBottom img,
-.contents-main .pageInfo.adCenterBottom img {
-  max-width: 100%;
+.contents .slide.slick-dotted ul.slick-dots li {
+  display: inline-block;
+  vertical-align: top;
 }
-
-/** Global components
------------------------------- **/
+.contents .slide.slick-dotted ul.slick-dots li button {
+  display: block;
+  width: 8px;
+  height: 8px;
+  margin: 0 4px;
+  padding: 0;
+  border: none;
+  border-radius: 2px;
+  outline: 0;
+  background: #E0E0E0;
+  font-size: 0;
+}
+.contents .slide.slick-dotted ul.slick-dots li.slick-active button {
+  background: #3F51B5;
+}
 .contents nav.pages {
   padding: 5px;
   border-top: solid 1px #BDBDBD;
@@ -873,7 +987,7 @@ footer .copyright .site {
 .contents nav.pages ul.paging li a {
   padding: 4px 9px;
   border: solid 1px #BDBDBD;
-  border-radius: 3px;
+  border-radius: 2px;
   background: #fff;
   text-decoration: none;
 }
@@ -887,24 +1001,26 @@ footer .copyright .site {
   font-weight: bold;
 }
 .contents .copyright {
-  padding: 10px;
-  border-radius: 3px;
+  padding: 5px;
+  border-radius: 2px;
   background: #BDBDBD;
   line-height: 15px;
   color: #fff;
-  font-size: 12px;
+  font-size: 10px;
 }
 .contents .officiallink,
 .contents .shoplink {
   overflow: hidden;
   clear: both;
   position: relative;
-  margin: 10px 0 20px;
+  margin: 10px 0;
+  padding: 10px;
   border-bottom: solid 2px #004D40;
   border-radius: 5px;
   background: #009688;
-  line-height: 30px;
   color: #fff;
+  text-align: center;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.35);
 }
 .contents .officiallink:first-child,
 .contents .shoplink:first-child {
@@ -914,48 +1030,22 @@ footer .copyright .site {
 .contents .shoplink:last-child {
   margin-bottom: 0;
 }
-.contents .officiallink:before,
-.contents .shoplink:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 0;
-  background: #00796B;
-  z-index: 0;
-  -moz-transition: height 0.25s ease;
-  -o-transition: height 0.25s ease;
-  -webkit-transition: height 0.25s ease;
-  transition: height 0.25s ease;
-}
-.contents .officiallink:hover:before,
-.contents .shoplink:hover:before {
-  height: 50%;
-}
-.contents .officiallink a, .contents .officiallink span, .contents .officiallink i,
-.contents .shoplink a,
-.contents .shoplink span,
-.contents .shoplink i {
-  z-index: 1;
-}
-.contents .officiallink span.caption, .contents .officiallink i,
-.contents .shoplink span.caption,
+.contents .officiallink i,
 .contents .shoplink i {
   position: absolute;
   top: 50%;
   height: 30px;
   margin-top: -15px;
   pointer-events: none;
+  z-index: 1;
 }
-.contents .officiallink span.caption, .contents .officiallink a,
-.contents .shoplink span.caption,
-.contents .shoplink a {
-  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.35);
-}
-.contents .officiallink span.caption,
-.contents .shoplink span.caption {
-  left: 10px;
+.contents .officiallink .caption,
+.contents .officiallink .read,
+.contents .shoplink .caption,
+.contents .shoplink .read {
+  display: block;
+  line-height: 15px;
+  font-size: 12px;
 }
 .contents .officiallink i,
 .contents .shoplink i {
@@ -965,47 +1055,19 @@ footer .copyright .site {
   font-size: 20px;
   text-align: center;
 }
-.contents .officiallink a,
-.contents .officiallink span.ended,
-.contents .shoplink a,
-.contents .shoplink span.ended {
-  position: relative;
+.contents .officiallink .title,
+.contents .shoplink .title {
   display: block;
-  color: inherit;
+  line-height: 30px;
   font-size: 20px;
-  text-align: right;
-  text-decoration: none;
 }
-.contents .officiallink a span,
-.contents .officiallink span.ended span,
-.contents .shoplink a span,
-.contents .shoplink span.ended span {
-  display: block;
-}
-.contents .officiallink a span.read,
-.contents .officiallink span.ended span.read,
-.contents .shoplink a span.read,
-.contents .shoplink span.ended span.read {
-  line-height: 15px;
-  font-size: 12px;
-}
-.contents .officiallink span.ended,
-.contents .shoplink span.ended {
+.contents .officiallink.ended,
+.contents .shoplink.ended {
   background: #004D40;
-  padding: 10px 30px;
-  text-align: center;
+  pointer-events: none;
 }
-.contents .officiallink span.caption {
-  font-size: 16px;
-}
-.contents .officiallink a {
-  padding: 10px 30px 10px 110px;
-}
-.contents .shoplink span.caption {
+.contents .shoplink .caption {
   font-size: 14px;
-}
-.contents .shoplink a {
-  padding: 10px 30px 10px 200px;
 }
 .contents .applink {
   overflow: hidden;
@@ -1034,19 +1096,17 @@ footer .copyright .site {
   font-size: 16px;
 }
 .contents .shares {
-  margin: 20px 0;
-  padding: 10px;
-  border-top: solid 1px #E0E0E0;
-  border-radius: 5px;
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 2px;
   background: #EEEEEE;
 }
 .contents .shares li {
   display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
-  margin-right: 5px;
+}
+.contents .shares li img {
+  width: 50px;
+  height: 50px;
 }
 .contents .form form {
   background: #fff;
@@ -1072,7 +1132,7 @@ footer .copyright .site {
   float: left;
   margin-right: 5px;
   padding: 4px 5px;
-  border-radius: 3px;
+  border-radius: 2px;
   background: #F44336;
   line-height: 1;
   color: #fff;
@@ -1148,36 +1208,195 @@ footer .copyright .site {
   font-size: 12px;
 }
 
-/** Ranking components
+/** Review components
 ------------------------------ **/
-.contents section.ranking ul.list li {
+.contents ul.borderedLinks > li {
   border-bottom: solid 1px #BDBDBD;
 }
-.contents section.ranking ul.list li:last-child {
+.contents ul.borderedLinks > li:last-child {
   border-bottom: 0;
 }
-.contents section.ranking ul.list li a {
+.contents ul.borderedLinks > li a {
   overflow: hidden;
   padding: 10px;
 }
-.contents section.ranking ul.list li ul li {
-  border: none;
+.contents ul.borderedLinks:first-child > li:first-child {
+  border-top: solid 1px #BDBDBD;
 }
-.contents section.ranking section.all .images {
-  position: relative;
+.contents ul.textLinks .main {
+  line-height: 20px;
+  color: #2196F3;
+  font-size: 16px;
+}
+.contents ul.textLinks .sub {
+  line-height: 10px;
+  color: #616161;
+  font-size: 10px;
+}
+.contents ul.textLinks .description {
+  color: #212121;
+}
+.contents ul.textLinks .description p {
+  margin-bottom: 5px;
+}
+.contents ul.textLinks .description p:last-of-type {
+  margin: 0;
+}
+.contents ul.imageLinks > li > a {
+  overflow: hidden;
+}
+.contents ul.imageLinks .images {
   float: left;
   width: 80px;
 }
-.contents section.ranking section.all .images .thumb img {
+.contents ul.imageLinks .images .thumb {
+  width: 80px;
+  margin-bottom: 5px;
+}
+.contents ul.imageLinks .images .thumb:only-child {
+  margin: 0;
+}
+.contents ul.imageLinks .images .thumb img {
   width: 80px;
   height: 60px;
+}
+.contents ul.imageLinks .data {
+  margin-left: 90px;
+}
+.contents ul.imageLinks .data .title {
+  margin-bottom: 5px;
+}
+.contents ul.imageLinks .data .title:only-child {
+  margin: 0;
+}
+.contents ul.imageLinks .data .title .official {
+  line-height: 20px;
+  color: #2196F3;
+  font-size: 16px;
+}
+.contents ul.imageLinks .data .title .read {
+  line-height: 10px;
+  font-size: 10px;
+}
+.contents ul.imageLinks.imageLinks-s .images {
+  width: 40px;
+}
+.contents ul.imageLinks.imageLinks-s .images .thumb {
+  width: 40px;
+}
+.contents ul.imageLinks.imageLinks-s .images .thumb img {
+  width: 40px;
+  height: 30px;
+}
+.contents ul.imageLinks.imageLinks-s .data {
+  margin-left: 50px;
+}
+
+/** Archive components
+------------------------------ **/
+.contents section.archive-titles .images .rate {
+  overflow: hidden;
+  padding: 5px;
+  border: solid 1px #BDBDBD;
+  border-radius: 2px;
+  background: #fff;
+  line-height: 15px;
+  text-align: center;
+}
+.contents section.archive-titles .images .rate .caption {
+  font-size: 12px;
+}
+.contents section.archive-titles .images .rate .value .num {
+  font-weight: bold;
+}
+.contents section.archive-titles .images .rate .value .unit {
+  font-size: 10px;
+}
+.contents section.archive-titles .data .platforms {
+  margin-bottom: 5px;
+}
+.contents section.archive-titles .data dl.attributes {
+  overflow: hidden;
+}
+.contents section.archive-titles .data dl.attributes dt {
+  clear: left;
+  float: left;
+  width: 50px;
+  line-height: 15px;
+}
+.contents section.archive-titles .data dl.attributes dd {
+  margin-left: 55px;
+  margin-bottom: 5px;
+  line-height: 15px;
+  color: #616161;
+  font-size: 12px;
+}
+
+/** Search components
+------------------------------ **/
+.contents section.search .form-search fieldset {
+  border-bottom: solid 1px #BDBDBD;
+  background: #fff;
+}
+.contents section.search .form-search fieldset legend {
+  padding: 10px 10px 5px;
+  line-height: 20px;
+}
+.contents section.search .form-search fieldset .inputs {
+  padding: 5px 10px 10px;
+}
+.contents section.search .form-search fieldset .inputs ul {
+  margin-bottom: -5px;
+}
+.contents section.search .form-search fieldset .inputs ul li {
+  margin-bottom: 5px;
+}
+.contents section.search .form-search fieldset .inputs label {
+  display: block;
+  padding: 10px;
+  border: solid 1px #BDBDBD;
+  line-height: 20px;
+  font-size: 12px;
+}
+.contents section.search .form-search fieldset .inputs input[type=checkbox] {
+  display: none;
+}
+.contents section.search .form-search fieldset .inputs input[type=checkbox]:checked + label {
+  background: #2196F3;
+  color: #fff;
+}
+.contents section.search .form-search fieldset .inputs.inputs-tile ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contents section.search .form-search fieldset .inputs.inputs-tile ul li {
+  width: 49%;
+}
+.contents section.search .form-search fieldset .inputs.inputs-tile label {
+  padding: 10px 5px;
+  text-align: center;
+}
+.contents section.search .form-search fieldset.keyword input {
+  width: 100%;
+}
+.contents section.search .form-search .submit {
+  padding: 10px;
+  text-align: center;
+}
+
+/** Ranking components
+------------------------------ **/
+.contents section.ranking section.all .images {
+  position: relative;
 }
 .contents section.ranking section.all .images .num {
   position: absolute;
   top: -5px;
   left: -5px;
-  width: 20px;
+  min-width: 20px;
   height: 15px;
+  padding: 0 2px;
   line-height: 15px;
   background: #E91E63;
   color: #fff;
@@ -1203,21 +1422,6 @@ footer .copyright .site {
   right: 0;
   border-left-color: transparent;
 }
-.contents section.ranking section.all .data {
-  margin-left: 90px;
-}
-.contents section.ranking section.all .data .title {
-  margin-bottom: 5px;
-}
-.contents section.ranking section.all .data .title .official {
-  line-height: 15px;
-  color: #2196F3;
-  font-size: 14px;
-}
-.contents section.ranking section.all .data .title .read {
-  line-height: 10px;
-  font-size: 10px;
-}
 .contents section.ranking section.all .data .rate {
   overflow: hidden;
   margin-bottom: 5px;
@@ -1239,18 +1443,7 @@ footer .copyright .site {
 .contents section.ranking section.all .data .rate .value .unit {
   font-size: 10px;
 }
-.contents section.ranking section.genres .thumb {
-  float: left;
-  width: 40px;
-  height: 30px;
-}
-.contents section.ranking section.genres .thumb img {
-  width: 40px;
-  height: 30px;
-}
-.contents section.ranking section.genres .genre {
-  display: block;
-  margin-left: 50px;
+.contents section.ranking section.genres .title {
   line-height: 30px;
 }
 .contents section.ranking section.waits .thumb {
@@ -1273,27 +1466,6 @@ footer .copyright .site {
 
 /** Review components
 ------------------------------ **/
-.contents section.review ul.list li {
-  border-bottom: solid 1px #BDBDBD;
-}
-.contents section.review ul.list li:last-child {
-  border-bottom: 0;
-}
-.contents section.review ul.list li a {
-  overflow: hidden;
-  padding: 10px;
-}
-.contents section.review section.recents .images {
-  float: left;
-  width: 80px;
-}
-.contents section.review section.recents .images .thumb {
-  margin-bottom: 5px;
-}
-.contents section.review section.recents .images .thumb img {
-  width: 80px;
-  height: 60px;
-}
 .contents section.review section.recents .images .rate {
   border-radius: 2px;
   background: #2196F3;
@@ -1305,42 +1477,27 @@ footer .copyright .site {
 .contents section.review section.recents .images .rate .unit {
   font-size: 10px;
 }
-.contents section.review section.recents .data {
-  margin-left: 90px;
-}
 .contents section.review section.recents .data * {
   line-height: 15px;
+  font-size: 12px;
 }
-.contents section.review section.recents .data .title {
-  color: #2196F3;
+.contents section.review section.recents .data .main {
+  font-size: 16px;
 }
 .contents section.review section.recents .data .review {
+  margin-top: 5px;
   margin-bottom: 5px;
-  font-size: 12px;
 }
 .contents section.review section.recents .data .review .continue {
   color: #2196F3;
 }
 .contents section.review section.recents .data .date {
   color: #616161;
-  font-size: 12px;
 }
 .contents section.review section.recents .data .official {
   color: #009688;
-  font-size: 12px;
-}
-.contents section.review section.waits .thumb {
-  float: left;
-  width: 40px;
-  height: 30px;
-}
-.contents section.review section.waits .thumb img {
-  width: 40px;
-  height: 30px;
 }
 .contents section.review section.waits .title {
-  display: block;
-  margin-left: 50px;
   line-height: 30px;
 }
 .contents .more a {
@@ -1349,222 +1506,161 @@ footer .copyright .site {
 
 /** Index contents
 ------------------------------ **/
-body.index {
-  /** Main contents
-  ------------------------------ **/
-}
 body.index .newGames h2 {
   padding: 5px 10px;
+  border: none;
   background: #3F51B5;
+  line-height: 15px;
   color: #fff;
   font-size: 10px;
   font-weight: bold;
 }
-body.index .newGames .slide {
-  overflow: hidden;
-  width: 100%;
-  height: 120px;
-}
-body.index .newGames .slide .slide-item {
-  float: left;
-  width: 100%;
-  height: 120px;
-  background: #F5F5F5;
-}
-body.index .newGames .slide .slide-item a {
-  display: block;
-  padding: 10px;
-  color: inherit;
-  text-decoration: none;
-}
-body.index .newGames .slide .slide-item a .images {
-  float: left;
-  width: 80px;
-}
-body.index .newGames .slide .slide-item a .images .thumb {
-  margin-bottom: 5px;
-}
-body.index .newGames .slide .slide-item a .texts {
-  margin-left: 85px;
-}
-body.index .newGames .slide .slide-item a .texts .title span {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  display: block;
-  height: 20px;
-}
-body.index .newGames .slide .slide-item a .texts .title span.official {
-  font-size: 16px;
-}
-body.index .newGames .slide .slide-item a .texts .title span.read {
-  color: #616161;
-  font-size: 12px;
-}
-body.index .newGames .slide .slide-item a .texts .description {
-  overflow: hidden;
-  height: 60px;
-  line-height: 15px;
-  font-size: 12px;
-}
-body.index .newGames .slide.slick-dotted {
-  position: relative;
-  height: 150px;
-}
-body.index .newGames .slide.slick-dotted ul.slick-dots {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 10px;
-  margin: 10px 0;
-  text-align: center;
-}
-body.index .newGames .slide.slick-dotted ul.slick-dots li {
-  display: inline-block;
-  vertical-align: top;
-}
-body.index .newGames .slide.slick-dotted ul.slick-dots li button {
-  display: block;
-  width: 8px;
-  height: 8px;
-  margin: 0 4px;
-  padding: 0;
-  border: none;
-  border-radius: 2px;
-  outline: 0;
-  background: #E0E0E0;
-  font-size: 0;
-}
-body.index .newGames .slide.slick-dotted ul.slick-dots li.slick-active button {
-  background: #3F51B5;
-}
 body.index section.test p.none {
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 2px;
   background: #EEEEEE;
   text-align: center;
 }
-body.index section.test ul.list li {
-  border-bottom: solid 1px #BDBDBD;
-}
-body.index section.test ul.list li:last-child {
-  border-bottom: 0;
-}
-body.index section.test ul.list li a {
-  overflow: hidden;
-  padding: 10px;
-}
-body.index section.test .thumb {
-  float: left;
-  width: 40px;
-}
-body.index section.test .thumb img {
-  width: 40px;
-  height: 30px;
-}
-body.index section.test .data {
-  margin-left: 50px;
-}
-body.index section.test .data .title {
-  margin-bottom: 5px;
-}
-body.index section.test .data .title span {
-  display: block;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-body.index section.test .data .title span.official {
-  line-height: 20px;
-  color: #2196F3;
-}
-body.index section.test .data .title span.read {
-  line-height: 15px;
-  color: #212121;
-  font-size: 10px;
+body.index section.test .data .label {
+  width: 60px;
 }
 body.index section.test .data .date {
   font-size: 10px;
 }
-body.index section.news ul.list li {
+
+/** Portals contents
+------------------------------ **/
+.contents section.portal-about .portal-about-body {
+  padding: 10px;
+}
+.contents section.portal-about .portal-about-body .capture {
+  float: right;
+  width: 100px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+.contents section.portal-about .portal-about-body p {
+  margin-bottom: 5px;
+}
+.contents section.portal-about .portal-about-body p:last-child {
+  margin: 0;
+}
+.contents section.portal-summary {
+  padding: 0 10px 10px;
+}
+.contents section.portal-summary .description {
+  margin-bottom: 10px;
+}
+
+/** Monies contents
+------------------------------ **/
+body.monies section.money-doc .money-doc-body {
+  padding: 10px;
+}
+body.monies section.money-sites ul.list li {
+  padding: 10px;
   border-bottom: solid 1px #BDBDBD;
 }
-body.index section.news ul.list li:last-child {
+body.monies section.money-sites .banner {
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+body.monies section.money-sites .title {
+  margin-bottom: 5px;
+}
+body.monies section.money-sites .title a {
+  color: #2196F3;
+}
+body.monies section.money-sites .description p {
+  margin-bottom: 5px;
+}
+body.monies section.money-sites .description p:last-of-type {
+  margin: 0;
+}
+body.monies section.money-categories ul.list > li {
+  border-bottom: solid 1px #BDBDBD;
+}
+body.monies section.money-categories ul.list > li:last-child {
   border-bottom: 0;
 }
-body.index section.news ul.list li a {
+body.monies section.money-categories ul.list > li a {
   overflow: hidden;
   padding: 10px;
 }
-body.index section.news .thumb {
-  float: left;
-  width: 40px;
-}
-body.index section.news .thumb img {
-  width: 40px;
-  height: 30px;
-}
-body.index section.news .data {
-  margin-left: 50px;
-}
-body.index section.news .main {
-  line-height: 20px;
+body.monies section.money-categories .title {
+  margin-bottom: 5px;
   color: #2196F3;
 }
-body.index section.news .sub {
-  line-height: 10px;
-  color: #212121;
-  font-size: 10px;
+body.monies section.money-categories .description p {
+  margin-bottom: 5px;
 }
-body.index .contents-main .information {
-  margin-bottom: 40px;
-  border-radius: 0 10px;
+body.monies section.money-categories .description p:last-of-type {
+  margin: 0;
 }
-body.index .contents-main .information h1.siteTitle {
-  position: relative;
-  margin: 0 auto;
-  padding: 20px;
+
+/** PCs contents
+------------------------------ **/
+body.pcs section.pc-titles .data .counts {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+body.pcs section.pc-titles .data .counts .count {
+  overflow: hidden;
+  width: 49%;
+  padding: 5px;
+  background: #fff;
+  border: solid 1px #BDBDBD;
+  border-radius: 2px;
+  font-size: 12px;
+}
+body.pcs section.pc-titles .data .counts .count span {
+  display: inline-block;
+}
+body.pcs section.pc-titles .data .counts .count span.caption {
+  float: left;
+}
+body.pcs section.pc-titles .data .counts .count span.number {
+  float: right;
+  font-weight: bold;
+}
+body.pcs section.pc-titles .data .counts .count.count-note {
+  border-top: solid 1px #BDBDBD;
+}
+body.pcs section.pc-titles .data .counts .count.count-none {
+  background: #EEEEEE;
+  color: #616161;
+}
+body.pcs section.pc-titles .data .price {
+  overflow: hidden;
+  line-height: 20px;
+  text-align: right;
+}
+body.pcs section.pc-titles .data .price .caption {
+  display: inline-block;
+  width: 40px;
+  margin-right: 5px;
+  border-radius: 2px;
+  background: #F44336;
+  color: #fff;
+  font-size: 12px;
   text-align: center;
 }
-body.index .contents-main .information h1.siteTitle:before, body.index .contents-main .information h1.siteTitle:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  height: 2px;
+body.pcs section.pc-titles .data .price .number {
+  display: inline-block;
+  color: #F44336;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: right;
 }
-body.index .contents-main .information h1.siteTitle:before {
-  left: 0;
-  right: 0;
-  background: #BDBDBD;
-}
-body.index .contents-main .information h1.siteTitle:after {
-  left: 120px;
-  right: 120px;
-  background: #2196F3;
-}
-body.index .contents-main .information h1.siteTitle span {
-  display: block;
-}
-body.index .contents-main .information h1.siteTitle span.caption {
-  line-height: 20px;
-  color: #616161;
-  font-size: 14px;
-}
-body.index .contents-main .information .text {
-  padding: 20px;
-  background: #EEEEEE;
-}
-body.index .contents-main .information .text p {
-  margin-bottom: .8em;
+body.pcs section.pc-titles .data .price .number .unit {
+  font-size: 12px;
 }
 
 /** Links contents
 ------------------------------ **/
-.contents section.link-about p {
-  padding: 10px;
-}
-.contents section.link-about ul.categories {
+body.links section.sites ul.categories {
   display: flex;
   overflow: auto;
   width: 100%;
@@ -1573,57 +1669,29 @@ body.index .contents-main .information .text p {
   border-bottom: solid 1px #BDBDBD;
   -webkit-overflow-scrolling: touch;
 }
-.contents section.link-about ul.categories li {
+body.links section.sites ul.categories li {
   float: left;
   border-right: solid 1px #BDBDBD;
 }
-.contents section.link-about ul.categories li:last-child {
+body.links section.sites ul.categories li:last-child {
   border-right: none;
 }
-.contents section.link-about ul.categories li a, .contents section.link-about ul.categories li span {
+body.links section.sites ul.categories li a, body.links section.sites ul.categories li span {
   display: block;
   padding: 5px 10px;
   font-size: 12px;
   white-space: nowrap;
 }
-.contents section.link-about ul.categories li.current span {
+body.links section.sites ul.categories li.current span {
   background: #2196F3;
   color: #fff;
   font-weight: bold;
-}
-.contents section.sites ul.list li {
-  border-bottom: solid 1px #BDBDBD;
-}
-.contents section.sites ul.list li:last-child {
-  border-bottom: 0;
-}
-.contents section.sites ul.list li a {
-  overflow: hidden;
-  padding: 10px;
-}
-.contents section.sites ul.list li .thumb {
-  float: left;
-  width: 80px;
-}
-.contents section.sites ul.list li .thumb img {
-  max-width: 80px;
-}
-.contents section.sites ul.list li .data {
-  margin-left: 90px;
-}
-.contents section.sites ul.list li .data .title {
-  margin-bottom: 5px;
-  color: #2196F3;
-}
-.contents section.sites ul.list li .data .description {
-  color: #616161;
-  font-size: 12px;
 }
 
 /** Abouts contents
 ------------------------------ **/
 .contents section.about-doc dl {
-  padding: 10px;
+  padding: 0 10px;
 }
 .contents section.about-doc dl dt {
   margin-bottom: 5px;
@@ -1631,6 +1699,9 @@ body.index .contents-main .information .text p {
 }
 .contents section.about-doc dl dd {
   margin-bottom: 10px;
+}
+.contents section.about-doc dl dd:last-child {
+  margin: 0;
 }
 .contents section.about-doc p {
   padding: 10px;

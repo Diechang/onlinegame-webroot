@@ -1,0 +1,94 @@
+
+/** Search components
+------------------------------ **/
+.contents
+{
+	//search
+	section.search
+	{
+		.form-search
+		{
+			fieldset
+			{
+				border-bottom: solid 1px $color-border;
+				background: $color-white;
+
+				legend
+				{
+					padding: 10px 10px 5px;
+					line-height: 20px;
+				}
+
+				.inputs
+				{
+					padding: 5px 10px 10px;
+					
+					ul
+					{
+						margin-bottom: -5px;
+						
+						li
+						{
+							margin-bottom: 5px;
+						}
+					}
+
+					label
+					{
+						display: block;
+						padding: 10px;
+						border: solid 1px $color-border;
+						line-height: 20px;
+						font-size: 12px;
+					}
+
+					input[type=checkbox]
+					{
+						display: none;
+
+						&:checked + label
+						{
+							background: $color-link;
+							color: $color-white;
+						}
+					}
+
+					&.inputs-tile
+					{
+						ul
+						{
+							display: flex;
+							flex-wrap: wrap;
+							justify-content: space-between;
+
+							li
+							{
+								width: 49%;
+							}
+						}
+
+						label
+						{
+							padding: 10px 5px;
+							text-align: center;
+						}
+					}
+				}
+
+				&.keyword
+				{
+					input
+					{
+						width: 100%;
+					}
+				}
+			}
+
+			.submit
+			{
+				padding: 10px;
+				text-align: center;
+			}
+		}
+	}
+}

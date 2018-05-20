@@ -3,12 +3,10 @@
 {
 	/** Vars
 	------------------------------ **/
-	var BASENAME		= "newGames";
-
-	var CLASS_SLIDE		= "slide";
+	var BASENAME		= "slide";
 
 	//$objects
-	var $base, $slide;
+	var $slides;
 	//slick instance
 	var slick;
 	var slickOptions = 
@@ -24,17 +22,21 @@
 	------------------------------ **/
 	var init = function()
 	{
-		$base		= $("." + BASENAME);
-		$slide		= $base.find("." + CLASS_SLIDE);
-		//init slick
-		$slide.on("init", function(slick)
+		// slick slides
+		$slides = $("." + BASENAME);
+		$slides.each(function(e)
 		{
-			// for iOS swipe
-			$slide.find(".slick-slide").on('touchstart', function(){
-				return true;
+			var $slide = $(this);
+			//init slick
+			$slide.on("init", function(slick)
+			{
+				// for iOS swipe
+				$slide.find(".slick-slide").on('touchstart', function(){
+					return true;
+				});
 			});
+			$slide.slick(slickOptions).slick("getSlick");
 		});
-		window.s = $slide.slick(slickOptions).slick("getSlick");
 	}
 
 

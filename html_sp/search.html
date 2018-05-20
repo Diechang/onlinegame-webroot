@@ -1,0 +1,116 @@
+<?php 
+	include dirname(__FILE__) . "/_includes/meta_head.html";
+?>
+
+<body class="searches">
+
+<?php include "_includes/header.html";?>
+
+<!-- contents -->
+<div class="contents">
+	<div class="pageInfo">
+		<h1 class="pageTitle">
+			<span class="main">オンラインゲーム検索</span>
+			<span class="sub">自分好みのオンラインゲームを探そう</span>
+		</h1>
+	</div>
+	<div class="gAds"><!-- adsense --></div>
+	<!-- form -->
+	<section class="search">
+		<div class="form-search">
+			<form action="search_result.html">
+				<fieldset class="keyword">
+					<legend>キーワード</legend>
+					<div class="inputs"><input type="text" class="input-text" name="" value=""></div>
+				</fieldset>
+				<fieldset class="platforms">
+					<legend>プラットフォーム</legend>
+					<div class="inputs inputs-tile">
+						<ul>
+							<li><input type="checkbox" name="platform[]" value="1" id="platform_1"><label for="platform_1">Windows</label></li>
+							<li><input type="checkbox" name="platform[]" value="2" id="platform_2"><label for="platform_2">Mac</label></li>
+							<li><input type="checkbox" name="platform[]" value="3" id="platform_3"><label for="platform_3">PCブラウザ</label></li>
+							<li><input type="checkbox" name="platform[]" value="4" id="platform_4"><label for="platform_4">iOSアプリ</label></li>
+							<li><input type="checkbox" name="platform[]" value="5" id="platform_5"><label for="platform_5">Androidアプリ</label></li>
+							<li><input type="checkbox" name="platform[]" value="6" id="platform_6"><label for="platform_6">スマホブラウザ</label></li>
+						</ul>
+					</div>
+				</fieldset>
+				<fieldset class="genres">
+					<legend>ジャンル</legend>
+					<div class="inputs inputs-tile">
+						<ul>
+							<li><input type="checkbox" name="category[]" value="2" id="category_2"><label for="category_2">MMO</label></li>
+							<li><input type="checkbox" name="category[]" value="1" id="category_1"><label for="category_1">MO</label></li>
+							<li><input type="checkbox" name="category[]" value="9" id="category_9"><label for="category_9">RPG</label></li>
+							<li><input type="checkbox" name="category[]" value="3" id="category_3"><label for="category_3">アクション</label></li>
+							<li><input type="checkbox" name="category[]" value="12" id="category_12"><label for="category_12">MOBA</label></li>
+							<li><input type="checkbox" name="category[]" value="4" id="category_4"><label for="category_4">シューティング</label></li>
+							<li><input type="checkbox" name="category[]" value="5" id="category_5"><label for="category_5">スポーツ</label></li>
+							<li><input type="checkbox" name="category[]" value="6" id="category_6"><label for="category_6">レース</label></li>
+							<li><input type="checkbox" name="category[]" value="7" id="category_7"><label for="category_7">シミュレーション・育成</label></li>
+							<li><input type="checkbox" name="category[]" value="11" id="category_11"><label for="category_11">カード</label></li>
+							<li><input type="checkbox" name="category[]" value="8" id="category_8"><label for="category_8">テーブル・パズル</label></li>
+							<li><input type="checkbox" name="category[]" value="10" id="category_10"><label for="category_10">その他</label></li>
+						</ul>
+					</div>
+				</fieldset>
+				<fieldset class="styles">
+					<legend>スタイル・環境</legend>
+					<div class="inputs inputs-tile">
+						<ul>
+							<li><input type="checkbox" name="style[]" value="1" id="style_1"><label for="style_1">3D</label></li>
+							<li><input type="checkbox" name="style[]" value="2" id="style_2"><label for="style_2">2D</label></li>
+							<li><input type="checkbox" name="style[]" value="3" id="style_3"><label for="style_3">リアル</label></li>
+							<li><input type="checkbox" name="style[]" value="4" id="style_4"><label for="style_4">アニメ調</label></li>
+							<li><input type="checkbox" name="style[]" value="5" id="style_5"><label for="style_5">じっくり</label></li>
+							<li><input type="checkbox" name="style[]" value="6" id="style_6"><label for="style_6">お手軽</label></li>
+							<li><input type="checkbox" name="style[]" value="7" id="style_7"><label for="style_7">低スペック</label></li>
+							<li><input type="checkbox" name="style[]" value="13" id="style_13"><label for="style_13">スマホ対応</label></li>
+						</ul>
+					</div>
+				</fieldset>
+				<fieldset class="services">
+					<legend>サービス状態</legend>
+					<div class="inputs inputs-tile">
+						<ul>
+							<li><input type="checkbox" name="service[]" value="2" id="service_2"><label for="service_2">正式サービス</label></li>
+							<li><input type="checkbox" name="service[]" value="3" id="service_3"><label for="service_3">オープンβテスト</label></li>
+							<li><input type="checkbox" name="service[]" value="4" id="service_4"><label for="service_4">クローズドβテスト</label></li>
+							<li><input type="checkbox" name="service[]" value="5" id="service_5"><label for="service_5">ティザーサイト</label></li>
+							<li><input type="checkbox" name="service[]" value="1" id="service_1"><label for="service_1">休止・終了</label></li>
+						</ul>
+					</div>
+				</fieldset>
+				<fieldset class="other">
+					<legend>ついでに</legend>
+					<div class="inputs">
+						<ul>
+							<li><input type="checkbox" name="free" id="free" value="1"><label for="free">基本プレイは無料がいい</label></li>
+							<li><input type="checkbox" name="vote" id="vote" value="1"><label for="vote">みんなの評価やレビューが見たい</label></li>
+							<li><input type="checkbox" name="fansite" id="fansite" value="1"><label for="fansite">攻略サイトやファンサイトも見てみたい</label></li>
+						</ul>
+					</div>
+				</fieldset>
+				<fieldset class="order">
+					<legend>並び順</legend>
+					<div class="inputs">
+						<select name="" id="" class="input-select">
+							<option value=""> 評価の高い順</option>
+							<option value=""> サービス開始順（正式サービス前のタイトルは後ろに表示されます）</option>
+							<option value=""> タイトル名順（A～Z、あ～お）</option>
+						</select>
+					</div>
+				</fieldset>
+				<div class="submit">
+					<button class="button button-block button-search"><i class="zmdi zmdi-search"></i> この条件で検索する</button>
+				</div>
+			</form>
+		</div>
+	</section>
+</div>
+
+<?php include "_includes/footer.html";?>
+
+</body>
+</html>

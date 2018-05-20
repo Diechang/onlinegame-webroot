@@ -8,15 +8,19 @@
 
 <!-- contents -->
 <div class="contents">
-	<h1 class="pageTitle">
-		<span class="main"><span class="label label-primary">おすすめ</span>リンク集</span>
-		<span class="sub">相互リンクしていただいているおすすめサイト集です</span>
-	</h1>
-	<!-- about -->
-	<section class="link-about">
-		<p>当サイトでは相互リンク集に登録していただけるサイト様を募集中です。<br>
-		<a href="#form" class="inline">依頼フォーム</a>より登録をお願いします。</p>
-
+	<div class="pageInfo">
+		<h1 class="pageTitle">
+			<span class="main"><span class="label label-primary">おすすめ</span>リンク集</span>
+			<span class="sub">相互リンクしていただいているおすすめサイト集です</span>
+		</h1>
+		<div class="pageDescrition">
+			<p>当サイトでは相互リンク集に登録していただけるサイト様を募集中です。<br>
+			<a href="#form" class="inline">依頼フォーム</a>より登録をお願いします。</p>
+		</div>
+	</div>
+	<div class="gAds"><!-- adsense --></div>
+	<!-- sites -->
+	<section class="sites">
 		<ul class="categories">
 			<li class="current"><span>おすすめ</span></li>
 			<li><a href="">ゲーム紹介・情報</a></li>
@@ -25,14 +29,13 @@
 			<li><a href="">プレイ日記・ブログ</a></li>
 			<li><a href="">その他</a></li>
 		</ul>
-	</section>
-	<!-- sites -->
-	<section class="sites">
-		<ul class="list">
+		<ul class="borderedLinks textLinks imageLinks">
 <?php for($i=0; $i<10; $i++):?>
 			<li>
 				<a href="http://ongetone.com/" target="_blank">
-					<div class="thumb"><img src="http://capture.heartrails.com/small?http://ongetone.com/" alt="オンゲトネ"></div>
+					<div class="images">
+						<div class="thumb"><img src="http://capture.heartrails.com/small?http://ongetone.com/" alt="オンゲトネ"></div>
+					</div>
 					<div class="data">
 						<div class="title">オンゲトネ</div>
 						<p class="description">無料で遊べるオンラインゲームや、レビュー・アップデート・イベント・テスト・情報まで幅広くご紹介しています。</p>
@@ -122,7 +125,7 @@
 					<tr>
 						<td>
 							<span class="input-attention">スパム防止のため上記認証番号を半角で入力してください。</span>
-							<input type="text" class="input-text input-text-s" size="4" maxlength="4">
+							<input type="text" class="input-text" size="4" maxlength="4">
 						</td>
 					</tr>
 					<tr class="submit">
@@ -149,9 +152,5 @@
 
 <?php include "_includes/footer.html";?>
 
-<!-- JS Libs -->
-<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<!-- JS -->
-<script src="../js/oglsp.newgames.js"></script>
 </body>
 </html>

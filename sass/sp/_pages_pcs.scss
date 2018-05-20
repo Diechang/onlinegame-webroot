@@ -1,0 +1,90 @@
+
+/** PCs contents
+------------------------------ **/
+body.pcs
+{
+	//titles
+	section.pc-titles
+	{
+		.data
+		{
+			.counts
+			{
+				display: flex;
+				justify-content: space-between;
+				margin-bottom: 5px;
+
+				.count
+				{
+					overflow: hidden;
+					width: 49%;
+					padding: 5px;
+					background: $color-white;
+					border: solid 1px $color-border;
+					border-radius: $border-radius;
+					font-size: 12px;
+
+					span
+					{
+						display: inline-block;
+
+						&.caption
+						{
+							float: left;
+						}
+
+						&.number
+						{
+							float: right;
+							font-weight: bold;
+						}
+					}
+
+					&.count-note
+					{
+						border-top: solid 1px $color-border;
+					}
+
+					&.count-none
+					{
+						background: $gm-color-grey-200;
+						color: $color-text-light;
+					}
+				}
+			}
+
+			.price
+			{
+				overflow: hidden;
+				line-height: 20px;
+				text-align: right;
+
+				.caption
+				{
+					display: inline-block;
+					width: 40px;
+					margin-right: 5px;
+					border-radius: $border-radius;
+					background: $color-danger;
+					color: $color-white;
+					font-size: 12px;
+					text-align: center;
+				}
+
+				.number
+				{
+					display: inline-block;
+					color: $color-danger;
+					font-size: 16px;
+					font-weight: bold;
+					text-align: right;
+
+					.unit
+					{
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
+}

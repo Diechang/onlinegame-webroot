@@ -39,11 +39,11 @@
 	var initHash = function()
 	{
 		// load
-		// _w.on("load." + BASENAME, function(e)
-		// {
-		// 	if(!!location.hash) OGL.utils.scrollTo(_hb.scrollTop() - HEADER_HEIGHT);
-		// });
-		if(!!location.hash) _hb.scrollTop(_hb.scrollTop() - HEADER_HEIGHT);
+		if(!!location.hash)
+		{
+			_hb.scrollTop(_hb.scrollTop() - HEADER_HEIGHT);
+			// _w.one("load." + BASENAME, function(e){ OGL.utils.scrollTo(_hb.scrollTop() - HEADER_HEIGHT); });
+		}
 		// link
 		$("a[href^='#']").on("click." + BASENAME, function(e)
 		{

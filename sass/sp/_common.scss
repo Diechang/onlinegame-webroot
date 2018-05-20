@@ -67,15 +67,16 @@ img.adTrack
 //inputs
 input,textarea
 {
+	line-height: 20px;
 	font-size: 16px;
 
 	&.input-text
 	{
 		width: 100%;
 		box-sizing: border-box;
-		padding: 10px;
+		padding: 5px 10px;
 		border: solid 1px $color-border;
-		border-radius: 5px;
+		border-radius: $border-radius-l;
 
 		&:focus
 		{
@@ -90,9 +91,10 @@ input,textarea
 }
 select.input-select
 {
+	width: 100%;
 	height: 32px;
 	border: solid 1px $color-border;
-	border-radius: 5px;
+	border-radius: $border-radius-l;
 	font-size: 16px;
 }
 .input-description
@@ -101,6 +103,7 @@ select.input-select
 
 	margin-top: 5px;
 	color: $color-text-light;
+	font-size: 12px;
 }
 .input-attention
 {
@@ -108,6 +111,7 @@ select.input-select
 
 	margin-bottom: 5px;
 	color: $color-danger;
+	font-size: 12px;
 }
 
 
@@ -176,7 +180,7 @@ select.input-select
 	padding: 10px;
 	border: solid 1px $color-border;
 	border-bottom-width: 2px;
-	border-radius: 3px;
+	border-radius: $border-radius;
 	outline: none;
 	background: $gm-color-grey-100;
 	line-height: 20px;
@@ -264,10 +268,10 @@ select.input-select
 {
 	display: inline-block;
 
-	width: 65px;
+	width: 50px;
 	height: 15px;
 	line-height: 15px;
-	border-radius: 2px;
+	border-radius: $border-radius;
 	background: $gm-color-grey-500;
 	color: $color-white;
 	font-size: 10px;
@@ -335,7 +339,7 @@ ul.platformLabels
 		display: inline-block;
 		margin-bottom: 5px;
 		padding: 0 2px;
-		border-radius: 2px;
+		border-radius: $border-radius;
 		background: $color-theme-platform;
 		line-height: 15px;
 		color: $color-white;
@@ -573,6 +577,27 @@ i.icon
 		.flash-title
 		{
 			color: $color-danger-dark;
+		}
+	}
+}
+	
+// editor document
+.editorDoc
+{
+	a
+	{
+		display: inline;
+		color: $color-link;
+		text-decoration: underline;
+	}
+
+	p
+	{
+		margin-bottom: 5px;
+
+		&:last-child
+		{
+			margin: 0;
 		}
 	}
 }

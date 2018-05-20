@@ -6,39 +6,21 @@
 	//ranking
 	section.ranking
 	{
-		@include bordered-links;
-
-		ul.list li ul li
-		{
-			border: none;
-		}
-
 		//all ranking
 		section.all
 		{
-
 			.images
 			{
 				position: relative;
-				float: left;
-				width: 80px;
-
-				.thumb
-				{
-					img
-					{
-						width: 80px;
-						height: 60px;
-					}
-				}
 
 				.num
 				{
 					position: absolute;
 					top: -5px;
 					left: -5px;
-					width: 20px;
+					min-width: 20px;
 					height: 15px;
+					padding: 0 2px;
 					line-height: 15px;
 					background: $color-theme-ranking;
 					color: $color-white;
@@ -73,26 +55,6 @@
 
 			.data
 			{
-				margin-left: 90px;
-
-				.title
-				{
-					margin-bottom: 5px;
-	
-					.official
-					{
-						line-height: 15px;
-						color: $color-link;
-						font-size: 14px;
-					}
-	
-					.read
-					{
-						line-height: 10px;
-						font-size: 10px;
-					}
-				}
-
 				.rate
 				{
 					overflow: hidden;
@@ -129,23 +91,8 @@
 		//genres ranking
 		section.genres
 		{
-			.thumb
+			.title
 			{
-				float: left;
-				width: 40px;
-				height: 30px;
-
-				img
-				{
-					width: 40px;
-					height: 30px;
-				}
-			}
-
-			.genre
-			{
-				display: block;
-				margin-left: 50px;
 				line-height: 30px;
 			}
 		}

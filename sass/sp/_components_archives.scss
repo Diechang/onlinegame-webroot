@@ -1,0 +1,70 @@
+
+/** Archive components
+------------------------------ **/
+.contents
+{
+	section.archive-titles
+	{
+		.images
+		{
+			.rate
+			{
+				overflow: hidden;
+				padding: 5px;
+				border: solid 1px $color-border;
+				border-radius: $border-radius;
+				background: $color-white;
+				line-height: 15px;
+				text-align: center;
+
+				.caption
+				{
+					font-size: 12px;
+				}
+
+				.value
+				{
+					.num
+					{
+						font-weight: bold;
+					}
+
+					.unit
+					{
+						font-size: 10px;
+					}
+				}
+			}
+		}
+
+		.data
+		{
+			.platforms
+			{
+				margin-bottom: 5px;
+			}
+
+			dl.attributes
+			{
+				overflow: hidden;
+
+				dt
+				{
+					clear: left;
+					float: left;
+					width: 50px;
+					line-height: 15px;
+				}
+
+				dd
+				{
+					margin-left: 55px;
+					margin-bottom: 5px;
+					line-height: 15px;
+					color: $color-text-light;
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}

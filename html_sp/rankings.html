@@ -1,0 +1,130 @@
+<?php 
+	include dirname(__FILE__) . "/_includes/meta_head.html";
+?>
+
+<body class="rankings">
+
+<?php include "_includes/header.html";?>
+
+<!-- contents -->
+<div class="contents">
+	<div class="pageInfo">
+		<h1 class="pageTitle">
+			<span class="main"><span class="label label-primary">総合</span>人気オンラインゲームランキング</span>
+			<span class="sub">正式サービス、各種テスト開始から2年以内の人気オンラインゲームランキングです</span>
+		</h1>
+	</div>
+	<div class="gAds"><!-- adsense --></div>
+	<!-- ranking -->
+	<section class="ranking">
+		<section class="all">
+			<ul class="borderedLinks imageLinks">
+<?php for($i=1; $i<=10; $i++):?>
+				<li>
+					<a href="titles_index.html">
+						<div class="images">
+							<div class="num"><?php echo $i;?></div>
+							<div class="thumb"><img src="../img/noimage160.gif" alt="" width="80" height="60"></div>
+						</div>
+						<div class="data">
+							<div class="title">
+								<div class="official">Soul of the Ultimate Nation</div>
+								<div class="read">ソウル・オブ・ジ・アルティメット・ネイション</div>
+							</div>
+							<div class="rate">
+								<div class="star">
+									<div class="stars stars-w150 stars-rate<?php echo $i ?>0"></div>
+								</div>
+								<div class="value">
+									<span class="num">5.0</span>
+									<span class="unit">点</span>
+								</div>
+							</div>
+							<div class="platforms">
+								<ul class="platformLabels">
+									<li>Windows</li>
+									<li>Mac</li>
+									<li>PCブラウザ</li>
+								</ul>
+							</div>
+							<div class="genres">
+								<ul class="categoryLabels">
+									<li>MMO</li>
+									<li>MO</li>
+									<li>RPG</li>
+								</ul>
+							</div>
+						</div>
+					</a>
+				</li>
+<?php endfor;?>
+			</ul>
+		</section>
+		<div class="gAds"><!-- adsense --></div>
+		<!-- genres -->
+		<section class="genres">
+			<h2>ジャンル別ランキング</h2>
+			<ul class="borderedLinks imageLinks imageLinks-s">
+				<li>
+					<a href="rankings.html">
+						<div class="images">
+							<div class="thumb"><img src="../img/noimage160.gif" alt="" width="40" height="30"></div>
+						</div>
+						<div class="data">
+							<div class="title">MMOランキング <i class="zmdi zmdi-chevron-right"></i></div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="rankings.html">
+						<div class="images">
+							<div class="thumb"><img src="../img/noimage160.gif" alt="" width="40" height="30"></div>
+						</div>
+						<div class="data">
+							<div class="title">MOランキング <i class="zmdi zmdi-chevron-right"></i></div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="rankings.html">
+						<div class="images">
+							<div class="thumb"><img src="../img/noimage160.gif" alt="" width="40" height="30"></div>
+						</div>
+						<div class="data">
+							<div class="title">RPGランキング <i class="zmdi zmdi-chevron-right"></i></div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="rankings.html">
+						<div class="images">
+							<div class="thumb"><img src="../img/noimage160.gif" alt="" width="40" height="30"></div>
+						</div>
+						<div class="data">
+							<div class="title">アクションランキング <i class="zmdi zmdi-chevron-right"></i></div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</section>
+		<!-- waits -->
+		<section class="waits">
+			<h2>評価がまだ投稿されていないゲーム</h2>
+			<ul class="borderedLinks textLinks">
+<?php for($i=1; $i<=5; $i++):?>
+				<li>
+					<a href="titles_index.html">
+						<div class="main">Soul of the Ultimate Nation</div>
+						<div class="sub">ソウル・オブ・ジ・アルティメット・ネイション</div>
+					</a>
+				</li>
+<?php endfor;?>
+			</ul>
+		</section>
+	</section>
+</div>
+
+<?php include "_includes/footer.html";?>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+
+/** Portals contents
+------------------------------ **/
+.contents
+{
+	//about
+	section.portal-about
+	{
+		.portal-about-body
+		{
+			padding: 10px;
+
+			.capture
+			{
+				float: right;
+				width: 100px;
+				margin-left: 5px;
+				margin-bottom: 5px;
+			}
+
+			p
+			{
+				margin-bottom: 5px;
+
+				&:last-child
+				{
+					margin: 0;
+				}
+			}
+		}
+	}
+
+	//summary
+	section.portal-summary
+	{
+		padding: 0 10px 10px;
+
+		.description
+		{
+			margin-bottom: 10px;
+		}
+	}
+}

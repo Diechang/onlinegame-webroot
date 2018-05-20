@@ -1,0 +1,68 @@
+<?php 
+	include dirname(__FILE__) . "/_includes/meta_head.html";
+?>
+
+<body class="reviews">
+
+<?php include "_includes/header.html";?>
+
+<!-- contents -->
+<div class="contents">
+	<div class="pageInfo">
+		<h1 class="pageTitle">
+			<span class="main">ユーザーレビュー投稿一覧</span>
+			<span class="sub">オンラインゲーム選びの参考にどうぞ</span>
+		</h1>
+	</div>
+	<div class="gAds"><!-- adsense --></div>
+	<!-- review -->
+	<section class="review">
+		<section class="recents">
+			<ul class="borderedLinks textLinks imageLinks">
+<?php for($i=0; $i<10; $i++):?>
+				<li>
+					<a href="titles_vote_single.html">
+						<div class="images">
+							<div class="thumb"><img src="../img/noimage160.gif" alt="" width="80" height="60"></div>
+							<div class="rate">2.5<span class="unit">点</span></div>
+						</div>
+						<div class="data">
+							<div class="main">レビュータイトル</div>
+							<p class="review">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト <span class="continue">...続き</span></p>
+							<div class="date">2015年12月31日 00時00分</div>
+							<div class="official">Soul of the Ultimate Nation</div>
+						</div>
+					</a>
+				</li>
+<?php endfor;?>
+			</ul>
+			<?php include dirname(__FILE__) . "/_includes/comp_pages.html"; ?>
+		</section>
+		<div class="gAds"><!-- adsense --></div>
+		<section class="waits">
+			<h2>レビュー・評価投稿募集中</h2>
+			<ul class="borderedLinks imageLinks imageLinks-s">
+<?php for($i=0; $i<5; $i++):?>
+				<li>
+					<a href="titles_index.html">
+						<div class="images">
+							<div class="thumb"><img src="../img/noimage160.gif" alt="" width="40" height="30"></div>
+						</div>
+						<div class="data">
+							<div class="title">
+								<div class="official">Soul of the Ultimate Nation</div>
+								<div class="read">ソウル・オブ・ジ・アルティメット・ネイション</div>
+							</div>
+						</div>
+					</a>
+				</li>
+<?php endfor;?>
+			</ul>
+		</section>
+	</section>
+</div>
+
+<?php include "_includes/footer.html";?>
+
+</body>
+</html>

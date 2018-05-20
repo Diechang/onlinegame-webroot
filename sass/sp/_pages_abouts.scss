@@ -8,7 +8,7 @@
 	{
 		dl
 		{
-			padding: 10px;
+			padding: 0 10px;
 
 			dt
 			{
@@ -18,6 +18,11 @@
 			dd
 			{
 				margin-bottom: 10px;
+
+				&:last-child
+				{
+					margin: 0;
+				}
 			}
 		}
 

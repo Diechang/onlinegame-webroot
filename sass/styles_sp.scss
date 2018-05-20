@@ -12,8 +12,8 @@
 // components
 //******************************
 @import "sp/components_globals";
-// @import "sp/components_archives";
-// @import "sp/components_searches";
+@import "sp/components_archives";
+@import "sp/components_searches";
 @import "sp/components_rankings";
 @import "sp/components_reviews";
 
@@ -22,8 +22,8 @@
 //******************************
 @import "sp/pages_index";
 // @import "sp/pages_titles";
-// @import "sp/pages_portals";
-// @import "sp/pages_monies";
-// @import "sp/pages_pcs";
+@import "sp/pages_portals";
+@import "sp/pages_monies";
+@import "sp/pages_pcs";
 @import "sp/pages_links";
 @import "sp/pages_abouts";
