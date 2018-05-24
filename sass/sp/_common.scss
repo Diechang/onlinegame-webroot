@@ -174,7 +174,7 @@ select.input-select
 //button
 .button
 {
-	display: inline-block;
+	display: inline-block !important;
 	
 	max-width: 100%;
 	padding: 10px;
@@ -190,9 +190,16 @@ select.input-select
 	text-align: center;
 	text-decoration: none;
 
+	&.button-s
+	{
+		padding: 5px;
+		line-height: 15px;
+		font-size: 12px;
+	}
+
 	&.button-block
 	{
-		display: block;
+		display: block !important;
 		width: 100%;
 		max-width: 100%;
 	}
@@ -201,49 +208,49 @@ select.input-select
 	{
 		background: $color-primary;
 		border-color: $color-primary-dark;
-		color: $color-white;
+		color: $color-white !important;
 	}
 
 	&.button-success
 	{
 		background: $color-success;
 		border-color: $color-success-dark;
-		color: $color-white;
+		color: $color-white !important;
 	}
 
 	&.button-info
 	{
 		background: $color-info;
 		border-color: $color-info-dark;
-		color: $color-white;
+		color: $color-white !important;
 	}
 
 	&.button-warning
 	{
 		background: $color-warning;
 		border-color: $color-warning-dark;
-		color: $color-white;
+		color: $color-white !important;
 	}
 
 	&.button-danger
 	{
 		background: $color-danger;
 		border-color: $color-danger-dark;
-		color: $color-white;
+		color: $color-white !important;
 	}
 
 	&.button-official
 	{
 		background: $color-theme-official;
 		border-color: $color-theme-official-dark;
-		color: $color-white;
+		color: $color-white !important;
 	}
 
 	&.button-accent
 	{
 		background: $gm-color-pink-500;
 		border-color: $gm-color-pink-700;
-		color: $color-white;
+		color: $color-white !important;
 	}
 
 	&.button-search,
@@ -251,7 +258,7 @@ select.input-select
 	{
 		background: $gm-color-indigo-500;
 		border-color: $gm-color-indigo-700;
-		color: $color-white;
+		color: $color-white !important;
 	}
 	&[class*="button-"]
 	{
@@ -376,113 +383,150 @@ ul.categoryLabels
 //stars
 .stars
 {
-	display: block;
+	display: flex;
 	margin: auto;
-	background: image-url("design_sp/images_sprite.png") no-repeat;
-	background-size: 150px 40px;
+	color: $gm-color-orange-500;
 
-	&.stars-w150
+	.zmdi
+	{
+		display: block;
+		width: 20%;
+		text-align: center;
+	}
+
+	&.stars-75
 	{
 		width: 75px;
-		height: 10px;
-
-		&.stars-rate100
+		height: 15px;
+		
+		.zmdi
 		{
-			background-position: 0px 0px;
-		}
-		&.stars-rate90
-		{
-			background-position: 0px -10px;
-		}
-		&.stars-rate80
-		{
-			background-position: -15px 0px;
-		}
-		&.stars-rate70
-		{
-			background-position: -15px -10px;
-		}
-		&.stars-rate60
-		{
-			background-position: -30px 0px;
-		}
-		&.stars-rate50
-		{
-			background-position: -30px -10px;
-		}
-		&.stars-rate40
-		{
-			background-position: -45px 0px;
-		}
-		&.stars-rate30
-		{
-			background-position: -45px -10px;
-		}
-		&.stars-rate20
-		{
-			background-position: -60px 0px;
-		}
-		&.stars-rate10
-		{
-			background-position: -60px -10px;
-		}
-		&.stars-rate0
-		{
-			background-position: -75px 0px;
+			line-height: 15px;
+			font-size: 15px;
 		}
 	}
 
-	&.stars-w100
+	&.stars-150
 	{
-		width: 50px;
-		height: 10px;
-
-		&.stars-rate100
+		width: 150px;
+		height: 25px;
+		
+		.zmdi
 		{
-			background-position: 0px -20px;
-		}
-		&.stars-rate90
-		{
-			background-position: 0px -30px;
-		}
-		&.stars-rate80
-		{
-			background-position: -10px -20px;
-		}
-		&.stars-rate70
-		{
-			background-position: -10px -30px;
-		}
-		&.stars-rate60
-		{
-			background-position: -20px -20px;
-		}
-		&.stars-rate50
-		{
-			background-position: -20px -30px;
-		}
-		&.stars-rate40
-		{
-			background-position: -30px -20px;
-		}
-		&.stars-rate30
-		{
-			background-position: -30px -30px;
-		}
-		&.stars-rate20
-		{
-			background-position: -40px -20px;
-		}
-		&.stars-rate10
-		{
-			background-position: -40px -30px;
-		}
-		&.stars-rate0
-		{
-			background-position: -50px -40px;
+			line-height: 25px;
+			font-size: 25px;
 		}
 	}
 }
+// .stars
+// {
+// 	display: block;
+// 	margin: auto;
+// 	background: image-url("design_sp/images_sprite.png") no-repeat;
+// 	background-size: 150px 40px;
+
+// 	&.stars-w150
+// 	{
+// 		width: 75px;
+// 		height: 10px;
+
+// 		&.stars-rate100
+// 		{
+// 			background-position: 0px 0px;
+// 		}
+// 		&.stars-rate90
+// 		{
+// 			background-position: 0px -10px;
+// 		}
+// 		&.stars-rate80
+// 		{
+// 			background-position: -15px 0px;
+// 		}
+// 		&.stars-rate70
+// 		{
+// 			background-position: -15px -10px;
+// 		}
+// 		&.stars-rate60
+// 		{
+// 			background-position: -30px 0px;
+// 		}
+// 		&.stars-rate50
+// 		{
+// 			background-position: -30px -10px;
+// 		}
+// 		&.stars-rate40
+// 		{
+// 			background-position: -45px 0px;
+// 		}
+// 		&.stars-rate30
+// 		{
+// 			background-position: -45px -10px;
+// 		}
+// 		&.stars-rate20
+// 		{
+// 			background-position: -60px 0px;
+// 		}
+// 		&.stars-rate10
+// 		{
+// 			background-position: -60px -10px;
+// 		}
+// 		&.stars-rate0
+// 		{
+// 			background-position: -75px 0px;
+// 		}
+// 	}
+
+// 	&.stars-w100
+// 	{
+// 		width: 50px;
+// 		height: 10px;
+
+// 		&.stars-rate100
+// 		{
+// 			background-position: 0px -20px;
+// 		}
+// 		&.stars-rate90
+// 		{
+// 			background-position: 0px -30px;
+// 		}
+// 		&.stars-rate80
+// 		{
+// 			background-position: -10px -20px;
+// 		}
+// 		&.stars-rate70
+// 		{
+// 			background-position: -10px -30px;
+// 		}
+// 		&.stars-rate60
+// 		{
+// 			background-position: -20px -20px;
+// 		}
+// 		&.stars-rate50
+// 		{
+// 			background-position: -20px -30px;
+// 		}
+// 		&.stars-rate40
+// 		{
+// 			background-position: -30px -20px;
+// 		}
+// 		&.stars-rate30
+// 		{
+// 			background-position: -30px -30px;
+// 		}
+// 		&.stars-rate20
+// 		{
+// 			background-position: -40px -20px;
+// 		}
+// 		&.stars-rate10
+// 		{
+// 			background-position: -40px -30px;
+// 		}
+// 		&.stars-rate0
+// 		{
+// 			background-position: -50px -40px;
+// 		}
+// 	}
+// }
 //icons
 i.icon
 {
@@ -502,32 +546,30 @@ i.icon
 //flash messages
 .flash
 {
-	margin-bottom: 20px;
-	padding: 10px 15px;
-	border-left: solid 5px $gm-color-grey-500;
+	padding: 10px;
+	border-bottom: solid 5px $gm-color-grey-500;
 	background: $gm-color-grey-100;
 
 	.flash-title
 	{
-		margin-bottom: 10px;
-		line-height: 20px;
-		font-size: 16px;
+		margin-bottom: 5px;
+		line-height: 15px;
 
-		&:last-child
+		&:only-child
 		{
-			margin-bottom: 0;
+			margin-bottom: 10px;
 		}
 	}
 
 	.flash-body
 	{
-		line-height: 20px;
-		font-size: 14px;
+		line-height: 15px;
+		font-size: 12px;
 	}
 
 	&.flash-primary
 	{
-		border-left-color: $color-primary;
+		border-bottom-color: $color-primary;
 		background: $color-primary-background;
 		
 		.flash-title
@@ -538,7 +580,7 @@ i.icon
 
 	&.flash-success
 	{
-		border-left-color: $color-success;
+		border-bottom-color: $color-success;
 		background: $color-success-background;
 		
 		.flash-title
@@ -549,7 +591,7 @@ i.icon
 
 	&.flash-info
 	{
-		border-left-color: $color-info;
+		border-bottom-color: $color-info;
 		background: $color-info-background;
 		
 		.flash-title
@@ -560,7 +602,7 @@ i.icon
 
 	&.flash-warning
 	{
-		border-left-color: $color-warning;
+		border-bottom-color: $color-warning;
 		background: $color-warning-background;
 		
 		.flash-title
@@ -571,7 +613,7 @@ i.icon
 
 	&.flash-danger
 	{
-		border-left-color: $color-danger;
+		border-bottom-color: $color-danger;
 		background: $color-danger-background;
 		
 		.flash-title

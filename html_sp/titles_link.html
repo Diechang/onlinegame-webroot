@@ -1,0 +1,169 @@
+<?php 
+	include dirname(__FILE__) . "/_includes/meta_head.html";
+?>
+
+<body class="titles">
+
+<?php include "_includes/header.html";?>
+
+<!-- contents -->
+<div class="contents">
+
+	<?php $title_current = "link";?>
+	<?php include "_includes/title_header.html";?>
+	<?php include "_includes/title_nav.html";?>
+
+
+	<h1 class="title-headline">
+		<span class="main">攻略・ファンサイトリンク集</span>
+		<span class="sub">Soul of the Ultimate Nationのリンク集</span>
+	</h1>
+	<!-- link  -->
+	<section class="title-link">
+		<section class="captures">
+			<h2>攻略サイト・Wikiリンク集</h2>
+			<ul class="borderedLinks textLinks imageLinks">
+<?php for($i=5; $i>0; $i--):?>
+				<li>
+					<a href="http://onlinegame.dz-life.net/" target="_blank">
+						<div class="images">
+							<div class="thumb"><img src="http://capture.heartrails.com/200x150?http://onlinegame.dz-life.net/" alt=""></div>
+						</div>
+						<div class="data">
+							<div class="main">オンラインゲームライフ</div>
+							<div class="description">http://onlinegame.dz-life.net/</div>
+						</div>
+					</a>
+				</li>
+<?php endfor;?>
+			</ul>
+			<div class="entry"><a href="#form" class="button button-s button-info button-block">リンク集に登録・推薦する</a></div>
+		</section>
+		<section class="fans">
+			<h2>ファンサイトリンク集</h2>
+			<div class="flash flash-info">
+				<div class="flash-title">攻略サイト情報が登録されていません。</div>
+				<div class="flash-body">Soul of the Ultimate Nationの攻略サイト、Wikiサイト等を運営、またはご存知の方は<a href="#form" class="inline">こちらから</a>ぜひご登録をお願いします。</div>
+			</div>
+			<div class="entry"><a href="#form" class="button button-s button-info button-block">リンク集に登録・推薦する</a></div>
+		</section>
+	</section>
+
+	<section class="title-form-link" id="form">
+		<h2>攻略・ファンサイトリンク集登録フォーム</h2>
+		<div class="flash flash-info">
+			<div class="flash-title">自薦他薦は問いません</div>
+			<div class="flash-body">Soul of the Ultimate Nationの攻略サイト、ファンサイトを運営、またはご存知の方はぜひご登録をお願いします。</div>
+		</div>
+		<div class="form">
+			<form action="">
+				<table>
+					<tr>
+						<th class="must">サイト名</th>
+					</tr>
+					<tr>
+						<td><input type="text" class="input-text"></td>
+					</tr>
+					<tr>
+						<th class="must">サイトURL</th>
+					</tr>
+					<tr>
+						<td><input type="url" class="input-text"></td>
+					</tr>
+					<tr>
+						<th>リンク集タイプ</th>
+					</tr>
+					<tr>
+						<td>
+							<select name="" id="" class="input-select">
+								<option value="">攻略サイト</option>
+								<option value="">ファンサイト</option>
+							</select>
+							<span class="input-description">管理人の独断と偏見により、ご希望に沿わない場合があります</span>
+						</td>
+					</tr>
+					<tr>
+						<th>サイト紹介文</th>
+					</tr>
+					<tr>
+						<td>
+							<textarea class="input-text" rows="5"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<th>リンク設置URL</th>
+					</tr>
+					<tr>
+						<td>
+							<input type="url" class="input-text">
+							<span class="input-description">自薦の場合、相互リンクしていただけるととてもありがたいです</span>
+						</td>
+					</tr>
+					<tr>
+						<th>メールアドレス</th>
+					</tr>
+					<tr>
+						<td>
+							<input type="email" class="input-text">
+							<span class="input-description">相互リンクして頂ける方はメールアドレスもお願いします</span>
+						</td>
+					</tr>
+					<tr>
+						<th>当サイトへのご意見</th>
+					</tr>
+					<tr>
+						<td>
+							<textarea class="input-text" rows="5"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<th>認証番号</th>
+					</tr>
+					<tr>
+						<td><img src="http://onlinegame.dz-life.net/img/design/spamnum.gif" alt=""></td>
+					</tr>
+					<tr>
+						<th class="must">認証</th>
+					</tr>
+					<tr>
+						<td>
+							<span class="input-attention">スパム防止のため上記認証番号を半角で入力してください。</span>
+							<input type="text" class="input-text" maxlength="4">
+						</td>
+					</tr>
+					<tr class="submit">
+						<td><button class="button button-submit button-block">サイト登録申請</button></td>
+					</tr>
+					<tr class="notes">
+						<td>
+							<dl>
+								<dt>相互リンクしていただけるサイト様へ</dt>
+								<dd>
+									<p>相互リンクしていただけるサイト様は上位に表示され、トップページに新着10件まで表示されます。</p>
+									<p>Soul of the Ultimate Nationのトップページ<br>
+									<input type="text" class="url" onclick="this.select()" value="http://onlinegame.dz-life.net/titles/sun/"></p>
+									<p>またはオンラインゲームライフのトップページ<br>
+									<input type="text" class="url" onclick="this.select()" value="http://onlinegame.dz-life.net/"></p>
+									<p>上記URLいずれかへのリンクを貼っていただけますと幸いです。</p>
+								</dd>
+							</dl>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</section>
+	
+	<?php include "_includes/title_summary_common.html";?>
+
+	<div class="gAds"><!-- adsense --></div>
+
+	<?php include "_includes/title_recommend.html";?>
+
+	<div class="gAds"><!-- adsense --></div>
+</div>
+
+<?php include "_includes/footer.html";?>
+
+</body>
+</html>

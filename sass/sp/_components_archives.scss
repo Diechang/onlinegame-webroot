@@ -14,24 +14,27 @@
 				border: solid 1px $color-border;
 				border-radius: $border-radius;
 				background: $color-white;
-				line-height: 15px;
 				text-align: center;
+				font-size: 12px;
 
 				.caption
 				{
-					font-size: 12px;
+					line-height: 15px;
 				}
 
 				.value
 				{
+					line-height: 20px;
+					
 					.num
 					{
+						font-size: 16px;
 						font-weight: bold;
 					}
 
 					.unit
 					{
-						font-size: 10px;
+						font-size: 12px;
 					}
 				}
 			}

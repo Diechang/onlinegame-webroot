@@ -414,8 +414,10 @@
 
 	//official & shop link
 	.officiallink,
-	.shoplink
+	.shoplink,
+	.applink
 	{
+		display: block;
 		overflow: hidden;
 		clear: both;
 		position: relative;
@@ -456,20 +458,11 @@
 			font-size: 12px;
 		}
 
-		i
-		{
-			right: 0px;
-			width: 30px;
-			line-height: 30px;
-			font-size: 20px;
-			text-align: center;
-		}
-
 		.title
 		{
 			display: block;
-			line-height: 30px;
-			font-size: 20px;
+			line-height: 20px;
+			font-size: 16px;
 		}
 
 		&.ended
@@ -479,47 +472,19 @@
 		}
 	}
 
-	// shop link
-	.shoplink
-	{
-		.caption
-		{
-			font-size: 14px;
-		}
-	}
-
 	// spp link
 	.applink
 	{
-		overflow: hidden;
-		position: relative;
-		height: 40px;
-		margin: 10px 0 20px;
-		padding: 5px;
-		border-bottom: solid 2px $color-theme-app-darkest;
-		border-radius: $border-radius-l;
 		background: $color-theme-app;
-		text-align: right;
 
-		&:first-child
+		.caption
 		{
-			margin-top: 0;
+			margin-bottom: 5px;
 		}
 
-		&:last-child
+		a
 		{
-			margin-bottom: 0;
-		}
-
-		span.caption
-		{
-			position: absolute;
-			top: 50%;
-			left: 10px;
-			margin-top: -20px;
-			line-height: 40px;
-			color: $color-white;
-			font-size: 16px;
+			display: inline;
 		}
 	}
 

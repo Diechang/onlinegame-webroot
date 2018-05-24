@@ -1,6 +1,6 @@
 <!-- summary -->
 <section class="title-summary">
-	<h2>
+	<h2 class="title">
 		<span class="official">Soul of the Ultimate Nation</span>
 		<span class="read">ソウル・オブ・ジ・アルティメット・ネイション</span>
 	</h2>
@@ -8,7 +8,7 @@
 		<div class="data-counts">
 			<div class="rate">
 				<div class="value">総合評価<span class="num">5.0</span>点</div>
-				<div class="stars stars-w150 stars-rate50"></div>
+				<?php include "_includes/stars_75.html";?>
 			</div>
 			<div class="count count-review">
 				<div class="caption">レビュー</div>
@@ -50,23 +50,22 @@
 					<td><a href="http://sun.jp/" target="_blank">http://sun.jp/</a></td>
 				</tr>
 				<tr>
-					<th>アプリダウンロード</th>
-					<td>
+					<td colspan="2" class="taRight">
 						<a href="#" target="_blank"><img src="../img/appbadge_app_store.png" alt="App Storeからダウンロード" width="135" height="40"></a>
 						<a href="#" target="_blank"><img src="../img/appbadge_google_play.png" alt="Google Playで手に入れよう" width="135" height="40"></a>
 					</td>
 				</tr>
 			</table>
 			<div class="actions">
-				<div class="vote"><a href="titles_review.html#form" class="button button-accent button-block">レビュー・評価を投稿</a></div>
-				<div class="link"><a href="titles_link.html#form" class="button button-info button-block">攻略・ファンサイトを登録</a></div>
+				<div class="vote"><a href="titles_review.html#form" class="button button-s button-accent button-block">レビュー・評価投稿</a></div>
+				<div class="link"><a href="titles_link.html#form" class="button button-s button-info button-block">攻略リンク登録</a></div>
 			</div>
 		</div>
 	</section>
 	
-<?php include "_includes/title_officiallink.html";?>
-	
-<?php include "_includes/comp_shares.html";?>
-
-	<div class="copyright">© 2010 NHN Japan Corp. All rights reserved.</div>
+	<section class="bottom">
+		<?php include "_includes/title_officiallink.html";?>
+		<?php include "_includes/comp_shares.html";?>
+		<div class="copyright">© 2010 NHN Japan Corp. All rights reserved.</div>
+	</section>
 </section>
