@@ -1841,6 +1841,202 @@ body.titles section.title-rating .rates ul li .num {
   margin-left: 5px;
   text-align: right;
 }
+body.titles section.title-review ul li {
+  position: relative;
+  padding: 0 5px 10px;
+}
+body.titles section.title-review .post {
+  border: solid 1px #BDBDBD;
+  border-radius: 2px;
+  z-index: 0;
+}
+body.titles section.title-review .post > a {
+  min-height: 80px;
+  padding: 10px;
+}
+body.titles section.title-review .post > a h3 {
+  margin-left: 50px;
+  margin-bottom: 5px;
+  padding: 0;
+  border: 0;
+  background: none;
+  line-height: 20px;
+  font-size: 14px;
+}
+body.titles section.title-review .post > a p {
+  margin-left: 50px;
+  line-height: 15px;
+  font-size: 12px;
+}
+body.titles section.title-review .post > a p span.continue {
+  color: #2196F3;
+}
+body.titles section.title-review .post ul.data {
+  display: flex;
+  padding: 5px;
+  border-top: solid 1px #BDBDBD;
+  background: #EEEEEE;
+}
+body.titles section.title-review .post ul.data li {
+  margin: 0;
+  padding: 0 5px;
+  line-height: 20px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+body.titles section.title-review .post ul.data li:first-child {
+  flex-grow: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+body.titles section.title-review .post ul.data li a {
+  padding: 0;
+  color: inherit;
+}
+body.titles section.title-review .title-comp-rate {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  z-index: 1;
+}
+body.titles section.title-review-single {
+  padding: 0 10px 10px;
+}
+body.titles section.title-review-single h1 {
+  padding: 10px 0;
+  line-height: 25px;
+}
+body.titles section.title-review-single ul.data {
+  display: flex;
+  margin: 0 -5px;
+}
+body.titles section.title-review-single ul.data li {
+  margin: 0;
+  padding: 0 5px;
+  line-height: 20px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+body.titles section.title-review-single ul.data li:first-child {
+  flex-grow: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+body.titles section.title-review-single ul.data li a {
+  padding: 0;
+  color: inherit;
+}
+body.titles section.title-review-single .review {
+  padding: 10px 0;
+}
+body.titles section.title-review-single .rate {
+  position: relative;
+  margin-bottom: 10px;
+}
+body.titles section.title-review-single .rate .points {
+  margin-left: 60px;
+  padding: 5px;
+  border: solid 1px #BDBDBD;
+  background: #fff;
+  z-index: 0;
+}
+body.titles section.title-review-single .rate .points ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+body.titles section.title-review-single .rate .points ul li {
+  overflow: hidden;
+  width: 50%;
+  padding: 5px;
+}
+body.titles section.title-review-single .rate .points ul li.good {
+  background: #E3F2FD;
+}
+body.titles section.title-review-single .rate .points ul li.bad {
+  background: #F3E5F5;
+}
+body.titles section.title-review-single .rate .points ul li .caption {
+  line-height: 20px;
+  font-size: 12px;
+  text-align: left;
+}
+body.titles section.title-review-single .rate .points ul li .num {
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: right;
+}
+body.titles section.title-review-single .rate .points ul li .num .unit {
+  font-size: 12px;
+  font-weight: normal;
+}
+body.titles section.title-review-single .rate .title-comp-rate {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  z-index: 1;
+}
+body.titles section.title-review-neighbors {
+  padding: 0 10px 10px;
+}
+body.titles section.title-review-neighbors .neighbor {
+  margin-bottom: 10px;
+  border: solid 1px #BDBDBD;
+  border-radius: 2px;
+  background: #fff;
+}
+body.titles section.title-review-neighbors .neighbor .caption {
+  overflow: hidden;
+  padding: 5px;
+  line-height: 15px;
+  color: #fff;
+  font-size: 12px;
+}
+body.titles section.title-review-neighbors .neighbor .caption.caption-good {
+  background: #2196F3;
+}
+body.titles section.title-review-neighbors .neighbor .caption.caption-bad {
+  background: #9C27B0;
+}
+body.titles section.title-review-neighbors .neighbor .caption .rate {
+  float: right;
+}
+body.titles section.title-review-neighbors .neighbor .review {
+  padding: 10px;
+}
+body.titles section.title-review-neighbors .neighbor .review h3 {
+  margin-bottom: 5px;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 14px;
+}
+body.titles section.title-review-neighbors .neighbor .review p {
+  line-height: 15px;
+  font-size: 12px;
+}
+body.titles section.title-review-neighbors .neighbor .review p span.continue {
+  color: #2196F3;
+}
+body.titles section.title-review-neighbors .neighbor ul.data {
+  display: flex;
+  padding: 5px 10px;
+  border-top: solid 1px #BDBDBD;
+  background: #F5F5F5;
+}
+body.titles section.title-review-neighbors .neighbor ul.data li {
+  line-height: 15px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+body.titles section.title-review-neighbors .neighbor ul.data li:first-child {
+  flex-grow: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 body.titles section.title-link .entry {
   padding: 10px;
 }
@@ -2002,212 +2198,31 @@ body.titles section.title-pcs dl dd .data table tr:last-child td {
 }
 
 .title-comp-rate {
-  width: 90px;
-  padding: 10px 5px;
-  border-top: solid 5px;
+  width: 60px;
+  padding: 5px 0;
   color: #fff;
-  font-size: 16px;
+  font-size: 12px;
   text-align: center;
 }
 .title-comp-rate .caption,
 .title-comp-rate .icon {
-  line-height: 20px;
+  line-height: 15px;
 }
 .title-comp-rate .point {
-  line-height: 30px;
+  line-height: 20px;
 }
 .title-comp-rate .point .num {
-  font-size: 24px;
+  font-size: 14px;
   font-weight: bold;
   vertical-align: bottom;
 }
 
 .title-comp-rate-good {
-  border-top-color: #0D47A1;
   background: #2196F3;
 }
 
 .title-comp-rate-bad {
-  border-top-color: #4A148C;
   background: #9C27B0;
-}
-
-.contents-main section.title-review ul li {
-  position: relative;
-  margin-bottom: 20px;
-}
-.contents-main section.title-review .post {
-  width: 539px;
-  margin-left: 96px;
-  padding: 4px;
-  background: #EEEEEE;
-  z-index: 0;
-}
-.contents-main section.title-review .post .post-body {
-  min-height: 110px;
-  border: solid 1px #BDBDBD;
-  background: #fff;
-}
-.contents-main section.title-review .post .review {
-  padding: 15px 20px;
-}
-.contents-main section.title-review .post .review h2 {
-  margin-bottom: 10px;
-  line-height: 30px;
-  font-size: 20px;
-}
-.contents-main section.title-review .post ul.data {
-  padding: 10px 20px;
-  background: #EEEEEE;
-}
-.contents-main section.title-review .post ul.data li {
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
-  margin-right: 10px;
-  margin-bottom: 0;
-  line-height: 20px;
-}
-.contents-main section.title-review .post ul.data li a {
-  color: inherit;
-}
-.contents-main section.title-review .title-comp-rate {
-  position: absolute;
-  top: 10px;
-  left: 0;
-  z-index: 1;
-}
-.contents-main section.title-review-single ul.data {
-  margin-bottom: 20px;
-}
-.contents-main section.title-review-single ul.data li {
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
-  margin-right: 10px;
-  margin-bottom: 0;
-  line-height: 20px;
-}
-.contents-main section.title-review-single ul.data li a {
-  color: inherit;
-}
-.contents-main section.title-review-single .review {
-  margin-bottom: 20px;
-  font-size: 16px;
-}
-.contents-main section.title-review-single .review p {
-  margin-bottom: 20px;
-}
-.contents-main section.title-review-single .rate {
-  position: relative;
-}
-.contents-main section.title-review-single .rate .points {
-  width: 539px;
-  margin-left: 96px;
-  padding: 4px;
-  background: #EEEEEE;
-  z-index: 0;
-}
-.contents-main section.title-review-single .rate .points .points-body {
-  height: 110px;
-  border: solid 1px #BDBDBD;
-  background: #fff;
-}
-.contents-main section.title-review-single .rate .points ul {
-  width: 530px;
-  height: 100px;
-  margin: 5px auto;
-}
-.contents-main section.title-review-single .rate .points ul li {
-  float: left;
-  width: 106px;
-  height: 50px;
-  text-align: center;
-}
-.contents-main section.title-review-single .rate .points ul li.good {
-  background: #E3F2FD;
-}
-.contents-main section.title-review-single .rate .points ul li.bad {
-  background: #F3E5F5;
-}
-.contents-main section.title-review-single .rate .points ul li .caption {
-  line-height: 20px;
-  font-size: 12px;
-}
-.contents-main section.title-review-single .rate .points ul li .num {
-  line-height: 30px;
-  font-size: 20px;
-}
-.contents-main section.title-review-single .rate .points ul li .num .unit {
-  font-size: 14px;
-}
-.contents-main section.title-review-single .rate .title-comp-rate {
-  position: absolute;
-  top: 10px;
-  left: 0;
-  z-index: 1;
-}
-.contents-main section.title-review-neighbors {
-  overflow: hidden;
-}
-.contents-main section.title-review-neighbors .neighbor {
-  width: 300px;
-  padding: 4px;
-  background: #EEEEEE;
-}
-.contents-main section.title-review-neighbors .neighbor .neighbor-body {
-  border: solid 1px #BDBDBD;
-  background: #fff;
-}
-.contents-main section.title-review-neighbors .neighbor .caption {
-  color: #fff;
-  font-size: 14px;
-}
-.contents-main section.title-review-neighbors .neighbor .caption.caption-good {
-  background: #2196F3;
-}
-.contents-main section.title-review-neighbors .neighbor .caption.caption-bad {
-  background: #9C27B0;
-}
-.contents-main section.title-review-neighbors .neighbor .caption .rate, .contents-main section.title-review-neighbors .neighbor .caption a {
-  display: block;
-  padding: 5px 10px;
-  line-height: 20px;
-}
-.contents-main section.title-review-neighbors .neighbor .caption .rate {
-  float: right;
-}
-.contents-main section.title-review-neighbors .neighbor .caption a {
-  color: inherit;
-  text-decoration: none;
-}
-.contents-main section.title-review-neighbors .neighbor .caption a:hover {
-  display: block;
-  text-decoration: underline;
-}
-.contents-main section.title-review-neighbors .neighbor .review {
-  padding: 10px;
-}
-.contents-main section.title-review-neighbors .neighbor .review h2 {
-  margin-bottom: 10px;
-  font-size: 16px;
-}
-.contents-main section.title-review-neighbors .neighbor ul.data {
-  padding: 10px;
-  background: #F5F5F5;
-}
-.contents-main section.title-review-neighbors .neighbor ul.data li {
-  line-height: 20px;
-}
-.contents-main section.title-review-neighbors .neighbor-prev {
-  float: left;
-}
-.contents-main section.title-review-neighbors .neighbor-next {
-  float: right;
 }
 
 /** Portals contents

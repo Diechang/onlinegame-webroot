@@ -1,0 +1,92 @@
+<?php 
+	include dirname(__FILE__) . "/_includes/meta_head.html";
+?>
+
+<body class="titles">
+
+<?php include "_includes/header.html";?>
+
+<!-- contents -->
+<div class="contents">
+
+	<?php $title_current = "review";?>
+	<?php include "_includes/title_header.html";?>
+	<?php include "_includes/title_nav.html";?>
+
+	<h1 class="title-headline">
+		<span class="main">プレイヤーのレビュー・評価投稿一覧</span>
+		<span class="sub">Soul of the Ultimate Nationへのレビュー・評価</span>
+	</h1>
+	<!-- review -->
+	<section class="title-review">
+		<ul>
+<?php for($i=5; $i>0; $i--):?>
+			<li>
+				<div class="post">
+					<a href="titles_review_single.html">
+						<h3>名無しさんのレビュー</h3>
+						<p>テキストテキスト<br>
+						テキストテキストテキスト<br>
+						テキストテキストテキストテキスト<br>
+						テキストテキストテキスト<br>
+						テキストテキスト...<span class="continue">続き</span></p>
+					</a>
+					<ul class="data">
+						<li><i class="zmdi zmdi-account"></i> 名無しさん</li>
+						<li><i class="zmdi zmdi-time"></i> 2016年12月31日</li>
+						<li><a href="titles_review_edit.html"><i class="zmdi zmdi-edit"></i></a></li>
+					</ul>
+				</div>
+				<div class="title-comp-rate title-comp-rate-good">
+					<div class="caption">総合評価</div>
+					<div class="point"><span class="num">5.0</span>点</div>
+					<div class="icon"><i class="zmdi zmdi-thumb-up"></i> Good</div>
+				</div>
+			</li>
+			<li>
+				<div class="post">
+					<a href="titles_review_single.html">
+						<h3>名無しさんのレビュー</h3>
+						<p>テキストテキスト<br>
+						テキストテキストテキスト<br>
+						テキストテキストテキストテキスト<br>
+						テキストテキストテキスト<br>
+						テキストテキスト...<span class="continue">続き</span></p>
+					</a>
+					<ul class="data">
+						<li><i class="zmdi zmdi-account"></i> 名無しさん</li>
+						<li><i class="zmdi zmdi-time"></i> 2016年12月31日</li>
+					</ul>
+				</div>
+				<div class="title-comp-rate title-comp-rate-bad">
+					<div class="caption">総合評価</div>
+					<div class="point"><span class="num">2.0</span>点</div>
+					<div class="icon"><i class="zmdi zmdi-thumb-down"></i> Bad</div>
+				</div>
+			</li>
+<?php endfor;?>
+		</ul>
+
+<?php include "_includes/title_officiallink.html";?>
+	</section>
+	
+	<!-- vote form -->
+	<section class="title-form-vote">
+		<h2>レビュー・評価を投稿する</h2>
+
+<?php include "_includes/title_form_vote.html";?>
+	</section>
+	
+	<?php include "_includes/title_summary_common.html";?>
+
+	<div class="gAds"><!-- adsense --></div>
+
+	<?php include "_includes/title_recommend.html";?>
+
+	<div class="gAds"><!-- adsense --></div>
+</div>
+
+<?php include "_includes/footer.html";?>
+
+</body>
+</html>

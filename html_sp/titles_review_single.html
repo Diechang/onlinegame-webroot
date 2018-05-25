@@ -1,0 +1,157 @@
+<?php 
+	include dirname(__FILE__) . "/_includes/meta_head.html";
+?>
+
+<body class="titles">
+
+<?php include "_includes/header.html";?>
+
+<!-- contents -->
+<div class="contents">
+
+	<?php $title_current = "review";?>
+	<?php include "_includes/title_header.html";?>
+	<?php include "_includes/title_nav.html";?>
+
+	<!-- review single -->
+	<section class="title-review-single">
+		<h1>名無しさんのレビュー</h1>
+		<ul class="data">
+			<li><i class="zmdi zmdi-account"></i> 名無しさん</li>
+			<li><i class="zmdi zmdi-time"></i> 2016年12月31日</li>
+			<li><a href="titles_review_edit.html"><i class="zmdi zmdi-edit"></i></a></li>
+		</ul>
+		<div class="review">
+			<p>テキストテキスト<br>
+			テキストテキストテキスト<br>
+			テキストテキストテキストテキスト<br>
+			テキストテキストテキスト<br>
+			テキストテキスト<br><br>
+			テキストテキストテキスト<br>
+			テキストテキストテキストテキスト<br>
+			テキストテキストテキスト<br>
+			テキストテキストテキストテキスト<br>
+			テキストテキストテキスト<br>
+			テキストテキストテキストテキスト<br>
+			テキストテキストテキスト<br>
+			テキストテキスト<br><br>
+			テキストテキストテキスト<br>
+			テキストテキストテキストテキスト<br>
+			テキストテキストテキスト<br>
+			テキストテキスト</p>
+		</div>
+		
+		<div class="rate">
+			<div class="points">
+				<ul>
+					<li class="good">
+						<div class="caption" title="単純に面白さ">面白さ</div>
+						<div class="num">2.5<span class="unit">点</span></div>
+					</li>
+					<li>
+						<div class="caption" title="オリジナリティ">オリジナリティ</div>
+						<div class="num">2.5<span class="unit">点</span></div>
+					</li>
+					<li class="bad">
+						<div class="caption" title="難易度">難易度</div>
+						<div class="num">2.5<span class="unit">点</span></div>
+					</li>
+					<li>
+						<div class="caption" title="グラフィック">グラフィック</div>
+						<div class="num">2.5<span class="unit">点</span></div>
+					</li>
+					<li class="good">
+						<div class="caption" title="音楽">音楽</div>
+						<div class="num">2.5<span class="unit">点</span></div>
+					</li>
+					<li>
+						<div class="caption" title="世界観・ストーリー">世界観</div>
+						<div class="num">2.5<span class="unit">点</span></div>
+					</li>
+					<li class="bad">
+						<div class="caption" title="キャラクター">キャラ</div>
+						<div class="num">2.5<span class="unit">点</span></div>
+					</li>
+					<li>
+						<div class="caption" title="コミュニケーション性">コミュ</div>
+						<div class="num">2.5<span class="unit">点</span></div>
+					</li>
+					<li class="good">
+						<div class="caption" title="イベントの充実">イベント</div>
+						<div class="num">2.5<span class="unit">点</span></div>
+					</li>
+					<li>
+						<div class="caption" title="料金設定">料金</div>
+						<div class="num">2.5<span class="unit">点</span></div>
+					</li>
+				</ul>
+			</div>
+			<div class="title-comp-rate title-comp-rate-good">
+				<div class="caption">総合評価</div>
+				<div class="point"><span class="num">5.0</span>点</div>
+				<div class="icon"><i class="zmdi zmdi-thumb-up"></i> Good</div>
+			</div>
+		</div>
+
+<?php include "_includes/comp_shares.html";?>
+
+<?php include "_includes/title_officiallink.html";?>
+	</section>
+	
+	<!-- review neighbors -->
+	<section class="title-review-neighbors">
+		<div class="neighbor">
+			<a href="titles_review_single.html">
+				<div class="caption caption-good">
+					<span class="rate"><i class="zmdi zmdi-thumb-up"></i> 3.5点</span>
+					<i class="zmdi zmdi-arrow-left"></i> 前のレビュー
+				</div>
+				<div class="review">
+					<h3>名無しさんのレビュー</h3>
+					<p>テキストテキスト<br>
+					テキストテキストテキスト<br>
+					テキストテキストテキストテキスト<br>
+					テキストテキストテキスト<br>
+					テキストテキスト...<span class="continue">続き</span></p>
+				</div>
+			</a>
+			<ul class="data">
+				<li><i class="zmdi zmdi-account"></i> 名無しさん</li>
+				<li><i class="zmdi zmdi-time"></i> 2016年12月31日</li>
+			</ul>
+		</div>
+		<div class="neighbor">
+			<a href="titles_review_single.html">
+				<div class="caption caption-bad">
+					<span class="rate"><i class="zmdi zmdi-thumb-down"></i> 2.0点</span>
+					<i class="zmdi zmdi-arrow-right"></i> 次のレビュー
+				</div>
+				<div class="review">
+					<h3>名無しさんのレビュー</h3>
+					<p>テキストテキスト<br>
+					テキストテキストテキスト<br>
+					テキストテキストテキストテキスト<br>
+					テキストテキストテキスト<br>
+					テキストテキスト...<span class="continue">続き</span></p>
+				</div>
+			</a>
+			<ul class="data">
+				<li><i class="zmdi zmdi-account"></i> 名無しさん</li>
+				<li><i class="zmdi zmdi-time"></i> 2016年12月31日</li>
+			</ul>
+		</div>
+	</section>
+	
+	<?php include "_includes/title_summary_common.html";?>
+
+	<div class="gAds"><!-- adsense --></div>
+
+	<?php include "_includes/title_recommend.html";?>
+
+	<div class="gAds"><!-- adsense --></div>
+</div>
+
+<?php include "_includes/footer.html";?>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<?php 
+	include dirname(__FILE__) . "/_includes/meta_head.html";
+?>
+
+<body class="titles">
+
+<?php include "_includes/header.html";?>
+
+<!-- contents -->
+<div class="contents">
+
+	<?php $title_current = "review";?>
+	<?php include "_includes/title_header.html";?>
+	<?php include "_includes/title_nav.html";?>
+
+	<h1 class="title-headline">
+		<span class="main">レビュー・評価を編集する</span>
+		<span class="sub">編集用パスワードが設定されている必要があります</span>
+	</h1>
+	<!-- vote form -->
+	<section class="title-form-vote">
+
+<?php include "_includes/title_form_vote.html";?>
+	</section>
+</div>
+
+<?php include "_includes/footer.html";?>
+
+</body>
+</html>

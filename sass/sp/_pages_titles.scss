@@ -556,6 +556,297 @@ body.titles
 
 
 	//----------
+	// Review
+	//----------
+	section.title-review
+	{
+		ul li
+		{
+			position: relative;
+			padding: 0 5px 10px;
+		}
+
+		.post
+		{
+			border: solid 1px $color-border;
+			border-radius: $border-radius;
+			z-index: 0;
+
+			> a
+			{
+				min-height: 80px;
+				padding: 10px;
+
+				h3
+				{
+					margin-left: 50px;
+					margin-bottom: 5px;
+					padding: 0;
+					border: 0;
+					background: none;
+					line-height: 20px;
+					font-size: 14px;
+				}
+
+				p
+				{
+					margin-left: 50px;
+					line-height: 15px;
+					font-size: 12px;
+
+					span.continue
+					{
+						color: $color-link;
+					}
+				}
+			}
+
+			ul.data
+			{
+				display: flex;
+				padding: 5px;
+				border-top: solid 1px $color-border;
+				background: $gm-color-grey-200;
+	
+				li
+				{
+					margin: 0;
+					padding: 0 5px;
+					line-height: 20px;
+					font-size: 12px;
+					white-space: nowrap;
+
+					&:first-child
+					{
+						flex-grow: 1;
+						@include text-overflow;
+					}
+	
+					a
+					{
+						padding: 0;
+						color: inherit;
+					}
+				}
+			}
+		}
+
+		.title-comp-rate
+		{
+			position: absolute;
+			top: 5px;
+			left: 0;
+			z-index: 1;
+		}
+	}
+
+
+	//----------
+	// Reviw single
+	//----------
+	section.title-review-single
+	{
+		padding: 0 10px 10px;
+		
+		h1
+		{
+			padding: 10px 0;
+			line-height: 25px;
+		}
+
+		ul.data
+		{
+			display: flex;
+			margin: 0 -5px;
+
+			li
+			{
+				margin: 0;
+				padding: 0 5px;
+				line-height: 20px;
+				font-size: 12px;
+				white-space: nowrap;
+
+				&:first-child
+				{
+					flex-grow: 1;
+					@include text-overflow;
+				}
+
+				a
+				{
+					padding: 0;
+					color: inherit;
+				}
+			}
+		}
+
+		.review
+		{
+			padding: 10px 0;
+
+			p
+			{
+				
+			}
+		}
+
+		.rate
+		{
+			position: relative;
+			margin-bottom: 10px;
+
+			.points
+			{
+				margin-left: 60px;
+				padding: 5px;
+				border: solid 1px $color-border;
+				background: $color-white;
+				z-index: 0;
+
+				ul
+				{
+					display: flex;
+					flex-wrap: wrap;
+
+					li
+					{
+						overflow: hidden;
+						width: 50%;
+						padding: 5px;
+
+						&.good
+						{
+							background: $gm-color-blue-50;
+						}
+
+						&.bad
+						{
+							background: $gm-color-purple-50;
+						}
+
+						.caption
+						{
+							line-height: 20px;
+							font-size: 12px;
+							text-align: left;
+						}
+
+						.num
+						{
+							line-height: 20px;
+							font-size: 14px;
+							font-weight: bold;
+							text-align: right;
+
+							.unit
+							{
+								font-size: 12px;
+								font-weight: normal;
+							}
+						}
+					}
+				}
+			}
+
+			.title-comp-rate
+			{
+				position: absolute;
+				top: 5px;
+				left: 0;
+				z-index: 1;
+			}
+		}
+	}
+
+
+	//----------
+	// Review neightbors
+	//----------
+	section.title-review-neighbors
+	{
+		padding: 0 10px 10px;
+
+		.neighbor
+		{
+			margin-bottom: 10px;
+			border: solid 1px $color-border;
+			border-radius: $border-radius;
+			background: $color-white;
+
+			.caption
+			{
+				overflow: hidden;
+				padding: 5px;
+				line-height: 15px;
+				color: $color-white;
+				font-size: 12px;
+
+				&.caption-good
+				{
+					background: $gm-color-blue-500;
+				}
+				&.caption-bad
+				{
+					background: $gm-color-purple-500;
+				}
+
+				.rate
+				{
+					float: right;
+				}
+			}
+
+			.review
+			{
+				padding: 10px;
+
+				h3
+				{
+					margin-bottom: 5px;
+					padding: 0;
+					border: 0;
+					background: none;
+					font-size: 14px;
+				}
+
+				p
+				{
+					line-height: 15px;
+					font-size: 12px;
+
+					span.continue
+					{
+						color: $color-link;
+					}
+				}
+			}
+
+			ul.data
+			{
+				display: flex;
+				padding: 5px 10px;
+				border-top: solid 1px $color-border;
+				background: $gm-color-grey-100;
+
+				li
+				{
+					line-height: 15px;
+					font-size: 12px;
+					white-space: nowrap;
+
+					&:first-child
+					{
+						flex-grow: 1;
+						@include text-overflow;
+					}
+				}
+			}
+		}
+	}
+
+
+	//----------
 	// Link
 	//----------
 	section.title-link
@@ -816,26 +1107,25 @@ body.titles
 //title components
 .title-comp-rate
 {
-	width: 90px;
-	padding: 10px 5px;
-	border-top: solid 5px;
+	width: 60px;
+	padding: 5px 0;
 	color: $color-white;
-	font-size: 16px;
+	font-size: 12px;
 	text-align: center;
 
 	.caption,
 	.icon
 	{
-		line-height: 20px;
+		line-height: 15px;
 	}
 
 	.point
 	{
-		line-height: 30px;
+		line-height: 20px;
 
 		.num
 		{
-			font-size: 24px;
+			font-size: 14px;
 			font-weight: bold;
 			vertical-align: bottom;
 		}
@@ -843,285 +1133,9 @@ body.titles
 }
 .title-comp-rate-good
 {
-	border-top-color: $gm-color-blue-900;
 	background: $gm-color-blue-500;
 }
 .title-comp-rate-bad
 {
-	border-top-color: $gm-color-purple-900;
 	background: $gm-color-purple-500;
-}
-
-
-.contents-main
-{
-	//----------
-	// Common
-	//----------
-
-
-	//----------
-	// Review
-	//----------
-	section.title-review
-	{
-		ul li
-		{
-			position: relative;
-			margin-bottom: 20px;
-		}
-
-		.post
-		{
-			width: 539px;
-			margin-left: 96px;
-			padding: 4px;
-			background: $gm-color-grey-200;
-			z-index: 0;
-
-			.post-body
-			{
-				min-height: 110px;
-				border: solid 1px $color-border;
-				background: $color-white;
-			}
-
-			.review
-			{
-				padding: 15px 20px;
-
-				h2
-				{
-					margin-bottom: 10px;
-					line-height: 30px;
-					font-size: 20px;
-				}
-			}
-
-			ul.data
-			{
-				padding: 10px 20px;
-				background: $gm-color-grey-200;
-
-				li
-				{
-					@include inline-block;
-					margin-right: 10px;
-					margin-bottom: 0;
-					line-height: 20px;
-
-					a
-					{
-						color: inherit;
-					}
-				}
-			}
-		}
-
-		.title-comp-rate
-		{
-			position: absolute;
-			top: 10px;
-			left: 0;
-			z-index: 1;
-		}
-	}
-
-
-	//----------
-	// Reviw single
-	//----------
-	section.title-review-single
-	{
-		ul.data
-		{
-			margin-bottom: 20px;
-
-			li
-			{
-				@include inline-block;
-				margin-right: 10px;
-				margin-bottom: 0;
-				line-height: 20px;
-
-				a
-				{
-					color: inherit;
-				}
-			}
-		}
-
-		.review
-		{
-			margin-bottom: 20px;
-			font-size: 16px;
-
-			p
-			{
-				margin-bottom: 20px;
-			}
-		}
-
-		.rate
-		{
-			position: relative;
-
-			.points
-			{
-				width: 539px;
-				margin-left: 96px;
-				padding: 4px;
-				background: $gm-color-grey-200;
-				z-index: 0;
-
-				.points-body
-				{
-					height: 110px;
-					border: solid 1px $color-border;
-					background: $color-white;
-				}
-
-				ul
-				{
-					width: 530px;
-					height: 100px;
-					margin: 5px auto;
-
-					li
-					{
-						float: left;
-						width: 106px;
-						height: 50px;
-						text-align: center;
-
-						&.good
-						{
-							background: $gm-color-blue-50;
-						}
-
-						&.bad
-						{
-							background: $gm-color-purple-50;
-						}
-
-						.caption
-						{
-							line-height: 20px;
-							font-size: 12px;
-						}
-
-						.num
-						{
-							line-height: 30px;
-							font-size: 20px;
-
-							.unit
-							{
-								font-size: 14px;
-							}
-						}
-					}
-				}
-			}
-
-			.title-comp-rate
-			{
-				position: absolute;
-				top: 10px;
-				left: 0;
-				z-index: 1;
-			}
-		}
-	}
-
-
-	//----------
-	// Review neightbors
-	//----------
-	section.title-review-neighbors
-	{
-		overflow: hidden;
-
-		.neighbor
-		{
-			width: 300px;
-			padding: 4px;
-			background: $gm-color-grey-200;
-
-			.neighbor-body
-			{
-				border: solid 1px $color-border;
-				background: $color-white;
-			}
-
-			.caption
-			{
-				color: $color-white;
-				font-size: 14px;
-
-				&.caption-good
-				{
-					background: $gm-color-blue-500;
-				}
-				&.caption-bad
-				{
-					background: $gm-color-purple-500;
-				}
-
-				.rate, a
-				{
-					display: block;
-					padding: 5px 10px;
-					line-height: 20px;
-				}
-
-				.rate
-				{
-					float: right;
-				}
-
-				a
-				{
-					color: inherit;
-					text-decoration: none;
-
-					&:hover
-					{
-						display: block;
-						text-decoration: underline;
-					}
-				}
-			}
-
-			.review
-			{
-				padding: 10px;
-
-				h2
-				{
-					margin-bottom: 10px;
-					font-size: 16px;
-				}
-			}
-
-			ul.data
-			{
-				padding: 10px;
-				background: $gm-color-grey-100;
-
-				li
-				{
-					line-height: 20px;
-				}
-			}
-		}
-		.neighbor-prev
-		{
-			float: left;
-		}
-		.neighbor-next
-		{
-			float: right;
-		}
-	}
 }
