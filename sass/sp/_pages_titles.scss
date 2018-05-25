@@ -426,50 +426,64 @@ body.titles
 	//----------
 	section.title-rating
 	{
-		section.total
+		padding: 0 10px 10px;
+
+		.counts
 		{
-			.counts
+			overflow: hidden;
+			margin-bottom: 10px;
+			border: solid 1px $color-border;
+			border-radius: $border-radius;
+			background: $color-white;
+
+			.rate
 			{
-				float: left;
-				width: 160px;
-				margin-bottom: 20px;
-				border: solid 1px $color-border;
-				// border-radius: 3px;
-				background: $color-white;
+				display: flex;
+				justify-content: center;
+				padding: 10px;
+				border-bottom: solid 1px $color-border;
 
-				.rate
+				.caption
 				{
-					padding: 9px 4px;
+					line-height: 25px;
+					font-size: 16px;
+				}
 
-					.caption
+				.value
+				{
+					margin: 0 10px;
+					line-height: 25px;
+					font-size: 16px;
+
+					span.num
 					{
-						line-height: 30px;
-						font-size: 24px;
-						text-align: center;
-					}
-
-					.value
-					{
-						line-height: 40px;
-						font-size: 24px;
-						text-align: center;
-
-						span.num
-						{
-							margin: 0 5px;
-							color: $color-danger;
-							font-size: 32px;
-							font-weight: bold;
-						}
+						margin-right: 5px;
+						line-height: 25px;
+						color: $color-danger;
+						font-size: 25px;
+						font-weight: bold;
+						vertical-align: middle;
 					}
 				}
+
+				.stars
+				{
+					display: inline-flex;
+					margin: 0;
+				}
+			}
+
+			.counts-bottom
+			{
+				display: flex;
 
 				.count
 				{
 					overflow: hidden;
-					padding: 4px 9px;
-					border-top: solid 1px $color-border;
+					width: 50%;
+					padding: 5px 10px;
 					line-height: 20px;
+					font-size: 12px;
 
 					.caption
 					{
@@ -483,118 +497,57 @@ body.titles
 						span.num
 						{
 							margin-right: 5px;
+							font-size: 14px;
 							font-weight: bold;
 						}
 					}
-				}
-			}
 
-			.rates
-			{
-				float: right;
-				width: 460px;
-				margin-bottom: 20px;
-
-				ul
-				{
-					border: solid 1px $color-border;
-					background: $color-white;
-
-					li
+					&.count-review
 					{
-						overflow: hidden;
-						position: relative;
-						padding: 10px 15px;
-						border-bottom: solid 1px $color-border;
-						font-size: 16px;
-
-						&:last-child
-						{
-							border-bottom: none;
-						}
-
-						.caption
-						{
-							line-height: 20px;
-						}
-
-						.num
-						{
-							position: absolute;
-							right: 15px;
-							top: 10px;
-							line-height: 20px;
-						}
-
-						.stars
-						{
-							position: absolute;
-							top: 10px;
-							left: 240px;
-						}
+						border-right: solid 1px $color-border;
 					}
 				}
 			}
 		}
 
-		section.separates
+		.rates
 		{
-			.separates-wrap
+			margin-bottom: 10px;
+
+			ul
 			{
 				overflow: hidden;
-				margin-left: -40px;
-			}
+				border: solid 1px $color-border;
+				border-radius: $border-radius;
+				background: $color-white;
 
-			.separate
-			{
-				float: left;
-				width: 300px;
-				margin-left: 40px;
-				margin-bottom: 20px;
-
-				h2
+				li
 				{
-					margin-bottom: 10px;
-					padding: 5px 10px;
-					line-height: 20px;
-					border-radius: 3px;
-					background: $gm-color-grey-500;
-					color: $color-white;
-				}
-
-				ul li
-				{
+					display: flex;
 					position: relative;
-					height: 30px;
+					padding: 10px;
+					border-bottom: solid 1px $color-border;
 
-					.point,
-					.count
+					&:last-child
 					{
-						position: absolute;
-						top: 5px;
-						line-height: 20px;
+						border-bottom: none;
 					}
-					.point
-					{
-						left: 0;
-					}
-					.count
-					{
-						right: 0;
-					}
-					.graph
-					{
-						position: absolute;
-						top: 10px;
-						left: 40px;
-						width: 200px;
-						height: 10px;
 
-						.bar
-						{
-							height: 100%;
-							background: $color-primary;
-						}
+					.caption
+					{
+						flex-grow: 1;
+					}
+
+					.stars
+					{
+						margin: 0;
+					}
+
+					.num
+					{
+						width: 40px;
+						margin-left: 5px;
+						text-align: right;
 					}
 				}
 			}

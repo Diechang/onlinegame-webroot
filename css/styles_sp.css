@@ -366,11 +366,11 @@ ul.categoryLabels:last-child li {
   line-height: 15px;
   font-size: 15px;
 }
-.stars.stars-150 {
-  width: 150px;
+.stars.stars-125 {
+  width: 125px;
   height: 25px;
 }
-.stars.stars-150 .zmdi {
+.stars.stars-125 .zmdi {
   line-height: 25px;
   font-size: 25px;
 }
@@ -1110,8 +1110,27 @@ footer .copyright .site {
 .contents .form table tr.notes dl dd p:last-child {
   margin-bottom: 0;
 }
-.contents .form-vote label.rate {
-  padding: 5px 15px;
+.contents .form-vote .rates {
+  display: flex;
+  justify-content: space-between;
+}
+.contents .form-vote .rates label.rate {
+  width: 19%;
+  padding: 10px;
+  border: solid 1px #BDBDBD;
+  border-radius: 2px;
+  line-height: 20px;
+  color: #616161;
+  font-size: 16px;
+  text-align: center;
+}
+.contents .form-vote .rates input[type=radio] {
+  display: none;
+}
+.contents .form-vote .rates input[type=radio]:checked + label.rate {
+  background: #2196F3;
+  color: #fff;
+  font-weight: bold;
 }
 .contents .noneTitles li {
   margin-bottom: 10px;
@@ -1732,125 +1751,95 @@ body.titles section.title-package .data .price {
 body.titles section.title-package .data .price span.unit {
   font-size: 12px;
 }
-body.titles section.title-rating section.total .counts {
-  float: left;
-  width: 160px;
-  margin-bottom: 20px;
+body.titles section.title-rating {
+  padding: 0 10px 10px;
+}
+body.titles section.title-rating .counts {
+  overflow: hidden;
+  margin-bottom: 10px;
   border: solid 1px #BDBDBD;
+  border-radius: 2px;
   background: #fff;
 }
-body.titles section.title-rating section.total .counts .rate {
-  padding: 9px 4px;
-}
-body.titles section.title-rating section.total .counts .rate .caption {
-  line-height: 30px;
-  font-size: 24px;
-  text-align: center;
-}
-body.titles section.title-rating section.total .counts .rate .value {
-  line-height: 40px;
-  font-size: 24px;
-  text-align: center;
-}
-body.titles section.title-rating section.total .counts .rate .value span.num {
-  margin: 0 5px;
-  color: #F44336;
-  font-size: 32px;
-  font-weight: bold;
-}
-body.titles section.title-rating section.total .counts .count {
-  overflow: hidden;
-  padding: 4px 9px;
-  border-top: solid 1px #BDBDBD;
-  line-height: 20px;
-}
-body.titles section.title-rating section.total .counts .count .caption {
-  float: left;
-}
-body.titles section.title-rating section.total .counts .count .value {
-  float: right;
-}
-body.titles section.title-rating section.total .counts .count .value span.num {
-  margin-right: 5px;
-  font-weight: bold;
-}
-body.titles section.title-rating section.total .rates {
-  float: right;
-  width: 460px;
-  margin-bottom: 20px;
-}
-body.titles section.title-rating section.total .rates ul {
-  border: solid 1px #BDBDBD;
-  background: #fff;
-}
-body.titles section.title-rating section.total .rates ul li {
-  overflow: hidden;
-  position: relative;
-  padding: 10px 15px;
+body.titles section.title-rating .counts .rate {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
   border-bottom: solid 1px #BDBDBD;
+}
+body.titles section.title-rating .counts .rate .caption {
+  line-height: 25px;
   font-size: 16px;
 }
-body.titles section.title-rating section.total .rates ul li:last-child {
-  border-bottom: none;
+body.titles section.title-rating .counts .rate .value {
+  margin: 0 10px;
+  line-height: 25px;
+  font-size: 16px;
 }
-body.titles section.title-rating section.total .rates ul li .caption {
-  line-height: 20px;
+body.titles section.title-rating .counts .rate .value span.num {
+  margin-right: 5px;
+  line-height: 25px;
+  color: #F44336;
+  font-size: 25px;
+  font-weight: bold;
+  vertical-align: middle;
 }
-body.titles section.title-rating section.total .rates ul li .num {
-  position: absolute;
-  right: 15px;
-  top: 10px;
-  line-height: 20px;
+body.titles section.title-rating .counts .rate .stars {
+  display: inline-flex;
+  margin: 0;
 }
-body.titles section.title-rating section.total .rates ul li .stars {
-  position: absolute;
-  top: 10px;
-  left: 240px;
+body.titles section.title-rating .counts .counts-bottom {
+  display: flex;
 }
-body.titles section.title-rating section.separates .separates-wrap {
+body.titles section.title-rating .counts .counts-bottom .count {
   overflow: hidden;
-  margin-left: -40px;
-}
-body.titles section.title-rating section.separates .separate {
-  float: left;
-  width: 300px;
-  margin-left: 40px;
-  margin-bottom: 20px;
-}
-body.titles section.title-rating section.separates .separate h2 {
-  margin-bottom: 10px;
+  width: 50%;
   padding: 5px 10px;
   line-height: 20px;
-  border-radius: 3px;
-  background: #9E9E9E;
-  color: #fff;
+  font-size: 12px;
 }
-body.titles section.title-rating section.separates .separate ul li {
+body.titles section.title-rating .counts .counts-bottom .count .caption {
+  float: left;
+}
+body.titles section.title-rating .counts .counts-bottom .count .value {
+  float: right;
+}
+body.titles section.title-rating .counts .counts-bottom .count .value span.num {
+  margin-right: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+body.titles section.title-rating .counts .counts-bottom .count.count-review {
+  border-right: solid 1px #BDBDBD;
+}
+body.titles section.title-rating .rates {
+  margin-bottom: 10px;
+}
+body.titles section.title-rating .rates ul {
+  overflow: hidden;
+  border: solid 1px #BDBDBD;
+  border-radius: 2px;
+  background: #fff;
+}
+body.titles section.title-rating .rates ul li {
+  display: flex;
   position: relative;
-  height: 30px;
+  padding: 10px;
+  border-bottom: solid 1px #BDBDBD;
 }
-body.titles section.title-rating section.separates .separate ul li .point,
-body.titles section.title-rating section.separates .separate ul li .count {
-  position: absolute;
-  top: 5px;
-  line-height: 20px;
+body.titles section.title-rating .rates ul li:last-child {
+  border-bottom: none;
 }
-body.titles section.title-rating section.separates .separate ul li .point {
-  left: 0;
+body.titles section.title-rating .rates ul li .caption {
+  flex-grow: 1;
 }
-body.titles section.title-rating section.separates .separate ul li .count {
-  right: 0;
+body.titles section.title-rating .rates ul li .stars {
+  margin: 0;
 }
-body.titles section.title-rating section.separates .separate ul li .graph {
-  position: absolute;
-  top: 10px;
-  left: 40px;
-  width: 200px;
-  height: 10px;
-}
-body.titles section.title-rating section.separates .separate ul li .graph .bar {
-  height: 100%;
-  background: #2196F3;
+body.titles section.title-rating .rates ul li .num {
+  width: 40px;
+  margin-left: 5px;
+  text-align: right;
 }
 body.titles section.title-link .entry {
   padding: 10px;
