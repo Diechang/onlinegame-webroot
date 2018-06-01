@@ -206,7 +206,21 @@
 
 				.texts
 				{
+					position: relative;
+					overflow: hidden;
+					height: 100px;
 					margin-left: 85px;
+
+					&:after
+					{
+						content: "";
+						position: absolute;
+						left: 0;
+						right: 0;
+						bottom: 0;
+						height: 10px;
+						background: linear-gradient(rgba($gm-color-grey-100, 0), $gm-color-grey-100);
+					}
 
 					.title
 					{
@@ -231,8 +245,6 @@
 
 					.description
 					{
-						overflow: hidden;
-						height: 60px;
 						line-height: 15px;
 						font-size: 12px;
 					}
@@ -268,7 +280,13 @@
 
 					.texts
 					{
+						height: 45px;
 						margin-left: 65px;
+
+						&:after
+						{
+							content: none;
+						}
 	
 						.title
 						{
