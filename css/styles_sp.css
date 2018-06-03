@@ -1186,6 +1186,9 @@ footer .copyright .site {
 .contents ul.borderedLinks:first-child > li:first-child {
   border-top: solid 1px #BDBDBD;
 }
+.contents h2 + section > ul.borderedLinks:first-child > li:first-child {
+  border-top: 0;
+}
 .contents ul.textLinks .main,
 .contents ul.textLinks .official {
   line-height: 20px;

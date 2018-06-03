@@ -27,6 +27,11 @@
 		}
 	}
 
+	h2 + section > ul.borderedLinks:first-child > li:first-child
+	{
+		border-top: 0;
+	}
+
 	ul.textLinks
 	{
 		.main,
