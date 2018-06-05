@@ -10,6 +10,9 @@
 #	www統一
 	RewriteCond %{HTTP_HOST} ^www.onlinegame.dz-life.net
 	RewriteRule (.*) https://onlinegame.dz-life.net/$1 [R=301,L]
+
+#	SPトップ
+	RewriteRule ^sp$ /sp/ [R=301,L]
 	
 
 #	SSL

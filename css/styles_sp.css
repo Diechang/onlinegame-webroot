@@ -1454,6 +1454,7 @@ footer .copyright .site {
   font-size: 12px;
 }
 .contents section.review section.recents .data .main {
+  line-height: 20px;
   font-size: 16px;
 }
 .contents section.review section.recents .data .review {
