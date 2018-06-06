@@ -1030,6 +1030,22 @@ footer .copyright .site {
   background: #004D40;
   pointer-events: none;
 }
+.contents div.officiallink {
+  padding: 0;
+}
+.contents div.officiallink .caption {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+}
+.contents div.officiallink a {
+  display: block;
+  padding: 25px 10px 10px;
+  line-height: 20px;
+  font-size: 16px;
+  text-align: center;
+}
 .contents .applink {
   background: #616161;
 }
