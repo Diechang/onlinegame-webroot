@@ -96,7 +96,7 @@
 	// page info
 	.pageInfo
 	{
-		padding: 20px 10px;
+		padding: 20px 10px 10px;
 		
 		h1.pageTitle
 		{
@@ -113,6 +113,34 @@
 		{
 			line-height: 15px;
 			font-size: 12px;
+		}
+	}
+
+	// editor document
+	.editorDoc
+	{
+		a
+		{
+			display: inline;
+			color: $color-link;
+			text-decoration: underline;
+		}
+	
+		p
+		{
+			margin-bottom: 5px;
+	
+			&:last-child
+			{
+				margin: 0;
+			}
+		}
+	
+		h2, h3
+		{
+			padding: 0;
+			border: 0;
+			background: none;
 		}
 	}
 
@@ -153,17 +181,22 @@
 	//adsense
 	.gAds
 	{
-		padding: 10px;
+		padding: 10px 0;
 		background: $gm-color-grey-100;
 		text-align: center;
-	}
-	.gAds-left
-	{
-		text-align: left;
-	}
-	.gAds-right
-	{
-		text-align: right;
+
+		&.gAds-responsive
+		{
+			padding: 10px;
+		}
+		&.gAds-left
+		{
+			text-align: left;
+		}
+		&.gAds-right
+		{
+			text-align: right;
+		}
 	}
 
 	// slide
@@ -280,6 +313,7 @@
 
 					.texts
 					{
+						overflow: visible;
 						height: 45px;
 						margin-left: 65px;
 
@@ -296,10 +330,12 @@
 	
 								&.official
 								{
+									@include text-overflow;
 									font-size: 14px;
 								}
 								&.read
 								{
+									@include text-overflow;
 									font-size: 12px;
 								}
 							}
@@ -312,6 +348,7 @@
 				}
 			}
 		}
+		
 		// with dots
 		&.slick-dotted
 		{

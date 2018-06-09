@@ -622,27 +622,6 @@ i.icon
 		}
 	}
 }
-	
-// editor document
-.editorDoc
-{
-	a
-	{
-		display: inline;
-		color: $color-link;
-		text-decoration: underline;
-	}
-
-	p
-	{
-		margin-bottom: 5px;
-
-		&:last-child
-		{
-			margin: 0;
-		}
-	}
-}
 
 
 /** Main blocks

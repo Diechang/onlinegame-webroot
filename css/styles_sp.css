@@ -439,18 +439,6 @@ i.icon.icon-feed {
   color: #D32F2F;
 }
 
-.editorDoc a {
-  display: inline;
-  color: #2196F3;
-  text-decoration: underline;
-}
-.editorDoc p {
-  margin-bottom: 5px;
-}
-.editorDoc p:last-child {
-  margin: 0;
-}
-
 /** Main blocks
 ------------------------------ **/
 header {
@@ -746,7 +734,7 @@ footer .copyright .site {
   font-size: 12px;
 }
 .contents .pageInfo {
-  padding: 20px 10px;
+  padding: 20px 10px 10px;
 }
 .contents .pageInfo h1.pageTitle {
   margin-bottom: 10px;
@@ -758,6 +746,22 @@ footer .copyright .site {
 .contents .pageInfo .pageDescription {
   line-height: 15px;
   font-size: 12px;
+}
+.contents .editorDoc a {
+  display: inline;
+  color: #2196F3;
+  text-decoration: underline;
+}
+.contents .editorDoc p {
+  margin-bottom: 5px;
+}
+.contents .editorDoc p:last-child {
+  margin: 0;
+}
+.contents .editorDoc h2, .contents .editorDoc h3 {
+  padding: 0;
+  border: 0;
+  background: none;
 }
 .contents .more {
   border-top: solid 1px #BDBDBD;
@@ -783,14 +787,17 @@ footer .copyright .site {
   margin-bottom: 0;
 }
 .contents .gAds {
-  padding: 10px;
+  padding: 10px 0;
   background: #F5F5F5;
   text-align: center;
 }
-.contents .gAds-left {
+.contents .gAds.gAds-responsive {
+  padding: 10px;
+}
+.contents .gAds.gAds-left {
   text-align: left;
 }
-.contents .gAds-right {
+.contents .gAds.gAds-right {
   text-align: right;
 }
 .contents .slide {
@@ -871,6 +878,7 @@ footer .copyright .site {
   height: 45px;
 }
 .contents .slide.slide-s .slide-item a .texts {
+  overflow: visible;
   height: 45px;
   margin-left: 65px;
 }
@@ -881,9 +889,15 @@ footer .copyright .site {
   height: 15px;
 }
 .contents .slide.slide-s .slide-item a .texts .title span.official {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   font-size: 14px;
 }
 .contents .slide.slide-s .slide-item a .texts .title span.read {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   font-size: 12px;
 }
 .contents .slide.slide-s .slide-item a .texts .stars {
@@ -1486,9 +1500,6 @@ footer .copyright .site {
 .contents section.review section.recents .data .official {
   color: #009688;
 }
-.contents section.review section.waits .title {
-  line-height: 30px;
-}
 .contents .more a {
   color: #2196F3;
 }
@@ -1514,7 +1525,13 @@ body.index section.test .data .label {
   width: 60px;
 }
 body.index section.test .data .date {
+  display: inline-block;
   font-size: 10px;
+}
+body.index section.news section.title .platformLabels {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 /** Title contents

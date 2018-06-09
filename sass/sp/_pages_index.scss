@@ -38,6 +38,7 @@ body.index
 
 			.date
 			{
+				display: inline-block;
 				font-size: 10px;
 			}
 		}
@@ -46,5 +47,12 @@ body.index
 	//new titles & fansites
 	section.news
 	{
+		section.title
+		{
+			.platformLabels
+			{
+				@include text-overflow;
+			}
+		}
 	}
 }
