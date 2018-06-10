@@ -35,6 +35,7 @@
 
 					label
 					{
+						position: relative;
 						display: block;
 						padding: 10px;
 						border: solid 1px $color-border;
@@ -50,6 +51,19 @@
 						{
 							background: $color-link;
 							color: $color-white;
+
+							&:before
+							{
+								content: "";
+								position: absolute;
+								right: 1px;
+								bottom: 1px;
+								width: 0;
+								height: 0;
+								border: solid 4px transparent;
+								border-right-color: $color-white;
+								border-bottom-color: $color-white;
+							}
 						}
 					}
 
@@ -89,6 +103,44 @@
 				padding: 10px;
 				text-align: center;
 			}
+		}
+	}
+
+	section.gSearch-result
+	{
+		a
+		{
+			display: inline;
+			color: $color-link;
+		}
+		.gsc-results
+		{
+			.gs-title
+			{
+				height: auto;
+				line-height: 20px;
+			}
+			.gsc-table-cell-snippet-close, .gsc-table-cell-snippet-open
+			{
+				line-height: 1.2;
+			}
+			.gsc-cursor
+			{
+				display: flex;
+	
+				.gsc-cursor-page
+				{
+					width: 10%;
+					margin: 0;
+					color: $color-link;
+					text-align: center;
+				}
+			}
+		}
+		.gs-webResult div.gs-visibleUrl, .gs-imageResult div.gs-visibleUrl
+		{
+			color: $color-theme-official;
+			@include text-overflow;
 		}
 	}
 }

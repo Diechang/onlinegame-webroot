@@ -193,6 +193,14 @@ $speed-slow: 1s;
 	width: $width-content-xl;
 }
 
+@mixin zmdi
+{
+    font-family: 'Material-Design-Iconic-Font';
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 
 //--------------------
 // functions

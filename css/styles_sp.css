@@ -115,6 +115,7 @@ input.input-text, textarea.input-text {
   padding: 5px 10px;
   border: solid 1px #BDBDBD;
   border-radius: 5px;
+  background: #fff;
 }
 input.input-text:focus, textarea.input-text:focus {
   border-color: #2196F3;
@@ -128,6 +129,7 @@ select.input-select {
   height: 32px;
   border: solid 1px #BDBDBD;
   border-radius: 5px;
+  background: #fff;
   font-size: 16px;
 }
 
@@ -1354,6 +1356,7 @@ footer .copyright .site {
   margin-bottom: 5px;
 }
 .contents section.search .form-search fieldset .inputs label {
+  position: relative;
   display: block;
   padding: 10px;
   border: solid 1px #BDBDBD;
@@ -1366,6 +1369,17 @@ footer .copyright .site {
 .contents section.search .form-search fieldset .inputs input[type=checkbox]:checked + label {
   background: #2196F3;
   color: #fff;
+}
+.contents section.search .form-search fieldset .inputs input[type=checkbox]:checked + label:before {
+  content: "";
+  position: absolute;
+  right: 1px;
+  bottom: 1px;
+  width: 0;
+  height: 0;
+  border: solid 4px transparent;
+  border-right-color: #fff;
+  border-bottom-color: #fff;
 }
 .contents section.search .form-search fieldset .inputs.inputs-tile ul {
   display: flex;
@@ -1385,6 +1399,32 @@ footer .copyright .site {
 .contents section.search .form-search .submit {
   padding: 10px;
   text-align: center;
+}
+.contents section.gSearch-result a {
+  display: inline;
+  color: #2196F3;
+}
+.contents section.gSearch-result .gsc-results .gs-title {
+  height: auto;
+  line-height: 20px;
+}
+.contents section.gSearch-result .gsc-results .gsc-table-cell-snippet-close, .contents section.gSearch-result .gsc-results .gsc-table-cell-snippet-open {
+  line-height: 1.2;
+}
+.contents section.gSearch-result .gsc-results .gsc-cursor {
+  display: flex;
+}
+.contents section.gSearch-result .gsc-results .gsc-cursor .gsc-cursor-page {
+  width: 10%;
+  margin: 0;
+  color: #2196F3;
+  text-align: center;
+}
+.contents section.gSearch-result .gs-webResult div.gs-visibleUrl, .contents section.gSearch-result .gs-imageResult div.gs-visibleUrl {
+  color: #009688;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 /** Ranking components

@@ -77,6 +77,7 @@ input,textarea
 		padding: 5px 10px;
 		border: solid 1px $color-border;
 		border-radius: $border-radius-l;
+		background: $color-white;
 
 		&:focus
 		{
@@ -95,6 +96,7 @@ select.input-select
 	height: 32px;
 	border: solid 1px $color-border;
 	border-radius: $border-radius-l;
+	background: $color-white;
 	font-size: 16px;
 }
 .input-description
