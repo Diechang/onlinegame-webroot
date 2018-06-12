@@ -408,15 +408,22 @@
 		@include border-sand;
 		background: $gm-color-grey-200;
 
+		.counts
+		{
+			padding: 0 5px;
+			font-size: 12px;
+			text-align: right;
+		}
+
 		ul.paging
 		{
 			display: flex;
 			flex-wrap: wrap;
+			justify-content: space-evenly;
 
 			li
 			{
-				float: left;
-				margin-right: 5px;
+				width: 10%;
 
 				&:last-child
 				{
@@ -433,10 +440,11 @@
 				
 				a
 				{
-					padding: 4px 9px;
+					padding: 4px;
 					border: solid 1px $color-border;
 					border-radius: $border-radius;
 					background: $color-white;
+					text-align: center;
 					text-decoration: none;
 				}
 

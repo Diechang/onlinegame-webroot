@@ -946,13 +946,18 @@ footer .copyright .site {
   border-bottom: solid 1px #BDBDBD;
   background: #EEEEEE;
 }
+.contents nav.pages .counts {
+  padding: 0 5px;
+  font-size: 12px;
+  text-align: right;
+}
 .contents nav.pages ul.paging {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .contents nav.pages ul.paging li {
-  float: left;
-  margin-right: 5px;
+  width: 10%;
 }
 .contents nav.pages ul.paging li:last-child {
   margin: 0;
@@ -964,10 +969,11 @@ footer .copyright .site {
   font-size: 12px;
 }
 .contents nav.pages ul.paging li a {
-  padding: 4px 9px;
+  padding: 4px;
   border: solid 1px #BDBDBD;
   border-radius: 2px;
   background: #fff;
+  text-align: center;
   text-decoration: none;
 }
 .contents nav.pages ul.paging li span {
