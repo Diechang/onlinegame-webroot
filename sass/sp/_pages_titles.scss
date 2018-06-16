@@ -242,6 +242,8 @@ body.titles
 					{
 						padding: 5px;
 						border-bottom: solid 1px $color-border;
+						font-size: 12px;
+						vertical-align: top;
 
 						&:only-child
 						{
@@ -252,6 +254,7 @@ body.titles
 					th
 					{
 						padding-left: 10px;
+						white-space: nowrap;
 					}
 
 					td
@@ -293,6 +296,7 @@ body.titles
 			{
 				float: left;
 				width: 80px;
+				margin-right: 10px;
 				@include shadow-card;
 
 				img
@@ -304,7 +308,7 @@ body.titles
 
 			.body
 			{
-				margin-left: 90px;
+				// margin-left: 90px;
 			}
 		}
 	}
@@ -337,6 +341,7 @@ body.titles
 				th
 				{
 					background: $gm-color-grey-100;
+					white-space: nowrap;
 				}
 				td
 				{

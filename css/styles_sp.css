@@ -776,7 +776,7 @@ footer .copyright .site {
   text-align: right;
 }
 .contents .noData {
-  margin: 10px 0;
+  margin: 0;
   padding: 10px;
   border-radius: 2px;
   background: #EEEEEE;
@@ -1068,6 +1068,9 @@ footer .copyright .site {
   font-size: 16px;
   text-align: center;
 }
+.contents div.officiallink a.separated {
+  line-height: normal;
+}
 .contents .applink {
   background: #616161;
 }
@@ -1257,7 +1260,6 @@ footer .copyright .site {
 }
 .contents ul.imageLinks .images .thumb {
   width: 80px;
-  margin-bottom: 5px;
 }
 .contents ul.imageLinks .images .thumb:only-child {
   margin: 0;
@@ -1265,6 +1267,15 @@ footer .copyright .site {
 .contents ul.imageLinks .images .thumb img {
   width: 80px;
   height: 60px;
+}
+.contents ul.imageLinks .images .banner {
+  width: 80px;
+}
+.contents ul.imageLinks .images .banner:only-child {
+  margin: 0;
+}
+.contents ul.imageLinks .images .banner img {
+  max-width: 100%;
 }
 .contents ul.imageLinks .data {
   margin-left: 90px;
@@ -1743,12 +1754,15 @@ body.titles section.title-summary section.data .data-properties table {
 body.titles section.title-summary section.data .data-properties table th, body.titles section.title-summary section.data .data-properties table td {
   padding: 5px;
   border-bottom: solid 1px #BDBDBD;
+  font-size: 12px;
+  vertical-align: top;
 }
 body.titles section.title-summary section.data .data-properties table th:only-child, body.titles section.title-summary section.data .data-properties table td:only-child {
   padding: 5px 10px;
 }
 body.titles section.title-summary section.data .data-properties table th {
   padding-left: 10px;
+  white-space: nowrap;
 }
 body.titles section.title-summary section.data .data-properties table td {
   padding-right: 10px;
@@ -1777,14 +1791,12 @@ body.titles section.title-summary section.intro .intro-body {
 body.titles section.title-summary section.intro .image {
   float: left;
   width: 80px;
+  margin-right: 10px;
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
 }
 body.titles section.title-summary section.intro .image img {
   width: 80px;
   height: 60px;
-}
-body.titles section.title-summary section.intro .body {
-  margin-left: 90px;
 }
 body.titles section.bottom {
   padding: 10px;
@@ -1799,6 +1811,7 @@ body.titles section.title-spec table th, body.titles section.title-spec table td
 }
 body.titles section.title-spec table tbody th {
   background: #F5F5F5;
+  white-space: nowrap;
 }
 body.titles section.title-spec table tbody td {
   background: #fff;
