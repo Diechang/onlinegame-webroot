@@ -450,13 +450,13 @@ body.titles
 
 				.caption
 				{
+					margin-right: 5px;
 					line-height: 25px;
 					font-size: 16px;
 				}
 
 				.value
 				{
-					margin: 0 10px;
 					line-height: 25px;
 					font-size: 16px;
 
@@ -550,7 +550,7 @@ body.titles
 
 					.num
 					{
-						width: 40px;
+						width: 50px;
 						margin-left: 5px;
 						text-align: right;
 					}
@@ -565,10 +565,12 @@ body.titles
 	//----------
 	section.title-review
 	{
+		padding: 0 10px 10px;
+
 		ul li
 		{
 			position: relative;
-			padding: 0 5px 10px;
+			margin-bottom: 10px;
 		}
 
 		.post
@@ -640,7 +642,7 @@ body.titles
 		{
 			position: absolute;
 			top: 5px;
-			left: 0;
+			left: -10px;
 			z-index: 1;
 		}
 	}

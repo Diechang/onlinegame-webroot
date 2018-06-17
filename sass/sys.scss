@@ -51,7 +51,7 @@ body
 ------------------------------ **/
 #wrap
 {
-	background:image-url("../sys/side_back.gif") left repeat-y;
+	background:image-url("sys/side_back.gif") left repeat-y;
 }
 
 #header
@@ -79,7 +79,7 @@ body
 		clear:both;
 		margin:0;
 		padding:0;
-		background:image-url("../sys/pankuz_back.gif");
+		background:image-url("sys/pankuz_back.gif");
 
 		li
 		{
@@ -93,7 +93,7 @@ body
 				height:30px;
 				padding-right:20px;
 				line-height:30px;
-				background:image-url("../sys/pankuz_arrow.gif") right center no-repeat;
+				background:image-url("sys/pankuz_arrow.gif") right center no-repeat;
 			}
 		}
 	}
@@ -118,7 +118,7 @@ body
 			margin:0;
 			padding:0 10px;
 			line-height:20px;
-			background:image-url("../sys/menu_head.gif") left repeat-y;
+			background:image-url("sys/menu_head.gif") left repeat-y;
 			color:#fff;
 		}
 		dd
@@ -148,7 +148,7 @@ body
 						{
 							padding:5px 20px 5px 10px;
 							border:none;
-							background:image-url("../sys/menu_hover.gif") left center;
+							background:image-url("sys/menu_hover.gif") left center;
 						}
 					}
 
@@ -156,7 +156,7 @@ body
 					{
 						padding:5px 20px 5px 10px;
 						border:none;
-						background:image-url("../sys/menu_active.gif") left center;
+						background:image-url("sys/menu_active.gif") left center;
 					}
 				}
 			}
@@ -300,17 +300,17 @@ table.tablesorter
 			}
 			.header
 			{
-				background-image: image-url("../sys/tablesorter_bg.gif");
+				background-image: image-url("sys/tablesorter_bg.gif");
 				background-repeat: no-repeat;
 				background-position: center left;
 			}
 			.headerSortUp
 			{
-				background-image: image-url("../sys/tablesorter_asc.gif");
+				background-image: image-url("sys/tablesorter_asc.gif");
 			}
 			.headerSortDown
 			{
-				background-image: image-url("../sys/tablesorter_desc.gif");
+				background-image: image-url("sys/tablesorter_desc.gif");
 			}
 		}
 	}

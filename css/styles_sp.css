@@ -105,6 +105,10 @@ img.adTrack {
   position: absolute !important;
 }
 
+section .section-body {
+  padding: 10px;
+}
+
 input, textarea {
   line-height: 20px;
   font-size: 16px;
@@ -231,43 +235,48 @@ select.input-select {
   background: #2196F3;
   border-color: #1976D2;
   color: #fff !important;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.2);
 }
 .button.button-success {
   background: #4CAF50;
   border-color: #388E3C;
   color: #fff !important;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.2);
 }
 .button.button-info {
   background: #03A9F4;
   border-color: #0288D1;
   color: #fff !important;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.2);
 }
 .button.button-warning {
   background: #FF9800;
   border-color: #F57C00;
   color: #fff !important;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.2);
 }
 .button.button-danger {
   background: #F44336;
   border-color: #D32F2F;
   color: #fff !important;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.2);
 }
 .button.button-official {
   background: #009688;
   border-color: #00796B;
   color: #fff !important;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.2);
 }
 .button.button-accent {
   background: #E91E63;
   border-color: #C2185B;
   color: #fff !important;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.2);
 }
 .button.button-search, .button.button-submit {
   background: #3F51B5;
   border-color: #303F9F;
   color: #fff !important;
-}
-.button[class*="button-"] {
   text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.2);
 }
 .button i.md {
@@ -393,6 +402,11 @@ i.icon.icon-feed {
   padding: 10px;
   border-bottom: solid 5px #9E9E9E;
   background: #F5F5F5;
+}
+.flash a {
+  display: inline !important;
+  color: #2196F3;
+  text-decoration: underline;
 }
 .flash .flash-title {
   margin-bottom: 5px;
@@ -994,7 +1008,6 @@ footer .copyright .site {
   font-size: 10px;
 }
 .contents .officiallink,
-.contents .shoplink,
 .contents .applink {
   display: block;
   overflow: hidden;
@@ -1010,17 +1023,14 @@ footer .copyright .site {
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.35);
 }
 .contents .officiallink:first-child,
-.contents .shoplink:first-child,
 .contents .applink:first-child {
   margin-top: 0;
 }
 .contents .officiallink:last-child,
-.contents .shoplink:last-child,
 .contents .applink:last-child {
   margin-bottom: 0;
 }
 .contents .officiallink i,
-.contents .shoplink i,
 .contents .applink i {
   position: absolute;
   top: 50%;
@@ -1031,8 +1041,6 @@ footer .copyright .site {
 }
 .contents .officiallink .caption,
 .contents .officiallink .read,
-.contents .shoplink .caption,
-.contents .shoplink .read,
 .contents .applink .caption,
 .contents .applink .read {
   display: block;
@@ -1040,14 +1048,12 @@ footer .copyright .site {
   font-size: 12px;
 }
 .contents .officiallink .title,
-.contents .shoplink .title,
 .contents .applink .title {
   display: block;
   line-height: 20px;
   font-size: 16px;
 }
 .contents .officiallink.ended,
-.contents .shoplink.ended,
 .contents .applink.ended {
   background: #004D40;
   pointer-events: none;
@@ -1187,30 +1193,6 @@ footer .copyright .site {
   color: #fff;
   font-weight: bold;
 }
-.contents .noneTitles li {
-  margin-bottom: 10px;
-}
-.contents .noneTitles li a {
-  text-decoration: none;
-}
-.contents .noneTitles li a:hover {
-  text-decoration: underline;
-}
-.contents .noneTitles li a .official,
-.contents .noneTitles li a .read {
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
-}
-.contents .noneTitles li a .official {
-  margin-right: 5px;
-}
-.contents .noneTitles li a .read {
-  color: #616161;
-  font-size: 12px;
-}
 
 /** Review components
 ------------------------------ **/
@@ -1247,6 +1229,8 @@ footer .copyright .site {
 }
 .contents ul.textLinks .description p {
   margin-bottom: 5px;
+  line-height: 15px;
+  word-break: break-all;
 }
 .contents ul.textLinks .description p:last-of-type {
   margin: 0;
@@ -1294,6 +1278,9 @@ footer .copyright .site {
 .contents ul.imageLinks .data .title .read {
   line-height: 10px;
   font-size: 10px;
+}
+.contents ul.imageLinks .data .stars {
+  margin-left: 0;
 }
 .contents ul.imageLinks.imageLinks-s .images {
   width: 40px;
@@ -1880,11 +1867,11 @@ body.titles section.title-rating .counts .rate {
   border-bottom: solid 1px #BDBDBD;
 }
 body.titles section.title-rating .counts .rate .caption {
+  margin-right: 5px;
   line-height: 25px;
   font-size: 16px;
 }
 body.titles section.title-rating .counts .rate .value {
-  margin: 0 10px;
   line-height: 25px;
   font-size: 16px;
 }
@@ -1949,13 +1936,16 @@ body.titles section.title-rating .rates ul li .stars {
   margin: 0;
 }
 body.titles section.title-rating .rates ul li .num {
-  width: 40px;
+  width: 50px;
   margin-left: 5px;
   text-align: right;
 }
+body.titles section.title-review {
+  padding: 0 10px 10px;
+}
 body.titles section.title-review ul li {
   position: relative;
-  padding: 0 5px 10px;
+  margin-bottom: 10px;
 }
 body.titles section.title-review .post {
   border: solid 1px #BDBDBD;
@@ -2009,7 +1999,7 @@ body.titles section.title-review .post ul.data li a {
 body.titles section.title-review .title-comp-rate {
   position: absolute;
   top: 5px;
-  left: 0;
+  left: -10px;
   z-index: 1;
 }
 body.titles section.title-review-single {

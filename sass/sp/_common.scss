@@ -64,6 +64,14 @@ img.adTrack
 	position: absolute !important;
 }
 
+section
+{
+	.section-body
+	{
+		padding: 10px;
+	}
+}
+
 //inputs
 input,textarea
 {
@@ -211,6 +219,7 @@ select.input-select
 		background: $color-primary;
 		border-color: $color-primary-dark;
 		color: $color-white !important;
+		text-shadow: -1px -1px 0 $color-shadow;
 	}
 
 	&.button-success
@@ -218,6 +227,7 @@ select.input-select
 		background: $color-success;
 		border-color: $color-success-dark;
 		color: $color-white !important;
+		text-shadow: -1px -1px 0 $color-shadow;
 	}
 
 	&.button-info
@@ -225,6 +235,7 @@ select.input-select
 		background: $color-info;
 		border-color: $color-info-dark;
 		color: $color-white !important;
+		text-shadow: -1px -1px 0 $color-shadow;
 	}
 
 	&.button-warning
@@ -232,6 +243,7 @@ select.input-select
 		background: $color-warning;
 		border-color: $color-warning-dark;
 		color: $color-white !important;
+		text-shadow: -1px -1px 0 $color-shadow;
 	}
 
 	&.button-danger
@@ -239,6 +251,7 @@ select.input-select
 		background: $color-danger;
 		border-color: $color-danger-dark;
 		color: $color-white !important;
+		text-shadow: -1px -1px 0 $color-shadow;
 	}
 
 	&.button-official
@@ -246,6 +259,7 @@ select.input-select
 		background: $color-theme-official;
 		border-color: $color-theme-official-dark;
 		color: $color-white !important;
+		text-shadow: -1px -1px 0 $color-shadow;
 	}
 
 	&.button-accent
@@ -253,6 +267,7 @@ select.input-select
 		background: $gm-color-pink-500;
 		border-color: $gm-color-pink-700;
 		color: $color-white !important;
+		text-shadow: -1px -1px 0 $color-shadow;
 	}
 
 	&.button-search,
@@ -261,9 +276,6 @@ select.input-select
 		background: $gm-color-indigo-500;
 		border-color: $gm-color-indigo-700;
 		color: $color-white !important;
-	}
-	&[class*="button-"]
-	{
 		text-shadow: -1px -1px 0 $color-shadow;
 	}
 
@@ -551,6 +563,13 @@ i.icon
 	padding: 10px;
 	border-bottom: solid 5px $gm-color-grey-500;
 	background: $gm-color-grey-100;
+
+	a
+	{
+		display: inline !important;
+		color: $color-link;
+		text-decoration: underline;
+	}
 
 	.flash-title
 	{
