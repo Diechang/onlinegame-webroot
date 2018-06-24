@@ -1244,6 +1244,7 @@ footer .copyright .site {
 }
 .contents ul.imageLinks .images .thumb {
   width: 80px;
+  margin-bottom: 5px;
 }
 .contents ul.imageLinks .images .thumb:only-child {
   margin: 0;
