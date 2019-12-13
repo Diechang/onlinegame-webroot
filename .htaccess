@@ -17,8 +17,7 @@
 
 #	SSL
 	RewriteCond %{SERVER_ADDR} !=127.0.0.1
-	RewriteCond %{ENV:HTTPS} !^on$
-	RewriteCond %{HTTP:X-SAKURA-FORWARDED-FOR} ^$
+	RewriteCond %{HTTPS} !=on
 	RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 
