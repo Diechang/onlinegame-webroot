@@ -36,7 +36,7 @@ if (!defined('DS')) {
  *
  */
 if (!defined('ROOT')) {
-		define('ROOT', dirname(dirname(dirname(__FILE__))) . DS . 'cakephp-2.10.19');
+		define('ROOT', dirname(dirname(dirname(__FILE__))) . DS . 'cakephp-2.6.7');
 }
 
 /**
